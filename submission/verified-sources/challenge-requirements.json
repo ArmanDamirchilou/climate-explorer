@@ -1,0 +1,37 @@
+{
+  "source_url": "https://www.spaceappschallenge.org/2026/challenges/earth-system-trend-detective/",
+  "retrieved_utc": "2026-11-13T06:54:49.665388+00:00",
+  "method": "Full production brief and resources decoded from NextJS RSC HTML strings; requirements below are paraphrases.",
+  "core_objectives": [
+    "Identify Earth science variables suitable for investigating trends.",
+    "Acquire data for a selected region.",
+    "Visualize a sufficiently long time series for the variable and region.",
+    "Estimate the rate and assess significance, for example through confidence intervals."
+  ],
+  "scope": "Basic linear trend analysis satisfies the envisaged statistical scope; more complex trend analysis is not required.",
+  "optional_suggestions": [
+    "Define variables for high-school/college users and interested public.",
+    "Provide demonstrations.",
+    "Questions may guide variable choice.",
+    "AI may assist discovery but is not required."
+  ],
+  "relevant_resources": [
+    {
+      "name": "Giovanni",
+      "url": "https://giovanni.gsfc.nasa.gov/"
+    },
+    {
+      "name": "AppEEARS",
+      "url": "https://appeears.earthdatacloud.nasa.gov/"
+    },
+    {
+      "name": "Climate Data Online",
+      "url": "https://www.ncei.noaa.gov/cdo-web/"
+    },
+    {
+      "name": "KNMI Climate Explorer",
+      "url": "https://climexp.knmi.nl/"
+    }
+  ],
+  "name_collision": "An existing KNMI product has the same Climate Explorer name. This project must identify itself as an independent student prototype, with no claim of affiliation or naming originality."
+}

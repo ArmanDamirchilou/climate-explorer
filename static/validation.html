@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Method evaluation | Climate Explorer</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><script src="validation.js" defer></script></head>
+<body>
+  <a class="skip" href="#evaluation">Skip to evaluation</a>
+  <header class="topbar"><a class="brand" href="./">Climate Explorer</a><nav aria-label="Main"><a href="./">Back to investigation</a></nav></header>
+  <main class="validation-page" id="evaluation">
+    <section class="intro"><h1>Test the method with answers we know.</h1><p>We generated records with known slopes, then checked whether each method recovered them. This tests statistical behavior under specified conditions. These records are synthetic. They are never presented as NASA observations.</p></section>
+    <h2>What failed, and why it matters</h2>
+    <p>Years can share a persistent pattern of error. That makes an ordinary interval too confident. A dependence adjustment can help, but short records still cause problems. Our experiment did not find a deployable interval method that passed every predeclared screening case.</p>
+    <p class="warning">Agreement between several methods does not prove a trend. They share data and may share weaknesses. Our application shows conditional comparisons rather than claiming that one adjustment solves every case.</p>
+    <h2>Fixed protocol</h2>
+    <p id="protocol-summary">Loading the saved evaluation…</p>
+    <p>Errors are Gaussian with marginal variance one. In the AR(1) scenarios, each year's error depends on the previous error by the stated correlation. Other scenarios increase the noise over time or add a single extreme endpoint. A known-covariance oracle is included as a control. It has information we do not have for a real location.</p>
+    <p>The automatic Newey-West lag is floor(4(n/100)^(2/9)). All Newey-West intervals use Bartlett weights, the n/(n−2) correction, and Student t critical values. Theil-Sen uses its ordinary interval in this experiment, which does not correct dependence. GLSAR estimates an AR(1) process with up to ten iterations.</p>
+    <h2>All evaluated cases</h2>
+    <p>Coverage should be near 95% if an advertised 95% interval performs as intended. In a null case, excluding zero is a false positive, ideally near 5%. In a trend case it is detection, which must be read alongside coverage. Bounds beside rates are Wilson 95% Monte Carlo intervals, describing simulation uncertainty.</p>
+    <label for="scenario">Choose a simulation case</label><select id="scenario" class="scenario-picker" disabled><option>Loading cases…</option></select>
+    <div id="validation-error" class="error" role="alert" hidden></div>
+    <div class="table-scroll"><table><caption id="evaluation-caption">Paired comparisons. Each method sees the same simulated record.</caption><thead><tr><th scope="col">Scenario</th><th scope="col">Method</th><th scope="col">Coverage</th><th scope="col">Excludes zero</th><th scope="col">Slope RMSE per decade</th><th scope="col">Failed fits</th></tr></thead><tbody id="evaluation-body"></tbody></table></div>
+    <h2 id="dataset-evaluation">Do two temperature datasets agree?</h2>
+    <p>We also compared the five original locations with NASA GISTEMP v4, using its land-only 2° grid with 250 km station smoothing. The table uses common complete calendar years in 1981–2025 and day-weighted annual values in both sources. No period was selected to improve agreement.</p>
+    <div class="table-scroll"><table><caption>Temperature slopes in °C per decade. POWER uses a 0.5° by 0.625° reanalysis grid. GISTEMP uses a coarser observation-based anomaly field.</caption><thead><tr><th scope="col">Location</th><th scope="col">GISTEMP cell center lat, lon</th><th scope="col">Common years</th><th scope="col">POWER slope</th><th scope="col">GISTEMP slope</th><th scope="col">Difference</th></tr></thead><tbody id="dataset-body"></tbody></table></div>
+    <p id="dataset-status" role="status">Loading the saved comparison…</p>
+    <p class="warning">Toronto shows a large difference between datasets. Its cause is unresolved. We retain that disagreement rather than selecting only locations with similar results. These fields differ in spatial support, smoothing, and processing; neither is a local reference station.</p>
+    <p>Subtracting a fixed reference temperature does not change a slope. Different spatial sampling can. Agreement would not make these datasets statistically independent or prove either one correct. This comparison covers temperature only. It does not validate precipitation. <a href="https://data.giss.nasa.gov/gistemp/data_v4.html" target="_blank" rel="noopener">GISTEMP download description</a>. <a href="api/dataset-check" data-report="dataset-check" download="climate-explorer-dataset-check.json">Download the frozen comparison</a>.</p>
+    <h2>Investigating the Toronto disagreement</h2>
+    <p>We checked every original annual value against NASA's own rounded annual summary, then examined a fixed set of nearby POWER requests and all nine cells in a 3 by 3 GISTEMP neighborhood. We retain every selected point. This is an exploratory diagnostic, not a search for the closest match.</p>
+    <div class="table-scroll"><table><caption>POWER temperature, 1981–2025. Rates in °C per decade. The final column checks our day-weighted annual calculation against NASA month 13; it does not validate the climate source.</caption><thead><tr><th scope="col">Fixed request</th><th scope="col">Latitude, longitude</th><th scope="col">POWER rate</th><th scope="col">Largest annual difference, °C</th></tr></thead><tbody id="audit-body"></tbody></table></div>
+    <p id="audit-status" role="status">Loading the frozen spatial audit…</p>
+    <p>Calendar weighting does not explain the original source difference. Location choice within POWER substantially changes the rate. This points toward further spatial and source checks, but does not prove a lake effect, urbanization effect, or model error. <a href="https://github.com/ArmanDamirchilou/climate-explorer/blob/main/evaluation/SCIENCE_AUDIT.md">Read the protocol and complete audit</a>. <a href="api/science-audit" data-report="science-audit" download="climate-explorer-science-audit.json">Download the frozen spatial audit</a>.</p>
+    <h2>What this does not establish</h2>
+    <p>The simulation does not cover every climate process. It does not validate source data, resolve changing observation networks, test all nonlinear trends, or correct repeated exploration of locations and dates. Rates here are not measured false-positive rates for Tehran. No real user benefit has yet been measured.</p>
+    <p>The full protocol, generator, environment record, raw metrics, and screening rule are retained in the project's evaluation folder. <a href="api/validation" data-report="validation" download="climate-explorer-method-evaluation.json">Download all evaluation results</a>.</p>
+    <p>Related research: <a href="https://www.integratedecosystemassessment.noaa.gov/publications/144" target="_blank" rel="noopener">NOAA-hosted simulation study of short environmental records</a> and <a href="https://climatedataguide.ucar.edu/climate-tools/trend-analysis" target="_blank" rel="noopener">NCAR guide to trend assumptions</a>. This is a student validation study, not a new general statistical result.</p>
+  </main>
+</body>
+</html>

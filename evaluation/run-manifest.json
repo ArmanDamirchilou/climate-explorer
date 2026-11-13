@@ -1,0 +1,19 @@
+{
+  "note": "File hashes recorded after verification. This is an integrity record, not proof of external preregistration or data correctness.",
+  "sha256": {
+    "evaluation/PROTOCOL.md": "c60c9720ce0bc59af189c8b2c009ef193323dceb82f4002c4cc5fab445b9521a",
+    "evaluation/calibration.py": "a5564881c4ed9ddaab5736b9f6c4622fc6ccd0bd3e54d14a57b9a75332d352b3",
+    "evaluation/results.json": "c005ee74cecef59efa4364001edeb286d56de1678dd42ba9993448de688e161f",
+    "evaluation/RESULTS.md": "b60065ae0aabdbad7a513418d5b878a851d500e0946d42e28063a4472a41a7b7",
+    "evaluation/dataset_check.py": "0126e63455d8b5530d44d53ef4480c1d74ff3ef2db974ad2a5dcc0680160517a",
+    "evaluation/dataset-check.json": "8af460536ccb726998af8b35e63d4461de87bc5d1578583c88d5651e74f3e266",
+    "evaluation/DATASET_CHECK.md": "1aadacb9fddea12b73d8512240a5b44f09e6f28e4ad8ddd918965adc8213c311",
+    "evaluation/gistemp250_GHCNv4.nc.gz": "06ca5386c537d48f5d4c93ebe9571f9058be0cb58aff056b972123bcb09cd6bf",
+    "requirements-lock.txt": "d7bdc499c4460f09d40bd2c1395968c2cc05ab2dc8c3d96afd9204b83611583e",
+    "evaluation/source-snapshots/ankara-power.json": "7b2f8cd7bc89ec287418cec913151b4d192209a2368273db9e90878a118e4644",
+    "evaluation/source-snapshots/berlin-power.json": "a7c2f3deea425d1247e3aa86bf0c65b70c700b243fd4391de0763497afcf0610",
+    "evaluation/source-snapshots/milan-power.json": "07ab510b2d679955ec8c3115a7a6204bcadb7c3ae912cc2673cc52894dfe57b6",
+    "evaluation/source-snapshots/tehran-power.json": "3a9796dd9235fc22b92b59db7ba056f2973de5198a93568248a80bd92f5ac6e8",
+    "evaluation/source-snapshots/toronto-power.json": "33f7e2efb22b495769586db535f6c11c40023d2b63b007dca258e1d47c94bb89"
+  }
+}

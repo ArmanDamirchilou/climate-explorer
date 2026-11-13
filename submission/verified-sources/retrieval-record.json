@@ -1,0 +1,55 @@
+{
+  "method": "Direct HTTPS GET; visible HTML plus JSON-decoded NextJS RSC payloads. No remote JavaScript executed. Web search corroborated production summary; web opens returned502.",
+  "records": [
+    {
+      "id": "project-submission-guide",
+      "url": "https://www.spaceappschallenge.org/resources/project-submission-guide/",
+      "retrieved_utc": "2026-11-13T06:48:58.242996+00:00",
+      "http_status": 200,
+      "html_bytes": 176089,
+      "html_sha256": "168ae84831f644059390d0e0532802a6c7d0abd521e6b7be6bb3107e99a41ac4",
+      "content_recovered": true,
+      "note": "Body read through HTML text extraction. Whole site HTML is not republished."
+    },
+    {
+      "id": "judging-awards-guide",
+      "url": "https://www.spaceappschallenge.org/resources/judging-awards-guide/",
+      "retrieved_utc": "2026-11-13T06:48:59.475765+00:00",
+      "http_status": 200,
+      "html_bytes": 139962,
+      "html_sha256": "ede512d5486398ad1fb79291b35db8bb0cfaaf4d96bb9e6da771b4522a435897",
+      "content_recovered": true,
+      "note": "Body read through HTML text extraction. Whole site HTML is not republished."
+    },
+    {
+      "id": "participant-faqs",
+      "url": "https://www.spaceappschallenge.org/resources/participant-faqs/",
+      "retrieved_utc": "2026-11-13T06:49:00.793864+00:00",
+      "http_status": 200,
+      "html_bytes": 155002,
+      "html_sha256": "cf2e00563a0e9c4cee055f12591ea8b6f6fedf5bed1b5cc69fa003a1743cb5ce",
+      "content_recovered": true,
+      "note": "Body read through HTML text extraction. Whole site HTML is not republished."
+    },
+    {
+      "id": "challenge",
+      "url": "https://www.spaceappschallenge.org/2026/challenges/earth-system-trend-detective/",
+      "retrieved_utc": "2026-11-13T06:54:49.665388+00:00",
+      "http_status": 200,
+      "html_bytes": 83179,
+      "html_sha256": "4fbb9c79e95490b2bb424b638c141982bc1e56871ec06e0a1ebd1c2ef6f6dd77",
+      "content_recovered": true,
+      "note": "Page body and structured data recovered by JSON-decoding NextJS RSC script payloads. No scripts executed. Whole HTML not republished."
+    },
+    {
+      "id": "ankara-schedule",
+      "url": "https://www.spaceappschallenge.org/2026/local-events/ankara/?tab=schedule",
+      "retrieved_utc": "2026-11-13T06:54:51.025052+00:00",
+      "http_status": 200,
+      "html_bytes": 85965,
+      "html_sha256": "48047b9ee33038ecd1ba074bdd4a19e57739fb3ea5e4216a89a0785b2ee4dd03",
+      "content_recovered": true,
+      "note": "Page body and structured data recovered by JSON-decoding NextJS RSC script payloads. No scripts executed. Whole HTML not republished."
+    }
+  ]
+}

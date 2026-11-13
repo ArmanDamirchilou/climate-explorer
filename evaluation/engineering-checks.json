@@ -1,0 +1,71 @@
+{
+  "verified_utc": "2026-11-13T06:56:53.472700+00:00",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "python": "3.14.7",
+  "unit_and_http_tests": {
+    "count": 53,
+    "passed": 53,
+    "skipped": 0,
+    "environments": [
+      "existing project virtual environment",
+      "fresh isolated virtual environment installed from locked downloaded wheels"
+    ]
+  },
+  "dependency_check": "pip check passed in both environments",
+  "binary_lock_downloads": {
+    "macOS_arm64_cp314": 13,
+    "Linux_x86_64_cp314": 13,
+    "scope": "Download availability and dependency resolution only; Linux execution awaits GitHub Actions."
+  },
+  "javascript_syntax": "All current static/*.js passed node --check",
+  "http_checks": [
+    "configuration",
+    "frozen real source and replay evidence",
+    "CSV units and source metadata",
+    "invalid input before retrieval",
+    "upstream 502",
+    "sanitized 500",
+    "unknown API 404",
+    "saved evidence JSON",
+    "security headers",
+    "static path traversal",
+    "HEAD response",
+    "missing saved report 404",
+    "corrupt or nonfinite report structured500",
+    "unreadable report sanitized500",
+    "science audit report JSON"
+  ],
+  "actions": {
+    "checkout": "d23441a48e516b6c34aea4fa41551a30e30af803",
+    "setup-python": "ece7cb06caefa5fff74198d8649806c4678c61a1",
+    "setup-node": "249970729cb0ef3589644e2896645e5dc5ba9c38",
+    "verification": "SHA values resolved from official repository v6 tags on verification date"
+  },
+  "limits": [
+    "No penetration-test certification",
+    "No live NASA service reliability claim",
+    "No browser accessibility certification",
+    "Hosted Linux CI and browser UI verification are recorded separately after those checks occur."
+  ],
+  "frozen_demo_checks": {
+    "tests": 13,
+    "network": "socket connections blocked during build and replay",
+    "analyses_replayed": 10,
+    "annual_values_per_analysis": 45,
+    "source_checks": [
+      "previously recorded payload hashes",
+      "HTTPS NASA endpoint",
+      "fixed query period",
+      "coordinates"
+    ],
+    "output_checks": [
+      "source directory and ancestor rejection",
+      "unmarked directory preservation",
+      "previous output retained when analysis fails",
+      "complete file manifest",
+      "repository subpath asset links",
+      "actual JavaScript report link rewriting for snapshot and local modes",
+      "no local user paths, private-key header, or GitHub token prefix in built text files"
+    ]
+  }
+}

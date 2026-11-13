@@ -1,0 +1,21 @@
+{
+  "source_url": "https://www.spaceappschallenge.org/2026/local-events/ankara/?tab=schedule",
+  "retrieved_utc": "2026-11-13T06:54:51.025052+00:00",
+  "page_last_published_utc": "2026-11-12T23:07:37.291136Z",
+  "timezone": "Europe/Istanbul",
+  "selected_schedule": [
+    {
+      "title": "Hackathon Başlangıcı 🚀",
+      "start_local": "2026-11-14T09:15:00"
+    },
+    {
+      "title": "Proje Teslimi İçin Son Saat",
+      "start_local": "2026-11-15T17:00:00"
+    }
+  ],
+  "tehran_conversion": {
+    "start": "2026-11-14T09:45:00+03:30",
+    "local_delivery_deadline": "2026-11-15T17:30:00+03:30"
+  },
+  "online_delivery_process": "Not specified in recovered schedule"
+}

@@ -1,0 +1,14 @@
+{
+  "climate.py": "cd4e6cfdb9cf642888cf8acbafc09d6af367450edcd27233eb60b7947cc0e1c9",
+  "server.py": "68715d3cbc3a3bd3f366c90a44d56d9702624735544745b6ab278b9a074bef5f",
+  "static/app.js": "274f4b6011e7f0ccdd03aecbfd138ff5e680574dcd45c79e7b6f9cfd82cde612",
+  "static/index.html": "9ed0b0290a7c95c4dbe6982c22aca36d2dc062cb1fef42e1a5e3b640fdf1dcf6",
+  "static/style.css": "7f79b7e9fea0957cb3ccf8f24590cf08798a5fc863719710487883ae146af35e",
+  "static/icon.svg": "25b3e37585460ab765449c69f52559d6d50348021df2c82753be2eff04b2e69b",
+  "tests/test_climate.py": "9fa5a6aac3c94960fc55b37f81287138c53daf4c5d0c8cc2f0ec7cca60c93036",
+  "README.md": "b3be5e27ba606034c7b10210f11d637a323fde6e1ad92dfd868e35b77dffb2bb",
+  "DESIGN.md": "50c89e655a4809d5053b33419544dda28571c3ca6070f15629e8d87f50017525",
+  "requirements.txt": "dbd1b4c4e7ce1c619c8e7f006a7dda252a0d881abfcc63fa53db733bf27997c2",
+  "requirements-lock.txt": "983665a6331eda07ab1f4b23ef92d66f4b024c27b360ee0e7420511ef3b28c64",
+  "data/tehran-nasa-snapshot.json": "2cdcb01ae9dfa6805da9f3cd667ced491b2d863747ccb78d289efce00a2fd1f9"
+}

@@ -1,0 +1,13 @@
+.venv/
+.demo-venv/
+submission/rendered/
+__pycache__/
+*.pyc
+data/cache/
+dist/
+.demo-build-*/
+.DS_Store
+*.egg-info/
+.env
+.env.*
+artifacts/baseline-2026-11-11.zip

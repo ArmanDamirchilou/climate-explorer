@@ -1,0 +1,1471 @@
+{
+  "generated_utc": "2026-11-12T04:25:26.640887+00:00",
+  "gistemp_source": "https://data.giss.nasa.gov/pub/gistemp/gistemp250_GHCNv4.nc.gz",
+  "gistemp_compressed_sha256": "06ca5386c537d48f5d4c93ebe9571f9058be0cb58aff056b972123bcb09cd6bf",
+  "gistemp_history": "Created 2026-10-22 14:38:13 by SBBX_to_nc 2.0 - ILAND=250,  IOCEAN=none,     Base: 1951-1980",
+  "gistemp_resolution": "2\u00b0 by 2\u00b0, land-only, 250 km station smoothing",
+  "aggregation": "Day-weighted complete calendar years in both sources; identical intersection of years per place",
+  "scope": "Exploratory coarse-scale consistency check. Different fields and spatial supports; not independent ground truth or validation of a street-level trend.",
+  "rows": [
+    {
+      "name": "Tehran, Iran",
+      "requested_coordinates": [
+        35.6892,
+        51.389
+      ],
+      "gistemp_cell_center": [
+        35.0,
+        51.0
+      ],
+      "years": [
+        1981,
+        1982,
+        1983,
+        1984,
+        1985,
+        1986,
+        1987,
+        1988,
+        1989,
+        1990,
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "gistemp_slope_c_per_decade": 0.5361992049177329,
+      "power_slope_c_per_decade": 0.5035205745737874,
+      "slope_difference_power_minus_gistemp": -0.03267863034394547,
+      "annual_correlation": 0.9058207422887196,
+      "power_source_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=51.389&latitude=35.6892&format=JSON&start=1981&end=2025",
+      "power_retrieved_utc": "2026-11-11T14:22:17.905516+00:00",
+      "power_payload_sha256": "debc7b7a881f8443990fdb1efa9323fcae9283eb0cbb227a5025291e56bc3d2c",
+      "annual": [
+        {
+          "year": 1981,
+          "gistemp_anomaly_c": 0.8867671034668815,
+          "power_temperature_c": 15.360493150684931
+        },
+        {
+          "year": 1982,
+          "gistemp_anomaly_c": -0.6315068351997905,
+          "power_temperature_c": 14.762876712328767
+        },
+        {
+          "year": 1983,
+          "gistemp_anomaly_c": -0.11589040836855156,
+          "power_temperature_c": 15.513369863013699
+        },
+        {
+          "year": 1984,
+          "gistemp_anomaly_c": -0.15538251018813237,
+          "power_temperature_c": 14.66172131147541
+        },
+        {
+          "year": 1985,
+          "gistemp_anomaly_c": 0.6393150542033453,
+          "power_temperature_c": 15.4513698630137
+        },
+        {
+          "year": 1986,
+          "gistemp_anomaly_c": 0.11504109331904208,
+          "power_temperature_c": 14.90054794520548
+        },
+        {
+          "year": 1987,
+          "gistemp_anomaly_c": 0.9029588839268847,
+          "power_temperature_c": 15.746465753424658
+        },
+        {
+          "year": 1988,
+          "gistemp_anomaly_c": 0.8576229316503053,
+          "power_temperature_c": 15.900628415300547
+        },
+        {
+          "year": 1989,
+          "gistemp_anomaly_c": 0.35583560848481033,
+          "power_temperature_c": 16.269972602739728
+        },
+        {
+          "year": 1990,
+          "gistemp_anomaly_c": 0.7890684755136297,
+          "power_temperature_c": 16.762164383561643
+        },
+        {
+          "year": 1991,
+          "gistemp_anomaly_c": 0.4231780727330136,
+          "power_temperature_c": 16.019561643835615
+        },
+        {
+          "year": 1992,
+          "gistemp_anomaly_c": -1.0923497023600373,
+          "power_temperature_c": 14.525437158469943
+        },
+        {
+          "year": 1993,
+          "gistemp_anomaly_c": -0.1833698589150628,
+          "power_temperature_c": 15.596821917808219
+        },
+        {
+          "year": 1994,
+          "gistemp_anomaly_c": 0.6880547791413248,
+          "power_temperature_c": 16.311643835616437
+        },
+        {
+          "year": 1995,
+          "gistemp_anomaly_c": 1.0884657290955522,
+          "power_temperature_c": 16.877479452054793
+        },
+        {
+          "year": 1996,
+          "gistemp_anomaly_c": 0.4531693887779784,
+          "power_temperature_c": 16.01945355191257
+        },
+        {
+          "year": 1997,
+          "gistemp_anomaly_c": 1.0505205244642415,
+          "power_temperature_c": 16.787150684931508
+        },
+        {
+          "year": 1998,
+          "gistemp_anomaly_c": 1.5804383208388335,
+          "power_temperature_c": 17.54950684931507
+        },
+        {
+          "year": 1999,
+          "gistemp_anomaly_c": 1.6871780444804119,
+          "power_temperature_c": 17.73476712328767
+        },
+        {
+          "year": 2000,
+          "gistemp_anomaly_c": 1.181284126601706,
+          "power_temperature_c": 17.07207650273224
+        },
+        {
+          "year": 2001,
+          "gistemp_anomaly_c": 1.879013656630908,
+          "power_temperature_c": 17.89249315068493
+        },
+        {
+          "year": 2002,
+          "gistemp_anomaly_c": 1.6098629777153877,
+          "power_temperature_c": 17.255013698630137
+        },
+        {
+          "year": 2003,
+          "gistemp_anomaly_c": 1.20772600040248,
+          "power_temperature_c": 16.716794520547946
+        },
+        {
+          "year": 2004,
+          "gistemp_anomaly_c": 1.4495628091298003,
+          "power_temperature_c": 17.000655737704918
+        },
+        {
+          "year": 2005,
+          "gistemp_anomaly_c": 1.1876986035898531,
+          "power_temperature_c": 17.03854794520548
+        },
+        {
+          "year": 2006,
+          "gistemp_anomaly_c": 1.6493150316280862,
+          "power_temperature_c": 16.90654794520548
+        },
+        {
+          "year": 2007,
+          "gistemp_anomaly_c": 1.1071506601847607,
+          "power_temperature_c": 16.296712328767125
+        },
+        {
+          "year": 2008,
+          "gistemp_anomaly_c": 1.2222404098392672,
+          "power_temperature_c": 16.626038251366122
+        },
+        {
+          "year": 2009,
+          "gistemp_anomaly_c": 1.36049312027554,
+          "power_temperature_c": 16.236657534246575
+        },
+        {
+          "year": 2010,
+          "gistemp_anomaly_c": 2.6969314465681986,
+          "power_temperature_c": 18.08808219178082
+        },
+        {
+          "year": 2011,
+          "gistemp_anomaly_c": 0.9570136772392139,
+          "power_temperature_c": 16.166465753424657
+        },
+        {
+          "year": 2012,
+          "gistemp_anomaly_c": 1.3400819372599486,
+          "power_temperature_c": 16.0896174863388
+        },
+        {
+          "year": 2013,
+          "gistemp_anomaly_c": 1.7867670833503138,
+          "power_temperature_c": 16.807534246575344
+        },
+        {
+          "year": 2014,
+          "gistemp_anomaly_c": 1.5610958555177465,
+          "power_temperature_c": 16.85619178082192
+        },
+        {
+          "year": 2015,
+          "gistemp_anomaly_c": 1.9180547516486823,
+          "power_temperature_c": 17.095013698630137
+        },
+        {
+          "year": 2016,
+          "gistemp_anomaly_c": 1.9073770065471285,
+          "power_temperature_c": 17.071502732240436
+        },
+        {
+          "year": 2017,
+          "gistemp_anomaly_c": 1.7932328366304506,
+          "power_temperature_c": 17.196684931506848
+        },
+        {
+          "year": 2018,
+          "gistemp_anomaly_c": 2.3123835099580354,
+          "power_temperature_c": 17.791808219178083
+        },
+        {
+          "year": 2019,
+          "gistemp_anomaly_c": 1.6984657154609897,
+          "power_temperature_c": 16.812
+        },
+        {
+          "year": 2020,
+          "gistemp_anomaly_c": 1.2030600823991286,
+          "power_temperature_c": 16.031448087431695
+        },
+        {
+          "year": 2021,
+          "gistemp_anomaly_c": 2.6726026799887013,
+          "power_temperature_c": 17.95123287671233
+        },
+        {
+          "year": 2022,
+          "gistemp_anomaly_c": 2.448739671293799,
+          "power_temperature_c": 17.73958904109589
+        },
+        {
+          "year": 2023,
+          "gistemp_anomaly_c": 2.620958845526592,
+          "power_temperature_c": 17.670684931506848
+        },
+        {
+          "year": 2024,
+          "gistemp_anomaly_c": 2.372513608172373,
+          "power_temperature_c": 17.44144808743169
+        },
+        {
+          "year": 2025,
+          "gistemp_anomaly_c": 2.2689588533944054,
+          "power_temperature_c": 17.921780821917807
+        }
+      ]
+    },
+    {
+      "name": "Ankara, Turkey",
+      "requested_coordinates": [
+        39.9334,
+        32.8597
+      ],
+      "gistemp_cell_center": [
+        39.0,
+        33.0
+      ],
+      "years": [
+        1981,
+        1982,
+        1983,
+        1984,
+        1985,
+        1986,
+        1987,
+        1988,
+        1989,
+        1990,
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "gistemp_slope_c_per_decade": 0.5012241465223942,
+      "power_slope_c_per_decade": 0.49536692706461016,
+      "slope_difference_power_minus_gistemp": -0.0058572194577840575,
+      "annual_correlation": 0.9508167384187475,
+      "power_source_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=32.8597&latitude=39.9334&format=JSON&start=1981&end=2025",
+      "power_retrieved_utc": "2026-11-11T19:00:01.590937+00:00",
+      "power_payload_sha256": "cf87dfe17e95534bd86d451e7cf43dd2a4b165636623cc086a3aaef46266f648",
+      "annual": [
+        {
+          "year": 1981,
+          "gistemp_anomaly_c": 0.6347671090995204,
+          "power_temperature_c": 10.149479452054795
+        },
+        {
+          "year": 1982,
+          "gistemp_anomaly_c": -0.4456164283958608,
+          "power_temperature_c": 8.632794520547945
+        },
+        {
+          "year": 1983,
+          "gistemp_anomaly_c": -0.524767111558212,
+          "power_temperature_c": 8.895726027397261
+        },
+        {
+          "year": 1984,
+          "gistemp_anomaly_c": -0.09808742950156413,
+          "power_temperature_c": 9.570027322404371
+        },
+        {
+          "year": 1985,
+          "gistemp_anomaly_c": 0.020273972149581126,
+          "power_temperature_c": 9.225095890410959
+        },
+        {
+          "year": 1986,
+          "gistemp_anomaly_c": 0.3183013627484237,
+          "power_temperature_c": 10.081452054794521
+        },
+        {
+          "year": 1987,
+          "gistemp_anomaly_c": -0.4570410856747464,
+          "power_temperature_c": 9.324438356164384
+        },
+        {
+          "year": 1988,
+          "gistemp_anomaly_c": -0.2339344210006663,
+          "power_temperature_c": 9.183825136612022
+        },
+        {
+          "year": 1989,
+          "gistemp_anomaly_c": -0.046794519502006166,
+          "power_temperature_c": 9.784986301369862
+        },
+        {
+          "year": 1990,
+          "gistemp_anomaly_c": -0.16394520181499114,
+          "power_temperature_c": 9.454164383561643
+        },
+        {
+          "year": 1991,
+          "gistemp_anomaly_c": -0.3569314988712742,
+          "power_temperature_c": 9.398520547945205
+        },
+        {
+          "year": 1992,
+          "gistemp_anomaly_c": -1.609262259112152,
+          "power_temperature_c": 8.042513661202186
+        },
+        {
+          "year": 1993,
+          "gistemp_anomaly_c": -0.4617260170768793,
+          "power_temperature_c": 9.061616438356165
+        },
+        {
+          "year": 1994,
+          "gistemp_anomaly_c": 0.9428492939941687,
+          "power_temperature_c": 10.67827397260274
+        },
+        {
+          "year": 1995,
+          "gistemp_anomaly_c": 0.1995616393750661,
+          "power_temperature_c": 9.427671232876712
+        },
+        {
+          "year": 1996,
+          "gistemp_anomaly_c": 0.673907088762139,
+          "power_temperature_c": 9.902978142076503
+        },
+        {
+          "year": 1997,
+          "gistemp_anomaly_c": -0.34328766355979934,
+          "power_temperature_c": 8.631342465753425
+        },
+        {
+          "year": 1998,
+          "gistemp_anomaly_c": 1.0176712101299876,
+          "power_temperature_c": 10.292109589041095
+        },
+        {
+          "year": 1999,
+          "gistemp_anomaly_c": 1.1975342198083663,
+          "power_temperature_c": 10.436219178082192
+        },
+        {
+          "year": 2000,
+          "gistemp_anomaly_c": -0.14612021531319358,
+          "power_temperature_c": 9.289754098360655
+        },
+        {
+          "year": 2001,
+          "gistemp_anomaly_c": 1.63873968939871,
+          "power_temperature_c": 10.78372602739726
+        },
+        {
+          "year": 2002,
+          "gistemp_anomaly_c": 0.2131780774268794,
+          "power_temperature_c": 9.477232876712328
+        },
+        {
+          "year": 2003,
+          "gistemp_anomaly_c": 0.6326027255862543,
+          "power_temperature_c": 9.71972602739726
+        },
+        {
+          "year": 2004,
+          "gistemp_anomaly_c": 0.4403278590103642,
+          "power_temperature_c": 9.730136612021857
+        },
+        {
+          "year": 2005,
+          "gistemp_anomaly_c": 0.6128493013702435,
+          "power_temperature_c": 9.906246575342466
+        },
+        {
+          "year": 2006,
+          "gistemp_anomaly_c": 0.49956163266954356,
+          "power_temperature_c": 9.78158904109589
+        },
+        {
+          "year": 2007,
+          "gistemp_anomaly_c": 1.0463561409956788,
+          "power_temperature_c": 10.883369863013698
+        },
+        {
+          "year": 2008,
+          "gistemp_anomaly_c": 0.6282513520777062,
+          "power_temperature_c": 10.236256830601093
+        },
+        {
+          "year": 2009,
+          "gistemp_anomaly_c": 0.8872602541407902,
+          "power_temperature_c": 9.984465753424658
+        },
+        {
+          "year": 2010,
+          "gistemp_anomaly_c": 2.571780764434027,
+          "power_temperature_c": 11.495041095890409
+        },
+        {
+          "year": 2011,
+          "gistemp_anomaly_c": -0.30701369176784604,
+          "power_temperature_c": 8.827260273972602
+        },
+        {
+          "year": 2012,
+          "gistemp_anomaly_c": 0.8143715664968302,
+          "power_temperature_c": 10.006639344262295
+        },
+        {
+          "year": 2013,
+          "gistemp_anomaly_c": 0.8468492961399359,
+          "power_temperature_c": 10.305095890410959
+        },
+        {
+          "year": 2014,
+          "gistemp_anomaly_c": 1.7931232475918042,
+          "power_temperature_c": 11.31041095890411
+        },
+        {
+          "year": 2015,
+          "gistemp_anomaly_c": -0.05353424537875881,
+          "power_temperature_c": 10.220958904109589
+        },
+        {
+          "year": 2016,
+          "gistemp_anomaly_c": 1.2068032517143694,
+          "power_temperature_c": 10.400081967213115
+        },
+        {
+          "year": 2017,
+          "gistemp_anomaly_c": 0.9513972390085867,
+          "power_temperature_c": 10.403479452054794
+        },
+        {
+          "year": 2018,
+          "gistemp_anomaly_c": 2.31898624953648,
+          "power_temperature_c": 11.732575342465754
+        },
+        {
+          "year": 2019,
+          "gistemp_anomaly_c": 1.5658903759585259,
+          "power_temperature_c": 10.785068493150685
+        },
+        {
+          "year": 2020,
+          "gistemp_anomaly_c": 1.8035791946595403,
+          "power_temperature_c": 11.102814207650274
+        },
+        {
+          "year": 2021,
+          "gistemp_anomaly_c": 1.302082162677017,
+          "power_temperature_c": 10.392465753424657
+        },
+        {
+          "year": 2022,
+          "gistemp_anomaly_c": 0.9968766900468362,
+          "power_temperature_c": 10.302849315068492
+        },
+        {
+          "year": 2023,
+          "gistemp_anomaly_c": 1.9179999571293593,
+          "power_temperature_c": 11.737835616438357
+        },
+        {
+          "year": 2024,
+          "gistemp_anomaly_c": 2.5161748071470873,
+          "power_temperature_c": 12.317568306010928
+        },
+        {
+          "year": 2025,
+          "gistemp_anomaly_c": 2.0266574889472495,
+          "power_temperature_c": 11.911095890410959
+        }
+      ]
+    },
+    {
+      "name": "Berlin, Germany",
+      "requested_coordinates": [
+        52.52,
+        13.405
+      ],
+      "gistemp_cell_center": [
+        53.0,
+        13.0
+      ],
+      "years": [
+        1981,
+        1982,
+        1983,
+        1984,
+        1985,
+        1986,
+        1987,
+        1988,
+        1989,
+        1990,
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "gistemp_slope_c_per_decade": 0.46538405501501057,
+      "power_slope_c_per_decade": 0.5598950465018872,
+      "slope_difference_power_minus_gistemp": 0.09451099148687658,
+      "annual_correlation": 0.9902062103466893,
+      "power_source_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=13.405&latitude=52.52&format=JSON&start=1981&end=2025",
+      "power_retrieved_utc": "2026-11-11T14:23:13.418672+00:00",
+      "power_payload_sha256": "3058852ecf73305c91848a9d49ae4548f66e6defbbddf579b6be00103dd26d11",
+      "annual": [
+        {
+          "year": 1981,
+          "gistemp_anomaly_c": 0.0486575331589947,
+          "power_temperature_c": 8.044027397260274
+        },
+        {
+          "year": 1982,
+          "gistemp_anomaly_c": 0.841890392141187,
+          "power_temperature_c": 9.03517808219178
+        },
+        {
+          "year": 1983,
+          "gistemp_anomaly_c": 1.094986276895012,
+          "power_temperature_c": 9.193452054794522
+        },
+        {
+          "year": 1984,
+          "gistemp_anomaly_c": 0.07153005304598743,
+          "power_temperature_c": 7.945546448087432
+        },
+        {
+          "year": 1985,
+          "gistemp_anomaly_c": -0.6344383419835813,
+          "power_temperature_c": 7.381424657534246
+        },
+        {
+          "year": 1986,
+          "gistemp_anomaly_c": -0.23016437841706897,
+          "power_temperature_c": 7.690712328767123
+        },
+        {
+          "year": 1987,
+          "gistemp_anomaly_c": -0.8711506654597717,
+          "power_temperature_c": 6.810191780821917
+        },
+        {
+          "year": 1988,
+          "gistemp_anomaly_c": 1.0068579009922394,
+          "power_temperature_c": 8.947732240437158
+        },
+        {
+          "year": 1989,
+          "gistemp_anomaly_c": 1.6360821552115352,
+          "power_temperature_c": 10.009315068493152
+        },
+        {
+          "year": 1990,
+          "gistemp_anomaly_c": 1.6480547576836526,
+          "power_temperature_c": 9.63104109589041
+        },
+        {
+          "year": 1991,
+          "gistemp_anomaly_c": 0.39246574465236433,
+          "power_temperature_c": 8.524109589041096
+        },
+        {
+          "year": 1992,
+          "gistemp_anomaly_c": 1.3223496972191366,
+          "power_temperature_c": 9.641584699453551
+        },
+        {
+          "year": 1993,
+          "gistemp_anomaly_c": 0.26126026813298053,
+          "power_temperature_c": 8.352109589041095
+        },
+        {
+          "year": 1994,
+          "gistemp_anomaly_c": 1.408575310981641,
+          "power_temperature_c": 9.638767123287671
+        },
+        {
+          "year": 1995,
+          "gistemp_anomaly_c": 0.7513424489596119,
+          "power_temperature_c": 9.033835616438356
+        },
+        {
+          "year": 1996,
+          "gistemp_anomaly_c": -0.9905737483507542,
+          "power_temperature_c": 7.145109289617487
+        },
+        {
+          "year": 1997,
+          "gistemp_anomaly_c": 0.7863561468071317,
+          "power_temperature_c": 8.9786301369863
+        },
+        {
+          "year": 1998,
+          "gistemp_anomaly_c": 0.9881643614744486,
+          "power_temperature_c": 9.231095890410959
+        },
+        {
+          "year": 1999,
+          "gistemp_anomaly_c": 1.5908766767699016,
+          "power_temperature_c": 9.912438356164383
+        },
+        {
+          "year": 2000,
+          "gistemp_anomaly_c": 1.8855190835384235,
+          "power_temperature_c": 10.214344262295082
+        },
+        {
+          "year": 2001,
+          "gistemp_anomaly_c": 0.8513972412437609,
+          "power_temperature_c": 9.11427397260274
+        },
+        {
+          "year": 2002,
+          "gistemp_anomaly_c": 1.4010958590940252,
+          "power_temperature_c": 9.39150684931507
+        },
+        {
+          "year": 2003,
+          "gistemp_anomaly_c": 1.1138903860615132,
+          "power_temperature_c": 9.306520547945206
+        },
+        {
+          "year": 2004,
+          "gistemp_anomaly_c": 0.9153551707970478,
+          "power_temperature_c": 9.237868852459016
+        },
+        {
+          "year": 2005,
+          "gistemp_anomaly_c": 1.0286849085139493,
+          "power_temperature_c": 9.36827397260274
+        },
+        {
+          "year": 2006,
+          "gistemp_anomaly_c": 1.6045753066006996,
+          "power_temperature_c": 9.832931506849315
+        },
+        {
+          "year": 2007,
+          "gistemp_anomaly_c": 1.8870684509714173,
+          "power_temperature_c": 10.119616438356164
+        },
+        {
+          "year": 2008,
+          "gistemp_anomaly_c": 1.603497231918606,
+          "power_temperature_c": 9.840191256830602
+        },
+        {
+          "year": 2009,
+          "gistemp_anomaly_c": 1.081205455285229,
+          "power_temperature_c": 9.351205479452055
+        },
+        {
+          "year": 2010,
+          "gistemp_anomaly_c": -0.4269862918259755,
+          "power_temperature_c": 7.355561643835616
+        },
+        {
+          "year": 2011,
+          "gistemp_anomaly_c": 1.5478081845818725,
+          "power_temperature_c": 9.406164383561643
+        },
+        {
+          "year": 2012,
+          "gistemp_anomaly_c": 0.9547813994239995,
+          "power_temperature_c": 9.129617486338798
+        },
+        {
+          "year": 2013,
+          "gistemp_anomaly_c": 0.7266027234851906,
+          "power_temperature_c": 8.951041095890412
+        },
+        {
+          "year": 2014,
+          "gistemp_anomaly_c": 2.3559999473392965,
+          "power_temperature_c": 10.603972602739727
+        },
+        {
+          "year": 2015,
+          "gistemp_anomaly_c": 1.8672876294957448,
+          "power_temperature_c": 10.279013698630138
+        },
+        {
+          "year": 2016,
+          "gistemp_anomaly_c": 1.6123770131408923,
+          "power_temperature_c": 9.984016393442623
+        },
+        {
+          "year": 2017,
+          "gistemp_anomaly_c": 1.5546574994972715,
+          "power_temperature_c": 9.627287671232876
+        },
+        {
+          "year": 2018,
+          "gistemp_anomaly_c": 2.3446026873200725,
+          "power_temperature_c": 10.88213698630137
+        },
+        {
+          "year": 2019,
+          "gistemp_anomaly_c": 2.4061095352603554,
+          "power_temperature_c": 11.067753424657534
+        },
+        {
+          "year": 2020,
+          "gistemp_anomaly_c": 2.446256775922992,
+          "power_temperature_c": 10.734289617486338
+        },
+        {
+          "year": 2021,
+          "gistemp_anomaly_c": 1.3570410655581788,
+          "power_temperature_c": 9.441397260273973
+        },
+        {
+          "year": 2022,
+          "gistemp_anomaly_c": 2.2997533732540396,
+          "power_temperature_c": 10.956657534246576
+        },
+        {
+          "year": 2023,
+          "gistemp_anomaly_c": 2.4040273435260744,
+          "power_temperature_c": 10.961616438356165
+        },
+        {
+          "year": 2024,
+          "gistemp_anomaly_c": 2.9606010267215837,
+          "power_temperature_c": 11.500136612021858
+        },
+        {
+          "year": 2025,
+          "gistemp_anomaly_c": 2.001452010058581,
+          "power_temperature_c": 10.434958904109589
+        }
+      ]
+    },
+    {
+      "name": "Toronto, Canada",
+      "requested_coordinates": [
+        43.6532,
+        -79.3832
+      ],
+      "gistemp_cell_center": [
+        43.0,
+        -79.0
+      ],
+      "years": [
+        1981,
+        1982,
+        1983,
+        1984,
+        1985,
+        1986,
+        1987,
+        1988,
+        1989,
+        1990,
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "gistemp_slope_c_per_decade": 0.3103488814332864,
+      "power_slope_c_per_decade": 0.8827120498573843,
+      "slope_difference_power_minus_gistemp": 0.5723631684240978,
+      "annual_correlation": 0.7758611474349605,
+      "power_source_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=-79.3832&latitude=43.6532&format=JSON&start=1981&end=2025",
+      "power_retrieved_utc": "2026-11-11T19:00:03.351946+00:00",
+      "power_payload_sha256": "2aff7549bbca1632c5e0a953d10392e17f7626b0c44117fb92baf05b6c09cf42",
+      "annual": [
+        {
+          "year": 1981,
+          "gistemp_anomaly_c": -0.047369861954899686,
+          "power_temperature_c": 7.661917808219178
+        },
+        {
+          "year": 1982,
+          "gistemp_anomaly_c": -0.15621917459042106,
+          "power_temperature_c": 6.697260273972603
+        },
+        {
+          "year": 1983,
+          "gistemp_anomaly_c": 0.5534794396835647,
+          "power_temperature_c": 7.510082191780821
+        },
+        {
+          "year": 1984,
+          "gistemp_anomaly_c": 0.14412567983864924,
+          "power_temperature_c": 6.976284153005465
+        },
+        {
+          "year": 1985,
+          "gistemp_anomaly_c": 0.021917807729276893,
+          "power_temperature_c": 6.9238630136986306
+        },
+        {
+          "year": 1986,
+          "gistemp_anomaly_c": 0.30873971912652665,
+          "power_temperature_c": 7.141780821917808
+        },
+        {
+          "year": 1987,
+          "gistemp_anomaly_c": 1.070630113055853,
+          "power_temperature_c": 7.814575342465754
+        },
+        {
+          "year": 1988,
+          "gistemp_anomaly_c": 0.37161201355174756,
+          "power_temperature_c": 7.013688524590164
+        },
+        {
+          "year": 1989,
+          "gistemp_anomaly_c": -0.41591779892269065,
+          "power_temperature_c": 6.348547945205479
+        },
+        {
+          "year": 1990,
+          "gistemp_anomaly_c": 1.2160273700799435,
+          "power_temperature_c": 7.2464657534246575
+        },
+        {
+          "year": 1991,
+          "gistemp_anomaly_c": 1.3910410647982197,
+          "power_temperature_c": 7.617369863013699
+        },
+        {
+          "year": 1992,
+          "gistemp_anomaly_c": -0.40704917122961065,
+          "power_temperature_c": 6.287568306010929
+        },
+        {
+          "year": 1993,
+          "gistemp_anomaly_c": -0.23747944674671512,
+          "power_temperature_c": 6.463150684931506
+        },
+        {
+          "year": 1994,
+          "gistemp_anomaly_c": -0.19753424216010798,
+          "power_temperature_c": 6.433972602739726
+        },
+        {
+          "year": 1995,
+          "gistemp_anomaly_c": 0.22320547446302355,
+          "power_temperature_c": 6.901068493150684
+        },
+        {
+          "year": 1996,
+          "gistemp_anomaly_c": -0.35926228705182917,
+          "power_temperature_c": 6.157349726775957
+        },
+        {
+          "year": 1997,
+          "gistemp_anomaly_c": -0.22542465249561283,
+          "power_temperature_c": 8.249123287671232
+        },
+        {
+          "year": 1998,
+          "gistemp_anomaly_c": 2.211123238248776,
+          "power_temperature_c": 10.44758904109589
+        },
+        {
+          "year": 1999,
+          "gistemp_anomaly_c": 1.27827394403109,
+          "power_temperature_c": 8.245287671232877
+        },
+        {
+          "year": 2000,
+          "gistemp_anomaly_c": 0.2843442559394924,
+          "power_temperature_c": 8.859207650273223
+        },
+        {
+          "year": 2001,
+          "gistemp_anomaly_c": 1.4109588725722,
+          "power_temperature_c": 7.431561643835616
+        },
+        {
+          "year": 2002,
+          "gistemp_anomaly_c": 1.2366027120858023,
+          "power_temperature_c": 7.449616438356164
+        },
+        {
+          "year": 2003,
+          "gistemp_anomaly_c": -0.1545753390107253,
+          "power_temperature_c": 6.161890410958905
+        },
+        {
+          "year": 2004,
+          "gistemp_anomaly_c": 0.29975409166062955,
+          "power_temperature_c": 8.850355191256831
+        },
+        {
+          "year": 2005,
+          "gistemp_anomaly_c": 0.8415616250252479,
+          "power_temperature_c": 9.890438356164383
+        },
+        {
+          "year": 2006,
+          "gistemp_anomaly_c": 1.5927944849462135,
+          "power_temperature_c": 10.141945205479452
+        },
+        {
+          "year": 2007,
+          "gistemp_anomaly_c": 0.8060547765038193,
+          "power_temperature_c": 9.668356164383562
+        },
+        {
+          "year": 2008,
+          "gistemp_anomaly_c": 0.3263387905199671,
+          "power_temperature_c": 8.931174863387978
+        },
+        {
+          "year": 2009,
+          "gistemp_anomaly_c": 0.056657532980180766,
+          "power_temperature_c": 8.765643835616439
+        },
+        {
+          "year": 2010,
+          "gistemp_anomaly_c": 1.2930684642483519,
+          "power_temperature_c": 9.96049315068493
+        },
+        {
+          "year": 2011,
+          "gistemp_anomaly_c": 1.128547919980467,
+          "power_temperature_c": 9.625616438356165
+        },
+        {
+          "year": 2012,
+          "gistemp_anomaly_c": 2.368852406068415,
+          "power_temperature_c": 10.917486338797815
+        },
+        {
+          "year": 2013,
+          "gistemp_anomaly_c": 0.4775342359016203,
+          "power_temperature_c": 9.095534246575344
+        },
+        {
+          "year": 2014,
+          "gistemp_anomaly_c": -0.5398356043720899,
+          "power_temperature_c": 7.707123287671233
+        },
+        {
+          "year": 2015,
+          "gistemp_anomaly_c": 0.5200273856367559,
+          "power_temperature_c": 8.701479452054793
+        },
+        {
+          "year": 2016,
+          "gistemp_anomaly_c": 1.7807103427116826,
+          "power_temperature_c": 10.326666666666666
+        },
+        {
+          "year": 2017,
+          "gistemp_anomaly_c": 1.2870410671228008,
+          "power_temperature_c": 9.7566301369863
+        },
+        {
+          "year": 2018,
+          "gistemp_anomaly_c": 0.9483561431861496,
+          "power_temperature_c": 9.557780821917808
+        },
+        {
+          "year": 2019,
+          "gistemp_anomaly_c": 0.34624656760325173,
+          "power_temperature_c": 8.822109589041096
+        },
+        {
+          "year": 2020,
+          "gistemp_anomaly_c": 1.7001092516170824,
+          "power_temperature_c": 10.274972677595628
+        },
+        {
+          "year": 2021,
+          "gistemp_anomaly_c": 1.9344931074456402,
+          "power_temperature_c": 10.770219178082192
+        },
+        {
+          "year": 2022,
+          "gistemp_anomaly_c": 0.9112054590850251,
+          "power_temperature_c": 9.606109589041097
+        },
+        {
+          "year": 2023,
+          "gistemp_anomaly_c": 1.9446300935204306,
+          "power_temperature_c": 10.527506849315069
+        },
+        {
+          "year": 2024,
+          "gistemp_anomaly_c": 2.548415243584927,
+          "power_temperature_c": 11.174262295081968
+        },
+        {
+          "year": 2025,
+          "gistemp_anomaly_c": 0.8918903910235999,
+          "power_temperature_c": 9.753534246575342
+        }
+      ]
+    },
+    {
+      "name": "Milan, Italy",
+      "requested_coordinates": [
+        45.4642,
+        9.19
+      ],
+      "gistemp_cell_center": [
+        45.0,
+        9.0
+      ],
+      "years": [
+        1981,
+        1982,
+        1983,
+        1984,
+        1985,
+        1986,
+        1987,
+        1988,
+        1989,
+        1990,
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "gistemp_slope_c_per_decade": 0.4771704672908248,
+      "power_slope_c_per_decade": 0.4868732749733445,
+      "slope_difference_power_minus_gistemp": 0.009702807682519687,
+      "annual_correlation": 0.9661049436698037,
+      "power_source_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=9.19&latitude=45.4642&format=JSON&start=1981&end=2025",
+      "power_retrieved_utc": "2026-11-11T19:00:05.650954+00:00",
+      "power_payload_sha256": "f6eeef4428c5cd1eb22aa1cc3a2159182737ea10397dba33cf7d23fac5300b2c",
+      "annual": [
+        {
+          "year": 1981,
+          "gistemp_anomaly_c": -0.06315068351997905,
+          "power_temperature_c": 12.033671232876712
+        },
+        {
+          "year": 1982,
+          "gistemp_anomaly_c": 0.6212054655670303,
+          "power_temperature_c": 12.730301369863016
+        },
+        {
+          "year": 1983,
+          "gistemp_anomaly_c": 0.5144109474061287,
+          "power_temperature_c": 12.574
+        },
+        {
+          "year": 1984,
+          "gistemp_anomaly_c": -0.4992349615188244,
+          "power_temperature_c": 11.550983606557377
+        },
+        {
+          "year": 1985,
+          "gistemp_anomaly_c": -0.0068219176557374325,
+          "power_temperature_c": 11.86490410958904
+        },
+        {
+          "year": 1986,
+          "gistemp_anomaly_c": 0.2136438308411265,
+          "power_temperature_c": 12.136657534246575
+        },
+        {
+          "year": 1987,
+          "gistemp_anomaly_c": 0.22679451547869264,
+          "power_temperature_c": 12.394602739726027
+        },
+        {
+          "year": 1988,
+          "gistemp_anomaly_c": 0.7466120051698444,
+          "power_temperature_c": 12.606994535519124
+        },
+        {
+          "year": 1989,
+          "gistemp_anomaly_c": 0.8037260094325837,
+          "power_temperature_c": 12.80619178082192
+        },
+        {
+          "year": 1990,
+          "gistemp_anomaly_c": 0.9461917596728835,
+          "power_temperature_c": 13.150082191780822
+        },
+        {
+          "year": 1991,
+          "gistemp_anomaly_c": 0.21956163892803127,
+          "power_temperature_c": 12.485068493150685
+        },
+        {
+          "year": 1992,
+          "gistemp_anomaly_c": 0.8319945169225986,
+          "power_temperature_c": 12.928934426229507
+        },
+        {
+          "year": 1993,
+          "gistemp_anomaly_c": 0.6287397119739693,
+          "power_temperature_c": 12.69068493150685
+        },
+        {
+          "year": 1994,
+          "gistemp_anomaly_c": 1.5909588685488865,
+          "power_temperature_c": 13.428739726027397
+        },
+        {
+          "year": 1995,
+          "gistemp_anomaly_c": 0.5487945082814318,
+          "power_temperature_c": 12.164684931506848
+        },
+        {
+          "year": 1996,
+          "gistemp_anomaly_c": 0.17751365723444626,
+          "power_temperature_c": 11.763224043715848
+        },
+        {
+          "year": 1997,
+          "gistemp_anomaly_c": 1.2604383279913909,
+          "power_temperature_c": 12.909479452054795
+        },
+        {
+          "year": 1998,
+          "gistemp_anomaly_c": 0.9033424455621472,
+          "power_temperature_c": 12.936301369863013
+        },
+        {
+          "year": 1999,
+          "gistemp_anomaly_c": 0.9379177872550815,
+          "power_temperature_c": 13.01849315068493
+        },
+        {
+          "year": 2000,
+          "gistemp_anomaly_c": 1.4475136288477342,
+          "power_temperature_c": 13.310300546448087
+        },
+        {
+          "year": 2001,
+          "gistemp_anomaly_c": 1.123808194059011,
+          "power_temperature_c": 12.790054794520548
+        },
+        {
+          "year": 2002,
+          "gistemp_anomaly_c": 1.312054765193838,
+          "power_temperature_c": 13.156767123287672
+        },
+        {
+          "year": 2003,
+          "gistemp_anomaly_c": 1.6907944827557426,
+          "power_temperature_c": 13.567123287671233
+        },
+        {
+          "year": 2004,
+          "gistemp_anomaly_c": 0.8976502531599966,
+          "power_temperature_c": 12.915628415300546
+        },
+        {
+          "year": 2005,
+          "gistemp_anomaly_c": 0.44917807215186834,
+          "power_temperature_c": 12.554630136986301
+        },
+        {
+          "year": 2006,
+          "gistemp_anomaly_c": 1.3355068194641642,
+          "power_temperature_c": 13.47523287671233
+        },
+        {
+          "year": 2007,
+          "gistemp_anomaly_c": 1.5782191428062442,
+          "power_temperature_c": 13.827808219178083
+        },
+        {
+          "year": 2008,
+          "gistemp_anomaly_c": 1.1242076251452249,
+          "power_temperature_c": 13.153961748633881
+        },
+        {
+          "year": 2009,
+          "gistemp_anomaly_c": 1.4071506534792382,
+          "power_temperature_c": 13.331753424657535
+        },
+        {
+          "year": 2010,
+          "gistemp_anomaly_c": 0.3399725951407462,
+          "power_temperature_c": 12.014438356164385
+        },
+        {
+          "year": 2011,
+          "gistemp_anomaly_c": 1.747013659581338,
+          "power_temperature_c": 13.464082191780824
+        },
+        {
+          "year": 2012,
+          "gistemp_anomaly_c": 1.3907376738326227,
+          "power_temperature_c": 13.559426229508198
+        },
+        {
+          "year": 2013,
+          "gistemp_anomaly_c": 0.9846301149781028,
+          "power_temperature_c": 12.68413698630137
+        },
+        {
+          "year": 2014,
+          "gistemp_anomaly_c": 1.9069862587453976,
+          "power_temperature_c": 13.700767123287672
+        },
+        {
+          "year": 2015,
+          "gistemp_anomaly_c": 1.9747396818885248,
+          "power_temperature_c": 13.846493150684932
+        },
+        {
+          "year": 2016,
+          "gistemp_anomaly_c": 1.5757103472937897,
+          "power_temperature_c": 13.503743169398907
+        },
+        {
+          "year": 2017,
+          "gistemp_anomaly_c": 1.647013661816512,
+          "power_temperature_c": 13.95076712328767
+        },
+        {
+          "year": 2018,
+          "gistemp_anomaly_c": 2.125945157960874,
+          "power_temperature_c": 14.144054794520548
+        },
+        {
+          "year": 2019,
+          "gistemp_anomaly_c": 1.9685205039453424,
+          "power_temperature_c": 14.171671232876712
+        },
+        {
+          "year": 2020,
+          "gistemp_anomaly_c": 1.9981147094370155,
+          "power_temperature_c": 13.808196721311475
+        },
+        {
+          "year": 2021,
+          "gistemp_anomaly_c": 1.2480547666243493,
+          "power_temperature_c": 13.288246575342466
+        },
+        {
+          "year": 2022,
+          "gistemp_anomaly_c": 2.678054734661359,
+          "power_temperature_c": 15.147561643835616
+        },
+        {
+          "year": 2023,
+          "gistemp_anomaly_c": 2.4981643277233188,
+          "power_temperature_c": 14.947917808219177
+        },
+        {
+          "year": 2024,
+          "gistemp_anomaly_c": 2.475710327177222,
+          "power_temperature_c": 14.405683060109288
+        },
+        {
+          "year": 2025,
+          "gistemp_anomaly_c": 2.3868492617182535,
+          "power_temperature_c": 14.200027397260275
+        }
+      ]
+    }
+  ]
+}
