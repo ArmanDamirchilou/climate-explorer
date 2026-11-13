@@ -34,8 +34,8 @@ class HTTPTests(unittest.TestCase):
         cls.server.server_close()
         cls.thread.join(timeout=5)
 
-    def request(self, path, method="GET"):
-        connection = HTTPConnection(*self.server.server_address, timeout=5)
+    def request(self, path, method="GET", timeout=5):
+        connection = HTTPConnection(*self.server.server_address, timeout=timeout)
         try:
             connection.request(method, path)
             response = connection.getresponse()
@@ -56,7 +56,7 @@ class HTTPTests(unittest.TestCase):
         from server import frozen_atlas
         frozen_atlas.cache_clear()
         with patch('climate.fetch_data', side_effect=AssertionError('Frozen atlas cannot fetch NASA')):
-            status, headers, body = self.request('/atlas/tehran-rainfall.json')
+            status, headers, body = self.request('/atlas/tehran-rainfall.json', timeout=30)
         self.assertEqual(status, 200)
         atlas = json.loads(body)
         self.assertEqual(len(atlas['windows']), 666)

@@ -20,6 +20,7 @@ All dates below use Tehran time (UTC+3:30). Development began on 11 November 202
 - Public verification requires the exact forty preset/period paths and fully replays all 6,660 atlas cells, rather than relying only on manifest hashes or record counts.
 - Build installation copies before replacing the previous site and restores it if the final rename fails. Regression checks cover copy failure and rename rollback.
 - An old request's late error cannot overwrite the state of a newer successful investigation.
+- CI fixes linear-algebra thread counts and allows twenty minutes for the exhaustive checks. Malformed atlases fail before expensive replay. Documentation/evidence-only commits and release tags reuse the already verified runtime; code, source data, media and workflow changes still run checks.
 - The longer film leads the film page; the original 29.8-second demo candidate and 45-second portrait reel remain separate.
 
 ### Limits and removals

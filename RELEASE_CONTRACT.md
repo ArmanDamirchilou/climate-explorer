@@ -22,6 +22,8 @@ Each published frozen case has 666 complete candidate windows across 1981–2025
 
 The 135-second technical film is separate from the short demonstration candidate. Reproducing generated source performances exactly is not promised. Retained source hashes, an explicit audio-edit receipt, script, figures, caption timing, local compositor and encoded-media review record make the edited artifact inspectable. Native 480p presenter footage is not described as native 1080p footage.
 
+CI runs on branch pushes and pull requests for runtime, data, media, tests and workflow changes. Markdown and generated public-verification reports are documentation/evidence and do not trigger another numerical run. Release tags preserve the already verified runtime plus its reviewed evidence; they do not start duplicate jobs. Manual workflow dispatch remains available. Release verification must identify the actual tested runtime commit and distinguish any later evidence-only commit. A skipped or canceled run is never reported as passed.
+
 ## Release gates
 
 The scientific fixtures, HTTP behavior, frozen build and browser-import regression suite must pass. All forty public analyses must replay from retained source responses. Public files must match their manifest. JavaScript syntax and locked dependency checks must pass. Media must remain within the current published limits and accurately disclose assistance. New UI behavior must be inspected in a real browser. Package and release notes must preserve known limits and actual work dates.

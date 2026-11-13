@@ -4,7 +4,7 @@ Checked 13 November 2026. Earlier verification is preserved in RELEASE_VERIFICAT
 
 ## Local software checks
 
-All **151 tests pass with zero skips**, in 189.535 seconds on the current Mac. The suite includes independent enumeration and statsmodels interval references, all-cell reconstruction/replay, missing-year and unavailable-window behavior, cross-case and edited-source rejection, actual browser-module/app harness checks, HTTP recovery, exact deployed-path validation, media tamper rejection and build copy/rename rollback. The earlier 146-test full run and targeted development runs are not substituted for this final run.
+All **151 tests pass with zero skips**, in 162.944 seconds on the current Mac with the CI thread controls. The suite includes independent enumeration and statsmodels interval references, all-cell reconstruction/replay, missing-year and unavailable-window behavior, cross-case and edited-source rejection, actual browser-module/app harness checks, HTTP recovery, exact deployed-path validation, media tamper rejection and build copy/rename rollback. An earlier complete 151-test run passed in 189.535 seconds; the final run includes the later verification-resource adjustments.
 
 The public-check test serves a real temporary static build over HTTP without authentication and fully replays all **6,660** atlas cells, forty fixed-period analyses and two guided records. It checks reviewed hashes for all three films, caption tracks and posters. Matching a manifest alone is insufficient: tests alter media or omit atlas rows while updating the manifest and require rejection.
 
@@ -36,6 +36,8 @@ The 29.8-second demo candidate, 45-second portrait reel and reviewed seven-page 
 ## Deployment and package
 
 Linux CI, anonymous public verification and the release archive are checked after the source commit. Their observed results will be recorded here before the final release tag. No pending run is counted as passed.
+
+The initial Linux run [43454215563](https://github.com/ArmanDamirchilou/climate-explorer/actions/runs/43454215563), on runtime commit 661fe268d0cf649b4279a8af160ef81527510eac, exceeded the original ten-minute job allowance and was canceled. Its cold-atlas HTTP test also reached the test client's five-second timeout. It is not counted as a passing run. The client now allows thirty seconds for that cold request, while other HTTP tests retain their earlier bound. CI fixes numerical-library thread counts, allows twenty minutes and rejects malformed atlases before expensive replay; complete accepted-atlas replay is retained. Documentation/evidence-only changes and release tags reuse the verified runtime instead of starting duplicate numerical jobs.
 
 ## Open human and eligibility work
 

@@ -105,9 +105,11 @@ def check(base_url):
             raise ValueError("Atlas base differs from the corresponding public analysis.")
         if base["analysis"]["code_sha256"] != CODE_SHA256:
             raise ValueError("Atlas code fingerprint differs from the local source.")
-        count = validate_atlas(atlas, full=True)
+        count = validate_atlas(atlas)
         if count != 666:
             raise ValueError("Expected all 666 complete windows per frozen case.")
+    for name in sorted(expected_atlases):
+        count = validate_atlas(json.loads(bodies[name]), full=True)
         atlas_records.append({"file": name, "windows_replayed": count})
     return {"checked_utc": datetime.now(timezone.utc).isoformat(), "base_url": base_url,
             "authentication": "none", "files_verified_against_manifest": len(bodies),
