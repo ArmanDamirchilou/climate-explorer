@@ -1,5 +1,7 @@
 # Final evaluator-facing audit
 
+Preparation follow-up: [SUBMISSION_STATUS.md](SUBMISSION_STATUS.md) records the later rule, public-link and participant-setup checks. The reviewed seven-page PDF is now selected for the official demo field. Human listening remains unperformed for the supporting films and is required before replacing that deck with a video; it is not an audio requirement for the PDF. The eligibility concerns in this audit remain unresolved.
+
 Reviewed 13 November 2026 against release 1.3 materials. This is an independent Codex specialist review, not a NASA decision, human peer review or award forecast. No entry, message, registration or account action was performed. The specialist's initial pass did not change media or release history; the producer's later fixes are distinguished below.
 
 ## Decision

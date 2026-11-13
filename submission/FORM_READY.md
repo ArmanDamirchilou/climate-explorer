@@ -1,6 +1,6 @@
 # Form-ready text for Climate Explorer 1.3.1
 
-Prepared 13 November 2026. These are conditional copy blocks for the eight fields mapped from the official guide. They are not entry approval. Development began on 11 November, and AI contributed to the solution idea. The organizer must resolve those material eligibility questions before the student makes any declaration or submits. Team, acceptance, age, guardian and local delivery details remain unverified. No form has been completed or submitted here.
+Prepared 13 November 2026. These are conditional copy blocks for the eight fields mapped from the official guide. They are not entry approval. Development began on 11 November, and AI contributed to the solution idea. The organizer must resolve those material eligibility questions before the student makes any declaration or submits. Participant setup, age, any guardian requirements and final local delivery must also be resolved. No form has been completed or submitted here. See [current preparation status](SUBMISSION_STATUS.md).
 
 Copy the text below the relevant field heading. Field 3 contains one recommended URL. Its notes identify alternatives and longer media. Keep the authorship paragraph in field 5: the guide says the separate SI response is not shown to judges. No form character limits were established by this drafting task; do not silently cut the disclosures to fit a limit.
 
@@ -14,11 +14,11 @@ Climate Explorer helps students question historical temperature and rainfall cla
 
 ## 3. Link to project demo
 
-https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.mp4
+https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf
 
-Form-use note: this is the 29.8-second narrated candidate, within the 30-second limit. It has English captions, a visibly disclosed fictional generated adult presenter and voice, retained NASA data figures, and a genuine app capture identified as release 1.1. A dedicated player is https://armandamirchilou.github.io/climate-explorer/demo-short.html.
+Form-use note: select this seven-page English PDF, including its cover, as the official demonstration. It uses retained project figures and contains the scientific, AI and eligibility disclosures. All seven pages have completed render, visual and link checks. Anonymous access and the exact reviewed hash were reconfirmed on 13 November. Selecting the deck avoids depending on an unperformed human listening review of a narrated video.
 
-The alternative deck is https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf. The current 1.3.1 PDF has seven pages including its cover. Choose the short video for this field. The separate 45-second reel and 135-second technical film are optional portfolio material, not compliant replacements for this field. The optional film is at https://armandamirchilou.github.io/climate-explorer/demo.html#technical-film.
+The optional 29.8-second narrated alternative is https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.mp4, with its player, English captions and fictional generated adult/voice disclosure at https://armandamirchilou.github.io/climate-explorer/demo-short.html. Its actual app capture is identified as release 1.1. Have a person listen before substituting it for the selected PDF. The separate 45-second reel and 135-second technical film are optional portfolio material, not compliant replacements for this field. The technical film is at https://armandamirchilou.github.io/climate-explorer/demo.html#technical-film.
 
 ## 4. Link to final project
 

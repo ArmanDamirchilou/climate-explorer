@@ -3,6 +3,13 @@
 All dates below use Tehran time (UTC+3:30). Development began on 11 November 2026. Git history starts with the truthful import on 13 November. Earlier local versions are documented milestones, not invented Git commits or backdated releases. A version number measures the software contract, not time spent or competition standing.
 
 
+## Documentation follow-up · 13 November 2026
+
+- Selected the already reviewed seven-page PDF for the official demonstration field. Narrated films remain optional supporting material, with the unperformed human listening check explicit.
+- Reconciled completed deployment checks in the final checklist, refreshed official-rule and entry-link checks, and added submission status and a concrete organizer eligibility request.
+- Read current local online-participation instructions and inspected participant setup privately. No team creation, message, eligibility approval or submission is claimed.
+- No runtime, statistical method, media bytes, historical tag or release archive changed.
+
 ## 1.3.1 · 13 November 2026
 
 ### Fixed

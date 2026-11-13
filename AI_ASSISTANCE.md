@@ -84,3 +84,7 @@ The producer initially misunderstood the deployment request and prepared an alte
 
 
 The final hosting audit found that earlier film panels and the PDF still displayed the retired app address. Codex corrected only the films' distribution-link rectangles to the stable dedicated repository, preserving the native voice, science and caption timing; edit receipts and new hashes identify the change. Codex rebuilt the seven-page PDF with the current GitHub project Pages address, version and atlas-verification explanation, then rendered and inspected every page. The older media and PDF remain available in their original tags. This is a distribution correction, not a new performance, new student contribution or new scientific result.
+
+## 13 November: submission preparation follow-up
+
+Codex refreshed production-rule and public-entry-link checks, inspected the existing participant setup and local announcements privately in Chrome, and exercised a non-default window on the final GitHub-hosted atlas. Codex selected the already visually reviewed seven-page PDF for the official demo field, reconciled preparation documents and prepared an explicit organizer eligibility request. This does not establish student understanding or contribution, an organizer ruling, human listening, a usability result or a competition submission. Account details and retrieved inbox content are not published. The 1.3.1 runtime and tagged release remain unchanged.

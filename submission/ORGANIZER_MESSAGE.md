@@ -1,16 +1,20 @@
 # Message for the event organizer
 
-Draft only. No message has been sent. The student can send this through the official Ankara contact or Space Apps support channel. Registration was observed on 11 November, but current acceptance, team membership and online participation are unconfirmed. Check those details before sending; this draft does not assert that online participation is approved.
+Draft only. No message has been sent. The public Ankara event page identifies Mustafa Karataş as Local Lead and lists the recipient below. The current account and saved Virtual participation type have been inspected. This does not establish eligibility of the existing project. Obtain explicit authorization before sending a message on the student's behalf.
 
-Hello,
+To: karatasmustafa0614@gmail.com
 
-My account showed an Ankara registration on 11 November. I would like to participate online and select Be An Earth System Trend Detective. Please confirm whether my current registration is accepted and whether I may participate alone through Ankara.
+Subject: Climate Explorer: eligibility ruling and online submission instructions
 
-I need to check whether my Climate Explorer project can be entered for judging. Work began on 11 November, before the hackathon. OpenAI Codex researched the methods, developed the detailed solution approach, wrote the implementation and tests, and prepared documentation. I chose the project name and climate direction. The repository discloses the full AI contribution and the actual start date. The media also visibly disclose a fictional generated adult narrator and voice. This project is separate from KNMI Climate Explorer.
+Hello Mustafa,
 
-I have read the rule against beginning challenge work before the hackathon and the submission guide's restriction on AI coming up with the solution idea. Does this history make the project ineligible? If so, can I share it as a noncompetitive demonstration? I do not want to make an inaccurate originality or timing statement.
+I am registered for Ankara with Virtual participation selected. I plan to participate alone in Be An Earth System Trend Detective. I understand from your announcement that I must create a one-person team.
 
-Please also confirm the online-team delivery link, local judging deadline in Turkey time, and whether an online pitch is required.
+Can my Climate Explorer project be entered for judging? Work began on 11 November, before the hackathon. I chose the project name and climate direction. OpenAI Codex researched methods, developed the detailed solution approach, wrote the implementation and tests, and prepared documentation. The actual history and AI contribution are public: https://github.com/ArmanDamirchilou/climate-explorer/blob/v1.3.1/AI_ASSISTANCE.md.
+
+I have read the restrictions on pre-event work and AI supplying the solution idea. Does this history make the project ineligible for local or global judging? If so, may I share it as a noncompetitive demonstration? I do not want to make an inaccurate timing or originality declaration.
+
+Please confirm whether online delivery needs anything beyond the Space Apps project form, whether the local deadline remains 15 November at 17:00 Turkey time, and the pitch duration if an online team reaches the local top ten.
 
 If I am under 18, please confirm the required guardian registration and accompaniment process. I will provide my age privately through the official channel.
 

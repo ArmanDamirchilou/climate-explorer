@@ -12,13 +12,13 @@ Climate Explorer helps students investigate historical temperature and rainfall 
 
 ## Link to project demo
 
-Short narrated video candidate: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.mp4
+Selected official demonstration, seven-page PDF: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf
 
-This is the 29.8-second English-captioned film with a visibly disclosed fictional adult presenter and generated voice. The public URL serves the narrated replacement; the earlier silent 29-second source remains in the 1.0 release. Its actual app capture is identified as release 1.1. Retained figures show two periods from the same NASA response.
+The PDF includes its cover. All seven pages were rendered and visually inspected, and their links and text bounds were checked. The current 1.3.1 deck retains actual scientific figures, AI disclosure and eligibility concerns, with the dedicated GitHub Pages project address and atlas-verification scope. Prior bytes remain in the earlier releases.
 
-Alternative seven-page PDF: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf
+Optional short narrated alternative: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.mp4
 
-The PDF includes its cover. The current 1.3.1 deck updates the earlier retained evidence with the independent app link, atlas and verification scopes; prior bytes remain in the earlier releases. Choose the short MP4 for the official demonstration field. Its dedicated player page is https://armandamirchilou.github.io/climate-explorer/demo-short.html. The PDF remains an alternative retained artifact. Recheck anonymous access before entering it. The separate 45-second portrait reel and 135-second technical film are portfolio material and exceed the official demo limit. Both candidate artifacts retain the AI and early-work disclosures.
+The 29.8-second English-captioned film has a visibly disclosed fictional generated adult presenter and voice, actual retained figures, and an app capture identified as release 1.1. Its dedicated player is https://armandamirchilou.github.io/climate-explorer/demo-short.html. The earlier silent 29-second source remains in the 1.0 release. The film meets the duration limit but has no recorded human listening review. Keep the PDF selected unless a person checks the film before substitution. The 45-second portrait reel and 135-second technical film are portfolio material and exceed the official demo limit. Anonymous access to both eligible-format artifacts was reconfirmed on 13 November; access does not establish competition eligibility.
 
 ## Link to final project
 
