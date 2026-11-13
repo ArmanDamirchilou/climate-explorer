@@ -19,7 +19,7 @@ All dates below use Tehran time (UTC+3:30). Development began on 11 November 202
 
 ### Verification and limits
 
-All 83 tests pass locally. The preceding 81-test suite also passed in a clean macOS environment. Browser tests cover period selection, notes, saving, restoration, file import, download and printing. The public deployment evidence is recorded separately after deployment. The video is 29.00 seconds with 696 frames, fully decoded and visually reviewed. All seven PDF pages were reviewed. The software milestone is complete; the documented scientific, user-testing and organizer checks remain open.
+All 83 tests pass locally. The preceding 81-test suite also passed in a clean macOS environment. Browser tests cover period selection, notes, saving, restoration, file import, download and printing. Linux CI passed all 83 tests. Anonymous public verification checked all forty analyses and both media artifacts. The exact deployment evidence is recorded separately. The video is 29.00 seconds with 696 frames, fully decoded and visually reviewed. All seven PDF pages were reviewed. The software milestone is complete; the documented scientific, user-testing and organizer checks remain open.
 
 ## 0.4.0 · 13 November 2026
 

@@ -12,7 +12,7 @@
     "Noextractedtextspanoutsidepagebounds",
     "Page6distinguisheslimitedbrowserchecksfromfullPythonreplay",
     "MetricsfromretainedsourceJSON",
-    "PublicPDFURLrequiresreverificationafternewdeployment"
+    "Publichashverifiedbyanonymousreleasecheck"
   ],
   "inputs": {
     "artifacts/tehran-temperature-v02.json": "e815a85815e3e3eac4ad9e9be55d474765ed8c7e6664fda13fe6146dc87cb383",
@@ -20,6 +20,6 @@
     "evaluation/science-audit.json": "b07f360f4ef7768491aa28943dc8bc45d96c481712f3787ad966c2780560a31d",
     "evaluation/dataset-check.json": "8af460536ccb726998af8b35e63d4461de87bc5d1578583c88d5651e74f3e266"
   },
-  "release_label": "1.0 release candidate; final publication depends on release checks",
+  "release_label": "1.0.0, seven-page software demonstration",
   "visual_review": "All seven final PDF pages visually inspected. Updated cover, browser/Python verification distinction, captions and persistent watermark fit without overlap."
 }

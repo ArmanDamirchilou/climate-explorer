@@ -17,9 +17,13 @@ Release work dated 13 November 2026, Tehran time (UTC+3:30). Version 0.4.0 is pr
 
 A baseline test assumed the public demo would always contain ten records. Its original-ten check now names those fixtures explicitly, and a new integration check verifies all forty periods. Slow file loads and configuration responses could overwrite newer actions; asynchronous saves could complete after clearing. These races were corrected and regression-tested. A missing import in the new media verification path was found by running the real command, fixed, and covered by the new HTTP verification tests. No failed check is recorded as successful.
 
-## Final hosted and package checks
+## Hosted and package checks
 
-Final source commit, fingerprint, Linux run, anonymous public media checks and archive checksum are recorded after those operations complete. Consult public-verification.json and the exact GitHub release assets, rather than treating this pending paragraph as evidence of deployment.
+The 1.0 runtime commit is `ea820c5fda5672b039ae421ec2b9ebc555f60d7e`, with source fingerprint `7f90ec174eaff5ad27b1185fadd0c89409b8b94c50127a0a31c76123368abc3b`. [Linux run 43389104282](https://github.com/ArmanDamirchilou/climate-explorer/actions/runs/43389104282) passed all 83 tests and deployed the site.
+
+Anonymous HTTP checks verified 55 public files, all forty analyses and both media hashes. Chrome played the packaged video. This revealed duplicate captions from enabling the optional WebVTT track by default on top of the embedded captions. The default track setting was removed; embedded English captions remain visible, and optional captions remain available. The corrected player was rechecked.
+
+A clean tracked-source package was built and all 170 included source/demo files were verified against its internal manifest. Archive structure excludes environments, private baseline archive and unrelated root documents. The final release archive is rebuilt from the final clean commit and carries that exact commit and a checksum in its accompanying verification JSON. Current public checks are in public-verification.json.
 
 ## Limits and honest history
 
