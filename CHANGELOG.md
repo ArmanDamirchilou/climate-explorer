@@ -10,6 +10,8 @@ All dates below use Tehran time (UTC+3:30). Development began on 11 November 202
 - Read current local online-participation instructions and inspected participant setup privately. No team creation, message, eligibility approval or submission is claimed.
 - No runtime, statistical method, media bytes, historical tag or release archive changed.
 
+Later setup at the participant's explicit request created the solo Climate Explorer team under Ankara with the intended challenge. Saved membership and challenge were verified. The Project tab is not available until the official opening time, 14 November at 09:30 Tehran. Added a submission and post-submission guide; no project submission, legal declaration, organizer ruling or certificate is claimed.
+
 ## 1.3.1 · 13 November 2026
 
 ### Fixed

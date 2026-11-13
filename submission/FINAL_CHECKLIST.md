@@ -9,10 +9,11 @@ Technical release checks below refer to the 1.3.1 evidence, not approval to ente
 - [ ] Obtain clear organizer guidance on the recorded 11 November start and Codex's contribution to the solution idea. Preserve the reply.
 - [x] Map the full production challenge statement and resources to the implementation. Core scope is covered; this does not resolve entry eligibility.
 - [x] Inspect the current signed-in account and saved participation type privately. Registration is for Ankara with Virtual selected. Participant setup still needs completion; this is not project eligibility approval.
-- [ ] Create or confirm the one-person team and select the intended official challenge after resolving participant requirements. The organizer explicitly requires a team even for solo online participants.
+- [x] At the participant's explicit instruction, create the one-person Climate Explorer team under Ankara and select Be An Earth System Trend Detective! Saved ownership, challenge and the single member are verified. Team creation does not resolve the separate age, guardian or project eligibility questions.
 - [ ] Resolve age and guardian requirements. No minor's photo, voice or likeness appears in the proposed demo.
 - [x] Read the latest Ankara online-participation announcements. Mentor links are distributed separately by email; online teams reaching the local top ten present remotely through a separately shared link. There is no continuous Zoom room.
-- [ ] Confirm the final online delivery link, any additional local form, pitch duration and later email updates. The latest read announcements did not establish these details.
+- [x] Read the newest local delivery update: all teams submit through the NASA Space Apps platform. The first online mentor session is Saturday 14 November at 11:45 Tehran, using the private link in Messages. Online top-ten teams present remotely on Sunday evening.
+- [ ] Check later email updates and confirm the final top-ten presentation link and pitch duration if selected. These details remain unspecified; no additional upload form was supplied by the newest announcement.
 - [ ] Confirm any country/residency or personal eligibility condition that applies to this student's entry. Do not infer this from a public demo or successful account registration.
 - [ ] Run the prepared task with real students or teachers if feasible. Keep anonymous observations. Do not invent endorsements or results.
 - [ ] Review the implementation and explain the core calculations in the student's own words.
@@ -35,6 +36,8 @@ Technical release checks below refer to the 1.3.1 evidence, not approval to ente
 Evidence: [Current release verification](../evaluation/RELEASE_VERIFICATION.md), [short-film record](climate-explorer-story-judge.json), [technical-film record](climate-explorer-story-technical.json), and [AI assistance](../AI_ASSISTANCE.md). Numerical and release checks do not establish learning benefit or scientific truth.
 
 ## Final form actions by the student
+
+**Window not open at the latest attempt:** on 13 November at approximately 22:30 Tehran, the saved team has About and Members only. The official guide says Project appears on 14 November at **09:30 Tehran** for Ankara. All project-form and submission boxes below remain pending; team creation is not project submission. See [current status](SUBMISSION_STATUS.md).
 
 - [ ] Enter the project name and accurate summary.
 - [ ] Add working public demo and final-project links.

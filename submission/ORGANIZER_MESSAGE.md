@@ -8,7 +8,7 @@ Subject: Climate Explorer: eligibility ruling and online submission instructions
 
 Hello Mustafa,
 
-I am registered for Ankara with Virtual participation selected. I plan to participate alone in Be An Earth System Trend Detective. I understand from your announcement that I must create a one-person team.
+I am registered for Ankara with Virtual participation selected. I have created a one-person Climate Explorer team for Be An Earth System Trend Detective: https://www.spaceappschallenge.org/2026/find-a-team/climate-explorer/.
 
 Can my Climate Explorer project be entered for judging? Work began on 11 November, before the hackathon. I chose the project name and climate direction. OpenAI Codex researched methods, developed the detailed solution approach, wrote the implementation and tests, and prepared documentation. The actual history and AI contribution are public: https://github.com/ArmanDamirchilou/climate-explorer/blob/v1.3.1/AI_ASSISTANCE.md.
 

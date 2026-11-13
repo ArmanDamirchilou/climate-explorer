@@ -1,6 +1,18 @@
 # Submission preparation status
 
-Checked 13 November 2026. Software release: 1.3.1. The software and demonstration package are prepared. **Judged submission remains on hold pending eligibility and participant setup.** No competition form, team registration, legal declaration or organizer message has been submitted in this preparation pass.
+Updated 13 November 2026 after the participant explicitly requested team creation and submission. Software release: 1.3.1. **The team is now created; the project is not submitted.** The official Project tab is unavailable until 14 November at 09:30 Tehran. The software and demonstration package are prepared. Organizer eligibility guidance, personal requirements and the final legal declarations remain unresolved. No project-submission confirmation or organizer reply exists.
+
+## Current saved team and actual blocker
+
+- Team: [Climate Explorer](https://www.spaceappschallenge.org/2026/find-a-team/climate-explorer/).
+- Saved event: Ankara. Saved challenge: Be An Earth System Trend Detective!
+- Native Chrome showed **Team created successfully**, ownership, the saved challenge and one member in the Members tab. Accepting new members was turned off. No portrait was uploaded.
+- The team page exposes About and Members, with no Project tab. The [official submission guide](https://www.spaceappschallenge.org/resources/project-submission-guide/) explicitly says that Project appears only when submission opens, 14 November at 09:00 in the event's time zone. Ankara converts to **Saturday 14 November, 09:30 Tehran**.
+- At the start of this attempt, the tool clock was **13 November, 19:00:23 UTC**, or **22:30:23 Tehran**. This is before the opening time. No hidden route, system-clock change or forged confirmation was used to bypass the site's window.
+
+The production submission guide was retrieved again at **19:02:05 UTC on 13 November**, HTTP 200, 177,520 bytes, SHA-256 `3dc5dfbb318e2f4f9f370d6fc4e937940cc91d16364fb5016b1df47199b596c6`. Its opening-time, Project-tab, confirmation and certificate instructions were also read in native Chrome. The missing Project tab currently prevents entering or saving the actual project fields, accepting its declarations and submitting for judging. Team creation does not perform those actions.
+
+See [the next-step guide](AFTER_SUBMISSION.md) for the opening-time procedure and what to do after a real successful submission.
 
 ## Selected materials
 
@@ -27,15 +39,15 @@ The 29.8-second video is an optional format-compliant alternative. It still need
 
 1. **Organizer eligibility ruling.** The truthful 11 November start and Codex contribution to the detailed solution idea conflict with published restrictions. Only the organizers can decide how those rules apply. Preserve the history and request a clear local/global judging decision using the [prepared message](ORGANIZER_MESSAGE.md). Do not treat silence, disclosure, a new team or a new repository as approval.
 2. **Participant requirements.** Confirm age and any required guardian registration/accompaniment privately. Confirm that profile details are accurate. Do not publish age, contact details or account screenshots in the repository.
-3. **Team and challenge.** A solo online participant still needs a one-person team, with the correct event and official challenge. Registration for an event alone is insufficient. Verify the saved Members and Project tabs after completing setup. No setup success is claimed from merely opening the creation form.
-4. **Final local delivery.** The signed-in local announcements confirm separate emailed mentor links, captain-only mentor meetings and a remote presentation for online teams reaching the local top ten. They do not establish an additional project-upload link or pitch duration. Check later emails and confirm any extra delivery step with the lead.
+3. **Submission window and Project page.** Team, event, challenge and one-person membership are now saved and verified. When the Project tab opens, enter all eight prepared fields and save progress. Complete the final declarations only when they can be made accurately. Observe the actual submission confirmation; a saved team or draft is insufficient.
+4. **Local delivery and mentoring.** The newest signed-in Ankara announcement confirms that all teams submit through the NASA Space Apps platform. Online and in-person teams follow the same delivery and evaluation process. The first captain-only online mentor session is Saturday 14 November at 11:15 Ankara time, or **11:45 Tehran**; its private meeting link is in Space Apps Messages. Further mentor links are emailed separately. Online teams reaching the local top ten present remotely on Sunday evening. The pitch duration and final presentation link remain unspecified. Check later updates and use mentoring to resolve project eligibility. No private meeting URL or passcode is published here.
 5. **Truthful participant review.** The student must review and understand the actual work and make only accurate contribution, originality and rights declarations. Use [the practice guide](STUDENT_PRACTICE.md). No student understanding or original coding contribution is certified by this preparation pass.
 
 The organizer contact is verified against the [public Ankara event page](https://www.spaceappschallenge.org/2026/local-events/ankara/). No message has been sent. The prepared message requests an eligibility decision and any extra online-delivery requirements. A noncompetitive demonstration is a possible request if judged entry is not permitted, not an approved fallback.
 
 The inspected [Create a Team form](https://www.spaceappschallenge.org/2026/create-a-team/) asks for a name, event, challenge, description and team contact information; optional fields cover a team picture, desired skills and languages. Its description and contact fields each display a 500-character limit. Use the chosen project name, Ankara and the exact intended challenge. Do not upload a student photograph. For a solo team, turn off accepting new members when setup is completed. Inspect the saved team page afterward; a filled but unsaved creation form is not a registered team or project submission.
 
-An unsaved browser draft is staged with Climate Explorer, Ankara, the exact challenge, a 280-character description disclosing the early start and Codex role, an 83-character public-repository contact line, and accepting new members turned off. No portrait or private contact data was entered. **Create Team was not pressed.** The draft may be lost on navigation or reload; it is not proof of registration or saved challenge selection. Required personal facts and an organizer decision are still outstanding.
+Earlier preparation staged an unsaved browser draft with the project name, Ankara, the exact challenge, a 280-character description disclosing the early start and Codex role, and an 83-character public-repository contact line. At the participant's subsequent explicit instruction, **Create Team was pressed** and the saved result and single member were verified. That earlier unsaved-draft status is superseded. Required personal facts, organizer guidance and the actual Project submission are still outstanding.
 
 ## Fresh official checks
 
@@ -54,4 +66,4 @@ Retrieved HTML and the private account-check notes remain outside published sour
 
 ## Release preservation
 
-This is a documentation follow-up to 1.3.1. It does not rewrite that release's tag, replace its handoff archive, change NASA observations or claim a new runtime CI result. The selected public PDF and application are the reviewed release assets. Until the unresolved actions above are completed, the accurate status is **package prepared; eligibility unresolved; not submitted**.
+This is a documentation follow-up to 1.3.1. It does not rewrite that release's tag, replace its handoff archive, change NASA observations or claim a new runtime CI result. The selected public PDF and application are the reviewed release assets. The accurate current status is **team created; package prepared; Project submission not yet open; eligibility unresolved; project not submitted**.
