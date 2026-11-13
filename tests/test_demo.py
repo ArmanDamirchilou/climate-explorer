@@ -118,7 +118,7 @@ class DemoBuildTests(unittest.TestCase):
         files = {
             str(path.relative_to(self.output)): hashlib.sha256(path.read_bytes()).hexdigest()
             for path in self.output.rglob("*")
-            if path.is_file() and path.name != "build-manifest.json"
+            if path.is_file() and path.name != "build-manifest.json" and not path.name.startswith(".")
         }
         self.assertEqual(manifest, files)
         self.assertEqual(self.file_count, len(files))

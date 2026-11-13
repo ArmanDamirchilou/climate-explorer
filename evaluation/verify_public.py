@@ -17,8 +17,11 @@ from evaluation.replay import verify
 def check(base_url):
     def fetch(relative):
         request = Request(base_url.rstrip("/") + "/" + relative, headers={"User-Agent": "ClimateExplorer-release-check/0.3.0"})
-        with urlopen(request, timeout=30) as response:
-            return response.read()
+        try:
+            with urlopen(request, timeout=30) as response:
+                return response.read()
+        except OSError as error:
+            raise ValueError(f"Could not fetch public file: {relative}") from error
 
     manifest = json.loads(fetch("build-manifest.json"))
     for relative, digest in manifest.items():
