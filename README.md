@@ -152,3 +152,10 @@ The downloadable investigation format is **Climate Explorer investigation 1**. I
 Start with [Farhad's review guide](submission/FARHAD_HANDOFF.md). The [video page](https://armandamirchilou.github.io/climate-explorer/demo.html) provides the 29-second demonstration, captions, transcript and seven-slide PDF. The [student practice guide](submission/STUDENT_PRACTICE.md) prepares explanations without inventing student contributions. The [1.x software contract](RELEASE_CONTRACT.md) states compatibility and limits.
 
 The GitHub 1.0.0 release includes a handoff ZIP containing the tracked source, frozen demo, media and SHA-256 manifest. After extracting it, follow START_HERE.md. Its static demo needs Python's built-in HTTP server but no scientific packages or NASA network access. Optional source links still use the internet. To reproduce an archive from a clean checkout, run `.venv/bin/python package_release.py`.
+
+
+## Follow a guided investigation
+
+Choose **Start the 3-step story** to investigate Tehran rainfall. The same frozen response gives a +36.901 mm/year-per-decade fitted rate over 1981–2025 and −52.832 over 2011–2025. The shorter ordinary interval includes zero. Dates change the question, not proof of a permanent climate reversal. Each step opens the matching observations and keeps your existing worksheet notes. The final step asks you to choose a supported claim. This teaching example was selected after reviewing the four windows; all four remain inspectable.
+
+`story_evidence.py` rebuilds both complete story analyses offline. The public build regenerates the file so its evidence matches the current source fingerprint. [Science review](evaluation/STORY_SCIENCE_REVIEW.md) records exact values and limits.

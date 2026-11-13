@@ -1,5 +1,13 @@
 # Climate Explorer improvement plan
 
+## Next iteration: story and evidence, 13 November
+
+The student reviewed 1.0 and found the video too static, silent and weakly connected to the product. This is real review feedback about the presentation, not a completed educational usability study. The next software milestone is 1.1: a guided investigation of Tehran rainfall that opens the exact evidence in the working app. The next media milestone is 1.2: an edited speaking-presenter video with the same question, real data, English captions and visible synthetic-media disclosure. Earlier releases remain available.
+
+Acceptance: the first three seconds pose a question before the project title; the story does not claim a climate reversal; both periods and the short-period uncertainty are visible; the app opens matching, verified records; audio is present and intelligible; the judge cut is no longer than 30 seconds; a portrait cut is clearly identified; public links and media hashes are checked after deployment. A realistic generated adult narrator is fictional and cannot serve as student testimony or independent validation. No student likeness or voice is required.
+
+Research compares native-audio generation, reference-driven talking heads and actual recordings. Generation supplies the narrator, while post-production supplies numeric charts, captions, sequencing and transitions. Never ask a video model to invent scientific plots. The selected generation and cost quote are retained with the production record. No automatic repeat purchases follow a failed or uncertain job.
+
 Started 11 November 2026; first iteration verified 12 November; release work continued on 13 November. Owner of research and implementation: Codex, working for the student. The student owns personal explanations, user feedback, and any final submission. This is an early prototype with unresolved competition eligibility.
 
 The aim is a useful, scientifically honest investigation tool that a student can explain and another person can reproduce. Winning is an outcome we cannot control. We can control the quality of the question, evidence, implementation, and explanation.

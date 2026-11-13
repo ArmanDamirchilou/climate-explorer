@@ -40,6 +40,7 @@ class PublicVerificationTests(unittest.TestCase):
         self.assertEqual(sorted(set(row["years_replayed"] for row in result["analyses"])), [15, 25, 35, 45])
         self.assertEqual(result["demo_video_seconds"], 29)
         self.assertEqual(result["authentication"], "none")
+        self.assertEqual(result["guided_story_analyses_replayed"], 2)
         self.assertEqual(result["demo_video_sha256"], hashlib.sha256((self.directory / "climate-explorer-demo.mp4").read_bytes()).hexdigest())
 
     def test_changed_video_is_rejected_even_with_an_updated_asset_manifest(self):
@@ -55,4 +56,21 @@ class PublicVerificationTests(unittest.TestCase):
                 check(self.url)
         finally:
             video.write_bytes(original_video)
+            manifest_path.write_bytes(original_manifest)
+
+    def test_changed_story_is_rejected_even_with_an_updated_asset_manifest(self):
+        story_path = self.directory / "story-tehran.json"
+        manifest_path = self.directory / "build-manifest.json"
+        original_story, original_manifest = story_path.read_bytes(), manifest_path.read_bytes()
+        try:
+            story = json.loads(original_story)
+            story["comparison"][-1]["slope_per_decade"] = 999
+            story_path.write_text(json.dumps(story))
+            manifest = json.loads(original_manifest)
+            manifest[story_path.name] = hashlib.sha256(story_path.read_bytes()).hexdigest()
+            manifest_path.write_text(json.dumps(manifest))
+            with self.assertRaisesRegex(ValueError, "story.comparison"):
+                check(self.url)
+        finally:
+            story_path.write_bytes(original_story)
             manifest_path.write_bytes(original_manifest)

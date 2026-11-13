@@ -34,7 +34,7 @@ PRESETS = {
     "milan": {"name": "Milan, Italy", "latitude": 45.4642, "longitude": 9.19},
 }
 FETCH_LOCK = threading.Lock()
-CODE_FILES = ["climate.py", "trend_checks.py", "server.py", "build_demo.py", "evaluation/replay.py", "requirements-lock.txt", "window_analysis.py", "static/workspace.js", "static/app.js", "static/index.html", "static/style.css", "static/validation.js", "static/validation.html"]
+CODE_FILES = ["climate.py", "trend_checks.py", "server.py", "build_demo.py", "evaluation/replay.py", "requirements-lock.txt", "window_analysis.py", "story_evidence.py", "static/guided-story.js", "static/workspace.js", "static/app.js", "static/index.html", "static/style.css", "static/validation.js", "static/validation.html"]
 CODE_SHA256 = hashlib.sha256(b"".join(
     name.encode() + b"\0" + (ROOT / name).read_bytes()
     for name in CODE_FILES
@@ -104,7 +104,7 @@ def fetch_data(lat, lon):
             except (ValueError, KeyError, OSError):
                 pass
         try:
-            request = Request(url, headers={"User-Agent": "ClimateExplorer/1.0.0 (independent student research tool)"})
+            request = Request(url, headers={"User-Agent": "ClimateExplorer/1.1.0 (independent student research tool)"})
             with urlopen(request, timeout=40) as response:
                 payload = json.load(response)
             if not payload.get("properties", {}).get("parameter"):
@@ -216,7 +216,7 @@ def analyze_saved(query, saved, delivery="frozen NASA response"):
         "period": {"start": start, "end": end}, "variable": variable,
         "metadata": VARIABLES[variable], "annual": annual, "monthly": monthly,
         "excluded_years": excluded, "trend": trend, "checks": checks,
-        "analysis": {"settings": SETTINGS, "app_release": "1.0.0", "code_sha256": CODE_SHA256, "code_files": CODE_FILES, "build_started": "2026-11-11",
+        "analysis": {"settings": SETTINGS, "app_release": "1.1.0", "code_sha256": CODE_SHA256, "code_files": CODE_FILES, "build_started": "2026-11-11",
                      "versions": {"python": platform.python_version(), "numpy": np.__version__, "scipy": scipy.__version__, "statsmodels": statsmodels.__version__}},
         "raw_source": saved["payload"],
         "provenance": {"provider": "NASA POWER", "sources": header.get("sources", []),

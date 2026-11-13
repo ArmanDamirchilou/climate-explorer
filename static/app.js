@@ -64,6 +64,7 @@ function getQuery() {
 
 async function explore(event) {
   if (event) event.preventDefault();
+  globalThis.ClimateStory?.pause();
   ++importSequence;
   $('end').setCustomValidity('');
   if (Number($('end').value) - Number($('start').value) < 9) {
@@ -396,7 +397,8 @@ async function persistWork() {
   }
 }
 
-async function openInvestigation(text, origin, sequence = ++importSequence) {
+async function openInvestigation(text, origin, sequence = ++importSequence, guided = false) {
+  if (!guided) globalThis.ClimateStory?.pause();
   const saved = await ClimateWorkspace.importText(text);
   if (sequence !== importSequence) return;
   if (activeRequest) { activeRequest.abort(); activeRequest = null; }
@@ -404,12 +406,14 @@ async function openInvestigation(text, origin, sequence = ++importSequence) {
   currentResult = saved.analysis;
   currentName = saved.locationName;
   currentQuery = null;
-  for (const [id, key] of [['investigation-question','question'], ['investigation-interpretation','interpretation'], ['investigation-uncertainty','remaining_uncertainty']]) $(id).value = saved.notes[key];
+  if (!guided) for (const [id, key] of [['investigation-question','question'], ['investigation-interpretation','interpretation'], ['investigation-uncertainty','remaining_uncertainty']]) $(id).value = saved.notes[key];
   $('status').hidden = true; $('error').hidden = true;
   $('results').hidden = false; $('results').setAttribute('aria-busy', 'false');
   render(currentResult, currentName);
   $('import-status').hidden = false;
-  $('import-status').textContent = `${origin}. ${saved.verification.summary} ${saved.verification.limitations} Imported notes are user text, not verified findings. The form remains available to start another analysis.`;
+  $('import-status').textContent = guided
+    ? `Guided example: Tehran precipitation, ${currentResult.period.start}–${currentResult.period.end}. Browser checks matched the recorded source hash and recalculated aggregation and point estimates. Uncertainty intervals are precomputed; full Python replay is available. Your notes are preserved.`
+    : `${origin}. ${saved.verification.summary} ${saved.verification.limitations} Imported notes are user text, not verified findings. The form remains available to start another analysis.`;
   $('workspace-status').textContent = `Opened saved evidence for ${currentName}. No file was uploaded.`;
   persistWork();
 }
@@ -455,6 +459,7 @@ $('window').addEventListener('change', () => {
 $('import-file').addEventListener('change', async event => {
   const file = event.target.files[0];
   if (!file) return;
+  globalThis.ClimateStory?.pause();
   const sequence = ++importSequence;
   try {
     if (file.size > 2*1024*1024) throw new Error('Choose a JSON file no larger than 2 MiB.');
@@ -463,6 +468,7 @@ $('import-file').addEventListener('change', async event => {
   finally { event.target.value = ''; }
 });
 $('restore-work').addEventListener('click', async () => {
+  globalThis.ClimateStory?.pause();
   const sequence = ++importSequence;
   try {
     const saved = await ClimateWorkspace.restore();
@@ -472,6 +478,7 @@ $('restore-work').addEventListener('click', async () => {
   } catch (error) { if (sequence === importSequence) $('workspace-status').textContent = `Could not restore local evidence: ${error.message}`; }
 });
 $('clear-work').addEventListener('click', () => {
+  globalThis.ClimateStory?.pause();
   ++importSequence;
   $('save-locally').checked = false;
   try { ClimateWorkspace.clear(); $('workspace-status').textContent = 'Local saved copy cleared. Current tab and downloaded files remain available.'; }
@@ -576,6 +583,32 @@ async function initialize() {
     $('error-text').textContent = error.message;
   }
 }
+
+globalThis.ClimateStory?.mount({
+  onIntent() {
+    const sequence = ++importSequence;
+    if (activeRequest) { activeRequest.abort(); activeRequest = null; }
+    $('explore-button').disabled = false;
+    $('status').hidden = true;
+    $('results').setAttribute('aria-busy', 'false');
+    if (currentResult) $('results').hidden = false;
+    return sequence;
+  },
+  async openAnalysis(record, context) {
+    if (context.intent !== importSequence || !context.isCurrent()) return false;
+    await openInvestigation(JSON.stringify(record), 'Guided story evidence', context.intent, true);
+    return context.intent === importSequence && context.isCurrent();
+  },
+  revealChart() {
+    $('chart-title').setAttribute('tabindex', '-1');
+    $('chart-title').focus({preventScroll: true});
+    $('chart-title').scrollIntoView({block: 'start', behavior: 'auto'});
+  },
+  exploreOwn() {
+    $('location').focus({preventScroll: true});
+    $('location').scrollIntoView({block: 'center', behavior: 'auto'});
+  },
+});
 
 initialize();
 

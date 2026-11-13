@@ -12,6 +12,7 @@ from urllib.request import Request, urlopen
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from climate import CODE_SHA256, ROOT
 from evaluation.replay import verify
+from story_evidence import validate_story_evidence
 
 
 def check(base_url):
@@ -42,6 +43,11 @@ def check(base_url):
             analyses.append({"file": relative, "years_replayed": verify(record)})
     if len(analyses) != 40:
         raise ValueError("Expected forty deployed frozen analyses.")
+    story = json.loads(bodies.get("story-tehran.json", b"{}"))
+    story_count = validate_story_evidence(story)
+    for record in story["analyses"].values():
+        if record["analysis"]["code_sha256"] != CODE_SHA256:
+            raise ValueError("Guided story fingerprint differs from the local source.")
     pdf = bodies.get("climate-explorer-demo.pdf", b"")
     if not pdf.startswith(b"%PDF-"):
         raise ValueError("The public demonstration PDF is missing or invalid.")
@@ -59,6 +65,7 @@ def check(base_url):
     return {"checked_utc": datetime.now(timezone.utc).isoformat(), "base_url": base_url,
             "authentication": "none", "files_verified_against_manifest": len(bodies),
             "code_sha256": CODE_SHA256, "analyses": analyses,
+            "guided_story_analyses_replayed": story_count,
             "demo_pdf_sha256": hashlib.sha256(pdf).hexdigest(),
             "demo_video_sha256": hashlib.sha256(video).hexdigest(),
             "demo_video_seconds": expected_video["duration_seconds"],

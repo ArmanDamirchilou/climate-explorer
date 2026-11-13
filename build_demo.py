@@ -11,6 +11,7 @@ from urllib.parse import parse_qs, urlsplit
 from climate import PRESETS, ROOT, analyze_saved, payload_hash
 from evaluation.replay import verify
 from window_analysis import FIXED_WINDOWS, analyze_window
+from story_evidence import build_story_evidence
 
 
 def write_json(path, value):
@@ -56,6 +57,7 @@ def build(output):
                     period_result = analyze_window(place, saved, variable, window["id"])
                     verify(period_result)
                     write_json(data / f"{key}-{window["id"]}-{variable}.json", period_result)
+        write_json(stage / "story-tehran.json", build_story_evidence())
         for source, target in (("results.json", "validation.json"), ("dataset-check.json", "dataset-check.json"), ("science-audit.json", "science-audit.json")):
             write_json(data / target, json.loads((ROOT / "evaluation" / source).read_text()))
         shutil.copyfile(ROOT / "submission" / "climate-explorer-demo.pdf", stage / "climate-explorer-demo.pdf")

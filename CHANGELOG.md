@@ -2,6 +2,25 @@
 
 All dates below use Tehran time (UTC+3:30). Development began on 11 November 2026. Git history starts with the truthful import on 13 November. Earlier local versions are documented milestones, not invented Git commits or backdated releases. A version number measures the software contract, not time spent or competition standing.
 
+## 1.1.0 · 13 November 2026
+
+### Added
+
+- A three-step Tehran rainfall investigation that starts with a question, compares the long and recent periods, and asks which claim the evidence supports.
+- Source-checked frozen story analyses, generated and replayed from the retained NASA monthly response. The public build regenerates the story using the current source fingerprint.
+- Matching chart actions, same-scale rate bars, recent-period uncertainty, source inspection and the disclosure that this illustrative case was selected after reviewing the fixed windows.
+- Thirteen guided-story and app-integration checks, five story-science checks, and a build check tying the story to the forty public analyses.
+
+### Changed and fixed
+
+- Guided steps preserve existing worksheet notes. Ordinary file import retains its documented replacement behavior.
+- Story navigation cancels stale requests and yields to newer explorer actions. Keyboard focus follows deliberate navigation, with no autoplay or automatic motion.
+- Guided evidence has a concise explanation instead of the unrelated imported-notes message.
+
+### Verification and limits
+
+All 103 tests pass locally, with zero skips. Desktop Chrome and the 400 by 800 responsive preview show readable story text, rate bars, dates, uncertainty and controls. Chart navigation displays the matching 45-year and 15-year observations. Claim feedback rejects a permanent reversal. Linux CI and anonymous deployment verification are recorded separately after publication. The statistical methods, forty example analyses and investigation envelope remain compatible. No user study or new scientific validation is claimed. Version 1.0 media remain the published media at this milestone.
+
 ## 1.0.0 · 13 November 2026
 
 ### Added

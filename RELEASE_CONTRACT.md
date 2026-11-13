@@ -1,4 +1,4 @@
-# Version 1.0 software contract
+# Version 1.x software contract
 
 Version 1.0 marks a complete reviewable investigation workflow and its first documented compatibility contract. It does not claim production certification, calibrated inference for every climate record, measured educational impact or competition eligibility.
 
@@ -25,3 +25,8 @@ The GitHub history, changelog and release tags preserve how each published versi
 ## Remaining evidence
 
 The existing source comparison uses different spatial supports. Toronto's cause remains unresolved. Precipitation has no second-source validation. A suitable station comparison and real student/teacher observations are follow-up work. Technical checks cannot settle the organizer's early-work and AI-ideation rules or confirm personal registration requirements.
+
+
+## Version 1.1 guided examples
+
+A bundled guided example is an optional entry to the same investigation workflow. Its two complete analyses retain source metadata and supported method settings. The browser checks source and point calculations before opening them; Python generation replays full uncertainty calculations. The example does not overwrite worksheet notes or turn a claim-choice exercise into a measured educational result. Manual file imports retain their existing behavior.

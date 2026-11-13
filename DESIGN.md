@@ -58,3 +58,8 @@ Review: the new comparison tests the claim across sources. The worksheet serves 
 The upgrade keeps the existing climate chart as the main visual. The palette remains ice white #fbfdfe, blue ground #edf3f7, ink #183d47, muted blue #526c76, teal #147c89 and temperature orange #cc6545. System sans serif handles controls and evidence; Trebuchet retains the existing display role. The four-period table is a comparison of estimates, so rows replace extra metric cards. Saved-file controls sit under a disclosure in the investigation sidebar. Opt-in storage remains beside the notes, with device privacy explained at the point of choice.
 
 The four fixed periods use the same frozen response and retain the longest default. Import shows its verification scope before the result. The form remains a separate way to begin another analysis rather than silently changing its controls to arbitrary imported data. Printed notes become plain paragraphs so textarea scrolling cannot hide their content. Media live on a separate demonstration page, keeping the main data workflow focused.
+
+
+## 1.1 guided investigation
+
+Retain the glacier, snow, deep-sea, slate and teal colors and system/Trebuchet type. A compact full-width story precedes the investigation workspace. Three genuine steps reveal the long period, the recent period and their uncertainty. The comparison uses actual values on one scale, with dates and rate units. Semantic buttons and an explicit action open matching evidence in the existing chart. There is no autoplay; scrolling follows a deliberate action. Mobile uses one column. The selection disclosure, source hash and conditional-interval caveat stay available.

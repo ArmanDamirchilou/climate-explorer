@@ -68,6 +68,19 @@ class DemoBuildTests(unittest.TestCase):
                         self.assertEqual(record["period"], {"start": window["start"], "end": window["end"]})
                         self.assertEqual(verify(record), window["end"]-window["start"]+1)
 
+    def test_guided_story_matches_built_period_evidence_and_source(self):
+        from story_evidence import validate_story_evidence
+        story = json.loads((self.output / "story-tehran.json").read_text())
+        self.assertEqual(validate_story_evidence(story), 2)
+        for window_id, filename, count in (("full45", "tehran-rainfall.json", 45), ("recent15", "tehran-recent15-rainfall.json", 15)):
+            built = json.loads((self.output / "demo" / filename).read_text())
+            record = story["analyses"][window_id]
+            self.assertEqual(record["annual"], built["annual"])
+            self.assertEqual(record["trend"], built["trend"])
+            self.assertEqual(record["analysis"]["code_sha256"], built["analysis"]["code_sha256"])
+            self.assertEqual(record["provenance"]["payload_sha256"], built["provenance"]["payload_sha256"])
+            self.assertEqual(verify(record), count)
+
     def test_source_fixtures_match_previously_recorded_hashes(self):
         rows = json.loads((ROOT / "evaluation/dataset-check.json").read_text())["rows"]
         expected = {row["power_source_url"]: row["power_payload_sha256"] for row in rows}

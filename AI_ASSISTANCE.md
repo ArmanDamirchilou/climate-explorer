@@ -44,3 +44,8 @@ At the student's request, Git commits omit AI `Co-authored-by` trailers. Assista
 ## Video and release 1.0
 
 The submission agent used Codex-written ReportLab, MuPDF and FFmpeg scripts to create the silent, captioned 29-second data demonstration and update the seven-slide PDF. Every video frame visibly states AI assistance. Charts use retained NASA values rather than generated observations. No synthetic person, voice or NASA branding appears. Higgsfield's available video models were inspected read-only, but no generation job was started and no credits were spent. Exact charts and captions were rendered directly to preserve numerical content. The main agent added the public media page, software contract and checksummed review packaging.
+
+
+## 13 November: 1.1 guided-story iteration
+
+The student reviewed version 1.0 and requested stronger storytelling, sound and a clearer connection between presentation and application. Codex continued the science, engineering and submission agents. They supplied the guided investigation, deterministic evidence contract, numeric review, regression tests and production research. Codex integrated and reviewed the build and Chrome behavior, including a 400-pixel responsive preview. These are AI contributions, not human testing or NASA judging. The student did not supply or claim the narrator's experiences. No new student contribution or measured benefit is inferred from this iteration. The original development date and solution-ideation disclosure remain unchanged.
