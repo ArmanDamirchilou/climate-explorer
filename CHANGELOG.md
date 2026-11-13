@@ -20,7 +20,7 @@ All dates below use Tehran time (UTC+3:30). Development began on 11 November 202
 
 ### Limits and preservation
 
-- Statistical methods, retained NASA observations and reviewed video/PDF bytes are unchanged. Earlier releases remain identifiable; no removal or backdating of development history.
+- Statistical methods and retained NASA observations are unchanged. Film distribution-link panels are corrected while narration, scientific figures and captions remain; the seven-page PDF updates its version, independent URL and atlas explanation. Earlier releases remain identifiable; no removal or backdating of development history.
 - Human usability evidence, listening review, matched station validation and Toronto source resolution remain unperformed. Entry eligibility, actual team and guardian requirements and local online delivery remain separate checks. No competition entry or organizer message is submitted.
 
 ## 1.3.0 · 13 November 2026

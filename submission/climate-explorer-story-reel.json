@@ -1,7 +1,7 @@
 {
   "mode": "reel",
   "file": "climate-explorer-story-reel.mp4",
-  "sha256": "355e8e4b9f073e73e54e1907af24e06092337d4e8607094aabc848eeb558762b",
+  "sha256": "2884bb288332a9f2d91fe39766c3123362236264040cc9ec28fae356e1965f94",
   "duration_seconds": 45.0,
   "resolution": [
     1080,
@@ -41,8 +41,8 @@
   "scientific_scope": "Two fitted periods from the same NASA grid response. Recent ordinary interval includes zero. No claim of climate reversal.",
   "audio_processing": "Original native speech with synchronized tempo adjustment, loudness normalization, original synthesized ambience and accents.",
   "extra_audio": "Original deterministic synthesized ambient tones and short musical accents; not weather recordings.",
-  "review": "Final encoded scene samples visually inspected, including the real app crop, period labels, interval crossing zero, opening and ending. Full video decode passed. No human listening is claimed.",
-  "checked_utc": "2026-11-13T08:38:36.308732+00:00",
+  "review": "Final encoded scene samples visually inspected, including the real app crop, period labels, interval crossing zero, opening and ending. Full video decode passed. No human listening is claimed. Distribution-link-only correction: actual corrected encoded panels and transition boundaries visually inspected. Original AAC stream and decoded float PCM are byte-identical; no new listening or strict reel-ASR claim is inferred.",
+  "checked_utc": "2026-11-13T16:56:06.713500+00:00",
   "audio_measurements": {
     "integrated_lufs": -17.98,
     "true_peak_dbtp": -0.86,
@@ -58,5 +58,49 @@
   },
   "builder_sha256": "25cc4d15a6e3cb1f8eac929646e1434acd8529ddaf44b65fc7b8130d8ef1bf50",
   "ffmpeg_version": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
-  "rendered_data_release": "1.1 preserved in submission/story-inputs"
+  "rendered_data_release": "1.1 preserved in submission/story-inputs",
+  "bytes": 6746281,
+  "distribution_link_correction": {
+    "reason": "Retired GitHub Pages destination replaced by stable source-repository address after hosting migration",
+    "replacement_text": "github.com/ArmanDamirchilou/climate-explorer",
+    "source_original_sha256": "355e8e4b9f073e73e54e1907af24e06092337d4e8607094aabc848eeb558762b",
+    "source_original_record_sha256": "eecb65212943cd8d67dda405b63e6a129a48d00d5eaaf85d648b34597e51db21",
+    "script": "submission/correct_media_distribution_links.py",
+    "script_sha256": "0f82eae6a7a15d41bdc967fde845f1e46b9ea3fa839e0ddf63efedb1f196da05",
+    "rectangles": [
+      {
+        "xywh": [
+          59,
+          1297,
+          930,
+          114
+        ],
+        "seconds": [
+          [
+            40,
+            45
+          ]
+        ],
+        "method": "Opaque source-built URL text panel"
+      }
+    ],
+    "audio_processing": "-c:a copy; no audio filtering or encoding",
+    "compressed_audio_sha256_before": "376ac1831ebd18b5e3c509f4e23a67d0f96fd2199eaff3e14a47935bfe3ccc98",
+    "compressed_audio_sha256_after": "376ac1831ebd18b5e3c509f4e23a67d0f96fd2199eaff3e14a47935bfe3ccc98",
+    "decoded_float_pcm_sha256_before": "7acf27ad22bb0b23d2c5a7f8a4b2dfcb9593e9f7d464f955867aa8b129261b59",
+    "decoded_float_pcm_sha256_after": "7acf27ad22bb0b23d2c5a7f8a4b2dfcb9593e9f7d464f955867aa8b129261b59",
+    "original_builder_sha256": "25cc4d15a6e3cb1f8eac929646e1434acd8529ddaf44b65fc7b8130d8ef1bf50",
+    "provenance_scope": "builder_sha256 identifies the original composition; this correction script is the final distribution-text pass",
+    "full_decode_passed": true,
+    "encoded_visual_review": true,
+    "checked_utc": "2026-11-13T16:54:52.045229+00:00",
+    "source_original_release": "v1.3.0",
+    "visual_review_seconds": [
+      39.966667,
+      40,
+      42,
+      44.9
+    ],
+    "review_scope": "Actual corrected encode inspected at visible-link frames and adjacent chart/correction-plate boundaries. Original scientific values, subtitles and disclosures retained. No human listening."
+  }
 }

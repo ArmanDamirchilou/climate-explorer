@@ -2,7 +2,7 @@
 
 This checklist cannot make an ineligible project eligible. The student owns registration and final submission under the folder instructions.
 
-Technical release checks below refer to the published 1.3 evidence, not approval to enter the competition. The early start and AI contribution to the solution idea remain material blockers to claiming an eligible judged entry. Do not accept a timing, originality or authorship declaration that contradicts the record. If organizers do not permit judged entry, keep the work as a portfolio project or ask about a noncompetitive demonstration.
+Technical release checks below refer to the 1.3.1 evidence, not approval to enter the competition. The early start and AI contribution to the solution idea remain material blockers to claiming an eligible judged entry. Do not accept a timing, originality or authorship declaration that contradicts the record. If organizers do not permit judged entry, keep the work as a portfolio project or ask about a noncompetitive demonstration.
 
 ## Organizer and student actions
 
@@ -22,14 +22,14 @@ Technical release checks below refer to the published 1.3 evidence, not approval
 - [x] The published release states that it began on 11 November and identifies AI contributions.
 - [x] All release tests and replay checks pass. Record the exact commit and environment.
 - [x] The public demo clearly distinguishes frozen examples from live NASA requests.
-- [x] The final source and demo links open without login in a signed-out browser.
+- [x] The independent host is reachable without login; anonymous original-asset hashes and full replay pass, and Chrome navigation loads the overview, app and atlas. See release verification for the XHR/browser scope.
 - [x] Actual retained data charts and current validation findings appear in the demo. No invented screenshot is used.
 - [x] The deck has no more than seven slides, or the video lasts no more than 30 seconds. English requirements are met.
 - [x] The AI-assisted video has a visible indicator throughout and an embedded metadata disclosure. No NASA branding is generated or modified.
 - [x] Generated adult presenter and voice, the 1.1 app capture, and the technical film's data-derived atlas plate and 480p presenter origin are identified accurately.
 - [ ] A person listens to the final selected demonstration and checks intelligibility, captions and cut endings. Automated speech agreement is recorded, but no human listening has been claimed.
 
-Evidence: [1.3 release verification](../evaluation/RELEASE_VERIFICATION.md), [short-film record](climate-explorer-story-judge.json), [technical-film record](climate-explorer-story-technical.json), and [AI assistance](../AI_ASSISTANCE.md). Numerical and release checks do not establish learning benefit or scientific truth.
+Evidence: [Current release verification](../evaluation/RELEASE_VERIFICATION.md), [short-film record](climate-explorer-story-judge.json), [technical-film record](climate-explorer-story-technical.json), and [AI assistance](../AI_ASSISTANCE.md). Numerical and release checks do not establish learning benefit or scientific truth.
 
 ## Final form actions by the student
 

@@ -1,6 +1,6 @@
 # Final evaluator-facing audit
 
-Reviewed 13 November 2026 against release 1.3 materials. This is an independent Codex specialist review, not a NASA decision, human peer review or award forecast. No entry, message, registration or account action was performed. Films, PDF, media records, build scripts and release history were not changed in this audit.
+Reviewed 13 November 2026 against release 1.3 materials. This is an independent Codex specialist review, not a NASA decision, human peer review or award forecast. No entry, message, registration or account action was performed. The specialist's initial pass did not change media or release history; the producer's later fixes are distinguished below.
 
 ## Decision
 
@@ -56,7 +56,7 @@ The fresh schedule retains local delivery on 15 November at 17:00 Turkey time, w
 
 ## Checks performed in this audit
 
-Read current submission prose, authorship disclosure, official evidence and all three narrated-film records. Recomputed local MP4, VTT and poster SHA-256 values against those records: all three sets match. The technical-film record reports exact135 seconds, 4,050frames, H.264/AAC, final-mix automatic agreement, full decode and sampled visual review. Those recorded production checks were not repeated or promoted into human listening here. No film or PDF was regenerated. The six evaluator-facing documents listed below were corrected, then reviewed for stale claims and local Markdown-link targets.
+Read current submission prose, authorship disclosure, official evidence and all three narrated-film records. Recomputed local MP4, VTT and poster SHA-256 values against those records: all three sets match. The technical-film record reports exact135 seconds, 4,050frames, H.264/AAC, final-mix automatic agreement, full decode and sampled visual review. Those recorded production checks were not repeated or promoted into human listening here. No film or PDF was regenerated during that specialist pass. The six evaluator-facing documents listed below were corrected, then reviewed for stale claims and local Markdown-link targets.
 
 Changed documents: PROJECT_DESCRIPTION.md, FINAL_CHECKLIST.md, JUDGE_QA.md, STUDENT_PRACTICE.md, REVIEW_RUBRIC.md and ORGANIZER_MESSAGE.md. The producer owns final hosting, release evidence and outward links. This audit adds no student contribution, test result, endorsement, award, submitted form or sent message.
 
@@ -68,3 +68,9 @@ The coordinated 1.3.1 changes bind selected-record replay to variable units, req
 The separate project overview and short-demo-only page make the review path explicit and keep the 135-second portfolio film out of the official-length candidate page. Current entry links use the independent hosting origin; exact final deployment and Linux evidence belong to the release verification record. The dedicated GitHub repository and historical releases are preserved. No personal-site source change or invented human feedback is part of these fixes.
 
 Published Higgsfield output-use terms were checked and linked from THIRD_PARTY_NOTICES.md. The record describes the actual service terms, not a blanket independent rights-clearance certificate. Generated-media disclosure remains visible. The final selected demo still needs an actual human listening review, and the student/organizer checks above remain open.
+
+
+Independent-host verification completed at 16:45:45 UTC on 13 November. All 79 original asset representations, forty fixed records, two guided records and 6,660 atlas windows passed. Normal navigation HTML contains the provider's detection addition; XHR checks retain strict original-asset hashes. Actual Chrome navigation to the new overview, app and full666-window atlas passed. The old project Pages configuration was then disabled; the personal-site repository remains unchanged. Exact tested runtime and remaining Linux/package evidence are recorded in RELEASE_VERIFICATION.md.
+
+
+The migration review subsequently found visible retired addresses inside the films and PDF. The producer corrected the films' link panels and rebuilt the seven-page PDF with the independent app URL and current atlas scope. Original sources remain in older tags. The new PDF's seven rendered pages were visually inspected, all text bounds and link annotations checked, and its hash updated. Final media receipts and deployment verification must identify the later corrected bytes instead of inheriting the initial pass above.

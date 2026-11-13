@@ -1,8 +1,8 @@
 {
   "mode": "technical",
   "file": "climate-explorer-story-technical.mp4",
-  "sha256": "aeb40d39bdf2750f6b86e86af48c5e009ddb1119c47409821a81078f23f60e58",
-  "bytes": 12492700,
+  "sha256": "21d79e197819ea8c6061e9afa4d87695d2fa0ab3ddc07fcd7f1dd6875121b5d6",
+  "bytes": 17509046,
   "duration_seconds": 135.0,
   "resolution": [
     1920,
@@ -150,7 +150,7 @@
     "final_mixed_audio_transcript_agreement": true,
     "caption_timing_valid": true
   },
-  "review": "Final full decode and PCM timestamp checks passed. Encoded scenes, correction masks, captions and closing card were visually inspected. The final mixed audio agrees with the 307-word canonical script after case, punctuation and number-spelling normalization. Native generated performances include documented full-sentence corrections and omissions. Human listening has not been performed.",
+  "review": "Final full decode and PCM timestamp checks passed. Encoded scenes, correction masks, captions and closing card were visually inspected. The final mixed audio agrees with the 307-word canonical script after case, punctuation and number-spelling normalization. Native generated performances include documented full-sentence corrections and omissions. Human listening has not been performed. Distribution-link-only correction: actual corrected encoded panels and transition boundaries visually inspected. Original AAC stream and decoded float PCM are byte-identical; no new listening or strict reel-ASR claim is inferred.",
   "generated_utc": "2026-11-13T15:24:45.720561+00:00",
   "video_duration_seconds": 135.0,
   "frame_count": 4050,
@@ -165,7 +165,7 @@
     "loudness_range_lu": 3.8,
     "scope": "Measured from the final AAC encode, not the pre-encode master."
   },
-  "checked_utc": "2026-11-13T15:30:28.002465+00:00",
+  "checked_utc": "2026-11-13T16:56:06.809725+00:00",
   "visual_review": {
     "final_master_sample_count": 31,
     "final_master_sample_seconds": [
@@ -208,5 +208,79 @@
     "sha256": "1aeaf0a93a0a3b417ca202c0c39164c7f6077d1913d2fa86c75087a8c7d587ed",
     "model": "medium.en",
     "scope": "Automatic normalized-word agreement on the frozen final mixed MP4; not human listening."
+  },
+  "distribution_link_correction": {
+    "reason": "Retired GitHub Pages destination replaced by stable source-repository address after hosting migration",
+    "replacement_text": "github.com/ArmanDamirchilou/climate-explorer",
+    "source_original_sha256": "aeb40d39bdf2750f6b86e86af48c5e009ddb1119c47409821a81078f23f60e58",
+    "source_original_record_sha256": "ecb49dfd9db1cd32c330cd6329b1fbb79f462e0d5b774ed2c534cae68073f9a2",
+    "script": "submission/correct_media_distribution_links.py",
+    "script_sha256": "0f82eae6a7a15d41bdc967fde845f1e46b9ea3fa839e0ddf63efedb1f196da05",
+    "rectangles": [
+      {
+        "xywh": [
+          59,
+          774,
+          850,
+          48
+        ],
+        "seconds": [
+          [
+            108,
+            115.07
+          ],
+          [
+            117.93,
+            127.12
+          ],
+          [
+            130,
+            130.0333333333
+          ]
+        ],
+        "method": "Opaque URL text panel; omitted wherever a full-screen correction plate supersedes the source label"
+      },
+      {
+        "xywh": [
+          59,
+          460,
+          1130,
+          66
+        ],
+        "seconds": [
+          [
+            130.0333333333,
+            135
+          ]
+        ],
+        "method": "Opaque endcard URL text panel"
+      }
+    ],
+    "audio_processing": "-c:a copy; no audio filtering or encoding",
+    "compressed_audio_sha256_before": "e4920a8374a4e99fb8b31bd0eef7a93b3ffef0a4cacc0476647cc23623d53f1e",
+    "compressed_audio_sha256_after": "e4920a8374a4e99fb8b31bd0eef7a93b3ffef0a4cacc0476647cc23623d53f1e",
+    "decoded_float_pcm_sha256_before": "2e277168da4fdfaf914f145cf57d48701b419839b331df5cb1621f8eb2ae9c5d",
+    "decoded_float_pcm_sha256_after": "2e277168da4fdfaf914f145cf57d48701b419839b331df5cb1621f8eb2ae9c5d",
+    "original_builder_sha256": "d14e6b19a34486b422f874a0dee1588d871ef7a5157d08cf66cda42961aff488",
+    "provenance_scope": "builder_sha256 identifies the original composition; this correction script is the final distribution-text pass",
+    "full_decode_passed": true,
+    "encoded_visual_review": true,
+    "checked_utc": "2026-11-13T16:55:00.631513+00:00",
+    "source_original_release": "v1.3.0",
+    "visual_review_seconds": [
+      110,
+      115.033333,
+      115.1,
+      117.9,
+      117.966667,
+      127.1,
+      127.166667,
+      129.966667,
+      130,
+      130.0333334,
+      132,
+      134.8
+    ],
+    "review_scope": "Actual corrected encode inspected at visible-link frames and adjacent chart/correction-plate boundaries. Original scientific values, subtitles and disclosures retained. No human listening."
   }
 }

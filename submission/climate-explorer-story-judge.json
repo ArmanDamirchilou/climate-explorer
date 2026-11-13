@@ -1,7 +1,7 @@
 {
   "mode": "judge",
   "file": "climate-explorer-story-judge.mp4",
-  "sha256": "56ba4b9247c6dc4188d865a39979bef473d569e52ac536312cd60cf55e4ede47",
+  "sha256": "b693749017e3ee27b0a816497c0c993cd3cc77ea523c46b8c12674b203988c3f",
   "duration_seconds": 29.8,
   "resolution": [
     1920,
@@ -35,14 +35,14 @@
   },
   "poster": {
     "file": "climate-explorer-story-judge-poster.jpg",
-    "sha256": "af6b92861177f03db41b2bcfdf2e021b018ded5d069357fe2414af2a73e15b5a"
+    "sha256": "3631552617854adba0aefd98fe0669001ebaa43b2291391b38f890aa21d4a492"
   },
   "ai_disclosure": "Persistent visible generated-adult/voice label plus descriptive text and MP4 metadata",
   "scientific_scope": "Two fitted periods from the same NASA grid response. Recent ordinary interval includes zero. No claim of climate reversal.",
   "audio_processing": "Original native speech with synchronized tempo adjustment, loudness normalization, original synthesized ambience and accents.",
   "extra_audio": "Original deterministic synthesized ambient tones and short musical accents; not weather recordings.",
-  "review": "Final encoded scene samples visually inspected, including the real app crop, period labels, interval crossing zero, opening and ending. Full video decode passed. No human listening is claimed.",
-  "checked_utc": "2026-11-13T08:38:35.648357+00:00",
+  "review": "Final encoded scene samples visually inspected, including the real app crop, period labels, interval crossing zero, opening and ending. Full video decode passed. No human listening is claimed. Distribution-link-only correction: actual corrected encoded panels and transition boundaries visually inspected. Original AAC stream and decoded float PCM are byte-identical; no new listening or strict reel-ASR claim is inferred.",
+  "checked_utc": "2026-11-13T16:56:06.668021+00:00",
   "audio_measurements": {
     "integrated_lufs": -16.2,
     "true_peak_dbtp": -0.95,
@@ -59,5 +59,58 @@
   "builder_sha256": "25cc4d15a6e3cb1f8eac929646e1434acd8529ddaf44b65fc7b8130d8ef1bf50",
   "ffmpeg_version": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
   "rendered_data_release": "1.1 preserved in submission/story-inputs",
-  "final_transcription_sha256": "43248a2f48ae7ce6c270282906924f90de2970275164b1bc905e06cf1b4aa012"
+  "final_transcription_sha256": "43248a2f48ae7ce6c270282906924f90de2970275164b1bc905e06cf1b4aa012",
+  "bytes": 4468856,
+  "distribution_link_correction": {
+    "reason": "Retired GitHub Pages destination replaced by stable source-repository address after hosting migration",
+    "replacement_text": "github.com/ArmanDamirchilou/climate-explorer",
+    "source_original_sha256": "56ba4b9247c6dc4188d865a39979bef473d569e52ac536312cd60cf55e4ede47",
+    "source_original_record_sha256": "70a1bd18ea4e12ba60f407bfde72237b4726ac2678d5560c87e10da62ec2bbd3",
+    "script": "submission/correct_media_distribution_links.py",
+    "script_sha256": "0f82eae6a7a15d41bdc967fde845f1e46b9ea3fa839e0ddf63efedb1f196da05",
+    "rectangles": [
+      {
+        "xywh": [
+          80,
+          744,
+          696,
+          48
+        ],
+        "seconds": [
+          [
+            0,
+            5.12
+          ],
+          [
+            22.0666666667,
+            29.8
+          ]
+        ],
+        "method": "Original source-built URL crop, preserving the chart crossfade and existing labels"
+      }
+    ],
+    "audio_processing": "-c:a copy; no audio filtering or encoding",
+    "compressed_audio_sha256_before": "4620637ab28fc0750a4817e8ab2a05a7d08b8427c0350c7654cb574e8cc38bf6",
+    "compressed_audio_sha256_after": "4620637ab28fc0750a4817e8ab2a05a7d08b8427c0350c7654cb574e8cc38bf6",
+    "decoded_float_pcm_sha256_before": "6a902cf687c1f64708c55dc95c2b30ca825aa6b23076a498f876af69a37865bd",
+    "decoded_float_pcm_sha256_after": "6a902cf687c1f64708c55dc95c2b30ca825aa6b23076a498f876af69a37865bd",
+    "original_builder_sha256": "25cc4d15a6e3cb1f8eac929646e1434acd8529ddaf44b65fc7b8130d8ef1bf50",
+    "provenance_scope": "builder_sha256 identifies the original composition; this correction script is the final distribution-text pass",
+    "full_decode_passed": true,
+    "encoded_visual_review": true,
+    "checked_utc": "2026-11-13T16:54:48.955072+00:00",
+    "source_original_release": "v1.3.0",
+    "visual_review_seconds": [
+      0,
+      4.9,
+      5.0,
+      5.1,
+      22.1,
+      22.3,
+      27,
+      29.7
+    ],
+    "review_scope": "Actual corrected encode inspected at visible-link frames and adjacent chart/correction-plate boundaries. Original scientific values, subtitles and disclosures retained. No human listening.",
+    "original_poster_sha256": "af6b92861177f03db41b2bcfdf2e021b018ded5d069357fe2414af2a73e15b5a"
+  }
 }

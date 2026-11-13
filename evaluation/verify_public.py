@@ -19,7 +19,10 @@ from window_analysis import FIXED_WINDOWS
 
 def check(base_url):
     def fetch(relative):
-        request = Request(base_url.rstrip("/") + "/" + relative, headers={"User-Agent": "ClimateExplorer-release-check/1.0.0"})
+        request = Request(base_url.rstrip("/") + "/" + relative, headers={
+            "User-Agent": "ClimateExplorer-release-check/1.3.1",
+            "X-Requested-With": "XMLHttpRequest", "Accept": "application/octet-stream",
+        })
         try:
             with urlopen(request, timeout=30) as response:
                 return response.read()
@@ -113,6 +116,7 @@ def check(base_url):
         atlas_records.append({"file": name, "windows_replayed": count})
     return {"checked_utc": datetime.now(timezone.utc).isoformat(), "base_url": base_url,
             "authentication": "none", "files_verified_against_manifest": len(bodies),
+            "request_representation": "Anonymous XHR asset fetch; no cookies, authorization, script stripping or hash normalization. Navigation HTML may also contain the hosting provider's injected detection script; inspect browser navigation separately.",
             "code_sha256": CODE_SHA256, "analyses": analyses,
             "guided_story_analyses_replayed": story_count,
             "window_atlases": atlas_records,

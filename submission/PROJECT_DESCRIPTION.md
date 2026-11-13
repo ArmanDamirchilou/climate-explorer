@@ -18,7 +18,7 @@ This is the 29.8-second English-captioned film with a visibly disclosed fictiona
 
 Alternative seven-page PDF: https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/climate-explorer-demo.pdf
 
-The PDF includes its cover and is the reviewed 1.0 artifact. Choose the short MP4 for the official demonstration field. Its dedicated player page is https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/demo-short.html. The PDF remains an alternative retained artifact. Recheck anonymous access before entering it. The separate 45-second portrait reel and 135-second technical film are portfolio material and exceed the official demo limit. Both candidate artifacts retain the AI and early-work disclosures.
+The PDF includes its cover. The current 1.3.1 deck updates the earlier retained evidence with the independent app link, atlas and verification scopes; prior bytes remain in the earlier releases. Choose the short MP4 for the official demonstration field. Its dedicated player page is https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/demo-short.html. The PDF remains an alternative retained artifact. Recheck anonymous access before entering it. The separate 45-second portrait reel and 135-second technical film are portfolio material and exceed the official demo limit. Both candidate artifacts retain the AI and early-work disclosures.
 
 ## Link to final project
 

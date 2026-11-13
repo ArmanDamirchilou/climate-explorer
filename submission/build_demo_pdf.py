@@ -16,7 +16,7 @@ INK, MUTED = "#123c3f", "#496c70"
 TEAL, ORANGE = "#177e85", "#c46632"
 PALE, GRID = "#edf4f4", "#d8e5e5"
 REPO = "https://github.com/ArmanDamirchilou/climate-explorer"
-DEMO = "https://armandamirchilou.github.io/climate-explorer/"
+DEMO = "https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/"
 
 
 def load(relative):
@@ -86,11 +86,11 @@ def build(output):
     study = load("evaluation/results.json")
     scenario = next(row for row in study["scenarios"] if row["n"] == 45 and row["rho"] == 0.7 and row["true_slope_per_decade"] == 0)
     pdf = canvas.Canvas(str(output), pagesize=(WIDTH, HEIGHT), invariant=1)
-    pdf.setTitle("Climate Explorer 1.0 project demonstration")
+    pdf.setTitle("Climate Explorer 1.3.1 project demonstration")
     pdf.setAuthor("Climate Explorer student project with OpenAI Codex assistance")
     pdf.setSubject("Seven-page PDF demonstration; early work and AI ideation eligibility unresolved")
 
-    start(pdf, 1, "Climate Explorer 1.0")
+    start(pdf, 1, "Climate Explorer 1.3.1")
     text(pdf, "Historical climate trends", 74, 190, 58, bold=True)
     text(pdf, "with visible assumptions", 74, 270, 58, TEAL, bold=True)
     text(pdf, "Be An Earth System Trend Detective!", 78, 390, 30, MUTED)
@@ -177,11 +177,11 @@ def build(output):
 
     start(pdf, 6, "Keep and check an investigation", "The browser workflow preserves the chosen evidence and makes its verification limits visible")
     text(pdf, "Browser investigation", 76, 195, 32, TEAL, bold=True)
-    text(pdf, "Choose 45, 35, 25 or 15 years.\nCompare rates on the same source.\nSave notes on this device, opt-in.\nPrint an investigation report.", 76, 258, 26, width=500)
+    text(pdf, "Compare four fixed periods.\nInspect all 666 date windows.\nOpen and save exact evidence.\nKeep optional notes on this device.", 76, 258, 26, width=500)
     text(pdf, "Two levels of verification", 660, 195, 32, TEAL, bold=True)
-    text(pdf, "Browser: hash, annual aggregation,\nOLS and Theil-Sen point checks.\nPython: full numerical replay,\nincluding intervals and sensitivity.", 660, 258, 26, width=500)
-    text(pdf, "Browser import does not verify intervals, p-values or chart bands.", 76, 490, 27, bold=True, width=1110)
-    text(pdf, "A matching hash does not establish source accuracy. The full Python replay remains available.", 76, 554, 24, MUTED, width=1120)
+    text(pdf, "Browser: units, hash, aggregation,\nOLS and slope point checks.\nPython: selected result replay.\nAtlas verifier: all 666 windows.", 660, 258, 26, width=500)
+    text(pdf, "Browser import retains precomputed intervals, p-values and chart bands.", 76, 490, 27, bold=True, width=1110)
+    text(pdf, "Windows overlap. Selection has no multiplicity correction. A hash does not establish source truth.", 76, 554, 24, MUTED, width=1120)
     source(pdf, "Browser checks and saved notes verified 13 November. Frozen example SHA-256: " + hashlib.sha256(example_path.read_bytes()).hexdigest()[:20], REPO + "/blob/main/evaluation/replay.py")
     pdf.showPage()
 
