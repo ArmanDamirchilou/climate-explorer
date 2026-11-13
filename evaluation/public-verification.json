@@ -1,0 +1,51 @@
+{
+  "checked_utc": "2026-11-13T07:12:42.131029+00:00",
+  "base_url": "https://armandamirchilou.github.io/climate-explorer/",
+  "authentication": "none",
+  "files_verified_against_manifest": 21,
+  "code_sha256": "f089606669534a1bf723627c0db2ade602c2b9a5c5a48ce3c22915b46d379f03",
+  "analyses": [
+    {
+      "file": "demo/ankara-rainfall.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/ankara-temperature.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/berlin-rainfall.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/berlin-temperature.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/milan-rainfall.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/milan-temperature.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/tehran-rainfall.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/tehran-temperature.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/toronto-rainfall.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/toronto-temperature.json",
+      "years_replayed": 45
+    }
+  ],
+  "demo_pdf_sha256": "663ceec3e79ae6c39dcd993664af7aa90f08d594a23c247e9ef3d9f80bce7332",
+  "scope": "Anonymous HTTP access, deployed file integrity and offline numerical replay; browser behavior and eligibility are separate checks."
+}

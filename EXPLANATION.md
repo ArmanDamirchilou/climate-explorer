@@ -40,10 +40,10 @@ We also checked temperature against GISTEMP over the same years in the five orig
 
 A 95% interval is a procedure with a coverage target under specified conditions. It is not a 95% probability that this particular claim is true. An interval excluding zero does not prove a cause. Agreement between methods is not independent evidence. A model grid cell is not a street thermometer.
 
-The current project still needs the full challenge review, real user feedback, and further source investigation. Early development started on 11 November, and competition eligibility is unresolved. Do not claim a NASA endorsement, an award, or work dates that did not happen.
+The full challenge and current guides have been reviewed. The project still needs real user feedback, further spatial validation, and your own explanation of the calculations. Early development started on 11 November, and competition eligibility is unresolved. Do not claim a NASA endorsement, an award, or work dates that did not happen.
 
 ## Demonstration sequence
 
 Open Tehran temperature over 1981–2025. Explain the rate and units. Show the assumptions beside the first interval. Compare the methods, then show the fixed date checks. Open the evaluation page and explain one false-positive case. Show the Toronto dataset difference as an unresolved finding. Finish by replaying a saved JSON and stating which parts you personally understand and contributed.
 
-The official guide must determine the final presentation format and duration. A clear explanation with one honest limitation is more useful than a long feature list.
+The verified guide permits at most seven slides or a video of at most 30 seconds. A seven-page PDF is prepared in submission/climate-explorer-demo.pdf. A clear explanation with one honest limitation is more useful than a long feature list.

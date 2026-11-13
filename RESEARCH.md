@@ -1,6 +1,6 @@
 # Climate Explorer research and decisions
 
-Research cycle: 11–12 November 2026. This record separates verified source facts, our experiments, and product hypotheses.
+Research and release review: 11–13 November 2026. This record separates verified source facts, our experiments, and product hypotheses.
 
 The current decision is to keep a simple linear estimate and expose its sensitivity. None of the deployable interval methods in our fixed experiment passed every screening case. A more complex method must not be described as a universal solution merely because its name includes "robust."
 
@@ -14,15 +14,14 @@ Our hypothesis: a student benefits from seeing whether conclusions change with m
 
 | Requirement or constraint | Evidence | Project response | State |
 |---|---|---|---|
-| Select an Earth science variable | Previously retrieved official challenge summary | Temperature and precipitation selector | Implemented; full brief pending |
-| Show changes over time | Same summary | Annual series and monthly view | Implemented |
-| Explain what changes, where, and by how much | Same summary | Units, coordinates, native grid scale, rate per decade | Implemented; full brief pending |
-| Assess statistical significance | Same summary | Conditional intervals, method comparison, failure cases | Implemented as exploratory comparisons; real-data coverage not established |
-| Full challenge requirements and data resources | Main official page currently renders only the title and site navigation; repeated web requests fail | Re-read when accessible. Do not replace the brief with a local site's summary. | Open |
-| Current judging and submission requirements | Earlier FAQ check records guides scheduled for 13 November | Map exact criteria and required media when published | Open; no assumed weights or first-place formula |
-| Before-event development | Earlier official FAQ check prohibits challenge work before the event | Preserve the true 11 November start date and original prototype | Eligibility unresolved |
+| Select Earth science variables and a region | Full production challenge recovered on 13 November | Temperature/precipitation selection and point location controls | Core objective covered |
+| Acquire data and show long time series | Full challenge | NASA POWER retrieval, annual plot and monthly view | Core objective covered; public demo uses frozen examples |
+| Estimate rate and significance | Full challenge permits basic linear trend analysis | Conditional intervals, method comparison and failure cases | Core objective covered; real-data coverage not established |
+| Demonstrate and document | Current submission and judging guides | Public source, seven-page PDF, actual evidence and AI disclosure | See submission/REQUIREMENTS.md and release checks |
+| Before-event development | Current FAQ prohibits early challenge work | Preserve the true 11 November start date and original prototype | Eligibility unresolved |
+| AI contribution to the solution idea | Current submission guide restricts this use | Disclose Codex's role in approach selection as well as coding | Eligibility unresolved |
 
-Official links: [challenge](https://www.spaceappschallenge.org/2026/challenges/earth-system-trend-detective/), [participant FAQs](https://www.spaceappschallenge.org/resources/participant-faqs/). The current research did not recover the full brief. This limits claims of challenge compliance.
+The full brief, data resources and current guides are mapped in [the requirements matrix](submission/REQUIREMENTS.md), with selected source evidence and retrieval hashes. The official challenge links KNMI Climate Explorer as an existing tool. This student project keeps the user's chosen name and explicitly identifies itself as separate from that service. Its contribution is a proposed investigation workflow, not the invention of climate trend analysis.
 
 ## Data choices
 
@@ -78,10 +77,18 @@ A NOAA-hosted simulation study also reports biased rejection rates in short, aut
 
 The local Python service and plain browser interface support the current load and keep calculations inspectable. A focused module separates sensitivity checks from retrieval. The implementation uses statsmodels for covariance calculations rather than copying an unverified implementation. The independent numerical test uses a separate scalar calculation.
 
-Record the selected query, raw NASA response, payload hash, analysis version, dependency versions, and method settings in the analysis export. Provide a replay command that recomputes from that frozen response without network access. Preserve the original prototype in `artifacts/baseline-2026-11-11.zip` with its manifest. A reproducible incorrect result is still incorrect; independent reference tests and source checks remain necessary.
+Record the selected query, raw NASA response, payload hash, analysis version, dependency versions, and method settings in the analysis export. Provide a replay command that recomputes from that frozen response without network access. Preserve the original prototype archive locally with its public hash manifest. The archive itself is excluded from publication because its README contains a local account path; it was not silently changed. A reproducible incorrect result is still incorrect; independent reference tests and source checks remain necessary.
 
 ## Validation still needed
 
-A five-location temperature comparison is now complete in [DATASET_CHECK.md](evaluation/DATASET_CHECK.md). All five original presets use the same 45 complete years, with no selection for agreement. Tehran rates are about 0.504 and 0.536 °C per decade for POWER and GISTEMP. Toronto rates are about 0.883 and 0.310. This is a comparison of different spatial supports, not a matched station validation. Toronto's day-weighted annual values agree with NASA's own rounded annual values in the inspected 1981, 2000, and 2025 records within 0.004 °C. That check does not explain the source difference.
+A five-location temperature comparison is now complete in [DATASET_CHECK.md](evaluation/DATASET_CHECK.md). All five original presets use the same 45 complete years, with no selection for agreement. Tehran rates are about 0.504 and 0.536 °C per decade for POWER and GISTEMP. Toronto rates are about 0.883 and 0.310. This is a comparison of different spatial supports, not a matched station validation. The follow-up [science audit](evaluation/SCIENCE_AUDIT.md) checks all 45 Toronto annual values against NASA's rounded annual summaries, within 0.005 °C. Nearby POWER requests give rates from about 0.318 to 0.883 °C per decade, while all nine selected adjacent GISTEMP cells give about 0.294 to 0.349. This narrows the investigation toward spatial/source representation without proving the cause or selecting either source as truth.
 
-Actual user feedback, matched spatial validation, the full official brief, and the student's ability to explain the method are not completed by passing code tests. The next product decision depends on whether students can correctly distinguish an estimated rate, an assumption-dependent interval, and a conclusion that changed when the dates changed. Use the prepared [usability protocol](evaluation/USER_TEST.md); its results are currently empty.
+Actual user feedback, matched spatial validation, and the student's ability to explain the method are not completed by passing code tests. The next product decision depends on whether students can correctly distinguish an estimated rate, an assumption-dependent interval, and a conclusion that changed when the dates changed. Use the prepared [usability protocol](evaluation/USER_TEST.md); its results are currently empty.
+
+## Release decisions after specialist review
+
+The science review justified making source disagreement visible in the main investigation and adding the fixed spatial audit to the evaluation page. It did not justify silently replacing a city result or making a physical explanation.
+
+The engineering review added HTTP and build checks, an isolated environment check, source hash validation, and tests that a frozen build cannot access the network. CSV now exports the displayed result rather than fetching again. The public frozen demonstration reduces installation and live-service dependencies for reviewers, while retaining the full Python tool for custom investigations.
+
+The submission review recovered the full official brief and exact demo limits. It also found the AI-ideation rule, making the existing authorship history material to eligibility. More features cannot resolve that rule. The seven-page PDF, current form drafts and organizer message are prepared without claiming organizer approval or personal work that did not happen.

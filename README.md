@@ -30,6 +30,8 @@ On macOS, `Start.command` creates the environment if needed and opens the local 
 
 No NASA account or API key is needed for this POWER endpoint. Other NASA services may require an account. NASA network failure falls back to a clearly labelled real Tehran snapshot or an older cached response when available.
 
+Verification: 54 tests pass locally and on GitHub Linux. All ten deployed analyses replay without authentication. See [the release evidence](evaluation/RELEASE_VERIFICATION.md).
+
 ## What works
 
 - Temperature and precipitation, selectable locations, and a period of at least 10 complete years.

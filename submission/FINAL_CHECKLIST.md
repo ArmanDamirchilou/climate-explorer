@@ -14,15 +14,15 @@ This checklist cannot make an ineligible project eligible. The student owns regi
 
 ## Release preparation
 
-- [ ] The final repository has an explicit code license and source/dependency acknowledgments.
-- [ ] No credentials, private account information, unrelated folder documents, or environment files are published.
-- [ ] The published release states that it began on 11 November and identifies AI contributions.
-- [ ] All release tests and replay checks pass. Record the exact commit and environment.
-- [ ] The public demo clearly distinguishes frozen examples from live NASA requests.
-- [ ] The final source and demo links open without login in a signed-out browser.
-- [ ] Actual screenshots, current dataset values and current validation findings appear in the demo.
-- [ ] The deck has no more than seven slides, or the video lasts no more than 30 seconds. English requirements are met.
-- [ ] AI-generated media, if introduced later, have the indicators required by the guide. No NASA branding is generated or modified.
+- [x] The final repository has an explicit code license and source/dependency acknowledgments.
+- [x] No credentials, private account information, unrelated folder documents, or environment files are published.
+- [x] The published release states that it began on 11 November and identifies AI contributions.
+- [x] All release tests and replay checks pass. Record the exact commit and environment.
+- [x] The public demo clearly distinguishes frozen examples from live NASA requests.
+- [x] The final source and demo links open without login in a signed-out browser.
+- [x] Actual retained data charts and current validation findings appear in the demo. No invented screenshot is used.
+- [x] The deck has no more than seven slides, or the video lasts no more than 30 seconds. English requirements are met.
+- [x] AI-generated media, if introduced later, have the indicators required by the guide. No NASA branding is generated or modified.
 
 ## Final form actions by the student
 

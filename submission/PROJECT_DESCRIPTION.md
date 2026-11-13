@@ -1,6 +1,6 @@
 # Climate Explorer project description
 
-Draft text for the published form fields. Replace link instructions with verified public URLs. Keep the eligibility and authorship statements accurate. These drafts do not mean the project is eligible or submitted.
+Draft text for the published form fields. Public source, browser demo and PDF links were verified on 13 November. Keep the eligibility and authorship statements accurate. These drafts do not mean the project is eligible or submitted.
 
 ## Project name
 
@@ -12,9 +12,9 @@ Climate Explorer helps students investigate historical temperature and rainfall 
 
 ## Link to project demo
 
-Prepared public PDF link: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf
+Verified public PDF link: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf
 
-The demo is a seven-page PDF, including the cover. Open the link without login after deployment before using it in the form.
+The demo is a seven-page PDF, including the cover. It opened in Incognito Chrome without login; recheck access before the final form.
 
 ## Link to final project
 
@@ -22,7 +22,7 @@ Repository: https://github.com/ArmanDamirchilou/climate-explorer
 
 Frozen browser demonstration: https://armandamirchilou.github.io/climate-explorer/
 
-The hosted demonstration uses retained examples. The repository provides the Python application for live NASA queries and instructions for reproducing calculations. Verify both links without login before using them in the form.
+The hosted demonstration uses retained examples. The repository provides the Python application for live NASA queries and instructions for reproducing calculations. Anonymous public access was verified on 13 November; recheck access before the final form.
 
 ## Detailed project description
 

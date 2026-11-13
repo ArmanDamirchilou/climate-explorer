@@ -9,3 +9,5 @@ The Tehran temperature, Tehran rainfall, Toronto temperature, and ten-year rainf
 `climate-explorer-analysis-v020-browser-known-hash-bug.json` preserves the export that exposed the JavaScript numeric-formatting hash bug. It is a regression record, not a current reusable result. Use the version 0.2.1 export instead.
 
 None of these files is an event submission or evidence of competition eligibility.
+
+Release 0.3.0 adds `climate-explorer-investigation-v030-browser.json`, an actual Chrome worksheet with explicitly labelled QA notes rather than a student usability result. Its nested analysis replays. `tehran-temperature-v030-http.json` is the current local HTTP result and matches the final runtime fingerprint. The browser example records an earlier build fingerprint; it is not silently rewritten.

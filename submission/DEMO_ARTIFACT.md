@@ -1,6 +1,6 @@
 # Demo artifact status
 
-The finished [seven-page PDF demonstration](climate-explorer-demo.pdf) uses actual retained project data. It is a PDF fallback, not a native Spaces presentation or editable PPTX. The public link must be checked after publication.
+The finished [seven-page PDF demonstration](climate-explorer-demo.pdf) uses actual retained project data. It is a PDF fallback, not a native Spaces presentation or editable PPTX. The public PDF opened in Incognito Chrome without login on 13 November. Anonymous file integrity also matches the recorded SHA-256.
 
 The Spaces presentation service created an empty Page on 13 November, then rejected the first cover edit with `artifact_preparation_failed`. It reported that no edit was saved and the failure was not retryable. A read-only inspection failed for the same reason. The empty Page is not a finished demo and must not be used as the submission link.
 
@@ -22,4 +22,4 @@ The source reads retained analysis and evaluation JSON. It does not retrieve new
 
 PDF authoring used the PDF skill because both permitted presentation runtimes failed. A service failure does not establish public access to the empty Spaces Page. Do not publish or cite that Page as the demo.
 
-Record the release commit and verify the final public PDF URL after publishing. The prepared URL is `https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf`; it becomes valid only after the site build includes the file.
+Verified public PDF: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf . It contains seven pages and matches the SHA-256 in demo-verification.json. The release tag v0.3.0 identifies the packaged source; runtime verification is recorded in ../evaluation/RELEASE_VERIFICATION.md.
