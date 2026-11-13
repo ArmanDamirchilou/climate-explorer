@@ -74,3 +74,5 @@ Historical hosting attempt, not the selected deployment: independent-host verifi
 
 
 The migration review subsequently found visible retired addresses inside the films and PDF. The producer corrected the films' link panels and rebuilt the seven-page PDF with the independent app URL and current atlas scope. Original sources remain in older tags. The new PDF's seven rendered pages were visually inspected, all text bounds and link annotations checked, and its hash updated. Final media receipts and deployment verification must identify the later corrected bytes instead of inheriting the initial pass above.
+
+Final producer verification: GitHub-only run43469525534 passes159 tests and publishes the restored source. Ordinary anonymous HTTP checks verify79 public files, all40fixedrecords,2guidedrecords and6,660atlascells, including the corrected distribution panels and current GitHub PDF. The final release evidence distinguishes these checks from earlier alternate-host attempts and documents the incomplete permanent-purge capability honestly.

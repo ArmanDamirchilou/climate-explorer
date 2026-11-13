@@ -24,4 +24,4 @@ No NASA credential, student account database or private notes are deployed. Opti
 
 An alternative Sites deployment was briefly prepared during the hosting review. The student explicitly selected GitHub-only publication. Current entry links and deployment instructions therefore use GitHub Pages. Historical audit and assistance records preserve actions that actually occurred; this document does not claim that an external copy has been deleted or made private.
 
-The current `evaluation/public-verification.json` temporarily retains the last verified GitHub Pages 1.3.0 result until the restored 1.3.1 deployment is independently checked. It is not evidence that the new deployment has already passed. Eligibility, authorship and competition submission remain separate matters.
+The current anonymous GitHub verification checks79 public files, forty fixed analyses, two guided records and all6,660 atlas cells. See evaluation/RELEASE_VERIFICATION.md for the tested commit, source fingerprint, completed Pages run and verification scope.

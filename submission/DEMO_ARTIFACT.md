@@ -25,3 +25,5 @@ The source reads retained analysis and evaluation JSON. It does not retrieve new
 PDF authoring used the PDF skill because both permitted presentation runtimes failed. A service failure does not establish public access to the empty Spaces Page. Do not publish or cite that Page as the demo.
 
 Public PDF URL: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf . The deployed file matches demo-verification.json in the anonymous public release check. Historical1.0 checks remain in their archived verification record; current 1.3.1 media and GitHub Pages checks belong to the current release record. The final release notes and tag identify the published source; runtime verification belongs in ../evaluation/RELEASE_VERIFICATION.md.
+
+The unused empty ChatGPT presentation Page was moved to Trash at the student's request. The final PDF and software are published through the dedicated GitHub repository and its Pages deployment. No ChatGPT-hosted artifact is the final demonstration link.
