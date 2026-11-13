@@ -34,3 +34,9 @@ Do not reduce this disclosure to “AI helped with coding.” Do not change the 
 ## Contribution log to complete honestly
 
 The student can add dated entries after performing the work. Useful entries name a calculation he explained, an issue he reproduced, a code change he made, an actual user task he observed, or a presentation he prepared. An entry should link to evidence where possible. No student contribution entries have been invented here.
+
+## 13 November: saved investigation upgrade
+
+The student requested continued development and a professional handoff to Farhad. The main Codex agent selected and integrated four fixed periods, saved-file import, optional browser storage, restoration, printing and release history. The science agent implemented and checked all forty fixed-window analyses. The engineering agent wrote and tested browser verification and storage handling, including malformed input and asynchronous saves. The submission agent prepared an actual-data video and review materials. These are AI contributions, not unrecorded student work.
+
+At the student's request, Git commits omit AI `Co-authored-by` trailers. Assistance remains documented here and in shared media and exports. No commits are backdated or rewritten to conceal assistance.

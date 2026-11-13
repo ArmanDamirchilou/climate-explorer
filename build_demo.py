@@ -10,6 +10,7 @@ from urllib.parse import parse_qs, urlsplit
 
 from climate import PRESETS, ROOT, analyze_saved, payload_hash
 from evaluation.replay import verify
+from window_analysis import FIXED_WINDOWS, analyze_window
 
 
 def write_json(path, value):
@@ -30,7 +31,7 @@ def build(output):
         for page in stage.glob("*.html"):
             text = page.read_text().replace("<head>", '<head>\n  <meta name="climate-mode" content="snapshot">', 1)
             page.write_text(text)
-        write_json(data / "config.json", {"presets": PRESETS, "first_year": 1981, "last_year": 2025, "mode": "snapshot"})
+        write_json(data / "config.json", {"presets": PRESETS, "first_year": 1981, "last_year": 2025, "mode": "snapshot", "windows": FIXED_WINDOWS})
         comparison = json.loads((ROOT / "evaluation" / "dataset-check.json").read_text())
         for key, place in PRESETS.items():
             saved = json.loads((ROOT / "evaluation" / "source-snapshots" / f"{key}-power.json").read_text())
@@ -51,6 +52,10 @@ def build(output):
                 result = analyze_saved(query, saved, "frozen NASA snapshot (public demonstration)")
                 verify(result)
                 write_json(data / f"{key}-{variable}.json", result)
+                for window in FIXED_WINDOWS[1:]:
+                    period_result = analyze_window(place, saved, variable, window["id"])
+                    verify(period_result)
+                    write_json(data / f"{key}-{window["id"]}-{variable}.json", period_result)
         for source, target in (("results.json", "validation.json"), ("dataset-check.json", "dataset-check.json"), ("science-audit.json", "science-audit.json")):
             write_json(data / target, json.loads((ROOT / "evaluation" / source).read_text()))
         shutil.copyfile(ROOT / "submission" / "climate-explorer-demo.pdf", stage / "climate-explorer-demo.pdf")
@@ -72,4 +77,4 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT / "dist")
     args = parser.parse_args()
-    print(f"Built {build(args.output)} public files. Ten analyses replayed without network access.")
+    print(f"Built {build(args.output)} public files. Forty analyses replayed without network access.")

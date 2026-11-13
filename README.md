@@ -1,10 +1,10 @@
 # Climate Explorer
 
-A reproducible investigation tool for testing historical climate claims with NASA data. Version 0.3.0 brings method, date, and source checks into one workflow. The proposed audience is students and teachers. Educational benefit has not yet been measured.
+A reproducible investigation tool for testing historical climate claims with NASA data. Version 0.4.0 extends the investigation with fixed date comparisons and saved evidence that can be reopened. The proposed audience is students and teachers. Educational benefit has not yet been measured.
 
 [Open the public demonstration](https://armandamirchilou.github.io/climate-explorer/) · [Research and decisions](RESEARCH.md) · [Seven-slide demo](https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf) · [Submission preparation](submission/README.md) · [AI assistance](AI_ASSISTANCE.md)
 
-The public demonstration contains ten frozen NASA analyses: temperature and precipitation for five locations, 1981–2025. It makes no live NASA request. The full Python app also supports custom coordinates and dates. Both export the exact displayed evidence for offline replay.
+The public demonstration contains forty frozen NASA analyses: temperature and precipitation for five locations across four fixed periods ending in 2025. It makes no live NASA request. The full Python app also supports custom coordinates and dates. Both export the exact displayed evidence for offline replay.
 
 ## Competition status
 
@@ -30,7 +30,7 @@ On macOS, `Start.command` creates the environment if needed and opens the local 
 
 No NASA account or API key is needed for this POWER endpoint. Other NASA services may require an account. NASA network failure falls back to a clearly labelled real Tehran snapshot or an older cached response when available.
 
-Verification: 54 tests pass locally and on GitHub Linux. All ten deployed analyses replay without authentication. See [the release evidence](evaluation/RELEASE_VERIFICATION.md).
+Verification for the preceding 0.3.0 release: 54 tests passed locally and on GitHub Linux. Current additions are checked before release; see the release evidence. See [the release evidence](evaluation/RELEASE_VERIFICATION.md).
 
 ## What works
 
@@ -131,8 +131,18 @@ NASA POWER data are provided by the NASA POWER Project. This is an independent s
 .venv/bin/python build_demo.py --output dist
 ```
 
-This build uses retained NASA records, checks their hashes against the frozen study, and replays all ten analyses without contacting NASA. The generated directory can be served by any static host. GitHub Actions tests the code and builds the demonstration before publishing it to GitHub Pages. Pull requests run checks without deploying. The workflow has no NASA key or application secret.
+This build uses retained NASA records, checks their hashes against the frozen study, and replays all forty analyses without contacting NASA. The generated directory can be served by any static host. GitHub Actions tests the code and builds the demonstration before publishing it to GitHub Pages. Pull requests run checks without deploying. The workflow has no NASA key or application secret.
 
-An optional investigation worksheet saves the user's question, interpretation, uncertainty, readable evidence summary and exact displayed analysis. Notes stay in the current tab until downloaded. CSV exports also use the displayed record instead of fetching a potentially different response.
+An optional investigation worksheet saves the user's question, interpretation, uncertainty, readable evidence summary and exact displayed analysis. Notes stay in the current tab unless optional saving in this browser is enabled. Saved copies can be restored or cleared. CSV exports also use the displayed record instead of fetching a potentially different response.
 
 Original code and documentation use [Apache-2.0](LICENSE). NASA data and installed dependencies retain their own terms; see [third-party notices](THIRD_PARTY_NOTICES.md). For development, use [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Reopen and check an investigation
+
+Use **Open saved evidence** to select an analysis or investigation JSON from version 0.2.1 or later, up to 2 MiB. The browser verifies the recorded raw-source hash, monthly and annual aggregation, OLS fitted values, and slope sensitivity calculations. It does not recompute uncertainty intervals, p-values, residual correlation or mean bands. The Python replay remains the full numerical check. Imported text is displayed as text and is not evaluated as markup or instructions. Nothing is uploaded.
+
+Choose **Keep my latest investigation in this browser** to save the latest evidence and notes on this device. Saving is optional and off by default. Use **Restore saved investigation** after reload. Turning saving off or choosing **Clear local copy** removes that stored copy. This does not delete downloaded files. Anyone using this browser profile may be able to read the saved notes.
+
+The public demo offers 1981–2025, 1991–2025, 2001–2025 and 2011–2025. All four rates appear together. Changing dates changes the question, so a different slope does not prove acceleration. See [all fixed-window results](evaluation/WINDOW_ANALYSIS.md). The source comparison remains available only for its matched 1981–2025 record.
+
+The downloadable investigation format is **Climate Explorer investigation 1**. It retains the nested analysis for Python replay. Version-by-version additions, changes, fixes and limits are in [CHANGELOG.md](CHANGELOG.md).

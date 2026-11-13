@@ -1,10 +1,10 @@
 {
-  "verified_utc": "2026-11-13T06:56:53.472700+00:00",
+  "verified_utc": "2026-11-13T07:47:08.476879+00:00",
   "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
   "python": "3.14.7",
   "unit_and_http_tests": {
-    "count": 53,
-    "passed": 53,
+    "count": 81,
+    "passed": 81,
     "skipped": 0,
     "environments": [
       "existing project virtual environment",
@@ -67,5 +67,23 @@
       "actual JavaScript report link rewriting for snapshot and local modes",
       "no local user paths, private-key header, or GitHub token prefix in built text files"
     ]
+  },
+  "workspace_checks": {
+    "tests": 20,
+    "scope": "Actual workspace.js and app.js executed with Node Web Crypto, blocked network and DOM-free workspace module; app integration uses a minimal event/DOM stub",
+    "checks": [
+      "all ten original NASA snapshot analyses import",
+      "raw payload hash matches Python Unicode/numeric serialization fixture",
+      "annual/monthly exclusions and OLS fit recompute",
+      "Theil-Sen, one-year influence and fixed-period slopes recompute",
+      "size, nesting, unsafe keys, finite numbers and metadata schema reject invalid files",
+      "notes preserve plain text at exact interface limits 2000/4000/2000",
+      "storage denial and unavailable Web Crypto report actionable errors",
+      "older asynchronous saves and saves cleared while pending do not overwrite state",
+      "actual app delayed file cannot replace newer analysis",
+      "actual app pending configuration success or failure cannot overwrite imported state",
+      "actual app clear keeps pending save from restoring data or changing cleared status"
+    ],
+    "limits": "Browser import does not recompute confidence intervals, p-values, residual correlation or mean bands. A matching hash does not authenticate NASA or validate user notes. Full numerical replay remains the Python script."
   }
 }

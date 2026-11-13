@@ -16,7 +16,7 @@ from evaluation.replay import verify
 
 def check(base_url):
     def fetch(relative):
-        request = Request(base_url.rstrip("/") + "/" + relative, headers={"User-Agent": "ClimateExplorer-release-check/0.3.0"})
+        request = Request(base_url.rstrip("/") + "/" + relative, headers={"User-Agent": "ClimateExplorer-release-check/0.4.0"})
         try:
             with urlopen(request, timeout=30) as response:
                 return response.read()
@@ -40,8 +40,8 @@ def check(base_url):
             if record["analysis"]["code_sha256"] != CODE_SHA256:
                 raise ValueError(f"Deployed code fingerprint differs from the local source: {relative}")
             analyses.append({"file": relative, "years_replayed": verify(record)})
-    if len(analyses) != 10:
-        raise ValueError("Expected ten deployed frozen analyses.")
+    if len(analyses) != 40:
+        raise ValueError("Expected forty deployed frozen analyses.")
     pdf = bodies.get("climate-explorer-demo.pdf", b"")
     if not pdf.startswith(b"%PDF-"):
         raise ValueError("The public demonstration PDF is missing or invalid.")
@@ -59,4 +59,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
     result = check(args.url)
     args.output.write_text(json.dumps(result, indent=2) + "\n")
-    print(f"Verified {result['files_verified_against_manifest']} public files and replayed ten analyses. No authentication used.")
+    print(f"Verified {result['files_verified_against_manifest']} public files and replayed forty analyses. No authentication used.")

@@ -11,6 +11,8 @@ let currentName;
 let currentQuery;
 let activeRequest;
 let datasetComparison;
+let importSequence = 0;
+let windowRequest;
 
 function apiPath(name) {
   return SNAPSHOT_MODE ? `demo/${name}.json` : `api/${name}`;
@@ -62,6 +64,7 @@ function getQuery() {
 
 async function explore(event) {
   if (event) event.preventDefault();
+  ++importSequence;
   $('end').setCustomValidity('');
   if (Number($('end').value) - Number($('start').value) < 9) {
     $('end').setCustomValidity('Choose a period of at least 10 complete years.');
@@ -74,13 +77,13 @@ async function explore(event) {
   activeRequest = request;
   const query = getQuery();
   $('status').hidden = false;
-  $('status').textContent = `Loading NASA data for ${query.place.name.replace(', Iran', '')}… This can take up to 40 seconds.`;
+  $('status').textContent = `Loading ${SNAPSHOT_MODE ? 'frozen' : 'NASA'} data for ${query.place.name.replace(', Iran', '')}… This can take up to 40 seconds.`;
   $('error').hidden = true;
   $('results').hidden = true;
   $('results').setAttribute('aria-busy', 'true');
   $('explore-button').disabled = true;
   try {
-    const path = SNAPSHOT_MODE ? `demo/${$('location').value}-${query.params.get('variable')}.json` : `api/climate?${query.params}`;
+    const path = SNAPSHOT_MODE ? `demo/${$('location').value}${$('window').value === 'full45' ? '' : `-${$('window').value}`}-${query.params.get('variable')}.json` : `api/climate?${query.params}`;
     const response = await fetch(path, { signal: request.signal });
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || 'The data service returned an error. Please try again.');
@@ -90,6 +93,8 @@ async function explore(event) {
     currentQuery = query.params.toString();
     $('results').hidden = false;
     render(result, query.place.name);
+    $('import-status').hidden = true;
+    persistWork();
     $('status').hidden = true;
     $('results').hidden = false;
     $('results').setAttribute('aria-busy', 'false');
@@ -97,7 +102,8 @@ async function explore(event) {
     if (error.name === 'AbortError') return;
     $('status').hidden = true;
     $('error').hidden = false;
-    $('error-text').textContent = error.message === 'Failed to fetch' ? 'The local app is not reachable. Restart the server, then try again.' : error.message;
+    $('error-text').textContent = error.message === 'Failed to fetch' ? SNAPSHOT_MODE ? 'The saved demonstration could not be reached. Check your connection and try again.' : 'The local app is not reachable. Restart the server, then try again.' : error.message;
+    $('results').setAttribute('aria-busy', 'false');
   } finally {
     if (activeRequest === request) $('explore-button').disabled = false;
   }
@@ -153,6 +159,7 @@ function render(result, name) {
   }
   $('table-body').replaceChildren(fragment);
   renderDatasetComparison();
+  renderWindows();
 }
 
 function matchingComparison() {
@@ -366,6 +373,127 @@ function download(contents, type, filename) {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
+function readNotes() {
+  return { question: $('investigation-question').value, interpretation: $('investigation-interpretation').value, remaining_uncertainty: $('investigation-uncertainty').value };
+}
+
+function updateStorageControls() {
+  const available = ClimateWorkspace.storageAvailable();
+  $('save-locally').disabled = !available;
+  $('restore-work').disabled = !available;
+  $('clear-work').disabled = !available;
+  if (!available) $('workspace-status').textContent = 'Browser storage is unavailable. You can still import and download investigation files.';
+}
+
+async function persistWork() {
+  if (!$('save-locally').checked || !currentResult) return;
+  try {
+    const saved = await ClimateWorkspace.save(currentResult, readNotes(), currentName);
+    if (saved.superseded) return;
+    $('workspace-status').textContent = 'Latest investigation saved on this device. It is not uploaded.';
+  } catch (error) {
+    $('workspace-status').textContent = `Local saving failed: ${error.message}. Download your investigation instead.`;
+  }
+}
+
+async function openInvestigation(text, origin, sequence = ++importSequence) {
+  const saved = await ClimateWorkspace.importText(text);
+  if (sequence !== importSequence) return;
+  if (activeRequest) { activeRequest.abort(); activeRequest = null; }
+  $('explore-button').disabled = false;
+  currentResult = saved.analysis;
+  currentName = saved.locationName;
+  currentQuery = null;
+  for (const [id, key] of [['investigation-question','question'], ['investigation-interpretation','interpretation'], ['investigation-uncertainty','remaining_uncertainty']]) $(id).value = saved.notes[key];
+  $('status').hidden = true; $('error').hidden = true;
+  $('results').hidden = false; $('results').setAttribute('aria-busy', 'false');
+  render(currentResult, currentName);
+  $('import-status').hidden = false;
+  $('import-status').textContent = `${origin}. ${saved.verification.summary} ${saved.verification.limitations} Imported notes are user text, not verified findings. The form remains available to start another analysis.`;
+  $('workspace-status').textContent = `Opened saved evidence for ${currentName}. No file was uploaded.`;
+  persistWork();
+}
+
+async function renderWindows() {
+  const result = currentResult;
+  if (!result || !SNAPSHOT_MODE || !config?.windows) { $('window-section').hidden = true; return; }
+  const key = Object.keys(config.presets).find(key => {
+    const p = config.presets[key];
+    return Math.abs(p.latitude-result.location.latitude)<.00001 && Math.abs(p.longitude-result.location.longitude)<.00001;
+  });
+  if (!key) { $('window-section').hidden = true; return; }
+  if (windowRequest) windowRequest.abort();
+  const request = new AbortController(); windowRequest = request;
+  try {
+    const records = await Promise.all(config.windows.map(async period => {
+      const suffix = period.id === 'full45' ? '' : `-${period.id}`;
+      const response = await fetch(`demo/${key}${suffix}-${result.variable}.json`, {signal: request.signal});
+      if (!response.ok) throw new Error('Period comparison unavailable.');
+      return {period, data: await response.json()};
+    }));
+    if (currentResult !== result || windowRequest !== request) return;
+    if (records.some(row => row.data.provenance.payload_sha256 !== result.provenance.payload_sha256)) { $('window-section').hidden = true; return; }
+    $('window-caption').textContent = `${currentName}. Rates in ${result.metadata.unit} per decade. Highlight: displayed period.`;
+    $('window-body').replaceChildren(...records.map(({period,data}) => {
+      const tr = document.createElement('tr');
+      if (data.period.start === result.period.start && data.period.end === result.period.end) tr.setAttribute('aria-current','true');
+      for (const value of [`${period.start}–${period.end}`, data.trend.years, signed(data.trend.slope_per_decade,3)]) {
+        const td = document.createElement('td'); td.textContent = value; tr.append(td);
+      }
+      return tr;
+    }));
+    $('window-section').hidden = false;
+  } catch (error) {
+    if (currentResult === result && error.name !== 'AbortError') $('window-section').hidden = true;
+  }
+}
+
+$('window').addEventListener('change', () => {
+  const period = config.windows.find(row => row.id === $('window').value);
+  $('start').value = period.start; $('end').value = period.end;
+});
+$('import-file').addEventListener('change', async event => {
+  const file = event.target.files[0];
+  if (!file) return;
+  const sequence = ++importSequence;
+  try {
+    if (file.size > 2*1024*1024) throw new Error('Choose a JSON file no larger than 2 MiB.');
+    await openInvestigation(await file.text(), 'Imported evidence', sequence);
+  } catch (error) { if (sequence === importSequence) $('workspace-status').textContent = `Could not open file: ${error.message}`; }
+  finally { event.target.value = ''; }
+});
+$('restore-work').addEventListener('click', async () => {
+  const sequence = ++importSequence;
+  try {
+    const saved = await ClimateWorkspace.restore();
+    if (sequence !== importSequence) return;
+    if (!saved) { $('workspace-status').textContent = 'No investigation is saved in this browser. Import a downloaded JSON file instead.'; return; }
+    await openInvestigation(JSON.stringify({format:'Climate Explorer investigation 1', analysis:{...saved.analysis,location_name:saved.locationName},notes:saved.notes}), 'Restored local evidence', sequence);
+  } catch (error) { if (sequence === importSequence) $('workspace-status').textContent = `Could not restore local evidence: ${error.message}`; }
+});
+$('clear-work').addEventListener('click', () => {
+  ++importSequence;
+  $('save-locally').checked = false;
+  try { ClimateWorkspace.clear(); $('workspace-status').textContent = 'Local saved copy cleared. Current tab and downloaded files remain available.'; }
+  catch (error) { $('workspace-status').textContent = `Could not clear browser storage: ${error.message}`; }
+});
+$('save-locally').addEventListener('change', () => {
+  if ($('save-locally').checked) persistWork();
+  else {
+    try { ClimateWorkspace.clear(); $('workspace-status').textContent = 'Local saving is off. The saved browser copy was cleared.'; }
+    catch (error) { $('workspace-status').textContent = `Local saving is off, but the saved copy could not be cleared: ${error.message}`; }
+  }
+});
+for (const id of ['investigation-question','investigation-interpretation','investigation-uncertainty']) $(id).addEventListener('input', persistWork);
+window.addEventListener('beforeprint', () => {
+  for (const id of ['investigation-question','investigation-interpretation','investigation-uncertainty']) {
+    let paragraph = document.getElementById(`${id}-print`);
+    if (!paragraph) { paragraph = document.createElement('p'); paragraph.id = `${id}-print`; paragraph.className = 'printed-note'; $(id).after(paragraph); }
+    paragraph.textContent = $(id).value || '(No note entered)';
+  }
+});
+$('print-investigation').addEventListener('click', () => { if (currentResult) window.print(); });
+
 $('explore-form').addEventListener('submit', explore);
 $('retry').addEventListener('click', () => config ? explore() : initialize());
 $('location').addEventListener('change', updateLocation);
@@ -419,6 +547,7 @@ $('download-chart').addEventListener('click', () => {
 });
 
 async function initialize() {
+  const sequence = importSequence;
   try {
     const response = await fetch(apiPath('config'));
     if (!response.ok) throw new Error('The app configuration could not be loaded. Restart the local server and refresh.');
@@ -430,16 +559,19 @@ async function initialize() {
       $('demo-notice').hidden = false;
       $('location').querySelector('option[value="custom"]').remove();
       $('start').value = config.first_year;
+      $('window-control').hidden = false;
       $('start').disabled = true; $('end').disabled = true;
-      document.querySelector('.field-help').textContent = 'This public demonstration uses the fixed period 1981–2025. The method section still compares fixed five-year date changes.';
+      document.querySelector('.field-help').textContent = 'Choose one of four fixed periods ending in 2025. Keep the longest period as your starting point; short records may tell a different story.';
     }
     fetch(apiPath('dataset-check')).then(response => {
       if (!response.ok) throw new Error('Source comparison unavailable.');
       return response.json();
     }).then(result => { datasetComparison = result; renderDatasetComparison(); }).catch(() => { datasetComparison = null; renderDatasetComparison(); });
     updateLocation();
-    await explore();
+    updateStorageControls();
+    if (sequence === importSequence) await explore();
   } catch (error) {
+    if (sequence !== importSequence) return;
     $('status').hidden = true; $('error').hidden = false;
     $('error-text').textContent = error.message;
   }

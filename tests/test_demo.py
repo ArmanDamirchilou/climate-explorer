@@ -45,8 +45,7 @@ class DemoBuildTests(unittest.TestCase):
         cls.temporary.cleanup()
 
     def test_ten_frozen_analyses_replay_without_network(self):
-        records = sorted((self.output / "demo").glob("*-temperature.json"))
-        records += sorted((self.output / "demo").glob("*-rainfall.json"))
+        records = [self.output / "demo" / f"{key}-{variable}.json" for key in PRESETS for variable in ["temperature", "rainfall"]]
         self.assertEqual(len(records), 10)
         with patch("socket.socket.connect", side_effect=AssertionError("Replay must not use the network")):
             for path in records:
@@ -55,6 +54,19 @@ class DemoBuildTests(unittest.TestCase):
                     self.assertEqual(verify(record), 45)
                     self.assertEqual(record["period"], {"start": 1981, "end": 2025})
                     self.assertIn("frozen NASA snapshot", record["provenance"]["delivery"])
+
+    def test_all_fixed_periods_are_built_and_replay(self):
+        config = json.loads((self.output / "demo/config.json").read_text())
+        self.assertEqual([row["start"] for row in config["windows"]], [1981, 1991, 2001, 2011])
+        for key in PRESETS:
+            for variable in ["temperature", "rainfall"]:
+                for window in config["windows"]:
+                    suffix = "" if window["id"] == "full45" else f"-{window['id']}"
+                    path = self.output / "demo" / f"{key}{suffix}-{variable}.json"
+                    with self.subTest(path=path.name):
+                        record = json.loads(path.read_text())
+                        self.assertEqual(record["period"], {"start": window["start"], "end": window["end"]})
+                        self.assertEqual(verify(record), window["end"]-window["start"]+1)
 
     def test_source_fixtures_match_previously_recorded_hashes(self):
         rows = json.loads((ROOT / "evaluation/dataset-check.json").read_text())["rows"]

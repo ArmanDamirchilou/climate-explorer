@@ -1,0 +1,2626 @@
+{
+  "generated_utc": "2026-11-13T07:39:32.356918+00:00",
+  "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+  "rows": [
+    {
+      "place_id": "tehran",
+      "name": "Tehran, Iran",
+      "variable": "temperature",
+      "rate_unit": "\u00b0C per decade",
+      "source": {
+        "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=51.389&latitude=35.6892&format=JSON&start=1981&end=2025",
+        "fetched_at": "2026-11-11T14:22:17.905516+00:00",
+        "payload_sha256": "debc7b7a881f8443990fdb1efa9323fcae9283eb0cbb227a5025291e56bc3d2c"
+      },
+      "analysis_settings": {
+        "version": "0.2.1",
+        "confidence_level": 0.95,
+        "hac_kernel": "bartlett",
+        "hac_lag_rule": "floor(4*(n/100)^(2/9))",
+        "hac_fixed_lags": [
+          1,
+          5
+        ],
+        "hac_small_sample_correction": true,
+        "hac_critical_distribution": "Student t with n-2 degrees of freedom",
+        "theil_sen": "Median of pairwise slopes; slope only, no dependence-adjusted interval",
+        "period_checks": "Full period; omit first 5 calendar years; omit last 5; omit both ends",
+        "minimum_complete_years_per_check": 10,
+        "minimum_years_for_long_record_note": 30,
+        "interpretation": "Conditional sensitivity checks on shared data, not independent confirmation or a joint confidence interval"
+      },
+      "windows": [
+        {
+          "id": "full45",
+          "start": 1981,
+          "end": 2025,
+          "label": "1981\u20132025 \u00b7 45 years",
+          "requested_years": 45,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 45,
+          "excluded_years": [],
+          "slope_per_decade": 0.5035205745737874,
+          "ordinary_ci95_per_decade": [
+            0.34705042234928485,
+            0.6599907267982899
+          ],
+          "theil_sen_slope_per_decade": 0.5102147850681551,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.5035205745737883,
+              "ci95_per_decade": [
+                0.34705042234928574,
+                0.659990726798291
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 0.5035205745737883,
+              "ci95_per_decade": [
+                0.3514623741859475,
+                0.6555787749616292
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.5035205745737883,
+              "ci95_per_decade": [
+                0.3576690183085398,
+                0.649372130839037
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.5035205745737883,
+              "ci95_per_decade": [
+                0.34582463822826065,
+                0.661216510919316
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent35",
+          "start": 1991,
+          "end": 2025,
+          "label": "1991\u20132025 \u00b7 35 years",
+          "requested_years": 35,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 35,
+          "excluded_years": [],
+          "slope_per_decade": 0.36573069823782495,
+          "ordinary_ci95_per_decade": [
+            0.1305575511479899,
+            0.60090384532766
+          ],
+          "theil_sen_slope_per_decade": 0.3629919904184433,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.36573069823782556,
+              "ci95_per_decade": [
+                0.13055755114799047,
+                0.6009038453276606
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 0.36573069823782556,
+              "ci95_per_decade": [
+                0.05445327925128758,
+                0.6770081172243636
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.36573069823782556,
+              "ci95_per_decade": [
+                0.07476277210497773,
+                0.6566986243706734
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.36573069823782556,
+              "ci95_per_decade": [
+                0.04239260291157322,
+                0.689068793564078
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent25",
+          "start": 2001,
+          "end": 2025,
+          "label": "2001\u20132025 \u00b7 25 years",
+          "requested_years": 25,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 25,
+          "excluded_years": [],
+          "slope_per_decade": 0.24693793754714422,
+          "ordinary_ci95_per_decade": [
+            -0.10441456268453449,
+            0.598290437778823
+          ],
+          "theil_sen_slope_per_decade": 0.3061746970415265,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.24693793754714505,
+              "ci95_per_decade": [
+                -0.10441456268453359,
+                0.5982904377788236
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": 0.24693793754714505,
+              "ci95_per_decade": [
+                -0.1318695470716076,
+                0.6257454221658977
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.24693793754714505,
+              "ci95_per_decade": [
+                -0.13054417358554316,
+                0.6244200486798333
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.24693793754714505,
+              "ci95_per_decade": [
+                -0.1465336693878836,
+                0.6404095444821736
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "recent15",
+          "start": 2011,
+          "end": 2025,
+          "label": "2011\u20132025 \u00b7 15 years",
+          "requested_years": 15,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 15,
+          "excluded_years": [],
+          "slope_per_decade": 1.0125498166030376,
+          "ordinary_ci95_per_decade": [
+            0.37904093419520624,
+            1.6460586990108688
+          ],
+          "theil_sen_slope_per_decade": 1.031975019516003,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 1.0125498166030371,
+              "ci95_per_decade": [
+                0.37904093419520557,
+                1.6460586990108688
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": 1.0125498166030371,
+              "ci95_per_decade": [
+                0.6348385100179657,
+                1.3902611231881088
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 1.0125498166030371,
+              "ci95_per_decade": [
+                0.6019174250272668,
+                1.4231822081788077
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 1.0125498166030371,
+              "ci95_per_decade": [
+                0.6975485024939367,
+                1.3275511307121377
+              ],
+              "evidence": "positive"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "place_id": "tehran",
+      "name": "Tehran, Iran",
+      "variable": "rainfall",
+      "rate_unit": "mm/year per decade",
+      "source": {
+        "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=51.389&latitude=35.6892&format=JSON&start=1981&end=2025",
+        "fetched_at": "2026-11-11T14:22:17.905516+00:00",
+        "payload_sha256": "debc7b7a881f8443990fdb1efa9323fcae9283eb0cbb227a5025291e56bc3d2c"
+      },
+      "analysis_settings": {
+        "version": "0.2.1",
+        "confidence_level": 0.95,
+        "hac_kernel": "bartlett",
+        "hac_lag_rule": "floor(4*(n/100)^(2/9))",
+        "hac_fixed_lags": [
+          1,
+          5
+        ],
+        "hac_small_sample_correction": true,
+        "hac_critical_distribution": "Student t with n-2 degrees of freedom",
+        "theil_sen": "Median of pairwise slopes; slope only, no dependence-adjusted interval",
+        "period_checks": "Full period; omit first 5 calendar years; omit last 5; omit both ends",
+        "minimum_complete_years_per_check": 10,
+        "minimum_years_for_long_record_note": 30,
+        "interpretation": "Conditional sensitivity checks on shared data, not independent confirmation or a joint confidence interval"
+      },
+      "windows": [
+        {
+          "id": "full45",
+          "start": 1981,
+          "end": 2025,
+          "label": "1981\u20132025 \u00b7 45 years",
+          "requested_years": 45,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 45,
+          "excluded_years": [],
+          "slope_per_decade": 36.901133069828724,
+          "ordinary_ci95_per_decade": [
+            17.318071961678008,
+            56.48419417797943
+          ],
+          "theil_sen_slope_per_decade": 35.518526785714286,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 36.90113306982873,
+              "ci95_per_decade": [
+                17.318071961678015,
+                56.48419417797945
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 36.90113306982873,
+              "ci95_per_decade": [
+                11.586217408193434,
+                62.21604873146403
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 36.90113306982873,
+              "ci95_per_decade": [
+                13.050156658996205,
+                60.752109480661254
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 36.90113306982873,
+              "ci95_per_decade": [
+                10.243639172600712,
+                63.558626967056746
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent35",
+          "start": 1991,
+          "end": 2025,
+          "label": "1991\u20132025 \u00b7 35 years",
+          "requested_years": 35,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 35,
+          "excluded_years": [],
+          "slope_per_decade": 60.6744537815126,
+          "ordinary_ci95_per_decade": [
+            32.15854651737429,
+            89.19036104565092
+          ],
+          "theil_sen_slope_per_decade": 60.95454545454547,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 60.67445378151257,
+              "ci95_per_decade": [
+                32.15854651737427,
+                89.19036104565087
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 60.67445378151257,
+              "ci95_per_decade": [
+                23.10066239876441,
+                98.24824516426074
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 60.67445378151257,
+              "ci95_per_decade": [
+                25.791620259295854,
+                95.55728730372928
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 60.67445378151257,
+              "ci95_per_decade": [
+                22.542154098001678,
+                98.80675346502346
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent25",
+          "start": 2001,
+          "end": 2025,
+          "label": "2001\u20132025 \u00b7 25 years",
+          "requested_years": 25,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 25,
+          "excluded_years": [],
+          "slope_per_decade": 47.75146153846153,
+          "ordinary_ci95_per_decade": [
+            -1.5804554078244504,
+            97.08337848474753
+          ],
+          "theil_sen_slope_per_decade": 52.2638888888889,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 47.75146153846155,
+              "ci95_per_decade": [
+                -1.5804554078244148,
+                97.08337848474753
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": 47.75146153846155,
+              "ci95_per_decade": [
+                -11.980319030458517,
+                107.48324210738161
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 47.75146153846155,
+              "ci95_per_decade": [
+                -11.033672514287618,
+                106.5365955912107
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 47.75146153846155,
+              "ci95_per_decade": [
+                -14.969841588979573,
+                110.47276466590267
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "recent15",
+          "start": 2011,
+          "end": 2025,
+          "label": "2011\u20132025 \u00b7 15 years",
+          "requested_years": 15,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 15,
+          "excluded_years": [],
+          "slope_per_decade": -52.83214285714284,
+          "ordinary_ci95_per_decade": [
+            -172.27585386960618,
+            66.61156815532051
+          ],
+          "theil_sen_slope_per_decade": -29.014285714285716,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": -52.832142857142856,
+              "ci95_per_decade": [
+                -172.27585386960618,
+                66.61156815532051
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": -52.832142857142856,
+              "ci95_per_decade": [
+                -159.79731643592186,
+                54.133030721636146
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": -52.832142857142856,
+              "ci95_per_decade": [
+                -169.44443839833065,
+                63.78015268404491
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": -52.832142857142856,
+              "ci95_per_decade": [
+                -151.4381504529185,
+                45.773864738632795
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "place_id": "ankara",
+      "name": "Ankara, Turkey",
+      "variable": "temperature",
+      "rate_unit": "\u00b0C per decade",
+      "source": {
+        "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=32.8597&latitude=39.9334&format=JSON&start=1981&end=2025",
+        "fetched_at": "2026-11-11T19:00:01.590937+00:00",
+        "payload_sha256": "cf87dfe17e95534bd86d451e7cf43dd2a4b165636623cc086a3aaef46266f648"
+      },
+      "analysis_settings": {
+        "version": "0.2.1",
+        "confidence_level": 0.95,
+        "hac_kernel": "bartlett",
+        "hac_lag_rule": "floor(4*(n/100)^(2/9))",
+        "hac_fixed_lags": [
+          1,
+          5
+        ],
+        "hac_small_sample_correction": true,
+        "hac_critical_distribution": "Student t with n-2 degrees of freedom",
+        "theil_sen": "Median of pairwise slopes; slope only, no dependence-adjusted interval",
+        "period_checks": "Full period; omit first 5 calendar years; omit last 5; omit both ends",
+        "minimum_complete_years_per_check": 10,
+        "minimum_years_for_long_record_note": 30,
+        "interpretation": "Conditional sensitivity checks on shared data, not independent confirmation or a joint confidence interval"
+      },
+      "windows": [
+        {
+          "id": "full45",
+          "start": 1981,
+          "end": 2025,
+          "label": "1981\u20132025 \u00b7 45 years",
+          "requested_years": 45,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 45,
+          "excluded_years": [],
+          "slope_per_decade": 0.49536692706461016,
+          "ordinary_ci95_per_decade": [
+            0.3379436979609665,
+            0.6527901561682538
+          ],
+          "theil_sen_slope_per_decade": 0.4694384439761152,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.4953669270646105,
+              "ci95_per_decade": [
+                0.33794369796096685,
+                0.6527901561682542
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 0.4953669270646105,
+              "ci95_per_decade": [
+                0.34216705377082574,
+                0.6485668003583953
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.4953669270646105,
+              "ci95_per_decade": [
+                0.32712442761660165,
+                0.6636094265126193
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.4953669270646105,
+              "ci95_per_decade": [
+                0.3470379247921867,
+                0.6436959293370342
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent35",
+          "start": 1991,
+          "end": 2025,
+          "label": "1991\u20132025 \u00b7 35 years",
+          "requested_years": 35,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 35,
+          "excluded_years": [],
+          "slope_per_decade": 0.6442845052685348,
+          "ordinary_ci95_per_decade": [
+            0.4051029260428284,
+            0.8834660844942411
+          ],
+          "theil_sen_slope_per_decade": 0.6208032038326223,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.6442845052685342,
+              "ci95_per_decade": [
+                0.4051029260428279,
+                0.8834660844942405
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 0.6442845052685342,
+              "ci95_per_decade": [
+                0.4396200565996683,
+                0.8489489539374001
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.6442845052685342,
+              "ci95_per_decade": [
+                0.39059834554558903,
+                0.8979706649914794
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.6442845052685342,
+              "ci95_per_decade": [
+                0.4640525498995579,
+                0.8245164606375105
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent25",
+          "start": 2001,
+          "end": 2025,
+          "label": "2001\u20132025 \u00b7 25 years",
+          "requested_years": 25,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 25,
+          "excluded_years": [],
+          "slope_per_decade": 0.7124622962335969,
+          "ordinary_ci95_per_decade": [
+            0.32145822922057454,
+            1.1034663632466193
+          ],
+          "theil_sen_slope_per_decade": 0.6625084814410838,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.7124622962335965,
+              "ci95_per_decade": [
+                0.32145822922057427,
+                1.1034663632466188
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": 0.7124622962335965,
+              "ci95_per_decade": [
+                0.32449384196856434,
+                1.1004307504986286
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.7124622962335965,
+              "ci95_per_decade": [
+                0.30955656702254264,
+                1.1153680254446503
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.7124622962335965,
+              "ci95_per_decade": [
+                0.4215027778467274,
+                1.0034218146204656
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent15",
+          "start": 2011,
+          "end": 2025,
+          "label": "2011\u20132025 \u00b7 15 years",
+          "requested_years": 15,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 15,
+          "excluded_years": [],
+          "slope_per_decade": 1.460266043223937,
+          "ordinary_ci95_per_decade": [
+            0.6207783928434831,
+            2.2997536936043907
+          ],
+          "theil_sen_slope_per_decade": 1.4649665739605107,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 1.4602660432239354,
+              "ci95_per_decade": [
+                0.6207783928434818,
+                2.299753693604389
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": 1.4602660432239354,
+              "ci95_per_decade": [
+                0.5990555530144492,
+                2.3214765334334215
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 1.4602660432239354,
+              "ci95_per_decade": [
+                0.5511947710799014,
+                2.3693373153679693
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 1.4602660432239354,
+              "ci95_per_decade": [
+                0.8599273009294955,
+                2.0606047855183753
+              ],
+              "evidence": "positive"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "place_id": "ankara",
+      "name": "Ankara, Turkey",
+      "variable": "rainfall",
+      "rate_unit": "mm/year per decade",
+      "source": {
+        "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=32.8597&latitude=39.9334&format=JSON&start=1981&end=2025",
+        "fetched_at": "2026-11-11T19:00:01.590937+00:00",
+        "payload_sha256": "cf87dfe17e95534bd86d451e7cf43dd2a4b165636623cc086a3aaef46266f648"
+      },
+      "analysis_settings": {
+        "version": "0.2.1",
+        "confidence_level": 0.95,
+        "hac_kernel": "bartlett",
+        "hac_lag_rule": "floor(4*(n/100)^(2/9))",
+        "hac_fixed_lags": [
+          1,
+          5
+        ],
+        "hac_small_sample_correction": true,
+        "hac_critical_distribution": "Student t with n-2 degrees of freedom",
+        "theil_sen": "Median of pairwise slopes; slope only, no dependence-adjusted interval",
+        "period_checks": "Full period; omit first 5 calendar years; omit last 5; omit both ends",
+        "minimum_complete_years_per_check": 10,
+        "minimum_years_for_long_record_note": 30,
+        "interpretation": "Conditional sensitivity checks on shared data, not independent confirmation or a joint confidence interval"
+      },
+      "windows": [
+        {
+          "id": "full45",
+          "start": 1981,
+          "end": 2025,
+          "label": "1981\u20132025 \u00b7 45 years",
+          "requested_years": 45,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 45,
+          "excluded_years": [],
+          "slope_per_decade": -2.2798155467720687,
+          "ordinary_ci95_per_decade": [
+            -20.44790628052194,
+            15.888275186977804
+          ],
+          "theil_sen_slope_per_decade": -4.733923076923086,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": -2.279815546772066,
+              "ci95_per_decade": [
+                -20.447906280521945,
+                15.888275186977815
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": -2.279815546772066,
+              "ci95_per_decade": [
+                -21.437922553204505,
+                16.87829145966037
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": -2.279815546772066,
+              "ci95_per_decade": [
+                -20.679005787047608,
+                16.119374693503477
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": -2.279815546772066,
+              "ci95_per_decade": [
+                -22.534922932703054,
+                17.97529183915892
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "recent35",
+          "start": 1991,
+          "end": 2025,
+          "label": "1991\u20132025 \u00b7 35 years",
+          "requested_years": 35,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 35,
+          "excluded_years": [],
+          "slope_per_decade": 0.7932773109243692,
+          "ordinary_ci95_per_decade": [
+            -27.976258458750788,
+            29.56281308059953
+          ],
+          "theil_sen_slope_per_decade": -0.3423076923077089,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.7932773109243518,
+              "ci95_per_decade": [
+                -27.976258458750802,
+                29.562813080599504
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 0.7932773109243518,
+              "ci95_per_decade": [
+                -33.31994479671611,
+                34.90649941856481
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.7932773109243518,
+              "ci95_per_decade": [
+                -30.064883724252237,
+                31.65143834610094
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.7932773109243518,
+              "ci95_per_decade": [
+                -34.04565855852156,
+                35.63221318037026
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "recent25",
+          "start": 2001,
+          "end": 2025,
+          "label": "2001\u20132025 \u00b7 25 years",
+          "requested_years": 25,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 25,
+          "excluded_years": [],
+          "slope_per_decade": -21.77069230769231,
+          "ordinary_ci95_per_decade": [
+            -72.60825287781125,
+            29.066868262426638
+          ],
+          "theil_sen_slope_per_decade": -23.41833333333333,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": -21.770692307692286,
+              "ci95_per_decade": [
+                -72.60825287781122,
+                29.066868262426656
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": -21.770692307692286,
+              "ci95_per_decade": [
+                -67.33947343929158,
+                23.798088823907012
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": -21.770692307692286,
+              "ci95_per_decade": [
+                -67.66410597741555,
+                24.12272136203097
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": -21.770692307692286,
+              "ci95_per_decade": [
+                -71.34032188134984,
+                27.798937265965268
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "recent15",
+          "start": 2011,
+          "end": 2025,
+          "label": "2011\u20132025 \u00b7 15 years",
+          "requested_years": 15,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 15,
+          "excluded_years": [],
+          "slope_per_decade": -91.94678571428571,
+          "ordinary_ci95_per_decade": [
+            -171.26957272979718,
+            -12.623998698774272
+          ],
+          "theil_sen_slope_per_decade": -103.92222222222225,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": -91.94678571428575,
+              "ci95_per_decade": [
+                -171.2695727297972,
+                -12.623998698774308
+              ],
+              "evidence": "negative"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": -91.94678571428575,
+              "ci95_per_decade": [
+                -143.7252293624635,
+                -40.16834206610801
+              ],
+              "evidence": "negative"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": -91.94678571428575,
+              "ci95_per_decade": [
+                -156.17771994033524,
+                -27.71585148823626
+              ],
+              "evidence": "negative"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": -91.94678571428575,
+              "ci95_per_decade": [
+                -128.1436371496912,
+                -55.74993427888032
+              ],
+              "evidence": "negative"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "place_id": "berlin",
+      "name": "Berlin, Germany",
+      "variable": "temperature",
+      "rate_unit": "\u00b0C per decade",
+      "source": {
+        "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=13.405&latitude=52.52&format=JSON&start=1981&end=2025",
+        "fetched_at": "2026-11-11T14:23:13.418672+00:00",
+        "payload_sha256": "3058852ecf73305c91848a9d49ae4548f66e6defbbddf579b6be00103dd26d11"
+      },
+      "analysis_settings": {
+        "version": "0.2.1",
+        "confidence_level": 0.95,
+        "hac_kernel": "bartlett",
+        "hac_lag_rule": "floor(4*(n/100)^(2/9))",
+        "hac_fixed_lags": [
+          1,
+          5
+        ],
+        "hac_small_sample_correction": true,
+        "hac_critical_distribution": "Student t with n-2 degrees of freedom",
+        "theil_sen": "Median of pairwise slopes; slope only, no dependence-adjusted interval",
+        "period_checks": "Full period; omit first 5 calendar years; omit last 5; omit both ends",
+        "minimum_complete_years_per_check": 10,
+        "minimum_years_for_long_record_note": 30,
+        "interpretation": "Conditional sensitivity checks on shared data, not independent confirmation or a joint confidence interval"
+      },
+      "windows": [
+        {
+          "id": "full45",
+          "start": 1981,
+          "end": 2025,
+          "label": "1981\u20132025 \u00b7 45 years",
+          "requested_years": 45,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 45,
+          "excluded_years": [],
+          "slope_per_decade": 0.5598950465018872,
+          "ordinary_ci95_per_decade": [
+            0.37250265242706204,
+            0.7472874405767121
+          ],
+          "theil_sen_slope_per_decade": 0.5495393312428426,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.5598950465018873,
+              "ci95_per_decade": [
+                0.37250265242706215,
+                0.7472874405767125
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 0.5598950465018873,
+              "ci95_per_decade": [
+                0.36613572186617804,
+                0.7536543711375965
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.5598950465018873,
+              "ci95_per_decade": [
+                0.35447045817535283,
+                0.7653196348284217
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.5598950465018873,
+              "ci95_per_decade": [
+                0.3916563763908049,
+                0.7281337166129696
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent35",
+          "start": 1991,
+          "end": 2025,
+          "label": "1991\u20132025 \u00b7 35 years",
+          "requested_years": 35,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 35,
+          "excluded_years": [],
+          "slope_per_decade": 0.5906797792400891,
+          "ordinary_ci95_per_decade": [
+            0.332450817305202,
+            0.8489087411749762
+          ],
+          "theil_sen_slope_per_decade": 0.5798282805599217,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.5906797792400886,
+              "ci95_per_decade": [
+                0.33245081730520154,
+                0.8489087411749757
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 0.5906797792400886,
+              "ci95_per_decade": [
+                0.38812345720855956,
+                0.7932361012716177
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.5906797792400886,
+              "ci95_per_decade": [
+                0.35743275103254424,
+                0.823926807447633
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.5906797792400886,
+              "ci95_per_decade": [
+                0.40761045560301884,
+                0.7737491028771584
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent25",
+          "start": 2001,
+          "end": 2025,
+          "label": "2001\u20132025 \u00b7 25 years",
+          "requested_years": 25,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 25,
+          "excluded_years": [],
+          "slope_per_decade": 0.7774307231655984,
+          "ordinary_ci95_per_decade": [
+            0.36836779858551016,
+            1.1864936477456864
+          ],
+          "theil_sen_slope_per_decade": 0.8039434356720453,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.7774307231655988,
+              "ci95_per_decade": [
+                0.3683677985855107,
+                1.1864936477456869
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": 0.7774307231655988,
+              "ci95_per_decade": [
+                0.47232645103442983,
+                1.082534995296768
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.7774307231655988,
+              "ci95_per_decade": [
+                0.4651582483692035,
+                1.0897031979619942
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.7774307231655988,
+              "ci95_per_decade": [
+                0.4916340957424492,
+                1.0632273505887486
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent15",
+          "start": 2011,
+          "end": 2025,
+          "label": "2011\u20132025 \u00b7 15 years",
+          "requested_years": 15,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 15,
+          "excluded_years": [],
+          "slope_per_decade": 1.189873418669062,
+          "ordinary_ci95_per_decade": [
+            0.4027869887310003,
+            1.9769598486071238
+          ],
+          "theil_sen_slope_per_decade": 1.1118395838011885,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 1.1898734186690603,
+              "ci95_per_decade": [
+                0.40278698873099844,
+                1.9769598486071218
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": 1.1898734186690603,
+              "ci95_per_decade": [
+                0.6283077879559238,
+                1.7514390493821965
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 1.1898734186690603,
+              "ci95_per_decade": [
+                0.540027177923928,
+                1.8397196594141922
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 1.1898734186690603,
+              "ci95_per_decade": [
+                0.7937218792837621,
+                1.5860249580543582
+              ],
+              "evidence": "positive"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "place_id": "berlin",
+      "name": "Berlin, Germany",
+      "variable": "rainfall",
+      "rate_unit": "mm/year per decade",
+      "source": {
+        "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=13.405&latitude=52.52&format=JSON&start=1981&end=2025",
+        "fetched_at": "2026-11-11T14:23:13.418672+00:00",
+        "payload_sha256": "3058852ecf73305c91848a9d49ae4548f66e6defbbddf579b6be00103dd26d11"
+      },
+      "analysis_settings": {
+        "version": "0.2.1",
+        "confidence_level": 0.95,
+        "hac_kernel": "bartlett",
+        "hac_lag_rule": "floor(4*(n/100)^(2/9))",
+        "hac_fixed_lags": [
+          1,
+          5
+        ],
+        "hac_small_sample_correction": true,
+        "hac_critical_distribution": "Student t with n-2 degrees of freedom",
+        "theil_sen": "Median of pairwise slopes; slope only, no dependence-adjusted interval",
+        "period_checks": "Full period; omit first 5 calendar years; omit last 5; omit both ends",
+        "minimum_complete_years_per_check": 10,
+        "minimum_years_for_long_record_note": 30,
+        "interpretation": "Conditional sensitivity checks on shared data, not independent confirmation or a joint confidence interval"
+      },
+      "windows": [
+        {
+          "id": "full45",
+          "start": 1981,
+          "end": 2025,
+          "label": "1981\u20132025 \u00b7 45 years",
+          "requested_years": 45,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 45,
+          "excluded_years": [],
+          "slope_per_decade": -2.1681554677206836,
+          "ordinary_ci95_per_decade": [
+            -26.506696051161214,
+            22.170385115719846
+          ],
+          "theil_sen_slope_per_decade": -5.339999999999993,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": -2.168155467720647,
+              "ci95_per_decade": [
+                -26.506696051161178,
+                22.17038511571989
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": -2.168155467720647,
+              "ci95_per_decade": [
+                -19.595695679877796,
+                15.259384744436503
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": -2.168155467720647,
+              "ci95_per_decade": [
+                -22.931385905932096,
+                18.595074970490803
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": -2.168155467720647,
+              "ci95_per_decade": [
+                -16.25975696628898,
+                11.923446030847684
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "recent35",
+          "start": 1991,
+          "end": 2025,
+          "label": "1991\u20132025 \u00b7 35 years",
+          "requested_years": 35,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 35,
+          "excluded_years": [],
+          "slope_per_decade": 7.497366946778711,
+          "ordinary_ci95_per_decade": [
+            -27.7266960760601,
+            42.72142996961752
+          ],
+          "theil_sen_slope_per_decade": 4.100000000000027,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 7.497366946778704,
+              "ci95_per_decade": [
+                -27.726696076060094,
+                42.7214299696175
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 7.497366946778704,
+              "ci95_per_decade": [
+                -13.905350980693264,
+                28.90008487425067
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 7.497366946778704,
+              "ci95_per_decade": [
+                -21.15445684644807,
+                36.14919074000547
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 7.497366946778704,
+              "ci95_per_decade": [
+                -10.30986128654169,
+                25.3045951800991
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "recent25",
+          "start": 2001,
+          "end": 2025,
+          "label": "2001\u20132025 \u00b7 25 years",
+          "requested_years": 25,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 25,
+          "excluded_years": [],
+          "slope_per_decade": -8.61984615384615,
+          "ordinary_ci95_per_decade": [
+            -73.8125072537892,
+            56.572814946096905
+          ],
+          "theil_sen_slope_per_decade": -17.031907894736836,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": -8.619846153846126,
+              "ci95_per_decade": [
+                -73.81250725378918,
+                56.572814946096926
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": -8.619846153846126,
+              "ci95_per_decade": [
+                -54.9393557466173,
+                37.69966343892504
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": -8.619846153846126,
+              "ci95_per_decade": [
+                -60.997626496366436,
+                43.757934188674184
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": -8.619846153846126,
+              "ci95_per_decade": [
+                -47.95148511897697,
+                30.71179281128472
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "recent15",
+          "start": 2011,
+          "end": 2025,
+          "label": "2011\u20132025 \u00b7 15 years",
+          "requested_years": 15,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 15,
+          "excluded_years": [],
+          "slope_per_decade": -6.200357142857139,
+          "ordinary_ci95_per_decade": [
+            -147.32621995005934,
+            134.92550566434505
+          ],
+          "theil_sen_slope_per_decade": -41.05384615384616,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": -6.200357142857129,
+              "ci95_per_decade": [
+                -147.32621995005934,
+                134.92550566434508
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": -6.200357142857129,
+              "ci95_per_decade": [
+                -98.99896731537831,
+                86.59825302966405
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": -6.200357142857129,
+              "ci95_per_decade": [
+                -106.5451977143556,
+                94.14448342864134
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": -6.200357142857129,
+              "ci95_per_decade": [
+                -83.93196059094024,
+                71.53124630522598
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "place_id": "toronto",
+      "name": "Toronto, Canada",
+      "variable": "temperature",
+      "rate_unit": "\u00b0C per decade",
+      "source": {
+        "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=-79.3832&latitude=43.6532&format=JSON&start=1981&end=2025",
+        "fetched_at": "2026-11-11T19:00:03.351946+00:00",
+        "payload_sha256": "2aff7549bbca1632c5e0a953d10392e17f7626b0c44117fb92baf05b6c09cf42"
+      },
+      "analysis_settings": {
+        "version": "0.2.1",
+        "confidence_level": 0.95,
+        "hac_kernel": "bartlett",
+        "hac_lag_rule": "floor(4*(n/100)^(2/9))",
+        "hac_fixed_lags": [
+          1,
+          5
+        ],
+        "hac_small_sample_correction": true,
+        "hac_critical_distribution": "Student t with n-2 degrees of freedom",
+        "theil_sen": "Median of pairwise slopes; slope only, no dependence-adjusted interval",
+        "period_checks": "Full period; omit first 5 calendar years; omit last 5; omit both ends",
+        "minimum_complete_years_per_check": 10,
+        "minimum_years_for_long_record_note": 30,
+        "interpretation": "Conditional sensitivity checks on shared data, not independent confirmation or a joint confidence interval"
+      },
+      "windows": [
+        {
+          "id": "full45",
+          "start": 1981,
+          "end": 2025,
+          "label": "1981\u20132025 \u00b7 45 years",
+          "requested_years": 45,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 45,
+          "excluded_years": [],
+          "slope_per_decade": 0.8827120498573843,
+          "ordinary_ci95_per_decade": [
+            0.6586092038830897,
+            1.1068148958316788
+          ],
+          "theil_sen_slope_per_decade": 0.8817577407769219,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.8827120498573846,
+              "ci95_per_decade": [
+                0.6586092038830899,
+                1.1068148958316792
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 0.8827120498573846,
+              "ci95_per_decade": [
+                0.6984089318443054,
+                1.0670151678704638
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.8827120498573846,
+              "ci95_per_decade": [
+                0.700137215014383,
+                1.0652868847003862
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.8827120498573846,
+              "ci95_per_decade": [
+                0.6882151897907772,
+                1.0772089099239919
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent35",
+          "start": 1991,
+          "end": 2025,
+          "label": "1991\u20132025 \u00b7 35 years",
+          "requested_years": 35,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 35,
+          "excluded_years": [],
+          "slope_per_decade": 1.046625326917952,
+          "ordinary_ci95_per_decade": [
+            0.6919779236601042,
+            1.4012727301757997
+          ],
+          "theil_sen_slope_per_decade": 1.0594945355191276,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 1.0466253269179513,
+              "ci95_per_decade": [
+                0.6919779236601037,
+                1.401272730175799
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 1.0466253269179513,
+              "ci95_per_decade": [
+                0.7153030897722212,
+                1.3779475640636816
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 1.0466253269179513,
+              "ci95_per_decade": [
+                0.708119672049487,
+                1.3851309817864157
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 1.0466253269179513,
+              "ci95_per_decade": [
+                0.7583980507326487,
+                1.3348526031032542
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent25",
+          "start": 2001,
+          "end": 2025,
+          "label": "2001\u20132025 \u00b7 25 years",
+          "requested_years": 25,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 25,
+          "excluded_years": [],
+          "slope_per_decade": 0.9640119043917381,
+          "ordinary_ci95_per_decade": [
+            0.39644002090698016,
+            1.531583787876496
+          ],
+          "theil_sen_slope_per_decade": 0.8842692673414823,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.9640119043917381,
+              "ci95_per_decade": [
+                0.3964400209069803,
+                1.531583787876496
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": 0.9640119043917381,
+              "ci95_per_decade": [
+                0.30161741149840826,
+                1.6264063972850678
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.9640119043917381,
+              "ci95_per_decade": [
+                0.3145371058615337,
+                1.6134867029219424
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.9640119043917381,
+              "ci95_per_decade": [
+                0.3917035094379923,
+                1.5363202993454839
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent15",
+          "start": 2011,
+          "end": 2025,
+          "label": "2011\u20132025 \u00b7 15 years",
+          "requested_years": 15,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 15,
+          "excluded_years": [],
+          "slope_per_decade": 0.7985785452290053,
+          "ordinary_ci95_per_decade": [
+            -0.3609330093725416,
+            1.9580900998305522
+          ],
+          "theil_sen_slope_per_decade": 0.8871050228310509,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.7985785452290045,
+              "ci95_per_decade": [
+                -0.36093300937254225,
+                1.9580900998305513
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": 0.7985785452290045,
+              "ci95_per_decade": [
+                -0.3229553664351334,
+                1.9201124568931425
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.7985785452290045,
+              "ci95_per_decade": [
+                -0.48839757650286114,
+                2.08555466696087
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.7985785452290045,
+              "ci95_per_decade": [
+                -0.01486171616231477,
+                1.6120188066203238
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "place_id": "toronto",
+      "name": "Toronto, Canada",
+      "variable": "rainfall",
+      "rate_unit": "mm/year per decade",
+      "source": {
+        "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=-79.3832&latitude=43.6532&format=JSON&start=1981&end=2025",
+        "fetched_at": "2026-11-11T19:00:03.351946+00:00",
+        "payload_sha256": "2aff7549bbca1632c5e0a953d10392e17f7626b0c44117fb92baf05b6c09cf42"
+      },
+      "analysis_settings": {
+        "version": "0.2.1",
+        "confidence_level": 0.95,
+        "hac_kernel": "bartlett",
+        "hac_lag_rule": "floor(4*(n/100)^(2/9))",
+        "hac_fixed_lags": [
+          1,
+          5
+        ],
+        "hac_small_sample_correction": true,
+        "hac_critical_distribution": "Student t with n-2 degrees of freedom",
+        "theil_sen": "Median of pairwise slopes; slope only, no dependence-adjusted interval",
+        "period_checks": "Full period; omit first 5 calendar years; omit last 5; omit both ends",
+        "minimum_complete_years_per_check": 10,
+        "minimum_years_for_long_record_note": 30,
+        "interpretation": "Conditional sensitivity checks on shared data, not independent confirmation or a joint confidence interval"
+      },
+      "windows": [
+        {
+          "id": "full45",
+          "start": 1981,
+          "end": 2025,
+          "label": "1981\u20132025 \u00b7 45 years",
+          "requested_years": 45,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 45,
+          "excluded_years": [],
+          "slope_per_decade": 18.48220026350461,
+          "ordinary_ci95_per_decade": [
+            -12.861129931793137,
+            49.82553045880236
+          ],
+          "theil_sen_slope_per_decade": 16.27123015873018,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 18.482200263504595,
+              "ci95_per_decade": [
+                -12.861129931793165,
+                49.82553045880235
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 18.482200263504595,
+              "ci95_per_decade": [
+                -26.662800091267957,
+                63.62720061827714
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 18.482200263504595,
+              "ci95_per_decade": [
+                -19.324756673059806,
+                56.289157200069
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 18.482200263504595,
+              "ci95_per_decade": [
+                -29.3884529890809,
+                66.35285351609008
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "recent35",
+          "start": 1991,
+          "end": 2025,
+          "label": "1991\u20132025 \u00b7 35 years",
+          "requested_years": 35,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 35,
+          "excluded_years": [],
+          "slope_per_decade": 25.703333333333333,
+          "ordinary_ci95_per_decade": [
+            -20.73753845936554,
+            72.1442051260322
+          ],
+          "theil_sen_slope_per_decade": 17.370833333333355,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 25.703333333333287,
+              "ci95_per_decade": [
+                -20.737538459365574,
+                72.14420512603215
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 25.703333333333287,
+              "ci95_per_decade": [
+                -47.49426365846139,
+                98.90093032512796
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 25.703333333333287,
+              "ci95_per_decade": [
+                -33.453204233669844,
+                84.85987090033643
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 25.703333333333287,
+              "ci95_per_decade": [
+                -54.423444998079106,
+                105.83011166474569
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "recent25",
+          "start": 2001,
+          "end": 2025,
+          "label": "2001\u20132025 \u00b7 25 years",
+          "requested_years": 25,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 25,
+          "excluded_years": [],
+          "slope_per_decade": -89.71561538461538,
+          "ordinary_ci95_per_decade": [
+            -144.89379251788057,
+            -34.53743825135017
+          ],
+          "theil_sen_slope_per_decade": -89.43291925465832,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": -89.71561538461538,
+              "ci95_per_decade": [
+                -144.89379251788057,
+                -34.53743825135017
+              ],
+              "evidence": "negative"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": -89.71561538461538,
+              "ci95_per_decade": [
+                -142.50251735169593,
+                -36.928713417534844
+              ],
+              "evidence": "negative"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": -89.71561538461538,
+              "ci95_per_decade": [
+                -142.98862567019913,
+                -36.44260509903163
+              ],
+              "evidence": "negative"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": -89.71561538461538,
+              "ci95_per_decade": [
+                -139.17007715764967,
+                -40.26115361158109
+              ],
+              "evidence": "negative"
+            }
+          ]
+        },
+        {
+          "id": "recent15",
+          "start": 2011,
+          "end": 2025,
+          "label": "2011\u20132025 \u00b7 15 years",
+          "requested_years": 15,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 15,
+          "excluded_years": [],
+          "slope_per_decade": -159.49285714285713,
+          "ordinary_ci95_per_decade": [
+            -280.2268392022813,
+            -38.758875083432955
+          ],
+          "theil_sen_slope_per_decade": -165.10000000000008,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": -159.49285714285722,
+              "ci95_per_decade": [
+                -280.2268392022814,
+                -38.758875083433054
+              ],
+              "evidence": "negative"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": -159.49285714285722,
+              "ci95_per_decade": [
+                -227.91227696809895,
+                -91.07343731761549
+              ],
+              "evidence": "negative"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": -159.49285714285722,
+              "ci95_per_decade": [
+                -236.7799309786435,
+                -82.20578330707092
+              ],
+              "evidence": "negative"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": -159.49285714285722,
+              "ci95_per_decade": [
+                -218.92544393911194,
+                -100.06027034660251
+              ],
+              "evidence": "negative"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "place_id": "milan",
+      "name": "Milan, Italy",
+      "variable": "temperature",
+      "rate_unit": "\u00b0C per decade",
+      "source": {
+        "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=9.19&latitude=45.4642&format=JSON&start=1981&end=2025",
+        "fetched_at": "2026-11-11T19:00:05.650954+00:00",
+        "payload_sha256": "f6eeef4428c5cd1eb22aa1cc3a2159182737ea10397dba33cf7d23fac5300b2c"
+      },
+      "analysis_settings": {
+        "version": "0.2.1",
+        "confidence_level": 0.95,
+        "hac_kernel": "bartlett",
+        "hac_lag_rule": "floor(4*(n/100)^(2/9))",
+        "hac_fixed_lags": [
+          1,
+          5
+        ],
+        "hac_small_sample_correction": true,
+        "hac_critical_distribution": "Student t with n-2 degrees of freedom",
+        "theil_sen": "Median of pairwise slopes; slope only, no dependence-adjusted interval",
+        "period_checks": "Full period; omit first 5 calendar years; omit last 5; omit both ends",
+        "minimum_complete_years_per_check": 10,
+        "minimum_years_for_long_record_note": 30,
+        "interpretation": "Conditional sensitivity checks on shared data, not independent confirmation or a joint confidence interval"
+      },
+      "windows": [
+        {
+          "id": "full45",
+          "start": 1981,
+          "end": 2025,
+          "label": "1981\u20132025 \u00b7 45 years",
+          "requested_years": 45,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 45,
+          "excluded_years": [],
+          "slope_per_decade": 0.4868732749733445,
+          "ordinary_ci95_per_decade": [
+            0.37077144937241374,
+            0.6029751005742752
+          ],
+          "theil_sen_slope_per_decade": 0.49143102468923733,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.4868732749733448,
+              "ci95_per_decade": [
+                0.370771449372414,
+                0.6029751005742756
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 0.4868732749733448,
+              "ci95_per_decade": [
+                0.36789609539870194,
+                0.6058504545479877
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.4868732749733448,
+              "ci95_per_decade": [
+                0.3588249973672567,
+                0.6149215525794329
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.4868732749733448,
+              "ci95_per_decade": [
+                0.37129304274972513,
+                0.6024535071969646
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent35",
+          "start": 1991,
+          "end": 2025,
+          "label": "1991\u20132025 \u00b7 35 years",
+          "requested_years": 35,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 35,
+          "excluded_years": [],
+          "slope_per_decade": 0.5430810760714198,
+          "ordinary_ci95_per_decade": [
+            0.36607174721318914,
+            0.7200904049296504
+          ],
+          "theil_sen_slope_per_decade": 0.5339293439077144,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.5430810760714195,
+              "ci95_per_decade": [
+                0.3660717472131889,
+                0.7200904049296503
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 0.5430810760714195,
+              "ci95_per_decade": [
+                0.3792095698696736,
+                0.7069525822731655
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.5430810760714195,
+              "ci95_per_decade": [
+                0.35595985735766733,
+                0.7302022947851717
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.5430810760714195,
+              "ci95_per_decade": [
+                0.39192920327248615,
+                0.694232948870353
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent25",
+          "start": 2001,
+          "end": 2025,
+          "label": "2001\u20132025 \u00b7 25 years",
+          "requested_years": 25,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 25,
+          "excluded_years": [],
+          "slope_per_decade": 0.6739734198206909,
+          "ordinary_ci95_per_decade": [
+            0.37126617007287743,
+            0.9766806695685044
+          ],
+          "theil_sen_slope_per_decade": 0.7014975086002919,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.6739734198206916,
+              "ci95_per_decade": [
+                0.3712661700728781,
+                0.9766806695685051
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": 0.6739734198206916,
+              "ci95_per_decade": [
+                0.40887176864902763,
+                0.9390750709923557
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.6739734198206916,
+              "ci95_per_decade": [
+                0.3751811049497046,
+                0.9727657346916786
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.6739734198206916,
+              "ci95_per_decade": [
+                0.44621126291621627,
+                0.9017355767251669
+              ],
+              "evidence": "positive"
+            }
+          ]
+        },
+        {
+          "id": "recent15",
+          "start": 2011,
+          "end": 2025,
+          "label": "2011\u20132025 \u00b7 15 years",
+          "requested_years": 15,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 15,
+          "excluded_years": [],
+          "slope_per_decade": 0.9460825393260817,
+          "ordinary_ci95_per_decade": [
+            0.32694415683585143,
+            1.5652209218163118
+          ],
+          "theil_sen_slope_per_decade": 0.8129452054794495,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 0.9460825393260813,
+              "ci95_per_decade": [
+                0.32694415683585143,
+                1.5652209218163113
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": 0.9460825393260813,
+              "ci95_per_decade": [
+                0.4837824594546303,
+                1.4083826191975324
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 0.9460825393260813,
+              "ci95_per_decade": [
+                0.3597302771311409,
+                1.5324348015210218
+              ],
+              "evidence": "positive"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 0.9460825393260813,
+              "ci95_per_decade": [
+                0.6574133832724565,
+                1.2347516953797062
+              ],
+              "evidence": "positive"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "place_id": "milan",
+      "name": "Milan, Italy",
+      "variable": "rainfall",
+      "rate_unit": "mm/year per decade",
+      "source": {
+        "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M%2CPRECTOTCORR&community=AG&longitude=9.19&latitude=45.4642&format=JSON&start=1981&end=2025",
+        "fetched_at": "2026-11-11T19:00:05.650954+00:00",
+        "payload_sha256": "f6eeef4428c5cd1eb22aa1cc3a2159182737ea10397dba33cf7d23fac5300b2c"
+      },
+      "analysis_settings": {
+        "version": "0.2.1",
+        "confidence_level": 0.95,
+        "hac_kernel": "bartlett",
+        "hac_lag_rule": "floor(4*(n/100)^(2/9))",
+        "hac_fixed_lags": [
+          1,
+          5
+        ],
+        "hac_small_sample_correction": true,
+        "hac_critical_distribution": "Student t with n-2 degrees of freedom",
+        "theil_sen": "Median of pairwise slopes; slope only, no dependence-adjusted interval",
+        "period_checks": "Full period; omit first 5 calendar years; omit last 5; omit both ends",
+        "minimum_complete_years_per_check": 10,
+        "minimum_years_for_long_record_note": 30,
+        "interpretation": "Conditional sensitivity checks on shared data, not independent confirmation or a joint confidence interval"
+      },
+      "windows": [
+        {
+          "id": "full45",
+          "start": 1981,
+          "end": 2025,
+          "label": "1981\u20132025 \u00b7 45 years",
+          "requested_years": 45,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 45,
+          "excluded_years": [],
+          "slope_per_decade": 34.59598155467721,
+          "ordinary_ci95_per_decade": [
+            -17.50709730261452,
+            86.69906041196894
+          ],
+          "theil_sen_slope_per_decade": 19.24755747126436,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 34.595981554677245,
+              "ci95_per_decade": [
+                -17.507097302614522,
+                86.69906041196901
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 34.595981554677245,
+              "ci95_per_decade": [
+                -16.47195620231322,
+                85.6639193116677
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 34.595981554677245,
+              "ci95_per_decade": [
+                -25.829480334901437,
+                95.02144344425591
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 34.595981554677245,
+              "ci95_per_decade": [
+                -10.702123430406147,
+                79.89408653976064
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "recent35",
+          "start": 1991,
+          "end": 2025,
+          "label": "1991\u20132025 \u00b7 35 years",
+          "requested_years": 35,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 35,
+          "excluded_years": [],
+          "slope_per_decade": 44.65330532212886,
+          "ordinary_ci95_per_decade": [
+            -40.03158896010372,
+            129.33819960436142
+          ],
+          "theil_sen_slope_per_decade": 26.72142857142855,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 44.6533053221288,
+              "ci95_per_decade": [
+                -40.03158896010376,
+                129.33819960436136
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 3,
+              "slope_per_decade": 44.6533053221288,
+              "ci95_per_decade": [
+                -38.01816941869406,
+                127.32478006295166
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 44.6533053221288,
+              "ci95_per_decade": [
+                -54.393240112339996,
+                143.69985075659758
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 44.6533053221288,
+              "ci95_per_decade": [
+                -25.678332251074963,
+                114.98494289533255
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "recent25",
+          "start": 2001,
+          "end": 2025,
+          "label": "2001\u20132025 \u00b7 25 years",
+          "requested_years": 25,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 25,
+          "excluded_years": [],
+          "slope_per_decade": 93.58146153846157,
+          "ordinary_ci95_per_decade": [
+            -61.964918773550615,
+            249.12784185047374
+          ],
+          "theil_sen_slope_per_decade": 92.76944444444446,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 93.58146153846162,
+              "ci95_per_decade": [
+                -61.964918773550544,
+                249.12784185047377
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": 93.58146153846162,
+              "ci95_per_decade": [
+                -80.36584963151631,
+                267.52877270843953
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 93.58146153846162,
+              "ci95_per_decade": [
+                -93.82600880199684,
+                280.9889318789201
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 93.58146153846162,
+              "ci95_per_decade": [
+                -33.07728631157655,
+                220.2402093884998
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        },
+        {
+          "id": "recent15",
+          "start": 2011,
+          "end": 2025,
+          "label": "2011\u20132025 \u00b7 15 years",
+          "requested_years": 15,
+          "scope": "Fixed comparisons of different periods in the same frozen source record. The windows overlap and are not independent evidence. A changed slope describes a different selected period; it does not by itself establish acceleration or a cause. Do not choose the window with the smallest p-value.",
+          "complete_years": 15,
+          "excluded_years": [],
+          "slope_per_decade": 182.1464285714286,
+          "ordinary_ci95_per_decade": [
+            -193.29780063222717,
+            557.5906577750844
+          ],
+          "theil_sen_slope_per_decade": 133.9083333333334,
+          "conditional_intervals": [
+            {
+              "method": "Ordinary OLS",
+              "lag": null,
+              "slope_per_decade": 182.14642857142852,
+              "ci95_per_decade": [
+                -193.29780063222725,
+                557.5906577750843
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West automatic lag",
+              "lag": 2,
+              "slope_per_decade": 182.14642857142852,
+              "ci95_per_decade": [
+                -208.59751256773126,
+                572.8903697105884
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 1",
+              "lag": 1,
+              "slope_per_decade": 182.14642857142852,
+              "ci95_per_decade": [
+                -247.81431401612468,
+                612.1071711589818
+              ],
+              "evidence": "unclear"
+            },
+            {
+              "method": "Newey-West lag 5",
+              "lag": 5,
+              "slope_per_decade": 182.14642857142852,
+              "ci95_per_decade": [
+                -102.31141016085576,
+                466.60426730371285
+              ],
+              "evidence": "unclear"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
