@@ -70,3 +70,8 @@ The project began before the event, and AI helped supply the approach. Those his
 Version 0.4.0 adds four fixed periods and safe evidence import with optional local notes. Its tag preserves the workflow milestone. Version 1.0.0 documents the export contract, adds the captioned 29-second video and updated PDF, and packages a reproducible review handoff for Farhad. Eighty-three tests cover the calculations, HTTP behavior, frozen build, browser import, asynchronous actions and public artifact verification. The saved-file workflow and complete printed notes were checked in Chrome. Exact Linux and public release results are retained in evaluation/RELEASE_VERIFICATION.md.
 
 A higher release number is not the objective. The completed 1.x contract is the acceptance milestone. Further features should follow observed review findings or new scientific evidence. Human feedback, the student's personal explanation, and eligibility decisions cannot be replaced by additional generated material.
+
+
+## 13 November: 1.1 and 1.2 review response
+
+The student's criticism of the silent film led to a three-step real-data story in 1.1, then a narrated short film, separate portrait portfolio reel and shareable views in 1.2. All 117 tests pass locally. Linux CI and anonymous checks verify the deployed site and both media artifacts. The film uses a fictional adult, generated speech, actual rainfall figures and a genuine app image. Exact production inputs and disclosure are retained. The public-page software milestone is complete; audience response, student explanation and organizer decisions still need real people.

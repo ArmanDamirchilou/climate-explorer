@@ -21,3 +21,12 @@ Both complete videos decoded without errors. Encoded scene samples show actual v
 One generation was submitted to Higgsfield. Its preflight quote was 480 credits; the receipt records the completed job, prompt and private-source hash. No repeat job, voice clone, student recording, account creation or external stock music was used.
 
 Linux CI, public browser playback and anonymous deployment checks follow the source commit and are recorded below after observation. No competition submission or Farhad message has been sent. Early work and AI-ideation eligibility remain unresolved.
+
+
+## Deployed verification
+
+Runtime commit c7f5ee1ec3f894d53fccbb71eb6c4e5c04594648 introduced the 1.2 release. The small film-page keyboard-link correction is commit 05d3d7ef04575601199ab1b7a81992d671446bb0. Linux run [43395369388](https://github.com/ArmanDamirchilou/climate-explorer/actions/runs/43395369388) passed verification and deployed the site. The earlier push run was canceled by the newer push, not counted as a successful run. Runtime source fingerprint is 1d2d2533841c16bbe5be2e161319954667fe340c46352bfa195d832e94e2c893.
+
+Anonymous HTTPS verification checked all 63 published files against the manifest, replayed forty examples and both guided records, and verified both films, caption tracks and posters against reviewed hashes. The public short film opened and played with audio in Incognito Chrome, without account access. Both local film players also played; the short local clip reached its full 29.8-second end. Playback observation is not a claim of human listening. The public report is retained in public-verification.json.
+
+The full local Python server was restarted on port 8766. Its 15-year rainfall response identifies app 1.2.0 and the current source fingerprint. The static demonstration is separately served from the built files during QA.

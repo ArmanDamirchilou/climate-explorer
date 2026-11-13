@@ -1,9 +1,9 @@
 {
-  "checked_utc": "2026-11-13T07:59:48.486418+00:00",
+  "checked_utc": "2026-11-13T08:44:56.816704+00:00",
   "base_url": "https://armandamirchilou.github.io/climate-explorer/",
   "authentication": "none",
-  "files_verified_against_manifest": 55,
-  "code_sha256": "7f90ec174eaff5ad27b1185fadd0c89409b8b94c50127a0a31c76123368abc3b",
+  "files_verified_against_manifest": 63,
+  "code_sha256": "1d2d2533841c16bbe5be2e161319954667fe340c46352bfa195d832e94e2c893",
   "analyses": [
     {
       "file": "demo/ankara-rainfall.json",
@@ -166,8 +166,29 @@
       "years_replayed": 45
     }
   ],
+  "guided_story_analyses_replayed": 2,
   "demo_pdf_sha256": "a779e9ce6097efb75c3dd4db9f4bc9f52f8b6b5480d7844a46ed5f68946fa7e9",
-  "demo_video_sha256": "9c2e7441abb4a2e1ecb9070ba4fac3b5cac6a743e64c689e1993a828cfd2a2a2",
-  "demo_video_seconds": 29.0,
+  "demo_video_sha256": "56ba4b9247c6dc4188d865a39979bef473d569e52ac536312cd60cf55e4ede47",
+  "demo_video_seconds": 29.8,
+  "narrated_media": {
+    "judge": {
+      "sha256": "56ba4b9247c6dc4188d865a39979bef473d569e52ac536312cd60cf55e4ede47",
+      "duration_seconds": 29.8,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "role": "short demo candidate"
+    },
+    "reel": {
+      "sha256": "355e8e4b9f073e73e54e1907af24e06092337d4e8607094aabc848eeb558762b",
+      "duration_seconds": 45.0,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "role": "portfolio, exceeds demo limit"
+    }
+  },
   "scope": "Anonymous HTTP access, deployed file integrity and offline numerical replay; browser behavior and eligibility are separate checks."
 }

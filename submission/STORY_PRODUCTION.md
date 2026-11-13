@@ -1,6 +1,6 @@
 # Climate Explorer story video production
 
-Prepared 13 November 2026. This is the production plan for a narrated replacement candidate. The existing published video remains unchanged until the new cut passes review.
+Prepared 13 November 2026. This records the narrated films published with release 1.2. The short film replaces the public silent clip; that earlier source remains preserved in release 1.0.
 
 ## Story and first three seconds
 
@@ -102,3 +102,10 @@ The student may practice privately. If he is under 18, do not use his face, voic
 ## Release checks
 
 Listen to the actual source and final mix. Correct automatic captions against what is spoken. Inspect the first three seconds, the two period labels, the interval crossing zero, the final sentence and both aspect ratios. Check every cut for mouth-sync discontinuity or clipped words. Decode the full video, inspect codec and duration with FFprobe, and verify the final public file hash. Keep generated-source and data-source hashes in the new production manifest. Only then replace the published candidate.
+
+
+## Observed release results
+
+Both final encodes passed a full decode and encoded-scene visual review. The short film is 29.800 seconds; the portrait reel is 45.000 seconds. The final mixed short-film audio automatically transcribes to the complete intended narration, including the closing sentence. Exact file hashes, source hashes, audio loudness and peak measurements are recorded in each cut's JSON. Chrome played both local files, and the public short film played with audio in Incognito without login. Human listening and audience feedback have not been recorded. The raw source stays private; edited, disclosed cuts are public.
+
+The public builder now verifies media hashes before and after staging. A render that is still being written cannot replace an existing valid demonstration. The root release verification record records CI and anonymous HTTP checks.
