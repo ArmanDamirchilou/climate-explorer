@@ -3,17 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="One city, two fitted rainfall trends. A narrated Climate Explorer story using retained NASA data.">
-  <title>One city, two climate stories | Climate Explorer</title>
+  <meta name="description" content="A technical studio story about climate claims, method choices, date sensitivity and reproducible NASA data analysis.">
+  <title>Behind the evidence | Climate Explorer</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="story-media.css">
 </head>
 <body>
-  <a class="skip" href="#film">Skip to the film</a>
+  <a class="skip" href="#technical-film">Skip to the technical film</a>
   <header class="topbar"><a class="brand" href="./">Climate Explorer</a><nav aria-label="Main navigation"><a href="./#guided-story">Try the story</a><a href="validation.html">Read the evidence</a></nav></header>
   <main class="validation-page media-page">
-    <section class="intro"><h1>Can one city tell two climate stories?</h1><p>A question first. Then the dates, the uncertainty, and the evidence you can check yourself.</p></section>
+    <section class="intro"><h1>Behind the evidence.</h1><p>Two headlines. One city. A technical story about the choices behind a climate claim.</p></section>
+    <section id="technical-film" aria-labelledby="technical-heading">
+      <h2 id="technical-heading">The full technical story · 2 minutes 15 seconds</h2>
+      <video controls playsinline preload="metadata" poster="story-technical-poster.jpg" width="1920" height="1080" class="demo-video" aria-label="Climate Explorer 2 minute 15 second technical portfolio film">
+        <source src="climate-explorer-technical.mp4" type="video/mp4">
+        <track kind="captions" src="climate-explorer-technical.vtt" srclang="en" label="English">
+        <p><a href="climate-explorer-technical.mp4">Download the technical film</a>.</p>
+      </video>
+      <p class="media-disclosure">AI-generated fictional adult presenter and native voice. Studio footage is 480p origin within a 1080p edit. Data figures are drawn from retained evidence. The working-app capture is identified separately. The narrator is not the student, a witness, or a NASA employee.</p>
+      <div class="media-actions"><a class="film-action" href="./?place=tehran&amp;variable=rainfall&amp;period=full45#window-atlas">Try the window atlas</a><a href="climate-explorer-technical.mp4" download>Download the full film</a><a href="#film">See the short demo candidate</a></div>
+      <p>This longer film explains the engineering and scientific tradeoffs. It exceeds the official demo limit. Keep it as a technical portfolio explanation; the short demo candidate remains below.</p>
+      <ol>
+        <li>00:00 · The conflicting headlines and the date choices behind them.</li>
+        <li>00:27 · NASA POWER data, units, missing months and source provenance.</li>
+        <li>00:54 · Ordinary regression, Newey-West, Theil-Sen and the synthetic failure cases.</li>
+        <li>01:21 · Every eligible date window, with explicit selection limits.</li>
+        <li>01:48 · Evidence exports, offline replay and the remaining validation work.</li>
+      </ol>
+      <p><a href="https://github.com/ArmanDamirchilou/climate-explorer/blob/main/submission/LONG_FILM_BRIEF.md">Production choices and sources</a>, <a href="https://github.com/ArmanDamirchilou/climate-explorer/blob/main/submission/long-film-script.json">full script and generation record</a>, and <a href="https://github.com/ArmanDamirchilou/climate-explorer/blob/main/INNOVATION_REVIEW.md">100 ideas and the selection process</a>.</p>
+    </section>
     <section id="film" aria-labelledby="judge-heading">
       <h2 id="judge-heading">The short story</h2>
       <video controls playsinline preload="metadata" poster="story-judge-poster.jpg" width="1920" height="1080" class="demo-video" aria-label="Climate Explorer narrated story, under 30 seconds">
@@ -45,6 +64,6 @@
     <p>Development began on 11 November 2026. Codex contributed the approach, code, research and media; Higgsfield generated the fictional narrator and speech. Early-work and AI-ideation rules require organizer guidance. Entry eligibility remains unresolved.</p>
     <p><a href="https://github.com/ArmanDamirchilou/climate-explorer/blob/main/submission/FARHAD_HANDOFF.md">Farhad's review guide</a>, <a href="https://github.com/ArmanDamirchilou/climate-explorer/blob/main/submission/STORY_PRODUCTION.md">production decisions</a>, and <a href="https://github.com/ArmanDamirchilou/climate-explorer/blob/main/AI_ASSISTANCE.md">AI assistance record</a>.</p>
   </main>
-  <footer><span>Climate Explorer 1.2.0</span><a href="https://github.com/ArmanDamirchilou/climate-explorer">Code and version history</a><span>Independent project. No NASA endorsement.</span></footer>
+  <footer><span>Climate Explorer 1.3.0</span><a href="https://github.com/ArmanDamirchilou/climate-explorer">Code and version history</a><span>Independent project. No NASA endorsement.</span></footer>
 </body>
 </html>

@@ -52,6 +52,48 @@ class HTTPTests(unittest.TestCase):
         self.assertGreaterEqual(result["last_year"], 2025)
         self.assertEqual(headers["Cache-Control"], "no-store")
 
+    def test_frozen_atlas_is_available_without_nasa_network(self):
+        from server import frozen_atlas
+        frozen_atlas.cache_clear()
+        with patch('climate.fetch_data', side_effect=AssertionError('Frozen atlas cannot fetch NASA')):
+            status, headers, body = self.request('/atlas/tehran-rainfall.json')
+        self.assertEqual(status, 200)
+        atlas = json.loads(body)
+        self.assertEqual(len(atlas['windows']), 666)
+        self.assertEqual(atlas['base_analysis']['period'], {'start': 1981, 'end': 2025})
+        self.assertEqual(int(headers['Content-Length']), len(body))
+
+    def test_invalid_atlas_paths_cannot_access_other_files(self):
+        with patch('server.build_window_atlas') as build:
+            for path in ['/atlas/../climate.py.json', '/atlas/tehran-unknown.json', '/atlas/tehran-rainfall.json?source=evil']:
+                status, _, body = self.request(path)
+                self.assertEqual(status, 404)
+                self.assertIn('error', json.loads(body))
+            build.assert_not_called()
+
+    def test_changed_frozen_atlas_source_returns_recovery_message(self):
+        import copy
+        from server import frozen_atlas
+        frozen_atlas.cache_clear()
+        saved = copy.deepcopy(self.saved)
+        saved['payload']['properties']['parameter']['T2M']['198101'] += 1
+        original_read = Path.read_text
+        def read(path, *args, **kwargs):
+            if path == ROOT / 'evaluation/source-snapshots/tehran-power.json':
+                return json.dumps(saved)
+            return original_read(path, *args, **kwargs)
+        with patch.object(Path, 'read_text', read), self.assertLogs(level='ERROR'):
+            status, _, body = self.request('/atlas/tehran-rainfall.json')
+        self.assertEqual(status, 500)
+        self.assertIn('Restore', json.loads(body)['error'])
+
+    def test_unavailable_atlas_analysis_returns_json_without_private_details(self):
+        with patch('server.frozen_atlas', side_effect=DataUnavailable('private diagnostic')), self.assertLogs(level='ERROR'):
+            status, headers, body = self.request('/atlas/tehran-rainfall.json')
+        self.assertEqual(status, 500)
+        self.assertTrue(headers['Content-Type'].startswith('application/json'))
+        self.assertNotIn(b'private diagnostic', body)
+
     def test_climate_response_contains_replay_evidence(self):
         with patch("climate.fetch_data", return_value=(self.saved, "frozen HTTP test")):
             status, headers, body = self.request("/api/climate?start=1981&end=2025")

@@ -1,0 +1,129 @@
+WEBVTT
+
+NOTE AI-generated fictional adult narrator and native voice. Technical portfolio film, not the NASA demo.
+
+00:00:00.000 --> 00:00:04.100
+Two headlines, one city, rainfall is rising,
+
+00:00:04.480 --> 00:00:05.656
+rainfall is falling.
+
+00:00:06.140 --> 00:00:08.258
+Both came from the same NASA record.
+
+00:00:08.660 --> 00:00:10.366
+The difference was the dates.
+
+00:00:13.660 --> 00:00:16.840
+Over the most recent 15, it points down,
+
+00:00:17.160 --> 00:00:19.278
+with an interval that includes zero.
+
+00:00:19.700 --> 00:00:22.171
+Neither chart proves a permanent reversal.
+
+00:00:22.260 --> 00:00:26.731
+So the engineering question became how do we make selective choices visible?
+
+00:00:27.000 --> 00:00:28.560
+We began with the data.
+
+00:00:29.220 --> 00:00:32.600
+NASA power provides monthly data from a reanalysis model,
+
+00:00:32.820 --> 00:00:34.879
+not a neighborhood weather station.
+
+00:00:34.940 --> 00:00:37.469
+Temperature uses a weighted yearly average.
+
+00:00:37.660 --> 00:00:39.940
+Rainfall arrives as millimeters per day,
+
+00:00:39.960 --> 00:00:43.019
+so each rate is multiplied by the days in its month.
+
+00:00:43.200 --> 00:00:44.965
+Incomplete years are left out.
+
+00:00:45.260 --> 00:00:49.966
+The original response, retrieval date, and source hash travel with the analysis.
+
+00:00:50.440 --> 00:00:53.970
+A polished graph is useful only if its inputs are inspectable.
+
+00:00:54.000 --> 00:00:55.500
+Then we compared methods.
+
+00:00:56.020 --> 00:00:59.138
+Ordinary regression gives an understandable baseline.
+
+00:00:59.180 --> 00:01:01.827
+Adjusted intervals examine correlated errors.
+
+00:01:02.340 --> 00:01:04.620
+A robust slope checks unusual years.
+
+00:01:05.120 --> 00:01:08.200
+We tested the candidates on 20,000 synthetic records.
+
+00:01:08.220 --> 00:01:12.720
+Under strong dependence, none of the deployable candidates passed every screening case.
+
+00:01:12.740 --> 00:01:14.580
+So we kept the alternatives visible,
+
+00:01:14.600 --> 00:01:19.020
+documented their failures, and avoided presenting one interval as a universal fix.
+
+00:01:19.040 --> 00:01:20.970
+This is exploration, not forecasting.
+
+00:01:21.000 --> 00:01:23.300
+The next weakness was date selection.
+
+00:01:23.960 --> 00:01:27.019
+Four examples help, but they can still hide choices.
+
+00:01:28.380 --> 00:01:30.792
+The map shows every eligible date window.
+
+00:01:32.460 --> 00:01:35.180
+Start year on one axis, end year on the other.
+
+00:01:35.660 --> 00:01:37.542
+Each cell shows its fitted rate.
+
+00:01:38.160 --> 00:01:40.513
+Select a cell, inspect its observations,
+
+00:01:40.540 --> 00:01:42.599
+and compare it with another period.
+
+00:01:42.900 --> 00:01:45.600
+These overlapping estimates are not independent votes,
+
+00:01:45.620 --> 00:01:47.970
+probabilities, or proof of a climate reversal.
+
+00:01:48.000 --> 00:01:50.588
+Finally, the result has to survive scrutiny.
+
+00:01:50.960 --> 00:01:53.380
+Save an investigation with its source response,
+
+00:01:53.400 --> 00:01:55.224
+settings, and code fingerprint.
+
+00:01:57.940 --> 00:02:01.058
+Automated tests check calculations and failure paths.
+
+00:02:01.300 --> 00:02:05.420
+An independent reader can inspect the same inputs without trusting a screenshot.
+
+00:02:05.440 --> 00:02:07.675
+Climate Explorer is still a prototype.
+
+00:02:09.960 --> 00:02:13.607
+The goal is a climate claim that another person can challenge.

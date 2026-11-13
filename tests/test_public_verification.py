@@ -40,8 +40,12 @@ class PublicVerificationTests(unittest.TestCase):
         self.assertEqual(sorted(set(row["years_replayed"] for row in result["analyses"])), [15, 25, 35, 45])
         self.assertEqual(result["demo_video_seconds"], 29.8)
         self.assertEqual(result["narrated_media"]["reel"]["duration_seconds"], 45)
+        self.assertAlmostEqual(result["narrated_media"]["technical"]["duration_seconds"], 135, delta=0.05)
+        self.assertEqual(result["narrated_media"]["technical"]["resolution"], [1920, 1080])
         self.assertEqual(result["authentication"], "none")
         self.assertEqual(result["guided_story_analyses_replayed"], 2)
+        self.assertEqual(result["atlas_windows_replayed"], 6660)
+        self.assertEqual(len(result["window_atlases"]), 10)
         self.assertEqual(result["demo_video_sha256"], hashlib.sha256((self.directory / "climate-explorer-demo.mp4").read_bytes()).hexdigest())
 
     def test_changed_video_is_rejected_even_with_an_updated_asset_manifest(self):
@@ -57,6 +61,22 @@ class PublicVerificationTests(unittest.TestCase):
                 check(self.url)
         finally:
             video.write_bytes(original_video)
+            manifest_path.write_bytes(original_manifest)
+
+    def test_same_record_count_cannot_hide_missing_required_preset_file(self):
+        manifest_path = self.directory / 'build-manifest.json'
+        source = self.directory / 'demo/tehran-recent15-rainfall.json'
+        substitute = self.directory / 'demo/unexpected-rainfall.json'
+        original_manifest = manifest_path.read_bytes()
+        try:
+            substitute.write_bytes(source.read_bytes())
+            manifest = json.loads(original_manifest)
+            manifest['demo/unexpected-rainfall.json'] = manifest.pop('demo/tehran-recent15-rainfall.json')
+            manifest_path.write_text(json.dumps(manifest))
+            with self.assertRaisesRegex(ValueError, 'exact forty preset'):
+                check(self.url)
+        finally:
+            substitute.unlink(missing_ok=True)
             manifest_path.write_bytes(original_manifest)
 
     def test_changed_story_is_rejected_even_with_an_updated_asset_manifest(self):
@@ -89,4 +109,36 @@ class PublicVerificationTests(unittest.TestCase):
                 check(self.url)
         finally:
             video.write_bytes(original_video)
+            manifest_path.write_bytes(original_manifest)
+
+    def test_incomplete_atlas_is_rejected_even_with_updated_asset_manifest(self):
+        atlas_path = self.directory / "atlas/tehran-rainfall.json"
+        manifest_path = self.directory / "build-manifest.json"
+        original, original_manifest = atlas_path.read_bytes(), manifest_path.read_bytes()
+        try:
+            atlas = json.loads(original)
+            atlas["windows"].pop()
+            atlas_path.write_text(json.dumps(atlas))
+            manifest = json.loads(original_manifest)
+            manifest['atlas/tehran-rainfall.json'] = hashlib.sha256(atlas_path.read_bytes()).hexdigest()
+            manifest_path.write_text(json.dumps(manifest))
+            with self.assertRaisesRegex(ValueError, "complete ordered window set"):
+                check(self.url)
+        finally:
+            atlas_path.write_bytes(original)
+            manifest_path.write_bytes(original_manifest)
+
+    def test_changed_technical_film_is_rejected_despite_matching_manifest(self):
+        video = self.directory / 'climate-explorer-technical.mp4'
+        manifest_path = self.directory / 'build-manifest.json'
+        original, original_manifest = video.read_bytes(), manifest_path.read_bytes()
+        try:
+            video.write_bytes(original + b'changed')
+            manifest = json.loads(original_manifest)
+            manifest[video.name] = hashlib.sha256(video.read_bytes()).hexdigest()
+            manifest_path.write_text(json.dumps(manifest))
+            with self.assertRaisesRegex(ValueError, 'technical video differs'):
+                check(self.url)
+        finally:
+            video.write_bytes(original)
             manifest_path.write_bytes(original_manifest)

@@ -1,0 +1,194 @@
+{
+  "checked_utc": "2026-11-13T08:44:56.816704+00:00",
+  "base_url": "https://armandamirchilou.github.io/climate-explorer/",
+  "authentication": "none",
+  "files_verified_against_manifest": 63,
+  "code_sha256": "1d2d2533841c16bbe5be2e161319954667fe340c46352bfa195d832e94e2c893",
+  "analyses": [
+    {
+      "file": "demo/ankara-rainfall.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/ankara-recent15-rainfall.json",
+      "years_replayed": 15
+    },
+    {
+      "file": "demo/ankara-recent15-temperature.json",
+      "years_replayed": 15
+    },
+    {
+      "file": "demo/ankara-recent25-rainfall.json",
+      "years_replayed": 25
+    },
+    {
+      "file": "demo/ankara-recent25-temperature.json",
+      "years_replayed": 25
+    },
+    {
+      "file": "demo/ankara-recent35-rainfall.json",
+      "years_replayed": 35
+    },
+    {
+      "file": "demo/ankara-recent35-temperature.json",
+      "years_replayed": 35
+    },
+    {
+      "file": "demo/ankara-temperature.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/berlin-rainfall.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/berlin-recent15-rainfall.json",
+      "years_replayed": 15
+    },
+    {
+      "file": "demo/berlin-recent15-temperature.json",
+      "years_replayed": 15
+    },
+    {
+      "file": "demo/berlin-recent25-rainfall.json",
+      "years_replayed": 25
+    },
+    {
+      "file": "demo/berlin-recent25-temperature.json",
+      "years_replayed": 25
+    },
+    {
+      "file": "demo/berlin-recent35-rainfall.json",
+      "years_replayed": 35
+    },
+    {
+      "file": "demo/berlin-recent35-temperature.json",
+      "years_replayed": 35
+    },
+    {
+      "file": "demo/berlin-temperature.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/milan-rainfall.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/milan-recent15-rainfall.json",
+      "years_replayed": 15
+    },
+    {
+      "file": "demo/milan-recent15-temperature.json",
+      "years_replayed": 15
+    },
+    {
+      "file": "demo/milan-recent25-rainfall.json",
+      "years_replayed": 25
+    },
+    {
+      "file": "demo/milan-recent25-temperature.json",
+      "years_replayed": 25
+    },
+    {
+      "file": "demo/milan-recent35-rainfall.json",
+      "years_replayed": 35
+    },
+    {
+      "file": "demo/milan-recent35-temperature.json",
+      "years_replayed": 35
+    },
+    {
+      "file": "demo/milan-temperature.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/tehran-rainfall.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/tehran-recent15-rainfall.json",
+      "years_replayed": 15
+    },
+    {
+      "file": "demo/tehran-recent15-temperature.json",
+      "years_replayed": 15
+    },
+    {
+      "file": "demo/tehran-recent25-rainfall.json",
+      "years_replayed": 25
+    },
+    {
+      "file": "demo/tehran-recent25-temperature.json",
+      "years_replayed": 25
+    },
+    {
+      "file": "demo/tehran-recent35-rainfall.json",
+      "years_replayed": 35
+    },
+    {
+      "file": "demo/tehran-recent35-temperature.json",
+      "years_replayed": 35
+    },
+    {
+      "file": "demo/tehran-temperature.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/toronto-rainfall.json",
+      "years_replayed": 45
+    },
+    {
+      "file": "demo/toronto-recent15-rainfall.json",
+      "years_replayed": 15
+    },
+    {
+      "file": "demo/toronto-recent15-temperature.json",
+      "years_replayed": 15
+    },
+    {
+      "file": "demo/toronto-recent25-rainfall.json",
+      "years_replayed": 25
+    },
+    {
+      "file": "demo/toronto-recent25-temperature.json",
+      "years_replayed": 25
+    },
+    {
+      "file": "demo/toronto-recent35-rainfall.json",
+      "years_replayed": 35
+    },
+    {
+      "file": "demo/toronto-recent35-temperature.json",
+      "years_replayed": 35
+    },
+    {
+      "file": "demo/toronto-temperature.json",
+      "years_replayed": 45
+    }
+  ],
+  "guided_story_analyses_replayed": 2,
+  "demo_pdf_sha256": "a779e9ce6097efb75c3dd4db9f4bc9f52f8b6b5480d7844a46ed5f68946fa7e9",
+  "demo_video_sha256": "56ba4b9247c6dc4188d865a39979bef473d569e52ac536312cd60cf55e4ede47",
+  "demo_video_seconds": 29.8,
+  "narrated_media": {
+    "judge": {
+      "sha256": "56ba4b9247c6dc4188d865a39979bef473d569e52ac536312cd60cf55e4ede47",
+      "duration_seconds": 29.8,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "role": "short demo candidate"
+    },
+    "reel": {
+      "sha256": "355e8e4b9f073e73e54e1907af24e06092337d4e8607094aabc848eeb558762b",
+      "duration_seconds": 45.0,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "role": "portfolio, exceeds demo limit"
+    }
+  },
+  "scope": "Anonymous HTTP access, deployed file integrity and offline numerical replay; browser behavior and eligibility are separate checks."
+}

@@ -66,6 +66,7 @@ function getQuery() {
 async function explore(event) {
   if (event) event.preventDefault();
   globalThis.ClimateStory?.pause();
+  globalThis.ClimateWindowAtlas?.pause();
   ++importSequence;
   if (!config) {
     $('status').hidden = false;
@@ -106,7 +107,7 @@ async function explore(event) {
     $('results').hidden = false;
     $('results').setAttribute('aria-busy', 'false');
   } catch (error) {
-    if (error.name === 'AbortError') return;
+    if (error.name === 'AbortError' || activeRequest !== request) return;
     $('status').hidden = true;
     $('error').hidden = false;
     $('error-text').textContent = error.message === 'Failed to fetch' ? SNAPSHOT_MODE ? 'The saved demonstration could not be reached. Check your connection and try again.' : 'The local app is not reachable. Restart the server, then try again.' : error.message;
@@ -167,6 +168,7 @@ function render(result, name) {
   $('table-body').replaceChildren(fragment);
   renderDatasetComparison();
   renderWindows();
+  globalThis.ClimateWindowAtlas?.setAnalysis(result, config);
 }
 
 function matchingComparison() {
@@ -418,8 +420,8 @@ async function persistWork() {
   }
 }
 
-async function openInvestigation(text, origin, sequence = ++importSequence, guided = false) {
-  if (!guided) globalThis.ClimateStory?.pause();
+async function openInvestigation(text, origin, sequence = ++importSequence, guided = false, evidenceKind = 'guided') {
+  if (!guided) { globalThis.ClimateStory?.pause(); globalThis.ClimateWindowAtlas?.pause(); }
   const saved = await ClimateWorkspace.importText(text);
   if (sequence !== importSequence) return;
   if (activeRequest) { activeRequest.abort(); activeRequest = null; }
@@ -433,7 +435,7 @@ async function openInvestigation(text, origin, sequence = ++importSequence, guid
   render(currentResult, currentName);
   $('import-status').hidden = false;
   $('import-status').textContent = guided
-    ? `Guided example: Tehran precipitation, ${currentResult.period.start}–${currentResult.period.end}. Browser checks matched the recorded source hash and recalculated aggregation and point estimates. Uncertainty intervals are precomputed; full Python replay is available. Your notes are preserved.`
+    ? `${evidenceKind === 'atlas' ? `Window atlas evidence: ${currentName}, ${currentResult.metadata.name.toLowerCase()}` : 'Guided example: Tehran precipitation'}, ${currentResult.period.start}–${currentResult.period.end}. Browser checks matched the recorded source hash and recalculated aggregation and point estimates. Uncertainty intervals are precomputed; full Python replay is available. Your notes are preserved.`
     : `${origin}. ${saved.verification.summary} ${saved.verification.limitations} Imported notes are user text, not verified findings. The form remains available to start another analysis.`;
   $('workspace-status').textContent = `Opened saved evidence for ${currentName}. No file was uploaded.`;
   persistWork();
@@ -508,6 +510,7 @@ $('import-file').addEventListener('change', async event => {
   const file = event.target.files[0];
   if (!file) return;
   globalThis.ClimateStory?.pause();
+  globalThis.ClimateWindowAtlas?.pause();
   const sequence = ++importSequence;
   try {
     if (file.size > 2*1024*1024) throw new Error('Choose a JSON file no larger than 2 MiB.');
@@ -517,6 +520,7 @@ $('import-file').addEventListener('change', async event => {
 });
 $('restore-work').addEventListener('click', async () => {
   globalThis.ClimateStory?.pause();
+  globalThis.ClimateWindowAtlas?.pause();
   const sequence = ++importSequence;
   try {
     const saved = await ClimateWorkspace.restore();
@@ -527,6 +531,7 @@ $('restore-work').addEventListener('click', async () => {
 });
 $('clear-work').addEventListener('click', () => {
   globalThis.ClimateStory?.pause();
+  globalThis.ClimateWindowAtlas?.pause();
   ++importSequence;
   $('save-locally').checked = false;
   try { ClimateWorkspace.clear(); $('workspace-status').textContent = 'Local saved copy cleared. Current tab and downloaded files remain available.'; }
@@ -638,6 +643,7 @@ async function initialize() {
     }).then(result => { datasetComparison = result; renderDatasetComparison(); }).catch(() => { datasetComparison = null; renderDatasetComparison(); });
     updateLocation();
     updateStorageControls();
+    globalThis.ClimateWindowAtlas?.setAnalysis(currentResult, config);
     if (sequence === importSequence) await explore();
     else if (!currentResult && !activeRequest) {
       $('status').hidden = false;
@@ -652,6 +658,7 @@ async function initialize() {
 
 globalThis.ClimateStory?.mount({
   onIntent() {
+    globalThis.ClimateWindowAtlas?.pause();
     const sequence = ++importSequence;
     if (activeRequest) { activeRequest.abort(); activeRequest = null; }
     $('explore-button').disabled = false;
@@ -673,6 +680,29 @@ globalThis.ClimateStory?.mount({
   exploreOwn() {
     $('location').focus({preventScroll: true});
     $('location').scrollIntoView({block: 'center', behavior: 'auto'});
+  },
+});
+
+globalThis.ClimateWindowAtlas?.mount({
+  onIntent() {
+    globalThis.ClimateStory?.pause();
+    const sequence = ++importSequence;
+    if (activeRequest) { activeRequest.abort(); activeRequest = null; }
+    $('explore-button').disabled = false;
+    $('status').hidden = true;
+    $('results').setAttribute('aria-busy', 'false');
+    if (currentResult) $('results').hidden = false;
+    return sequence;
+  },
+  async openAnalysis(record, context) {
+    if (context.intent !== importSequence || !context.isCurrent()) return false;
+    await openInvestigation(JSON.stringify(record), 'Window atlas evidence', context.intent, true, 'atlas');
+    return context.intent === importSequence && context.isCurrent();
+  },
+  revealChart() {
+    $('chart-title').setAttribute('tabindex', '-1');
+    $('chart-title').focus({preventScroll: true});
+    $('chart-title').scrollIntoView({block: 'start', behavior: 'auto'});
   },
 });
 

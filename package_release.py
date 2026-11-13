@@ -37,7 +37,7 @@ def package(output):
     for path in sorted((ROOT / "dist").rglob("*")):
         if path.is_file() and not path.name.startswith("."):
             files[f"demo/{path.relative_to(ROOT / 'dist')}"] = path.read_bytes()
-    files["START_HERE.md"] = b"""# Climate Explorer 1.2.0 review package
+    files["START_HERE.md"] = b"""# Climate Explorer 1.3.0 review package
 
 Read source/submission/FARHAD_HANDOFF.md first. The video and seven-slide PDF are in demo/.
 
@@ -51,7 +51,7 @@ For the full Python application, tests and replay, follow source/README.md using
 
 RELEASE_MANIFEST.json records the source commit and every included file's SHA-256. It detects changes relative to this manifest; it is not a digital signature or proof of scientific validity.
 """
-    record = {"release": "1.2.0", "created_utc": datetime.now(timezone.utc).isoformat(),
+    record = {"release": "1.3.0", "created_utc": datetime.now(timezone.utc).isoformat(),
               "source_commit": git("rev-parse", "HEAD").decode().strip(), "code_sha256": CODE_SHA256,
               "files": {name: hashlib.sha256(body).hexdigest() for name, body in sorted(files.items())}}
     files["RELEASE_MANIFEST.json"] = (json.dumps(record, indent=2)+"\n").encode()
@@ -80,7 +80,7 @@ RELEASE_MANIFEST.json records the source commit and every included file's SHA-25
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=ROOT / "release-build/climate-explorer-1.2.0-handoff.zip")
+    parser.add_argument("--output", type=Path, default=ROOT / "release-build/climate-explorer-1.3.0-handoff.zip")
     args = parser.parse_args()
     result = package(args.output)
     args.output.with_suffix(".verification.json").write_text(json.dumps(result, indent=2)+"\n")

@@ -1,8 +1,8 @@
 # Climate Explorer
 
-A reproducible investigation tool for testing historical climate claims with NASA data. Version 1.0.0 completes the saved-investigation workflow, fixed date comparisons and review package. The proposed audience is students and teachers. Educational benefit has not yet been measured.
+A reproducible investigation tool for testing historical climate claims with NASA data. Version 1.3 adds a complete date-window sensitivity atlas and a longer technical film. The proposed audience is students and teachers. Educational benefit has not yet been measured.
 
-[Open the public demonstration](https://armandamirchilou.github.io/climate-explorer/) · [Research and decisions](RESEARCH.md) · [29-second video](https://armandamirchilou.github.io/climate-explorer/demo.html) · [Seven-slide demo](https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf) · [Submission preparation](submission/README.md) · [AI assistance](AI_ASSISTANCE.md)
+[Open the public demonstration](https://armandamirchilou.github.io/climate-explorer/) · [Research and decisions](RESEARCH.md) · [Films](https://armandamirchilou.github.io/climate-explorer/demo.html) · [Seven-slide demo](https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf) · [Submission preparation](submission/README.md) · [AI assistance](AI_ASSISTANCE.md)
 
 The public demonstration contains forty frozen NASA analyses: temperature and precipitation for five locations across four fixed periods ending in 2025. It makes no live NASA request. The full Python app also supports custom coordinates and dates. Both export the exact displayed evidence for offline replay.
 
@@ -30,7 +30,7 @@ On macOS, `Start.command` creates the environment if needed and opens the local 
 
 No NASA account or API key is needed for this POWER endpoint. Other NASA services may require an account. NASA network failure falls back to a clearly labelled real Tehran snapshot or an older cached response when available.
 
-Verification: 83 tests pass locally. The preceding 81-test suite also passed in a clean macOS environment. Linux CI and public release checks are recorded in the release evidence. See [the release evidence](evaluation/RELEASE_VERIFICATION.md).
+Verification includes numerical references, input failure paths, browser-module behavior, HTTP boundaries and offline replay. Actual release test counts, Linux CI and anonymous public checks are recorded in [the release evidence](evaluation/RELEASE_VERIFICATION.md).
 
 ## What works
 
@@ -149,9 +149,9 @@ The downloadable investigation format is **Climate Explorer investigation 1**. I
 
 ## Review and handoff
 
-Start with [Farhad's review guide](submission/FARHAD_HANDOFF.md). The [video page](https://armandamirchilou.github.io/climate-explorer/demo.html) provides the 29-second demonstration, captions, transcript and seven-slide PDF. The [student practice guide](submission/STUDENT_PRACTICE.md) prepares explanations without inventing student contributions. The [1.x software contract](RELEASE_CONTRACT.md) states compatibility and limits.
+Start with [Farhad's review guide](submission/FARHAD_HANDOFF.md). The [video page](https://armandamirchilou.github.io/climate-explorer/demo.html) provides the long technical film, separate short demonstration, portrait reel, captions and seven-slide PDF. The [student practice guide](submission/STUDENT_PRACTICE.md) prepares explanations without inventing student contributions. The [1.x software contract](RELEASE_CONTRACT.md) states compatibility and limits.
 
-The GitHub 1.0.0 release includes a handoff ZIP containing the tracked source, frozen demo, media and SHA-256 manifest. After extracting it, follow START_HERE.md. Its static demo needs Python's built-in HTTP server but no scientific packages or NASA network access. Optional source links still use the internet. To reproduce an archive from a clean checkout, run `.venv/bin/python package_release.py`.
+Each published release has a handoff ZIP containing the tracked source, frozen demo, media and SHA-256 manifest. After extracting it, follow START_HERE.md. Its static demo needs Python's built-in HTTP server but no scientific packages or NASA network access. Optional source links still use the internet. To reproduce an archive from a clean checkout, run `.venv/bin/python package_release.py`.
 
 
 ## Follow a guided investigation
@@ -168,3 +168,27 @@ Version 1.2 adds a narrated, edited short film and a 45-second portrait portfoli
 Use **Copy view link** beside the source downloads to share a supported public location, variable and period. For example, [Tehran rainfall, 2011–2025](https://armandamirchilou.github.io/climate-explorer/?place=tehran&variable=rainfall&period=recent15#workspace). The link does not include notes or freeze the hosted app/data version. Download an investigation for its exact retained evidence. If clipboard access is unavailable, select and copy the displayed URL. Unsupported links announce the default; the full local app does not apply these public-view parameters.
 
 [Production research and rebuild instructions](submission/STORY_PRODUCTION.md) and the [generation receipt](submission/higgsfield-generation.json) record the method and limits. The original silent video remains identifiable in Git history and its 1.0 release.
+
+## Inspect every date window
+
+Version 1.3 adds **666 windows for each of ten frozen location/variable cases**, or 6,660 retained analyses. [Open Tehran rainfall](https://armandamirchilou.github.io/climate-explorer/?place=tehran&variable=rainfall&period=full45#window-atlas), then choose **Load the atlas**. The start/end grid and chronological table contain every requested contiguous period of at least ten calendar years. A fit also requires ten complete annual observations. Missing years remain excluded; dependence checks are withheld where their calendar-spacing assumption fails.
+
+Display-only length and direction filters keep the full universe visible in the count. They do not change calculations, select a preferred result or correct for searching. Opening a cell reconstructs its exact source-backed analysis and preserves your worksheet notes. Atlas data load only when requested, about 3.3 MB per case before transport compression. The full local server also serves these frozen cases and announces when they differ from its current live source.
+
+Download the complete atlas from its source details. Verify its raw source, complete enumeration, every estimate, interval and sensitivity check offline:
+
+```sh
+.venv/bin/python window_atlas.py --verify /path/to/climate-explorer-window-atlas.json
+```
+
+To regenerate all ten cases: `.venv/bin/python window_atlas.py --output tmp/window-atlas --deep`. To replay only a selected analysis, use `evaluation/replay.py`; that checks the selected calculations, not completeness of the parent atlas. The browser independently checks aggregation and point calculations but retains precomputed uncertainty. [The scientific protocol](evaluation/WINDOW_ATLAS.md) defines this difference.
+
+The atlas exposes date sensitivity. Its overlapping windows are not independent votes, and their sign counts are not direction probabilities. Intervals remain conditional and have no selection adjustment. Ten years is a product exploration boundary, not a guarantee of reliable climate evidence. This is not a forecast or causal analysis.
+
+## The longer technical story
+
+[Watch the 2-minute-15-second technical film](https://armandamirchilou.github.io/climate-explorer/demo.html#technical-film). Five chapters connect the opening question to source conversions, competing methods, synthetic failure cases, the atlas and offline replay. Accurate figures are composited outside the generative model; the atlas plate is explicitly a rendering from retained data, not an interface capture. The separately labeled app capture is from the working 1.1 release.
+
+The fictional adult studio presenter and voice are AI-generated. Presenter sources are 480p within a 1080p composition. The first chapter omits an ambiguous-place-name sentence while its accurate full-period figure is shown; no unspoken replacement name is inserted in captions. [The production brief](submission/LONG_FILM_BRIEF.md), [chapter records](submission/long-film-script.json) and [audio-edit receipt](submission/long-film-word-edit.json) preserve the details. The longer film is a portfolio explanation, separate from the existing short demo candidate.
+
+[The innovation review](INNOVATION_REVIEW.md) records 100 concrete alternatives, tradeoffs and selection criteria. It distinguishes implemented work from proposals and human validation tasks. No measured learning impact, original invention of trend matrices or award is claimed.

@@ -47,3 +47,15 @@ The full challenge and current guides have been reviewed. The project still need
 Open Tehran temperature over 1981–2025. Explain the rate and units. Show the assumptions beside the first interval. Compare the methods, then show the fixed date checks. Open the evaluation page and explain one false-positive case. Show the Toronto dataset difference as an unresolved finding. Finish by replaying a saved JSON and stating which parts you personally understand and contributed.
 
 The verified guide permits at most seven slides or a video of at most 30 seconds. A seven-page PDF is prepared in submission/climate-explorer-demo.pdf. A clear explanation with one honest limitation is more useful than a long feature list.
+
+## Why the window atlas matters
+
+Four example periods are useful, but they still leave many date choices hidden. Version 1.3 keeps every requested contiguous window with a minimum of ten years. A 45-year complete record has 36 possible ten-year windows, 35 eleven-year windows, and so on to one 45-year window. Adding these gives 666. Ten retained location/variable cases give 6,660 fits.
+
+The raw monthly response appears once in an atlas file. Each cell retains its own dates, complete-year count, fitted result and method checks. Opening a cell combines those results with the matching observations from the shared source. It does not fetch a different NASA response. This is a small evidence format, not a database of unrelated screenshots.
+
+Compare two nearby cells. Explain what changed in the dates and observations. Then explain why two overlapping periods are not independent evidence. A fraction of positive cells is not the probability that a trend is real. Looking through all cells does not correct an interval for selective reporting.
+
+Download the complete atlas and run `window_atlas.py --verify` to check all cells offline. `evaluation/replay.py` checks one selected analysis. The browser checks a narrower set of point calculations. Those are three different scopes; say which check actually ran.
+
+The longer technical film is a separate portfolio explanation. It does not replace the short official demo candidate. Read the production notes before describing its generated presenter or claiming personal work.

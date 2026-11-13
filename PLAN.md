@@ -1,5 +1,13 @@
 # Climate Explorer improvement plan
 
+## Technical depth and long film, 13 November
+
+The student's new review asks for a two-to-three-minute studio explanation and deeper engineering. This is feedback about the prototype and presentation, not measured learning impact. Three AI specialists independently reviewed scientific validity, engineering and presentation. [The innovation review](INNOVATION_REVIEW.md) records 100 specific alternatives and selection criteria. The selected next release is 1.3, with one complete date-window sensitivity atlas across the ten retained location/variable cases, exact selected-window evidence and offline verification. Historical statistical settings remain 0.2.1.
+
+The separate technical film targets 135 seconds across five chapters: conflicting headlines, source conversions, method tradeoffs, exhaustive date sensitivity and reproducibility. The short NASA demo candidate is retained separately. An initial Full HD generation was rejected before a job started. The current 480p presenter plan quotes 405 credits total within the observed existing balance; figures and the final composite are 1080p. Receipts, actual outcomes and source resolution must be recorded before delivery. No account, payment or competition submission is authorized by this production work.
+
+Acceptance requires independent numerical references, complete enumeration, missing-year behavior, exact selected evidence, honest browser/Python verification scope, cancellation and note preservation, atomic build rollback, public replay and a reviewed captioned final film. Real student testing, organizer eligibility, age/guardian and team questions remain human tasks. Do not claim an award, original invention of trend matrices, human peer review or educational benefit from software checks.
+
 ## Next iteration: story and evidence, 13 November
 
 The student reviewed 1.0 and found the video too static, silent and weakly connected to the product. This is real review feedback about the presentation, not a completed educational usability study. The next software milestone is 1.1: a guided investigation of Tehran rainfall that opens the exact evidence in the working app. The next media milestone is 1.2: an edited speaking-presenter video with the same question, real data, English captions and visible synthetic-media disclosure. Earlier releases remain available.

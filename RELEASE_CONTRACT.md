@@ -16,6 +16,12 @@ The browser accepts the supported NASA POWER export layout from application 0.2.
 
 App release and method settings have separate versions. App 1.0.0 retains method settings 0.2.1 because this release improves the workflow rather than silently replacing the statistical method. Exported source fingerprints identify a source snapshot, not a cryptographic signature, NASA authentication or peer review.
 
+Version 1.3 adds `Climate Explorer window atlas 1`. The envelope retains one ordinary base analysis and the full declared ordered window universe. A materialized cell is an ordinary analysis compatible with the existing selected-record replay and investigation format. Replaying one selected analysis does not verify the parent atlas's completeness; use `window_atlas.py --verify` for the complete source, enumeration, estimates, intervals and checks. Browser verification retains its narrower point-calculation scope.
+
+Each published frozen case has 666 complete candidate windows across 1981–2025 with a ten-year minimum. That count is specific to these complete 45-year records, not all future inputs. Internal missing years remain excluded and unavailable fits are explicit. Filters affect display only. Statistical settings remain 0.2.1; no selection-adjusted inference is introduced.
+
+The 135-second technical film is separate from the short demonstration candidate. Reproducing generated source performances exactly is not promised. Retained source hashes, an explicit audio-edit receipt, script, figures, caption timing, local compositor and encoded-media review record make the edited artifact inspectable. Native 480p presenter footage is not described as native 1080p footage.
+
 ## Release gates
 
 The scientific fixtures, HTTP behavior, frozen build and browser-import regression suite must pass. All forty public analyses must replay from retained source responses. Public files must match their manifest. JavaScript syntax and locked dependency checks must pass. Media must remain within the current published limits and accurately disclose assistance. New UI behavior must be inspected in a real browser. Package and release notes must preserve known limits and actual work dates.

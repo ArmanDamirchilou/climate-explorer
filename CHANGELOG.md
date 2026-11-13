@@ -2,6 +2,35 @@
 
 All dates below use Tehran time (UTC+3:30). Development began on 11 November 2026. Git history starts with the truthful import on 13 November. Earlier local versions are documented milestones, not invented Git commits or backdated releases. A version number measures the software contract, not time spent or competition standing.
 
+## 1.3.0 · 13 November 2026
+
+### Added
+
+- A complete window-sensitivity atlas: 666 contiguous requested periods per complete 45-year record, across ten frozen location/variable cases. Each fit needs at least ten complete years.
+- Compact retained evidence, with the raw response stored once and complete per-window trend and sensitivity results. A selected cell reconstructs a normal analysis that can be inspected, saved and replayed.
+- Independent enumeration and OLS reference checks, missing-year and unavailable-window fixtures, cross-case/tamper rejection and a full offline atlas verifier.
+- A lazy start/end map and chronological table, display-only filters, keyboard selection, exact evidence opening, source mismatch warnings and preserved worksheet notes.
+- A 135-second technical studio film covering the question, NASA data conversions, method alternatives, synthetic failures, date selection and reproducibility. Five generated adult performances are edited with accurate figures, source-backed atlas graphics, semantic English captions and an original instrumental bed.
+- A documented correction take and sentence omissions for unclear generated speech. Caption text follows the edited narration. Raw source hashes and editing receipts remain inspectable.
+- A research-based review of 100 specific professional improvements, with tradeoffs, selection criteria and human-validation tasks.
+
+### Changed and fixed
+
+- Frozen local atlas requests check the original retained source hash and URL and return actionable errors for unavailable or changed source data.
+- Public verification requires the exact forty preset/period paths and fully replays all 6,660 atlas cells, rather than relying only on manifest hashes or record counts.
+- Build installation copies before replacing the previous site and restores it if the final rename fails. Regression checks cover copy failure and rename rollback.
+- An old request's late error cannot overwrite the state of a newer successful investigation.
+- The longer film leads the film page; the original 29.8-second demo candidate and 45-second portrait reel remain separate.
+
+### Limits and removals
+
+- No previous evidence, method, demo candidate or release tag is removed. Statistical settings remain 0.2.1.
+- The atlas exposes date sensitivity; it supplies no selection-adjusted intervals, joint test, independent votes, direction probability, forecast or causal attribution.
+- Presenter sources are 480p in a 1080p composition. The data-derived atlas plate is explicitly not an interface screenshot; the genuine app capture is identified as version 1.1.
+- Automated tests and ASR do not establish human listening, screen-reader certification, educational benefit, original invention of trend matrices or competition eligibility. Real user and matched-station validation remain open.
+
+See [the scientific protocol](evaluation/WINDOW_ATLAS.md), [production record](submission/LONG_FILM_BRIEF.md) and [release verification](evaluation/RELEASE_VERIFICATION.md) for actual checks and their scope.
+
 ## 1.2.0 · 13 November 2026
 
 ### Added

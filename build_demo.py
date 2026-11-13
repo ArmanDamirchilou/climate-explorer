@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import os
 import shutil
 import tempfile
 from pathlib import Path
@@ -12,10 +13,29 @@ from climate import PRESETS, ROOT, analyze_saved, payload_hash
 from evaluation.replay import verify
 from window_analysis import FIXED_WINDOWS, analyze_window
 from story_evidence import build_story_evidence
+from window_atlas import build_window_atlas, validate_atlas
 
 
 def write_json(path, value):
     path.write_text(json.dumps(value, allow_nan=False, separators=(",", ":")) + "\n")
+
+
+def install_build(stage, output):
+    """Keep the previous complete site if copying or the final rename fails."""
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix=f".{output.name}-install-", dir=output.parent) as temporary:
+        temporary = Path(temporary)
+        ready, previous = temporary / "ready", temporary / "previous"
+        shutil.copytree(stage, ready)
+        had_previous = output.exists()
+        if had_previous:
+            os.replace(output, previous)
+        try:
+            os.replace(ready, output)
+        except BaseException:
+            if had_previous:
+                os.replace(previous, output)
+            raise
 
 
 def build(output):
@@ -29,6 +49,8 @@ def build(output):
         shutil.copytree(ROOT / "static", stage)
         data = stage / "demo"
         data.mkdir()
+        atlas_directory = stage / "atlas"
+        atlas_directory.mkdir()
         for page in stage.glob("*.html"):
             text = page.read_text().replace("<head>", '<head>\n  <meta name="climate-mode" content="snapshot">', 1)
             page.write_text(text)
@@ -53,6 +75,9 @@ def build(output):
                 result = analyze_saved(query, saved, "frozen NASA snapshot (public demonstration)")
                 verify(result)
                 write_json(data / f"{key}-{variable}.json", result)
+                atlas = build_window_atlas(result)
+                validate_atlas(atlas)
+                write_json(atlas_directory / f"{key}-{variable}.json", atlas)
                 for window in FIXED_WINDOWS[1:]:
                     period_result = analyze_window(place, saved, variable, window["id"])
                     verify(period_result)
@@ -61,10 +86,12 @@ def build(output):
         for source, target in (("results.json", "validation.json"), ("dataset-check.json", "dataset-check.json"), ("science-audit.json", "science-audit.json")):
             write_json(data / target, json.loads((ROOT / "evaluation" / source).read_text()))
         reviewed_media = {}
-        for mode in ("judge", "reel"):
+        for mode in ("judge", "reel", "technical"):
             record = json.loads((ROOT / f"submission/climate-explorer-story-{mode}.json").read_text())
             if record["mode"] != mode or (mode == "judge" and record["duration_seconds"] > 30):
                 raise ValueError("Reviewed media has the wrong role or exceeds the demo limit.")
+            if mode == "technical" and (not 120 <= record["duration_seconds"] <= 180 or not record["checks"]["encoded_visual_review"] or not record["checks"]["full_decode_passed"]):
+                raise ValueError("The technical portfolio film is unfinished or outside the agreed duration.")
             expected = {f"climate-explorer-story-{mode}.mp4": record["sha256"],
                         f"climate-explorer-story-{mode}.vtt": record["captions"]["sha256"],
                         f"climate-explorer-story-{mode}-poster.jpg": record["poster"]["sha256"]}
@@ -81,6 +108,9 @@ def build(output):
             "climate-explorer-story-reel.vtt": "climate-explorer-reel.vtt",
             "climate-explorer-story-judge-poster.jpg": "story-judge-poster.jpg",
             "climate-explorer-story-reel-poster.jpg": "story-reel-poster.jpg",
+            "climate-explorer-story-technical.mp4": "climate-explorer-technical.mp4",
+            "climate-explorer-story-technical.vtt": "climate-explorer-technical.vtt",
+            "climate-explorer-story-technical-poster.jpg": "story-technical-poster.jpg",
             "story-media.css": "story-media.css",
         }
         for source, target in media.items():
@@ -94,10 +124,7 @@ def build(output):
             for path in sorted(stage.rglob("*")) if path.is_file() and not path.name.startswith(".")
         }
         write_json(stage / "build-manifest.json", manifest)
-        output.parent.mkdir(parents=True, exist_ok=True)
-        if output.exists():
-            shutil.rmtree(output)
-        shutil.copytree(stage, output)
+        install_build(stage, output)
     return len(manifest)
 
 

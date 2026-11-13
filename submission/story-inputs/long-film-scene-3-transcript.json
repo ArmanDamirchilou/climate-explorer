@@ -1,0 +1,462 @@
+{
+  "method": "faster-whisper 1.2.1",
+  "model": "medium.en",
+  "scope": "Automatic draft. Inspect the actual speech and correct captions before publishing.",
+  "duration": 27.072,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.4,
+      "text": " Then we compared methods.",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.48,
+          "word": " Then",
+          "probability": 0.8682534098625183
+        },
+        {
+          "start": 0.48,
+          "end": 0.62,
+          "word": " we",
+          "probability": 0.9261361956596375
+        },
+        {
+          "start": 0.62,
+          "end": 0.94,
+          "word": " compared",
+          "probability": 0.9934104084968567
+        },
+        {
+          "start": 0.94,
+          "end": 1.4,
+          "word": " methods.",
+          "probability": 0.9976402521133423
+        }
+      ]
+    },
+    {
+      "start": 2.02,
+      "end": 4.3,
+      "text": " Ordinary regression gives an understandable baseline.",
+      "words": [
+        {
+          "start": 2.02,
+          "end": 2.32,
+          "word": " Ordinary",
+          "probability": 0.9895228445529938
+        },
+        {
+          "start": 2.32,
+          "end": 2.76,
+          "word": " regression",
+          "probability": 0.6828487515449524
+        },
+        {
+          "start": 2.76,
+          "end": 3.08,
+          "word": " gives",
+          "probability": 0.996494472026825
+        },
+        {
+          "start": 3.08,
+          "end": 3.24,
+          "word": " an",
+          "probability": 0.9926020503044128
+        },
+        {
+          "start": 3.24,
+          "end": 3.74,
+          "word": " understandable",
+          "probability": 0.9969743490219116
+        },
+        {
+          "start": 3.74,
+          "end": 4.3,
+          "word": " baseline.",
+          "probability": 0.9917286038398743
+        }
+      ]
+    },
+    {
+      "start": 5.18,
+      "end": 7.42,
+      "text": " Adjusted intervals examine correlated errors.",
+      "words": [
+        {
+          "start": 5.18,
+          "end": 5.42,
+          "word": " Adjusted",
+          "probability": 0.7956646680831909
+        },
+        {
+          "start": 5.42,
+          "end": 5.9,
+          "word": " intervals",
+          "probability": 0.9909842014312744
+        },
+        {
+          "start": 5.9,
+          "end": 6.38,
+          "word": " examine",
+          "probability": 0.841579794883728
+        },
+        {
+          "start": 6.38,
+          "end": 6.92,
+          "word": " correlated",
+          "probability": 0.9887593984603882
+        },
+        {
+          "start": 6.92,
+          "end": 7.42,
+          "word": " errors.",
+          "probability": 0.9989608526229858
+        }
+      ]
+    },
+    {
+      "start": 8.34,
+      "end": 10.52,
+      "text": " A robust slope checks unusual years.",
+      "words": [
+        {
+          "start": 8.34,
+          "end": 8.44,
+          "word": " A",
+          "probability": 0.9763462543487549
+        },
+        {
+          "start": 8.44,
+          "end": 8.78,
+          "word": " robust",
+          "probability": 0.9973982572555542
+        },
+        {
+          "start": 8.78,
+          "end": 9.14,
+          "word": " slope",
+          "probability": 0.9814451336860657
+        },
+        {
+          "start": 9.14,
+          "end": 9.54,
+          "word": " checks",
+          "probability": 0.998134195804596
+        },
+        {
+          "start": 9.54,
+          "end": 10.04,
+          "word": " unusual",
+          "probability": 0.9845947027206421
+        },
+        {
+          "start": 10.04,
+          "end": 10.52,
+          "word": " years.",
+          "probability": 0.9967064261436462
+        }
+      ]
+    },
+    {
+      "start": 11.12,
+      "end": 13.82,
+      "text": " We tested the candidates on 20,000 synthetic records.",
+      "words": [
+        {
+          "start": 11.12,
+          "end": 11.2,
+          "word": " We",
+          "probability": 0.9965032339096069
+        },
+        {
+          "start": 11.2,
+          "end": 11.52,
+          "word": " tested",
+          "probability": 0.9986236095428467
+        },
+        {
+          "start": 11.52,
+          "end": 11.72,
+          "word": " the",
+          "probability": 0.9957225322723389
+        },
+        {
+          "start": 11.72,
+          "end": 12.06,
+          "word": " candidates",
+          "probability": 0.998137354850769
+        },
+        {
+          "start": 12.06,
+          "end": 12.34,
+          "word": " on",
+          "probability": 0.9987558126449585
+        },
+        {
+          "start": 12.34,
+          "end": 12.62,
+          "word": " 20",
+          "probability": 0.8842121362686157
+        },
+        {
+          "start": 12.62,
+          "end": 13.0,
+          "word": ",000",
+          "probability": 0.9873498678207397
+        },
+        {
+          "start": 13.0,
+          "end": 13.4,
+          "word": " synthetic",
+          "probability": 0.9894359111785889
+        },
+        {
+          "start": 13.4,
+          "end": 13.82,
+          "word": " records.",
+          "probability": 0.9978901743888855
+        }
+      ]
+    },
+    {
+      "start": 14.22,
+      "end": 18.24,
+      "text": " Under strong dependence, none of the deployable candidates passed every screening case.",
+      "words": [
+        {
+          "start": 14.22,
+          "end": 14.4,
+          "word": " Under",
+          "probability": 0.9983123540878296
+        },
+        {
+          "start": 14.4,
+          "end": 14.72,
+          "word": " strong",
+          "probability": 0.9920260310173035
+        },
+        {
+          "start": 14.72,
+          "end": 15.18,
+          "word": " dependence,",
+          "probability": 0.9243113398551941
+        },
+        {
+          "start": 15.6,
+          "end": 15.68,
+          "word": " none",
+          "probability": 0.9957329630851746
+        },
+        {
+          "start": 15.68,
+          "end": 15.84,
+          "word": " of",
+          "probability": 0.9991679191589355
+        },
+        {
+          "start": 15.84,
+          "end": 15.96,
+          "word": " the",
+          "probability": 0.9971780776977539
+        },
+        {
+          "start": 15.96,
+          "end": 16.38,
+          "word": " deployable",
+          "probability": 0.993644654750824
+        },
+        {
+          "start": 16.38,
+          "end": 16.88,
+          "word": " candidates",
+          "probability": 0.9970621466636658
+        },
+        {
+          "start": 16.88,
+          "end": 17.22,
+          "word": " passed",
+          "probability": 0.9819024801254272
+        },
+        {
+          "start": 17.22,
+          "end": 17.52,
+          "word": " every",
+          "probability": 0.9971691966056824
+        },
+        {
+          "start": 17.52,
+          "end": 17.84,
+          "word": " screening",
+          "probability": 0.9975100755691528
+        },
+        {
+          "start": 17.84,
+          "end": 18.24,
+          "word": " case.",
+          "probability": 0.9992235898971558
+        }
+      ]
+    },
+    {
+      "start": 18.74,
+      "end": 21.58,
+      "text": " So we kept the alternatives visible, documented their failures,",
+      "words": [
+        {
+          "start": 18.74,
+          "end": 18.9,
+          "word": " So",
+          "probability": 0.9861447811126709
+        },
+        {
+          "start": 18.9,
+          "end": 19.02,
+          "word": " we",
+          "probability": 0.8972625136375427
+        },
+        {
+          "start": 19.02,
+          "end": 19.18,
+          "word": " kept",
+          "probability": 0.9987478256225586
+        },
+        {
+          "start": 19.18,
+          "end": 19.36,
+          "word": " the",
+          "probability": 0.9963271021842957
+        },
+        {
+          "start": 19.36,
+          "end": 19.76,
+          "word": " alternatives",
+          "probability": 0.9946869611740112
+        },
+        {
+          "start": 19.76,
+          "end": 20.22,
+          "word": " visible,",
+          "probability": 0.9976981282234192
+        },
+        {
+          "start": 20.6,
+          "end": 20.94,
+          "word": " documented",
+          "probability": 0.9936937689781189
+        },
+        {
+          "start": 20.94,
+          "end": 21.2,
+          "word": " their",
+          "probability": 0.9978345036506653
+        },
+        {
+          "start": 21.2,
+          "end": 21.58,
+          "word": " failures,",
+          "probability": 0.9985260963439941
+        }
+      ]
+    },
+    {
+      "start": 21.84,
+      "end": 24.56,
+      "text": " and avoided presenting one interval as a universal fix.",
+      "words": [
+        {
+          "start": 21.84,
+          "end": 22.04,
+          "word": " and",
+          "probability": 0.9972466230392456
+        },
+        {
+          "start": 22.04,
+          "end": 22.32,
+          "word": " avoided",
+          "probability": 0.9989690780639648
+        },
+        {
+          "start": 22.32,
+          "end": 22.78,
+          "word": " presenting",
+          "probability": 0.9987026453018188
+        },
+        {
+          "start": 22.78,
+          "end": 23.08,
+          "word": " one",
+          "probability": 0.9886975288391113
+        },
+        {
+          "start": 23.08,
+          "end": 23.42,
+          "word": " interval",
+          "probability": 0.999093770980835
+        },
+        {
+          "start": 23.42,
+          "end": 23.68,
+          "word": " as",
+          "probability": 0.9977918863296509
+        },
+        {
+          "start": 23.68,
+          "end": 23.84,
+          "word": " a",
+          "probability": 0.9949476718902588
+        },
+        {
+          "start": 23.84,
+          "end": 24.22,
+          "word": " universal",
+          "probability": 0.9903901815414429
+        },
+        {
+          "start": 24.22,
+          "end": 24.56,
+          "word": " fix.",
+          "probability": 0.9951474070549011
+        }
+      ]
+    },
+    {
+      "start": 25.04,
+      "end": 26.88,
+      "text": " This is exploration, not forecasting.",
+      "words": [
+        {
+          "start": 25.04,
+          "end": 25.2,
+          "word": " This",
+          "probability": 0.9947558641433716
+        },
+        {
+          "start": 25.2,
+          "end": 25.36,
+          "word": " is",
+          "probability": 0.9982805252075195
+        },
+        {
+          "start": 25.36,
+          "end": 25.9,
+          "word": " exploration,",
+          "probability": 0.9761584401130676
+        },
+        {
+          "start": 26.2,
+          "end": 26.36,
+          "word": " not",
+          "probability": 0.9988988637924194
+        },
+        {
+          "start": 26.36,
+          "end": 26.88,
+          "word": " forecasting.",
+          "probability": 0.9982082843780518
+        }
+      ]
+    }
+  ],
+  "text": "Then we compared methods. Ordinary regression gives an understandable baseline. Adjusted intervals examine correlated errors. A robust slope checks unusual years. We tested the candidates on 20,000 synthetic records. Under strong dependence, none of the deployable candidates passed every screening case. So we kept the alternatives visible, documented their failures, and avoided presenting one interval as a universal fix. This is exploration, not forecasting."
+}

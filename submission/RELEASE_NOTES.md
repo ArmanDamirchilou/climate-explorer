@@ -1,14 +1,28 @@
-# Climate Explorer 1.2.0
+# Climate Explorer 1.3.0
 
-The presentation now starts with a question and follows the same rainfall evidence as the working app. The software adds shareable views so someone watching can open the exact public period and variable directly.
+The four existing date examples could still hide other choices. This release adds the complete declared date-window universe and lets a reader open and replay the exact evidence behind a selected cell. The separate 135-second studio film explains the engineering decisions and known method failures.
 
-- A 29.8-second narrated landscape film with a fictional adult presenter, synchronized generated speech, animated NASA data, real app capture, English captions, transitions and original synthesized sound.
-- A separate 45-second portrait portfolio reel. It exceeds the official demo length and is clearly labeled.
-- Validated public view links, explicit invalid-link fallback and a selectable URL if clipboard copying is unavailable. Notes remain private and are not included.
-- A build check that rejects unfinished or changed media before replacing the previous site. Exact video inputs, generation receipt, hashes and production scripts are retained.
+## Inspect the improvement
 
-117 tests pass locally with zero skips. All forty public analyses and both story records replay. Both videos fully decode; automated transcription of the final mixed short film matches the complete script. Encoded scenes and actual app capture were visually reviewed. No human listening, educational benefit or station validation is claimed.
+- [Open Tehran rainfall and load its atlas](https://armandamirchilou.github.io/climate-explorer/?place=tehran&variable=rainfall&period=full45#window-atlas).
+- [Watch the full technical story](https://armandamirchilou.github.io/climate-explorer/demo.html#technical-film).
+- [Read the 100-candidate decision review](../INNOVATION_REVIEW.md).
+- [Read the date-window protocol](../evaluation/WINDOW_ATLAS.md).
 
-[Watch both cuts](https://armandamirchilou.github.io/climate-explorer/demo.html) · [Try the story](https://armandamirchilou.github.io/climate-explorer/#guided-story) · [Open the rainfall example](https://armandamirchilou.github.io/climate-explorer/?place=tehran&variable=rainfall&period=recent15#workspace) · [Version history](https://github.com/ArmanDamirchilou/climate-explorer/blob/main/CHANGELOG.md)
+There are 666 periods per complete 45-year case and ten cases, with complete per-cell trend and sensitivity results. The raw response appears once per atlas. Default browser checks recalculate point estimates; full Python verification also replays intervals and method checks. Filters only change the display. Overlap and searching do not produce independent evidence or corrected significance.
 
-Earlier releases and the original silent source video remain preserved. App methods, raw NASA records and investigation compatibility have not changed. Synthetic-media disclosure is visible and embedded in metadata. No AI co-author trailer is added to Git commits; the assistance record stays public. Development began on 11 November, and AI contributed to the approach. Organizer guidance remains necessary. No competition entry or message to Farhad has been sent.
+The local server checks frozen source identity, public verification checks every required file and cell, and failed build installation restores the previous complete site. Stale asynchronous errors no longer replace a newer successful result. The existing statistical settings and investigation format remain compatible.
+
+## Presentation and provenance
+
+Five fictional adult studio performances and one short correction take were generated with Higgsfield. Total preflight quotes were 444 credits within the observed existing 444.73-credit balance; no top-up, account or subscription was created. The earlier attempted 1080p request was rejected before a job started. Presenter sources are 480p, composed with 1080p data figures and English captions.
+
+The edited speech uses documented whole-sentence corrections and omissions where automatic checks found unclear words. The original raw performances remain private and hashed. The atlas plate is rendered from retained data and labeled as such. The genuine app capture is from the working 1.1 release. No student likeness, voice clone, NASA employee portrayal, invented observations or human testimonials are used.
+
+The short demo candidate remains 29.8 seconds, separately from the 45-second reel and this technical film. The PDF remains the reviewed seven-page 1.0 artifact.
+
+## Validation and open work
+
+[The release verification record](../evaluation/RELEASE_VERIFICATION.md) records the actual local tests, CI, public checks and media review. The release ZIP retains source, the frozen site, media, evidence and a full checksum manifest. A hash establishes consistency, not NASA authentication or scientific truth.
+
+Development began 11 November and AI contributed to the approach. Organizer eligibility, guardian/team details, real student observations and matched station checks remain open. No award, educational outcome, human audio review or NASA endorsement is claimed. No competition entry or message to Farhad has been submitted.

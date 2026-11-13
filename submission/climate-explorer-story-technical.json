@@ -1,0 +1,212 @@
+{
+  "mode": "technical",
+  "file": "climate-explorer-story-technical.mp4",
+  "sha256": "aeb40d39bdf2750f6b86e86af48c5e009ddb1119c47409821a81078f23f60e58",
+  "bytes": 12492700,
+  "duration_seconds": 135.0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "native_audio_preserved": true,
+  "native_audio_scope": "Native generated performances with documented full-clause omissions and separately generated native correction-take insertions; chapter loudness normalization and original quiet instrumental bed",
+  "audio_edit_record": {
+    "file": "submission/long-film-word-edit.json",
+    "sha256": "e45f3ae354083faba2a6dab68dbb7dbd3dc3784f2c3f669e214092698e3c47b3"
+  },
+  "audio_edit_records": [
+    {
+      "file": "submission/long-film-word-edit.json",
+      "sha256": "e45f3ae354083faba2a6dab68dbb7dbd3dc3784f2c3f669e214092698e3c47b3"
+    },
+    {
+      "file": "submission/long-film-sentence-edits.json",
+      "sha256": "ab3cbb02f93b0dc2f9f616afa00fb064d464e1a58cbb21b05332e85165b59aad"
+    },
+    {
+      "file": "submission/long-film-scene5-omissions.json",
+      "sha256": "e4e3206d1b322bb6bc7d36ce1c9b7b11d2d155325cd5ec6b14a2090441c0641b"
+    }
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "source": "tmp/long-film/scene-1.mp4",
+      "sha256": "de8f172e6632bdd982f1ca9cf4299ec02299b400d0df0fdd0dacc33fc574a804",
+      "source_resolution": [
+        854,
+        480
+      ],
+      "duration_seconds": 27.041667,
+      "native_audio_preserved": true,
+      "transcript": "tmp/long-film/scene-1-transcript.json",
+      "transcript_sha256": "0386c10a47a89d79d679c286c9a059c90e2be678a0afef33ff310d0fab7660a2",
+      "automatic_transcript_matches_approved_script": true,
+      "last_word_seconds": 26.44
+    },
+    {
+      "chapter": 2,
+      "source": "tmp/long-film/scene-2.mp4",
+      "sha256": "3a2cbfff5a73d2f522d5cd04bd13eb98fe5c4ce5c28f835e4b67194c4fc5ffac",
+      "source_resolution": [
+        854,
+        480
+      ],
+      "duration_seconds": 27.072,
+      "native_audio_preserved": true,
+      "transcript": "tmp/long-film/scene-2-transcript.json",
+      "transcript_sha256": "ea27d8b4861a6221efee1e1827147ad52a483dc19012a286ab21c2c9b4c540fd",
+      "automatic_transcript_matches_approved_script": true,
+      "last_word_seconds": 26.72
+    },
+    {
+      "chapter": 3,
+      "source": "tmp/long-film/scene-3.mp4",
+      "sha256": "1bc7bf9155074b8a6329aaa0b85d77714d2990b4e76accb6853ea762fc0c7d94",
+      "source_resolution": [
+        854,
+        480
+      ],
+      "duration_seconds": 27.072,
+      "native_audio_preserved": true,
+      "transcript": "tmp/long-film/scene-3-transcript.json",
+      "transcript_sha256": "dfe2579a89117e1445514f928c9846c3b48d3c274a6d189056f0cd9e1c4392ed",
+      "automatic_transcript_matches_approved_script": true,
+      "last_word_seconds": 26.88
+    },
+    {
+      "chapter": 4,
+      "source": "tmp/long-film/scene-4.mp4",
+      "sha256": "7bf38c0335efba2f9e6be95be0a483f72252bf5d04a3d88d0be91d50bf4f2c27",
+      "source_resolution": [
+        854,
+        480
+      ],
+      "duration_seconds": 27.072,
+      "native_audio_preserved": true,
+      "transcript": "tmp/long-film/scene-4-transcript.json",
+      "transcript_sha256": "e9afd46f4cb2d67a3a31ee1b5c81c17546e8f281d75e78a1b55256c6419640a3",
+      "automatic_transcript_matches_approved_script": true,
+      "last_word_seconds": 26.82
+    },
+    {
+      "chapter": 5,
+      "source": "tmp/long-film/scene-5.mp4",
+      "sha256": "65fb4a80ace5fd3d2170a939d59a2ef299fcf6bb12eb093d4bfba293db39a2a7",
+      "source_resolution": [
+        854,
+        480
+      ],
+      "duration_seconds": 27.072,
+      "native_audio_preserved": true,
+      "transcript": "tmp/long-film/scene-5-transcript.json",
+      "transcript_sha256": "f06c193aa3d155d517db3ef702d17f2d72fa6c13c587e8d6f3c5a2107490997f",
+      "automatic_transcript_matches_approved_script": true,
+      "last_word_seconds": 25.1
+    }
+  ],
+  "script": "submission/long-film-script.json",
+  "script_sha256": "c432a759e198531ff86da65bfeab5ace2dc25330528d3cebd3919bb97a2015d1",
+  "sources": {
+    "submission/story-inputs/tehran-rainfall.json": "8249c9ee82fd3d6521057b78cf9576eac7350523cce7c35679ef9692d6e92c1a",
+    "submission/story-inputs/tehran-recent15-rainfall.json": "925c79b5f862afe6152479a4db8b0b318665b28398faacbc5d9e6342a4ea8232",
+    "evaluation/results.json": "c005ee74cecef59efa4364001edeb286d56de1678dd42ba9993448de688e161f",
+    "submission/story-inputs/tehran-rainfall-atlas.json": "2bcaa3eb162631871e1110d078bd33b1adcd905b0543d9974ab9e5a2aa3f06d1",
+    "submission/long-film-word-edit.json": "e45f3ae354083faba2a6dab68dbb7dbd3dc3784f2c3f669e214092698e3c47b3",
+    "submission/long-film-sentence-edits.json": "ab3cbb02f93b0dc2f9f616afa00fb064d464e1a58cbb21b05332e85165b59aad",
+    "submission/long-film-scene5-omissions.json": "e4e3206d1b322bb6bc7d36ce1c9b7b11d2d155325cd5ec6b14a2090441c0641b"
+  },
+  "captures": {
+    "app": {
+      "file": "submission/story-app-capture.png",
+      "sha256": "600a0ef358e05b6d16004ecaa8c9348df3ee14c11db916bfe9e18d2ca6a6faa0"
+    }
+  },
+  "atlas_visual": "Data-derived plate, explicitly labeled as not an interface capture",
+  "builder_sha256": "d14e6b19a34486b422f874a0dee1588d871ef7a5157d08cf66cda42961aff488",
+  "ffmpeg_version": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+  "captions": {
+    "file": "climate-explorer-story-technical.vtt",
+    "sha256": "4359701d5600c8610316a1fb7ad88e95808fbe13efc471d64b7f491f742a83ec",
+    "maximum_characters_per_second": 20.0,
+    "median_characters_per_second": 17.0,
+    "high_reading_speed_review_flags": [],
+    "cue_count": 42
+  },
+  "poster": {
+    "file": "climate-explorer-story-technical-poster.jpg",
+    "sha256": "13cf541631f8e5191f5ed13c727f585cdae5f90c43df403525479b82cce769cf"
+  },
+  "source_resolution_disclosure": "480p generated presenter sources upscaled; deterministic graphics and composition are 1080p",
+  "checks": {
+    "full_decode_passed": true,
+    "source_transcript_agreement": true,
+    "encoded_visual_review": true,
+    "human_listening_performed": false,
+    "audio_pcm_decode_no_timestamp_warnings": true,
+    "final_mixed_audio_transcript_agreement": true,
+    "caption_timing_valid": true
+  },
+  "review": "Final full decode and PCM timestamp checks passed. Encoded scenes, correction masks, captions and closing card were visually inspected. The final mixed audio agrees with the 307-word canonical script after case, punctuation and number-spelling normalization. Native generated performances include documented full-sentence corrections and omissions. Human listening has not been performed.",
+  "generated_utc": "2026-11-13T15:24:45.720561+00:00",
+  "video_duration_seconds": 135.0,
+  "frame_count": 4050,
+  "pixel_format": "yuv420p",
+  "audio_channels": 2,
+  "audio_sample_rate": 48000,
+  "audio_timeline": "Each chapter separately decoded to48000Hz stereo float PCM; exactly27seconds per chapter joined sample-wise. Compressed audio tracks are not concatenated. Video is joined separately.",
+  "master_gain_db": -3.2,
+  "audio_measurements": {
+    "integrated_lufs": -19.22,
+    "true_peak_dbtp": -4.66,
+    "loudness_range_lu": 3.8,
+    "scope": "Measured from the final AAC encode, not the pre-encode master."
+  },
+  "checked_utc": "2026-11-13T15:30:28.002465+00:00",
+  "visual_review": {
+    "final_master_sample_count": 31,
+    "final_master_sample_seconds": [
+      0.5,
+      6.5,
+      14.8,
+      21.8,
+      26.9,
+      27.1,
+      35.7,
+      43.8,
+      48,
+      53.8,
+      54.1,
+      60.5,
+      63,
+      67.2,
+      80.8,
+      81.1,
+      88.9,
+      94.5,
+      98.5,
+      107.8,
+      108.1,
+      116.2,
+      127.3,
+      132,
+      134.8,
+      127.1,
+      127.3,
+      130.1,
+      133.18,
+      134.2,
+      134.8
+    ],
+    "scope": "Actual final encoded samples inspected across all chapters, edited-speech masks, same-source figures, retained atlas, real app image, subtitles, transitions and fully opaque closing card. Repeated31sample times include two additional checks at the same ending locations."
+  },
+  "final_mixed_transcript": {
+    "file": "submission/story-inputs/long-film-final-mixed-transcript.json",
+    "sha256": "1aeaf0a93a0a3b417ca202c0c39164c7f6077d1913d2fa86c75087a8c7d587ed",
+    "model": "medium.en",
+    "scope": "Automatic normalized-word agreement on the frozen final mixed MP4; not human listening."
+  }
+}

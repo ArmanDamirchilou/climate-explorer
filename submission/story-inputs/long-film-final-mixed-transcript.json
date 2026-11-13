@@ -1,0 +1,2180 @@
+{
+  "method": "faster-whisper 1.2.1",
+  "model": "medium.en",
+  "scope": "Automatic draft. Inspect the actual speech and correct captions before publishing.",
+  "duration": 135.0,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.36,
+      "text": " Two headlines, one city.",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.76,
+          "word": " Two",
+          "probability": 0.6424142718315125
+        },
+        {
+          "start": 0.76,
+          "end": 1.22,
+          "word": " headlines,",
+          "probability": 0.993412435054779
+        },
+        {
+          "start": 1.8,
+          "end": 1.96,
+          "word": " one",
+          "probability": 0.9869912266731262
+        },
+        {
+          "start": 1.96,
+          "end": 2.36,
+          "word": " city.",
+          "probability": 0.9972288012504578
+        }
+      ]
+    },
+    {
+      "start": 2.96,
+      "end": 5.48,
+      "text": " Rainfall is rising, rainfall is falling.",
+      "words": [
+        {
+          "start": 2.96,
+          "end": 3.36,
+          "word": " Rainfall",
+          "probability": 0.7371983528137207
+        },
+        {
+          "start": 3.36,
+          "end": 3.58,
+          "word": " is",
+          "probability": 0.963344156742096
+        },
+        {
+          "start": 3.58,
+          "end": 3.98,
+          "word": " rising,",
+          "probability": 0.9953248500823975
+        },
+        {
+          "start": 4.5,
+          "end": 4.84,
+          "word": " rainfall",
+          "probability": 0.9873923659324646
+        },
+        {
+          "start": 4.84,
+          "end": 5.1,
+          "word": " is",
+          "probability": 0.9982847571372986
+        },
+        {
+          "start": 5.1,
+          "end": 5.48,
+          "word": " falling.",
+          "probability": 0.998649537563324
+        }
+      ]
+    },
+    {
+      "start": 6.2,
+      "end": 8.08,
+      "text": " Both came from the same NASA record.",
+      "words": [
+        {
+          "start": 6.2,
+          "end": 6.42,
+          "word": " Both",
+          "probability": 0.9943312406539917
+        },
+        {
+          "start": 6.42,
+          "end": 6.74,
+          "word": " came",
+          "probability": 0.9979640245437622
+        },
+        {
+          "start": 6.74,
+          "end": 7.0,
+          "word": " from",
+          "probability": 0.9985541701316833
+        },
+        {
+          "start": 7.0,
+          "end": 7.16,
+          "word": " the",
+          "probability": 0.997211754322052
+        },
+        {
+          "start": 7.16,
+          "end": 7.4,
+          "word": " same",
+          "probability": 0.9992177486419678
+        },
+        {
+          "start": 7.4,
+          "end": 7.74,
+          "word": " NASA",
+          "probability": 0.9982730150222778
+        },
+        {
+          "start": 7.74,
+          "end": 8.08,
+          "word": " record.",
+          "probability": 0.9948025941848755
+        }
+      ]
+    },
+    {
+      "start": 8.68,
+      "end": 9.86,
+      "text": " The difference was the dates.",
+      "words": [
+        {
+          "start": 8.68,
+          "end": 8.78,
+          "word": " The",
+          "probability": 0.9958623647689819
+        },
+        {
+          "start": 8.78,
+          "end": 9.06,
+          "word": " difference",
+          "probability": 0.9978739023208618
+        },
+        {
+          "start": 9.06,
+          "end": 9.32,
+          "word": " was",
+          "probability": 0.9978006482124329
+        },
+        {
+          "start": 9.32,
+          "end": 9.5,
+          "word": " the",
+          "probability": 0.9979165196418762
+        },
+        {
+          "start": 9.5,
+          "end": 9.86,
+          "word": " dates.",
+          "probability": 0.9913342595100403
+        }
+      ]
+    },
+    {
+      "start": 14.02,
+      "end": 16.82,
+      "text": " Over the most recent 15, it points down,",
+      "words": [
+        {
+          "start": 14.02,
+          "end": 14.34,
+          "word": " Over",
+          "probability": 0.9738942384719849
+        },
+        {
+          "start": 14.34,
+          "end": 14.48,
+          "word": " the",
+          "probability": 0.9988389611244202
+        },
+        {
+          "start": 14.48,
+          "end": 14.68,
+          "word": " most",
+          "probability": 0.9977586269378662
+        },
+        {
+          "start": 14.68,
+          "end": 15.04,
+          "word": " recent",
+          "probability": 0.9984915256500244
+        },
+        {
+          "start": 15.04,
+          "end": 15.5,
+          "word": " 15,",
+          "probability": 0.8250123262405396
+        },
+        {
+          "start": 15.92,
+          "end": 16.12,
+          "word": " it",
+          "probability": 0.9971722960472107
+        },
+        {
+          "start": 16.12,
+          "end": 16.4,
+          "word": " points",
+          "probability": 0.9989389777183533
+        },
+        {
+          "start": 16.4,
+          "end": 16.82,
+          "word": " down,",
+          "probability": 0.9984031319618225
+        }
+      ]
+    },
+    {
+      "start": 17.16,
+      "end": 18.94,
+      "text": " with an interval that includes zero.",
+      "words": [
+        {
+          "start": 17.16,
+          "end": 17.4,
+          "word": " with",
+          "probability": 0.9923563003540039
+        },
+        {
+          "start": 17.4,
+          "end": 17.58,
+          "word": " an",
+          "probability": 0.9973517656326294
+        },
+        {
+          "start": 17.58,
+          "end": 17.88,
+          "word": " interval",
+          "probability": 0.9989744424819946
+        },
+        {
+          "start": 17.88,
+          "end": 18.12,
+          "word": " that",
+          "probability": 0.998155415058136
+        },
+        {
+          "start": 18.12,
+          "end": 18.52,
+          "word": " includes",
+          "probability": 0.9929713606834412
+        },
+        {
+          "start": 18.52,
+          "end": 18.94,
+          "word": " zero.",
+          "probability": 0.8839937448501587
+        }
+      ]
+    },
+    {
+      "start": 19.66,
+      "end": 21.72,
+      "text": " Neither chart proves a permanent reversal.",
+      "words": [
+        {
+          "start": 19.66,
+          "end": 19.94,
+          "word": " Neither",
+          "probability": 0.997102677822113
+        },
+        {
+          "start": 19.94,
+          "end": 20.3,
+          "word": " chart",
+          "probability": 0.9997014403343201
+        },
+        {
+          "start": 20.3,
+          "end": 20.68,
+          "word": " proves",
+          "probability": 0.9978030323982239
+        },
+        {
+          "start": 20.68,
+          "end": 20.96,
+          "word": " a",
+          "probability": 0.9985415935516357
+        },
+        {
+          "start": 20.96,
+          "end": 21.22,
+          "word": " permanent",
+          "probability": 0.9985231757164001
+        },
+        {
+          "start": 21.22,
+          "end": 21.72,
+          "word": " reversal.",
+          "probability": 0.9993509650230408
+        }
+      ]
+    },
+    {
+      "start": 22.28,
+      "end": 24.02,
+      "text": " So the engineering question became,",
+      "words": [
+        {
+          "start": 22.28,
+          "end": 22.52,
+          "word": " So",
+          "probability": 0.9928025603294373
+        },
+        {
+          "start": 22.52,
+          "end": 22.7,
+          "word": " the",
+          "probability": 0.8835205435752869
+        },
+        {
+          "start": 22.7,
+          "end": 23.12,
+          "word": " engineering",
+          "probability": 0.9907305836677551
+        },
+        {
+          "start": 23.12,
+          "end": 23.52,
+          "word": " question",
+          "probability": 0.9985201954841614
+        },
+        {
+          "start": 23.52,
+          "end": 24.02,
+          "word": " became,",
+          "probability": 0.9956275224685669
+        }
+      ]
+    },
+    {
+      "start": 24.52,
+      "end": 26.58,
+      "text": " how do we make selective choices visible?",
+      "words": [
+        {
+          "start": 24.52,
+          "end": 24.64,
+          "word": " how",
+          "probability": 0.6219605207443237
+        },
+        {
+          "start": 24.64,
+          "end": 24.78,
+          "word": " do",
+          "probability": 0.996856689453125
+        },
+        {
+          "start": 24.78,
+          "end": 24.9,
+          "word": " we",
+          "probability": 0.998572587966919
+        },
+        {
+          "start": 24.9,
+          "end": 25.14,
+          "word": " make",
+          "probability": 0.9979786276817322
+        },
+        {
+          "start": 25.14,
+          "end": 25.62,
+          "word": " selective",
+          "probability": 0.991204023361206
+        },
+        {
+          "start": 25.62,
+          "end": 26.1,
+          "word": " choices",
+          "probability": 0.9957493543624878
+        },
+        {
+          "start": 26.1,
+          "end": 26.58,
+          "word": " visible?",
+          "probability": 0.9974307417869568
+        }
+      ]
+    },
+    {
+      "start": 26.96,
+      "end": 28.48,
+      "text": " We began with the data.",
+      "words": [
+        {
+          "start": 26.96,
+          "end": 27.58,
+          "word": " We",
+          "probability": 0.9951605200767517
+        },
+        {
+          "start": 27.58,
+          "end": 27.86,
+          "word": " began",
+          "probability": 0.9916691780090332
+        },
+        {
+          "start": 27.86,
+          "end": 28.04,
+          "word": " with",
+          "probability": 0.9995169639587402
+        },
+        {
+          "start": 28.04,
+          "end": 28.18,
+          "word": " the",
+          "probability": 0.996335506439209
+        },
+        {
+          "start": 28.18,
+          "end": 28.48,
+          "word": " data.",
+          "probability": 0.9993327260017395
+        }
+      ]
+    },
+    {
+      "start": 28.48,
+      "end": 32.52,
+      "text": " NASA power provides monthly data from a reanalysis model,",
+      "words": [
+        {
+          "start": 28.48,
+          "end": 29.42,
+          "word": " NASA",
+          "probability": 0.7845986485481262
+        },
+        {
+          "start": 29.42,
+          "end": 29.78,
+          "word": " power",
+          "probability": 0.48051103949546814
+        },
+        {
+          "start": 29.78,
+          "end": 30.3,
+          "word": " provides",
+          "probability": 0.9935573935508728
+        },
+        {
+          "start": 30.3,
+          "end": 30.7,
+          "word": " monthly",
+          "probability": 0.9920628666877747
+        },
+        {
+          "start": 30.7,
+          "end": 31.04,
+          "word": " data",
+          "probability": 0.998674750328064
+        },
+        {
+          "start": 31.04,
+          "end": 31.36,
+          "word": " from",
+          "probability": 0.9940580129623413
+        },
+        {
+          "start": 31.36,
+          "end": 31.52,
+          "word": " a",
+          "probability": 0.9939256310462952
+        },
+        {
+          "start": 31.52,
+          "end": 32.02,
+          "word": " reanalysis",
+          "probability": 0.8627402782440186
+        },
+        {
+          "start": 32.02,
+          "end": 32.52,
+          "word": " model,",
+          "probability": 0.9988924860954285
+        }
+      ]
+    },
+    {
+      "start": 32.8,
+      "end": 34.3,
+      "text": " not a neighborhood weather station.",
+      "words": [
+        {
+          "start": 32.8,
+          "end": 33.06,
+          "word": " not",
+          "probability": 0.9975560903549194
+        },
+        {
+          "start": 33.06,
+          "end": 33.24,
+          "word": " a",
+          "probability": 0.9948179125785828
+        },
+        {
+          "start": 33.24,
+          "end": 33.46,
+          "word": " neighborhood",
+          "probability": 0.9785397052764893
+        },
+        {
+          "start": 33.46,
+          "end": 33.8,
+          "word": " weather",
+          "probability": 0.9973927736282349
+        },
+        {
+          "start": 33.8,
+          "end": 34.3,
+          "word": " station.",
+          "probability": 0.9979667663574219
+        }
+      ]
+    },
+    {
+      "start": 34.9,
+      "end": 37.08,
+      "text": " Temperature uses a weighted yearly average.",
+      "words": [
+        {
+          "start": 34.9,
+          "end": 35.18,
+          "word": " Temperature",
+          "probability": 0.969090461730957
+        },
+        {
+          "start": 35.18,
+          "end": 35.66,
+          "word": " uses",
+          "probability": 0.9952504634857178
+        },
+        {
+          "start": 35.66,
+          "end": 36.0,
+          "word": " a",
+          "probability": 0.9937134385108948
+        },
+        {
+          "start": 36.0,
+          "end": 36.22,
+          "word": " weighted",
+          "probability": 0.9974484443664551
+        },
+        {
+          "start": 36.22,
+          "end": 36.62,
+          "word": " yearly",
+          "probability": 0.9962745904922485
+        },
+        {
+          "start": 36.62,
+          "end": 37.08,
+          "word": " average.",
+          "probability": 0.9987438321113586
+        }
+      ]
+    },
+    {
+      "start": 37.64,
+      "end": 39.7,
+      "text": " Rainfall arrives as millimeters per day,",
+      "words": [
+        {
+          "start": 37.64,
+          "end": 37.96,
+          "word": " Rainfall",
+          "probability": 0.9697568416595459
+        },
+        {
+          "start": 37.96,
+          "end": 38.36,
+          "word": " arrives",
+          "probability": 0.9901041388511658
+        },
+        {
+          "start": 38.36,
+          "end": 38.62,
+          "word": " as",
+          "probability": 0.9790133237838745
+        },
+        {
+          "start": 38.62,
+          "end": 39.06,
+          "word": " millimeters",
+          "probability": 0.9824311137199402
+        },
+        {
+          "start": 39.06,
+          "end": 39.36,
+          "word": " per",
+          "probability": 0.9977896213531494
+        },
+        {
+          "start": 39.36,
+          "end": 39.7,
+          "word": " day,",
+          "probability": 0.9993419051170349
+        }
+      ]
+    },
+    {
+      "start": 39.82,
+      "end": 42.6,
+      "text": " so each rate is multiplied by the days in its month.",
+      "words": [
+        {
+          "start": 39.82,
+          "end": 40.18,
+          "word": " so",
+          "probability": 0.9967650175094604
+        },
+        {
+          "start": 40.18,
+          "end": 40.42,
+          "word": " each",
+          "probability": 0.9968383312225342
+        },
+        {
+          "start": 40.42,
+          "end": 40.66,
+          "word": " rate",
+          "probability": 0.9972520470619202
+        },
+        {
+          "start": 40.66,
+          "end": 40.86,
+          "word": " is",
+          "probability": 0.9969199895858765
+        },
+        {
+          "start": 40.86,
+          "end": 41.3,
+          "word": " multiplied",
+          "probability": 0.9973801970481873
+        },
+        {
+          "start": 41.3,
+          "end": 41.6,
+          "word": " by",
+          "probability": 0.9983932375907898
+        },
+        {
+          "start": 41.6,
+          "end": 41.74,
+          "word": " the",
+          "probability": 0.9927056431770325
+        },
+        {
+          "start": 41.74,
+          "end": 41.96,
+          "word": " days",
+          "probability": 0.993675172328949
+        },
+        {
+          "start": 41.96,
+          "end": 42.12,
+          "word": " in",
+          "probability": 0.9909941554069519
+        },
+        {
+          "start": 42.12,
+          "end": 42.26,
+          "word": " its",
+          "probability": 0.9747337102890015
+        },
+        {
+          "start": 42.26,
+          "end": 42.6,
+          "word": " month.",
+          "probability": 0.9837771654129028
+        }
+      ]
+    },
+    {
+      "start": 43.2,
+      "end": 44.66,
+      "text": " Incomplete years are left out.",
+      "words": [
+        {
+          "start": 43.2,
+          "end": 43.56,
+          "word": " Incomplete",
+          "probability": 0.9369016289710999
+        },
+        {
+          "start": 43.56,
+          "end": 43.88,
+          "word": " years",
+          "probability": 0.997631311416626
+        },
+        {
+          "start": 43.88,
+          "end": 44.1,
+          "word": " are",
+          "probability": 0.9985260367393494
+        },
+        {
+          "start": 44.1,
+          "end": 44.28,
+          "word": " left",
+          "probability": 0.9991835951805115
+        },
+        {
+          "start": 44.28,
+          "end": 44.66,
+          "word": " out.",
+          "probability": 0.9990007281303406
+        }
+      ]
+    },
+    {
+      "start": 45.26,
+      "end": 47.38,
+      "text": " The original response, retrieval date,",
+      "words": [
+        {
+          "start": 45.26,
+          "end": 45.38,
+          "word": " The",
+          "probability": 0.9939512014389038
+        },
+        {
+          "start": 45.38,
+          "end": 45.74,
+          "word": " original",
+          "probability": 0.998540997505188
+        },
+        {
+          "start": 45.74,
+          "end": 46.34,
+          "word": " response,",
+          "probability": 0.997818112373352
+        },
+        {
+          "start": 46.68,
+          "end": 46.98,
+          "word": " retrieval",
+          "probability": 0.9968511462211609
+        },
+        {
+          "start": 46.98,
+          "end": 47.38,
+          "word": " date,",
+          "probability": 0.9888381958007812
+        }
+      ]
+    },
+    {
+      "start": 47.66,
+      "end": 49.74,
+      "text": " and source hash travel with the analysis.",
+      "words": [
+        {
+          "start": 47.66,
+          "end": 47.96,
+          "word": " and",
+          "probability": 0.9979423880577087
+        },
+        {
+          "start": 47.96,
+          "end": 48.2,
+          "word": " source",
+          "probability": 0.9912145137786865
+        },
+        {
+          "start": 48.2,
+          "end": 48.54,
+          "word": " hash",
+          "probability": 0.992782711982727
+        },
+        {
+          "start": 48.54,
+          "end": 48.94,
+          "word": " travel",
+          "probability": 0.9874217510223389
+        },
+        {
+          "start": 48.94,
+          "end": 49.14,
+          "word": " with",
+          "probability": 0.9991598129272461
+        },
+        {
+          "start": 49.14,
+          "end": 49.28,
+          "word": " the",
+          "probability": 0.9950236082077026
+        },
+        {
+          "start": 49.28,
+          "end": 49.74,
+          "word": " analysis.",
+          "probability": 0.9969397783279419
+        }
+      ]
+    },
+    {
+      "start": 50.44,
+      "end": 53.76,
+      "text": " A polished graph is useful only if its inputs are inspectable.",
+      "words": [
+        {
+          "start": 50.44,
+          "end": 50.64,
+          "word": " A",
+          "probability": 0.997972309589386
+        },
+        {
+          "start": 50.64,
+          "end": 50.92,
+          "word": " polished",
+          "probability": 0.986902117729187
+        },
+        {
+          "start": 50.92,
+          "end": 51.22,
+          "word": " graph",
+          "probability": 0.9986259937286377
+        },
+        {
+          "start": 51.22,
+          "end": 51.48,
+          "word": " is",
+          "probability": 0.9991057515144348
+        },
+        {
+          "start": 51.48,
+          "end": 51.78,
+          "word": " useful",
+          "probability": 0.9993295669555664
+        },
+        {
+          "start": 51.78,
+          "end": 52.18,
+          "word": " only",
+          "probability": 0.9940876960754395
+        },
+        {
+          "start": 52.18,
+          "end": 52.42,
+          "word": " if",
+          "probability": 0.9976758360862732
+        },
+        {
+          "start": 52.42,
+          "end": 52.58,
+          "word": " its",
+          "probability": 0.9653605818748474
+        },
+        {
+          "start": 52.58,
+          "end": 52.92,
+          "word": " inputs",
+          "probability": 0.9936091899871826
+        },
+        {
+          "start": 52.92,
+          "end": 53.12,
+          "word": " are",
+          "probability": 0.9992890357971191
+        },
+        {
+          "start": 53.12,
+          "end": 53.76,
+          "word": " inspectable.",
+          "probability": 0.9870856404304504
+        }
+      ]
+    },
+    {
+      "start": 54.36,
+      "end": 55.4,
+      "text": " Then we compared methods.",
+      "words": [
+        {
+          "start": 54.36,
+          "end": 54.5,
+          "word": " Then",
+          "probability": 0.993137001991272
+        },
+        {
+          "start": 54.5,
+          "end": 54.62,
+          "word": " we",
+          "probability": 0.9300777912139893
+        },
+        {
+          "start": 54.62,
+          "end": 54.96,
+          "word": " compared",
+          "probability": 0.9801607728004456
+        },
+        {
+          "start": 54.96,
+          "end": 55.4,
+          "word": " methods.",
+          "probability": 0.9978183507919312
+        }
+      ]
+    },
+    {
+      "start": 55.4,
+      "end": 58.3,
+      "text": " Ordinary regression gives an understandable baseline.",
+      "words": [
+        {
+          "start": 55.4,
+          "end": 56.32,
+          "word": " Ordinary",
+          "probability": 0.6645865589380264
+        },
+        {
+          "start": 56.32,
+          "end": 56.76,
+          "word": " regression",
+          "probability": 0.5968636274337769
+        },
+        {
+          "start": 56.76,
+          "end": 57.06,
+          "word": " gives",
+          "probability": 0.9958115816116333
+        },
+        {
+          "start": 57.06,
+          "end": 57.24,
+          "word": " an",
+          "probability": 0.9894506335258484
+        },
+        {
+          "start": 57.24,
+          "end": 57.76,
+          "word": " understandable",
+          "probability": 0.9939625859260559
+        },
+        {
+          "start": 57.76,
+          "end": 58.3,
+          "word": " baseline.",
+          "probability": 0.982299268245697
+        }
+      ]
+    },
+    {
+      "start": 59.2,
+      "end": 61.42,
+      "text": " Adjusted intervals examine correlated errors.",
+      "words": [
+        {
+          "start": 59.2,
+          "end": 59.42,
+          "word": " Adjusted",
+          "probability": 0.8194078803062439
+        },
+        {
+          "start": 59.42,
+          "end": 59.94,
+          "word": " intervals",
+          "probability": 0.9872332811355591
+        },
+        {
+          "start": 59.94,
+          "end": 60.38,
+          "word": " examine",
+          "probability": 0.9498677849769592
+        },
+        {
+          "start": 60.38,
+          "end": 60.94,
+          "word": " correlated",
+          "probability": 0.9894943833351135
+        },
+        {
+          "start": 60.94,
+          "end": 61.42,
+          "word": " errors.",
+          "probability": 0.9982130527496338
+        }
+      ]
+    },
+    {
+      "start": 62.36,
+      "end": 64.54,
+      "text": " A robust slope checks unusual years.",
+      "words": [
+        {
+          "start": 62.36,
+          "end": 62.44,
+          "word": " A",
+          "probability": 0.9544976353645325
+        },
+        {
+          "start": 62.44,
+          "end": 62.8,
+          "word": " robust",
+          "probability": 0.9962574243545532
+        },
+        {
+          "start": 62.8,
+          "end": 63.14,
+          "word": " slope",
+          "probability": 0.9799933433532715
+        },
+        {
+          "start": 63.14,
+          "end": 63.54,
+          "word": " checks",
+          "probability": 0.9973135590553284
+        },
+        {
+          "start": 63.54,
+          "end": 64.04,
+          "word": " unusual",
+          "probability": 0.9888080954551697
+        },
+        {
+          "start": 64.04,
+          "end": 64.54,
+          "word": " years.",
+          "probability": 0.996987521648407
+        }
+      ]
+    },
+    {
+      "start": 65.14,
+      "end": 67.82,
+      "text": " We tested the candidates on 20,000 synthetic records.",
+      "words": [
+        {
+          "start": 65.14,
+          "end": 65.2,
+          "word": " We",
+          "probability": 0.9711928963661194
+        },
+        {
+          "start": 65.2,
+          "end": 65.52,
+          "word": " tested",
+          "probability": 0.9981605410575867
+        },
+        {
+          "start": 65.52,
+          "end": 65.72,
+          "word": " the",
+          "probability": 0.993678867816925
+        },
+        {
+          "start": 65.72,
+          "end": 66.06,
+          "word": " candidates",
+          "probability": 0.996990442276001
+        },
+        {
+          "start": 66.06,
+          "end": 66.32,
+          "word": " on",
+          "probability": 0.9979044198989868
+        },
+        {
+          "start": 66.32,
+          "end": 66.66,
+          "word": " 20",
+          "probability": 0.9268380999565125
+        },
+        {
+          "start": 66.66,
+          "end": 67.0,
+          "word": ",000",
+          "probability": 0.9884843528270721
+        },
+        {
+          "start": 67.0,
+          "end": 67.42,
+          "word": " synthetic",
+          "probability": 0.9866470098495483
+        },
+        {
+          "start": 67.42,
+          "end": 67.82,
+          "word": " records.",
+          "probability": 0.9974440336227417
+        }
+      ]
+    },
+    {
+      "start": 68.22,
+      "end": 70.88,
+      "text": " Under strong dependence, none of the deployable candidates",
+      "words": [
+        {
+          "start": 68.22,
+          "end": 68.4,
+          "word": " Under",
+          "probability": 0.9968120455741882
+        },
+        {
+          "start": 68.4,
+          "end": 68.74,
+          "word": " strong",
+          "probability": 0.9843048453330994
+        },
+        {
+          "start": 68.74,
+          "end": 69.18,
+          "word": " dependence,",
+          "probability": 0.892005205154419
+        },
+        {
+          "start": 69.6,
+          "end": 69.68,
+          "word": " none",
+          "probability": 0.993065595626831
+        },
+        {
+          "start": 69.68,
+          "end": 69.82,
+          "word": " of",
+          "probability": 0.9992017149925232
+        },
+        {
+          "start": 69.82,
+          "end": 69.96,
+          "word": " the",
+          "probability": 0.9974743723869324
+        },
+        {
+          "start": 69.96,
+          "end": 70.38,
+          "word": " deployable",
+          "probability": 0.987537294626236
+        },
+        {
+          "start": 70.38,
+          "end": 70.88,
+          "word": " candidates",
+          "probability": 0.9963731169700623
+        }
+      ]
+    },
+    {
+      "start": 70.88,
+      "end": 72.24,
+      "text": " passed every screening case.",
+      "words": [
+        {
+          "start": 70.88,
+          "end": 71.22,
+          "word": " passed",
+          "probability": 0.9784019589424133
+        },
+        {
+          "start": 71.22,
+          "end": 71.52,
+          "word": " every",
+          "probability": 0.9963030815124512
+        },
+        {
+          "start": 71.52,
+          "end": 71.86,
+          "word": " screening",
+          "probability": 0.9970405697822571
+        },
+        {
+          "start": 71.86,
+          "end": 72.24,
+          "word": " case.",
+          "probability": 0.9990189075469971
+        }
+      ]
+    },
+    {
+      "start": 72.7,
+      "end": 74.2,
+      "text": " So we kept the alternatives visible,",
+      "words": [
+        {
+          "start": 72.7,
+          "end": 72.9,
+          "word": " So",
+          "probability": 0.9807301759719849
+        },
+        {
+          "start": 72.9,
+          "end": 73.02,
+          "word": " we",
+          "probability": 0.8934476971626282
+        },
+        {
+          "start": 73.02,
+          "end": 73.18,
+          "word": " kept",
+          "probability": 0.998370349407196
+        },
+        {
+          "start": 73.18,
+          "end": 73.36,
+          "word": " the",
+          "probability": 0.9961114525794983
+        },
+        {
+          "start": 73.36,
+          "end": 73.76,
+          "word": " alternatives",
+          "probability": 0.9930303692817688
+        },
+        {
+          "start": 73.76,
+          "end": 74.2,
+          "word": " visible,",
+          "probability": 0.9964796900749207
+        }
+      ]
+    },
+    {
+      "start": 74.6,
+      "end": 75.6,
+      "text": " documented their failures,",
+      "words": [
+        {
+          "start": 74.6,
+          "end": 74.96,
+          "word": " documented",
+          "probability": 0.9944812059402466
+        },
+        {
+          "start": 74.96,
+          "end": 75.22,
+          "word": " their",
+          "probability": 0.997525155544281
+        },
+        {
+          "start": 75.22,
+          "end": 75.6,
+          "word": " failures,",
+          "probability": 0.9983213543891907
+        }
+      ]
+    },
+    {
+      "start": 75.88,
+      "end": 78.58,
+      "text": " and avoided presenting one interval as a universal fix.",
+      "words": [
+        {
+          "start": 75.88,
+          "end": 76.02,
+          "word": " and",
+          "probability": 0.9944120049476624
+        },
+        {
+          "start": 76.02,
+          "end": 76.32,
+          "word": " avoided",
+          "probability": 0.9987731575965881
+        },
+        {
+          "start": 76.32,
+          "end": 76.78,
+          "word": " presenting",
+          "probability": 0.9981028437614441
+        },
+        {
+          "start": 76.78,
+          "end": 77.08,
+          "word": " one",
+          "probability": 0.9882215857505798
+        },
+        {
+          "start": 77.08,
+          "end": 77.44,
+          "word": " interval",
+          "probability": 0.9984802603721619
+        },
+        {
+          "start": 77.44,
+          "end": 77.68,
+          "word": " as",
+          "probability": 0.9979870319366455
+        },
+        {
+          "start": 77.68,
+          "end": 77.86,
+          "word": " a",
+          "probability": 0.9955149292945862
+        },
+        {
+          "start": 77.86,
+          "end": 78.22,
+          "word": " universal",
+          "probability": 0.9903042912483215
+        },
+        {
+          "start": 78.22,
+          "end": 78.58,
+          "word": " fix.",
+          "probability": 0.9969826340675354
+        }
+      ]
+    },
+    {
+      "start": 79.06,
+      "end": 80.88,
+      "text": " This is exploration, not forecasting.",
+      "words": [
+        {
+          "start": 79.06,
+          "end": 79.2,
+          "word": " This",
+          "probability": 0.9905334711074829
+        },
+        {
+          "start": 79.2,
+          "end": 79.36,
+          "word": " is",
+          "probability": 0.9943346977233887
+        },
+        {
+          "start": 79.36,
+          "end": 79.92,
+          "word": " exploration,",
+          "probability": 0.9700936079025269
+        },
+        {
+          "start": 80.2,
+          "end": 80.36,
+          "word": " not",
+          "probability": 0.9988405108451843
+        },
+        {
+          "start": 80.36,
+          "end": 80.88,
+          "word": " forecasting.",
+          "probability": 0.9979021549224854
+        }
+      ]
+    },
+    {
+      "start": 81.46,
+      "end": 83.16,
+      "text": " The next weakness was date selection.",
+      "words": [
+        {
+          "start": 81.46,
+          "end": 81.6,
+          "word": " The",
+          "probability": 0.9865010380744934
+        },
+        {
+          "start": 81.6,
+          "end": 81.84,
+          "word": " next",
+          "probability": 0.9992600083351135
+        },
+        {
+          "start": 81.84,
+          "end": 82.16,
+          "word": " weakness",
+          "probability": 0.996847927570343
+        },
+        {
+          "start": 82.16,
+          "end": 82.46,
+          "word": " was",
+          "probability": 0.9970445036888123
+        },
+        {
+          "start": 82.46,
+          "end": 82.66,
+          "word": " date",
+          "probability": 0.9357675909996033
+        },
+        {
+          "start": 82.66,
+          "end": 83.16,
+          "word": " selection.",
+          "probability": 0.9913120865821838
+        }
+      ]
+    },
+    {
+      "start": 83.16,
+      "end": 86.5,
+      "text": " Four examples help, but they can still hide choices.",
+      "words": [
+        {
+          "start": 83.16,
+          "end": 84.04,
+          "word": " Four",
+          "probability": 0.7455872297286987
+        },
+        {
+          "start": 84.04,
+          "end": 84.48,
+          "word": " examples",
+          "probability": 0.9915008544921875
+        },
+        {
+          "start": 84.48,
+          "end": 84.82,
+          "word": " help,",
+          "probability": 0.9901408553123474
+        },
+        {
+          "start": 85.0,
+          "end": 85.22,
+          "word": " but",
+          "probability": 0.9977889060974121
+        },
+        {
+          "start": 85.22,
+          "end": 85.32,
+          "word": " they",
+          "probability": 0.9935353994369507
+        },
+        {
+          "start": 85.32,
+          "end": 85.5,
+          "word": " can",
+          "probability": 0.9943186640739441
+        },
+        {
+          "start": 85.5,
+          "end": 85.74,
+          "word": " still",
+          "probability": 0.997296154499054
+        },
+        {
+          "start": 85.74,
+          "end": 86.02,
+          "word": " hide",
+          "probability": 0.9947124719619751
+        },
+        {
+          "start": 86.02,
+          "end": 86.5,
+          "word": " choices.",
+          "probability": 0.998013973236084
+        }
+      ]
+    },
+    {
+      "start": 88.26,
+      "end": 90.62,
+      "text": " The map shows every eligible date window.",
+      "words": [
+        {
+          "start": 88.26,
+          "end": 88.52,
+          "word": " The",
+          "probability": 0.9368763566017151
+        },
+        {
+          "start": 88.52,
+          "end": 88.72,
+          "word": " map",
+          "probability": 0.9922146201133728
+        },
+        {
+          "start": 88.72,
+          "end": 89.06,
+          "word": " shows",
+          "probability": 0.9983281493186951
+        },
+        {
+          "start": 89.06,
+          "end": 89.48,
+          "word": " every",
+          "probability": 0.994768500328064
+        },
+        {
+          "start": 89.48,
+          "end": 89.98,
+          "word": " eligible",
+          "probability": 0.9975841045379639
+        },
+        {
+          "start": 89.98,
+          "end": 90.24,
+          "word": " date",
+          "probability": 0.9963725805282593
+        },
+        {
+          "start": 90.24,
+          "end": 90.62,
+          "word": " window.",
+          "probability": 0.9981088638305664
+        }
+      ]
+    },
+    {
+      "start": 92.34,
+      "end": 95.08,
+      "text": " Start year on one axis, end year on the other.",
+      "words": [
+        {
+          "start": 92.34,
+          "end": 92.68,
+          "word": " Start",
+          "probability": 0.9353262186050415
+        },
+        {
+          "start": 92.68,
+          "end": 92.9,
+          "word": " year",
+          "probability": 0.9057896733283997
+        },
+        {
+          "start": 92.9,
+          "end": 93.12,
+          "word": " on",
+          "probability": 0.9909226298332214
+        },
+        {
+          "start": 93.12,
+          "end": 93.36,
+          "word": " one",
+          "probability": 0.9959484934806824
+        },
+        {
+          "start": 93.36,
+          "end": 93.76,
+          "word": " axis,",
+          "probability": 0.9825733304023743
+        },
+        {
+          "start": 94.18,
+          "end": 94.34,
+          "word": " end",
+          "probability": 0.9896283149719238
+        },
+        {
+          "start": 94.34,
+          "end": 94.52,
+          "word": " year",
+          "probability": 0.9951634407043457
+        },
+        {
+          "start": 94.52,
+          "end": 94.7,
+          "word": " on",
+          "probability": 0.9975908994674683
+        },
+        {
+          "start": 94.7,
+          "end": 94.84,
+          "word": " the",
+          "probability": 0.9963420033454895
+        },
+        {
+          "start": 94.84,
+          "end": 95.08,
+          "word": " other.",
+          "probability": 0.999298095703125
+        }
+      ]
+    },
+    {
+      "start": 95.66,
+      "end": 97.38,
+      "text": " Each cell shows its fitted rate.",
+      "words": [
+        {
+          "start": 95.66,
+          "end": 95.88,
+          "word": " Each",
+          "probability": 0.9972866773605347
+        },
+        {
+          "start": 95.88,
+          "end": 96.16,
+          "word": " cell",
+          "probability": 0.9974652528762817
+        },
+        {
+          "start": 96.16,
+          "end": 96.62,
+          "word": " shows",
+          "probability": 0.9950786828994751
+        },
+        {
+          "start": 96.62,
+          "end": 96.82,
+          "word": " its",
+          "probability": 0.9604800343513489
+        },
+        {
+          "start": 96.82,
+          "end": 97.06,
+          "word": " fitted",
+          "probability": 0.9629855751991272
+        },
+        {
+          "start": 97.06,
+          "end": 97.38,
+          "word": " rate.",
+          "probability": 0.9985098242759705
+        }
+      ]
+    },
+    {
+      "start": 98.14,
+      "end": 100.18,
+      "text": " Select a cell, inspect its observations,",
+      "words": [
+        {
+          "start": 98.14,
+          "end": 98.4,
+          "word": " Select",
+          "probability": 0.9938274025917053
+        },
+        {
+          "start": 98.4,
+          "end": 98.6,
+          "word": " a",
+          "probability": 0.9850459694862366
+        },
+        {
+          "start": 98.6,
+          "end": 98.82,
+          "word": " cell,",
+          "probability": 0.9888942837715149
+        },
+        {
+          "start": 99.0,
+          "end": 99.4,
+          "word": " inspect",
+          "probability": 0.9965164661407471
+        },
+        {
+          "start": 99.4,
+          "end": 99.6,
+          "word": " its",
+          "probability": 0.9675430655479431
+        },
+        {
+          "start": 99.6,
+          "end": 100.18,
+          "word": " observations,",
+          "probability": 0.9804767370223999
+        }
+      ]
+    },
+    {
+      "start": 100.5,
+      "end": 102.1,
+      "text": " and compare it with another period.",
+      "words": [
+        {
+          "start": 100.5,
+          "end": 100.8,
+          "word": " and",
+          "probability": 0.997161865234375
+        },
+        {
+          "start": 100.8,
+          "end": 101.12,
+          "word": " compare",
+          "probability": 0.9992712140083313
+        },
+        {
+          "start": 101.12,
+          "end": 101.26,
+          "word": " it",
+          "probability": 0.9960307478904724
+        },
+        {
+          "start": 101.26,
+          "end": 101.4,
+          "word": " with",
+          "probability": 0.9976770281791687
+        },
+        {
+          "start": 101.4,
+          "end": 101.68,
+          "word": " another",
+          "probability": 0.9987008571624756
+        },
+        {
+          "start": 101.68,
+          "end": 102.1,
+          "word": " period.",
+          "probability": 0.9971137046813965
+        }
+      ]
+    },
+    {
+      "start": 102.88,
+      "end": 105.36,
+      "text": " These overlapping estimates are not independent votes,",
+      "words": [
+        {
+          "start": 102.88,
+          "end": 103.08,
+          "word": " These",
+          "probability": 0.9963133931159973
+        },
+        {
+          "start": 103.08,
+          "end": 103.54,
+          "word": " overlapping",
+          "probability": 0.9974308609962463
+        },
+        {
+          "start": 103.54,
+          "end": 104.04,
+          "word": " estimates",
+          "probability": 0.9985722303390503
+        },
+        {
+          "start": 104.04,
+          "end": 104.28,
+          "word": " are",
+          "probability": 0.9991193413734436
+        },
+        {
+          "start": 104.28,
+          "end": 104.48,
+          "word": " not",
+          "probability": 0.9988085031509399
+        },
+        {
+          "start": 104.48,
+          "end": 104.94,
+          "word": " independent",
+          "probability": 0.9959567189216614
+        },
+        {
+          "start": 104.94,
+          "end": 105.36,
+          "word": " votes,",
+          "probability": 0.9987747073173523
+        }
+      ]
+    },
+    {
+      "start": 105.64,
+      "end": 107.8,
+      "text": " probabilities, or proof of a climate reversal.",
+      "words": [
+        {
+          "start": 105.64,
+          "end": 106.06,
+          "word": " probabilities,",
+          "probability": 0.9797734022140503
+        },
+        {
+          "start": 106.34,
+          "end": 106.68,
+          "word": " or",
+          "probability": 0.9986893534660339
+        },
+        {
+          "start": 106.68,
+          "end": 106.84,
+          "word": " proof",
+          "probability": 0.9972296357154846
+        },
+        {
+          "start": 106.84,
+          "end": 107.0,
+          "word": " of",
+          "probability": 0.9945250749588013
+        },
+        {
+          "start": 107.0,
+          "end": 107.18,
+          "word": " a",
+          "probability": 0.9942523837089539
+        },
+        {
+          "start": 107.18,
+          "end": 107.4,
+          "word": " climate",
+          "probability": 0.9988168478012085
+        },
+        {
+          "start": 107.4,
+          "end": 107.8,
+          "word": " reversal.",
+          "probability": 0.9994107484817505
+        }
+      ]
+    },
+    {
+      "start": 108.38,
+      "end": 110.42,
+      "text": " Finally, the result has to survive scrutiny.",
+      "words": [
+        {
+          "start": 108.38,
+          "end": 108.68,
+          "word": " Finally,",
+          "probability": 0.9971522092819214
+        },
+        {
+          "start": 108.82,
+          "end": 108.92,
+          "word": " the",
+          "probability": 0.9986293315887451
+        },
+        {
+          "start": 108.92,
+          "end": 109.2,
+          "word": " result",
+          "probability": 0.9892093539237976
+        },
+        {
+          "start": 109.2,
+          "end": 109.42,
+          "word": " has",
+          "probability": 0.9986488223075867
+        },
+        {
+          "start": 109.42,
+          "end": 109.62,
+          "word": " to",
+          "probability": 0.9993828535079956
+        },
+        {
+          "start": 109.62,
+          "end": 109.92,
+          "word": " survive",
+          "probability": 0.9990611672401428
+        },
+        {
+          "start": 109.92,
+          "end": 110.42,
+          "word": " scrutiny.",
+          "probability": 0.9988706707954407
+        }
+      ]
+    },
+    {
+      "start": 110.9,
+      "end": 113.04,
+      "text": " Save an investigation with its source response,",
+      "words": [
+        {
+          "start": 110.9,
+          "end": 111.16,
+          "word": " Save",
+          "probability": 0.9950230121612549
+        },
+        {
+          "start": 111.16,
+          "end": 111.34,
+          "word": " an",
+          "probability": 0.9939373731613159
+        },
+        {
+          "start": 111.34,
+          "end": 111.9,
+          "word": " investigation",
+          "probability": 0.9976634979248047
+        },
+        {
+          "start": 111.9,
+          "end": 112.16,
+          "word": " with",
+          "probability": 0.9966930150985718
+        },
+        {
+          "start": 112.16,
+          "end": 112.32,
+          "word": " its",
+          "probability": 0.9797787666320801
+        },
+        {
+          "start": 112.32,
+          "end": 112.52,
+          "word": " source",
+          "probability": 0.9957256317138672
+        },
+        {
+          "start": 112.52,
+          "end": 113.04,
+          "word": " response,",
+          "probability": 0.9850752353668213
+        }
+      ]
+    },
+    {
+      "start": 113.04,
+      "end": 114.92,
+      "text": " settings, and code fingerprint.",
+      "words": [
+        {
+          "start": 113.04,
+          "end": 113.64,
+          "word": " settings,",
+          "probability": 0.7177404165267944
+        },
+        {
+          "start": 114.1,
+          "end": 114.2,
+          "word": " and",
+          "probability": 0.9873161315917969
+        },
+        {
+          "start": 114.2,
+          "end": 114.38,
+          "word": " code",
+          "probability": 0.9888690710067749
+        },
+        {
+          "start": 114.38,
+          "end": 114.92,
+          "word": " fingerprint.",
+          "probability": 0.9830909371376038
+        }
+      ]
+    },
+    {
+      "start": 117.94,
+      "end": 120.74,
+      "text": " Automated tests check calculations and failure paths.",
+      "words": [
+        {
+          "start": 117.94,
+          "end": 118.46,
+          "word": " Automated",
+          "probability": 0.9579497575759888
+        },
+        {
+          "start": 118.46,
+          "end": 118.78,
+          "word": " tests",
+          "probability": 0.9527020454406738
+        },
+        {
+          "start": 118.78,
+          "end": 119.06,
+          "word": " check",
+          "probability": 0.9183832406997681
+        },
+        {
+          "start": 119.06,
+          "end": 119.68,
+          "word": " calculations",
+          "probability": 0.9936171770095825
+        },
+        {
+          "start": 119.68,
+          "end": 120.02,
+          "word": " and",
+          "probability": 0.9894118905067444
+        },
+        {
+          "start": 120.02,
+          "end": 120.3,
+          "word": " failure",
+          "probability": 0.9966337084770203
+        },
+        {
+          "start": 120.3,
+          "end": 120.74,
+          "word": " paths.",
+          "probability": 0.9815670251846313
+        }
+      ]
+    },
+    {
+      "start": 121.32,
+      "end": 123.42,
+      "text": " An independent reader can inspect the same inputs",
+      "words": [
+        {
+          "start": 121.32,
+          "end": 121.42,
+          "word": " An",
+          "probability": 0.9935552477836609
+        },
+        {
+          "start": 121.42,
+          "end": 121.82,
+          "word": " independent",
+          "probability": 0.9976789355278015
+        },
+        {
+          "start": 121.82,
+          "end": 122.1,
+          "word": " reader",
+          "probability": 0.9988529682159424
+        },
+        {
+          "start": 122.1,
+          "end": 122.32,
+          "word": " can",
+          "probability": 0.9992491602897644
+        },
+        {
+          "start": 122.32,
+          "end": 122.64,
+          "word": " inspect",
+          "probability": 0.9982966780662537
+        },
+        {
+          "start": 122.64,
+          "end": 122.84,
+          "word": " the",
+          "probability": 0.9983060359954834
+        },
+        {
+          "start": 122.84,
+          "end": 123.04,
+          "word": " same",
+          "probability": 0.9984132051467896
+        },
+        {
+          "start": 123.04,
+          "end": 123.42,
+          "word": " inputs",
+          "probability": 0.9880587458610535
+        }
+      ]
+    },
+    {
+      "start": 123.42,
+      "end": 124.72,
+      "text": " without trusting a screenshot.",
+      "words": [
+        {
+          "start": 123.42,
+          "end": 123.7,
+          "word": " without",
+          "probability": 0.995918333530426
+        },
+        {
+          "start": 123.7,
+          "end": 124.1,
+          "word": " trusting",
+          "probability": 0.9984151124954224
+        },
+        {
+          "start": 124.1,
+          "end": 124.3,
+          "word": " a",
+          "probability": 0.9915369749069214
+        },
+        {
+          "start": 124.3,
+          "end": 124.72,
+          "word": " screenshot.",
+          "probability": 0.8055148124694824
+        }
+      ]
+    },
+    {
+      "start": 125.46,
+      "end": 127.04,
+      "text": " Climate Explorer is still a prototype.",
+      "words": [
+        {
+          "start": 125.46,
+          "end": 125.68,
+          "word": " Climate",
+          "probability": 0.9370400905609131
+        },
+        {
+          "start": 125.68,
+          "end": 126.0,
+          "word": " Explorer",
+          "probability": 0.7818643450737
+        },
+        {
+          "start": 126.0,
+          "end": 126.28,
+          "word": " is",
+          "probability": 0.996665894985199
+        },
+        {
+          "start": 126.28,
+          "end": 126.44,
+          "word": " still",
+          "probability": 0.9985005855560303
+        },
+        {
+          "start": 126.44,
+          "end": 126.64,
+          "word": " a",
+          "probability": 0.9994162321090698
+        },
+        {
+          "start": 126.64,
+          "end": 127.04,
+          "word": " prototype.",
+          "probability": 0.9980668425559998
+        }
+      ]
+    },
+    {
+      "start": 130.1,
+      "end": 133.1,
+      "text": " The goal is a climate claim that another person can challenge,",
+      "words": [
+        {
+          "start": 130.1,
+          "end": 130.5,
+          "word": " The",
+          "probability": 0.9932812452316284
+        },
+        {
+          "start": 130.5,
+          "end": 130.68,
+          "word": " goal",
+          "probability": 0.9958613514900208
+        },
+        {
+          "start": 130.68,
+          "end": 130.84,
+          "word": " is",
+          "probability": 0.9986118078231812
+        },
+        {
+          "start": 130.84,
+          "end": 131.02,
+          "word": " a",
+          "probability": 0.9875043034553528
+        },
+        {
+          "start": 131.02,
+          "end": 131.26,
+          "word": " climate",
+          "probability": 0.9971056580543518
+        },
+        {
+          "start": 131.26,
+          "end": 131.58,
+          "word": " claim",
+          "probability": 0.9991288781166077
+        },
+        {
+          "start": 131.58,
+          "end": 131.76,
+          "word": " that",
+          "probability": 0.9884568452835083
+        },
+        {
+          "start": 131.76,
+          "end": 132.04,
+          "word": " another",
+          "probability": 0.9990246295928955
+        },
+        {
+          "start": 132.04,
+          "end": 132.38,
+          "word": " person",
+          "probability": 0.9997382760047913
+        },
+        {
+          "start": 132.38,
+          "end": 132.62,
+          "word": " can",
+          "probability": 0.9987737536430359
+        },
+        {
+          "start": 132.62,
+          "end": 133.1,
+          "word": " challenge,",
+          "probability": 0.9970581531524658
+        }
+      ]
+    }
+  ],
+  "text": "Two headlines, one city. Rainfall is rising, rainfall is falling. Both came from the same NASA record. The difference was the dates. Over the most recent 15, it points down, with an interval that includes zero. Neither chart proves a permanent reversal. So the engineering question became, how do we make selective choices visible? We began with the data. NASA power provides monthly data from a reanalysis model, not a neighborhood weather station. Temperature uses a weighted yearly average. Rainfall arrives as millimeters per day, so each rate is multiplied by the days in its month. Incomplete years are left out. The original response, retrieval date, and source hash travel with the analysis. A polished graph is useful only if its inputs are inspectable. Then we compared methods. Ordinary regression gives an understandable baseline. Adjusted intervals examine correlated errors. A robust slope checks unusual years. We tested the candidates on 20,000 synthetic records. Under strong dependence, none of the deployable candidates passed every screening case. So we kept the alternatives visible, documented their failures, and avoided presenting one interval as a universal fix. This is exploration, not forecasting. The next weakness was date selection. Four examples help, but they can still hide choices. The map shows every eligible date window. Start year on one axis, end year on the other. Each cell shows its fitted rate. Select a cell, inspect its observations, and compare it with another period. These overlapping estimates are not independent votes, probabilities, or proof of a climate reversal. Finally, the result has to survive scrutiny. Save an investigation with its source response, settings, and code fingerprint. Automated tests check calculations and failure paths. An independent reader can inspect the same inputs without trusting a screenshot. Climate Explorer is still a prototype. The goal is a climate claim that another person can challenge,"
+}

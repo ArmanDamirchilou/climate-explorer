@@ -1,0 +1,233 @@
+{
+  "scope": "Whole-sentence native generated voice correction. No word cloning or replacement synthesis in post.",
+  "take": "tmp/long-film/correction.mp4",
+  "take_sha256": "cace34514b7e2855f4882d6adb856d2d87311af58d0dbbba6cc3339680b28eb9",
+  "transcript": "tmp/long-film/correction-transcript.json",
+  "transcript_sha256": "4d749662b1d9ea6049cf6833ef0e3f60e8c05eea3cc4d457d1369635438c7b0f",
+  "take_automatic_transcript_agreement": true,
+  "planned_edits": [
+    {
+      "chapter": 2,
+      "target": [
+        7.5,
+        10.48
+      ],
+      "old": "Temperature needs a day-weighted annual mean.",
+      "text": "Temperature uses a weighted yearly average.",
+      "donor_interval_seconds": [
+        0,
+        2.3249999999999997
+      ],
+      "tempo_factor": 1.0
+    },
+    {
+      "chapter": 2,
+      "target": [
+        15.85,
+        18.1
+      ],
+      "old": "Incomplete years are excluded.",
+      "text": "Incomplete years are left out.",
+      "donor_interval_seconds": [
+        2.935,
+        4.565
+      ],
+      "tempo_factor": 1.0
+    },
+    {
+      "chapter": 3,
+      "target": [
+        4.55,
+        8.0
+      ],
+      "old": "Newey-West intervals explore sensitivity to correlated errors.",
+      "text": "Adjusted intervals examine correlated errors.",
+      "donor_interval_seconds": [
+        5.015,
+        7.385000000000001
+      ],
+      "tempo_factor": 1.0
+    },
+    {
+      "chapter": 3,
+      "target": [
+        8.0,
+        10.9
+      ],
+      "old": "Theil-Sen reduces sensitivity to unusual years.",
+      "text": "A robust slope checks unusual years.",
+      "donor_interval_seconds": [
+        7.895,
+        10.125
+      ],
+      "tempo_factor": 1.0
+    },
+    {
+      "chapter": 4,
+      "target": [
+        5.8,
+        11.2
+      ],
+      "old": "The new window atlas examines every continuous period with at least ten complete years.",
+      "text": "The map shows every eligible date window.",
+      "donor_interval_seconds": [
+        10.655,
+        12.885
+      ],
+      "tempo_factor": 1.0
+    }
+  ],
+  "human_listening_performed": false,
+  "applied": true,
+  "chapters": [
+    {
+      "chapter": 2,
+      "raw_source": "tmp/long-film/scene-2-raw.mp4",
+      "raw_source_sha256": "1ebed967e7cd7480037ddc6a452df8c3d45b03863e6da301429a964fed031354",
+      "edited_source": "tmp/long-film/scene-2.mp4",
+      "edited_source_sha256": "3a2cbfff5a73d2f522d5cd04bd13eb98fe5c4ce5c28f835e4b67194c4fc5ffac",
+      "edits": [
+        {
+          "chapter": 2,
+          "target": [
+            7.5,
+            10.48
+          ],
+          "old": "Temperature needs a day-weighted annual mean.",
+          "text": "Temperature uses a weighted yearly average.",
+          "donor_interval_seconds": [
+            0,
+            2.3249999999999997
+          ],
+          "tempo_factor": 1.0,
+          "placement_seconds": 7.8275,
+          "placed_duration_seconds": 2.325,
+          "edge_fade_seconds": 0.005,
+          "unused_window": "Quiet edit space around the inserted complete sentence; timeline duration is preserved. Figures cover the mouth."
+        },
+        {
+          "chapter": 2,
+          "target": [
+            15.85,
+            18.1
+          ],
+          "old": "Incomplete years are excluded.",
+          "text": "Incomplete years are left out.",
+          "donor_interval_seconds": [
+            2.935,
+            4.565
+          ],
+          "tempo_factor": 1.0,
+          "placement_seconds": 16.16,
+          "placed_duration_seconds": 1.63,
+          "edge_fade_seconds": 0.005,
+          "unused_window": "Quiet edit space around the inserted complete sentence; timeline duration is preserved. Figures cover the mouth."
+        }
+      ],
+      "full_decode_passed": true,
+      "derived_transcript_review": "Medium.en automatic transcript exactly matches the revised canonical paragraph after case, punctuation and number-spelling normalization. No changed words accepted.",
+      "derived_transcript": {
+        "file": "tmp/long-film/scene-2-transcript.json",
+        "sha256": "ea27d8b4861a6221efee1e1827147ad52a483dc19012a286ab21c2c9b4c540fd",
+        "model": "medium.en"
+      }
+    },
+    {
+      "chapter": 3,
+      "raw_source": "tmp/long-film/scene-3-raw.mp4",
+      "raw_source_sha256": "364cb533432d21fd4dcb08f1e6d73411f9e768913a576389886a6e71256fc304",
+      "edited_source": "tmp/long-film/scene-3.mp4",
+      "edited_source_sha256": "1bc7bf9155074b8a6329aaa0b85d77714d2990b4e76accb6853ea762fc0c7d94",
+      "edits": [
+        {
+          "chapter": 3,
+          "target": [
+            4.55,
+            8.0
+          ],
+          "old": "Newey-West intervals explore sensitivity to correlated errors.",
+          "text": "Adjusted intervals examine correlated errors.",
+          "donor_interval_seconds": [
+            5.015,
+            7.385000000000001
+          ],
+          "tempo_factor": 1.0,
+          "placement_seconds": 5.09,
+          "placed_duration_seconds": 2.37,
+          "edge_fade_seconds": 0.005,
+          "unused_window": "Quiet edit space around the inserted complete sentence; timeline duration is preserved. Figures cover the mouth."
+        },
+        {
+          "chapter": 3,
+          "target": [
+            8.0,
+            10.9
+          ],
+          "old": "Theil-Sen reduces sensitivity to unusual years.",
+          "text": "A robust slope checks unusual years.",
+          "donor_interval_seconds": [
+            7.895,
+            10.125
+          ],
+          "tempo_factor": 1.0,
+          "placement_seconds": 8.335,
+          "placed_duration_seconds": 2.23,
+          "edge_fade_seconds": 0.005,
+          "unused_window": "Quiet edit space around the inserted complete sentence; timeline duration is preserved. Figures cover the mouth."
+        }
+      ],
+      "full_decode_passed": true,
+      "derived_transcript_review": "Medium.en automatic transcript exactly matches the revised canonical paragraph after case, punctuation and number-spelling normalization. No changed words accepted.",
+      "derived_transcript": {
+        "file": "tmp/long-film/scene-3-transcript.json",
+        "sha256": "dfe2579a89117e1445514f928c9846c3b48d3c274a6d189056f0cd9e1c4392ed",
+        "model": "medium.en"
+      }
+    },
+    {
+      "chapter": 4,
+      "raw_source": "tmp/long-film/scene-4-raw.mp4",
+      "raw_source_sha256": "8fe4cabfab36c7c630a8a9d8814c613fad715fe5b719a4127bbd3799add322c8",
+      "edited_source": "tmp/long-film/scene-4.mp4",
+      "edited_source_sha256": "7bf38c0335efba2f9e6be95be0a483f72252bf5d04a3d88d0be91d50bf4f2c27",
+      "edits": [
+        {
+          "chapter": 4,
+          "target": [
+            5.8,
+            11.2
+          ],
+          "old": "The new window atlas examines every continuous period with at least ten complete years.",
+          "text": "The map shows every eligible date window.",
+          "donor_interval_seconds": [
+            10.655,
+            12.885
+          ],
+          "tempo_factor": 1.0,
+          "placement_seconds": 7.385,
+          "placed_duration_seconds": 2.23,
+          "edge_fade_seconds": 0.005,
+          "unused_window": "Quiet edit space around the inserted complete sentence; timeline duration is preserved. Figures cover the mouth."
+        }
+      ],
+      "full_decode_passed": true,
+      "derived_transcript_review": "Medium.en automatic transcript exactly matches the revised canonical paragraph after case, punctuation and number-spelling normalization. No changed words accepted.",
+      "derived_transcript": {
+        "file": "tmp/long-film/scene-4-transcript.json",
+        "sha256": "e9afd46f4cb2d67a3a31ee1b5c81c17546e8f281d75e78a1b55256c6419640a3",
+        "model": "medium.en"
+      }
+    }
+  ],
+  "script": "submission/long-film-script.json",
+  "script_sha256": "b06e6be46298b68090ecc9a1e97d93075d9411f388a44972609e4004bad6ecca",
+  "helper_sha256": "373577a5ca1eadde6c8f4a09a65e9f5b89b408663363ba882511302b317d4432",
+  "created_utc": "2026-11-13T15:12:21.835281+00:00",
+  "checks": {
+    "correction_take_automatic_transcript_agreement": true,
+    "all_derived_sources_full_decode": true,
+    "derived_sources_transcript_agreement": true,
+    "human_listening_performed": false
+  },
+  "next_check": "Re-transcribe each derived chapter and compare against its revised canonical paragraph before final film rendering."
+}

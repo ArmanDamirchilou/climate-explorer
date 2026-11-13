@@ -42,4 +42,19 @@ Finish with a truthful contribution statement. For example: “I chose the proje
 - Why did the project use an interpretable historical rate instead of a forecasting model?
 - What would you change after observing a real student's mistakes?
 
-If age-related media restrictions apply, practice privately. Do not put your voice, image or likeness into the public competition demonstration. The current silent demo needs no personal recording.
+If age-related media restrictions apply, practice privately. Do not put your voice, image or likeness into the public competition demonstration. The prepared fictional adult narrator needs no personal recording.
+
+## Explain the engineering in version 1.3
+
+Load the Tehran rainfall atlas. Choose an interior date window, open its evidence, and check that your worksheet notes remain. Download the full atlas and the selected investigation. Explain why one retains the full search while the other retains one exact result.
+
+Practice these questions:
+
+- Why are there 666 windows in this particular record?
+- Why does the file keep the raw NASA response once?
+- What does a filter change, and what does it leave unchanged?
+- Why are overlapping windows not 666 independent tests?
+- What do the browser, selected-record Python replay and complete-atlas verifier each check?
+- What happens if a build fails or an old request reports an error after a newer one succeeds?
+
+Use INNOVATION_REVIEW.md to explain one rejected alternative and the evidence needed to revisit it. Do not claim that every listed idea was built, validated or independently developed by you. Record your own actual calculation, test or code contribution with its date and evidence.

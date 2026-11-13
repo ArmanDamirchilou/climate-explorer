@@ -8,7 +8,7 @@ Climate Explorer asks whether a historical climate result changes when we change
 
 - [Frozen browser demonstration](https://armandamirchilou.github.io/climate-explorer/)
 - [Source repository and run instructions](https://github.com/ArmanDamirchilou/climate-explorer)
-- [Narrated short film and separate portfolio reel](https://armandamirchilou.github.io/climate-explorer/demo.html)
+- [Full technical story, short demo candidate and portrait reel](https://armandamirchilou.github.io/climate-explorer/demo.html)
 - [Seven-page demonstration](https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf)
 - [Research decisions](https://github.com/ArmanDamirchilou/climate-explorer/blob/main/RESEARCH.md)
 - [AI assistance and authorship](https://github.com/ArmanDamirchilou/climate-explorer/blob/main/AI_ASSISTANCE.md)
@@ -16,6 +16,10 @@ Climate Explorer asks whether a historical climate result changes when we change
 The public website uses frozen examples. It does not fetch live data. The Python application supports custom locations and periods. Downloading the same example twice is not an independent scientific replication; offline replay recalculates its values from the retained input.
 
 ## A twenty minute review
+
+For version 1.3, first watch the separate 2-minute-15-second technical film. Then open Tehran rainfall and load its date-window atlas. Select an interior period, open its exact observations and check the source hash, dates and preserved worksheet notes. Inspect the complete chronological table and download the full atlas. Its Python verifier checks all 666 cells; selected-record replay checks one analysis. The short demo and seven-page PDF remain the official-length candidates.
+
+The atlas makes a reader's date selection inspectable. It does not supply a corrected significance test or 666 independent votes. The [100-candidate review](../INNOVATION_REVIEW.md) documents why this was selected over alternatives. The media receipts disclose the generated adult presenter, native voice correction take, omitted unclear sentences and the 480p source resolution. No student likeness or human testimonial was fabricated.
 
 1. Start the three-step rainfall story. Inspect the opposite fitted signs and explain why the recent interval includes zero. Use a chart action and a public view link, then check that your notes are preserved. Also open Tehran temperature for 1981-2025. Explain the displayed rate and units in one sentence. Check whether the page tells you that this is a model grid rather than a street measurement.
 2. Inspect the method comparison. Check whether you can distinguish the fitted rate from the uncertainty interval. Then inspect the fixed date windows. Record any sentence that makes these choices unclear.

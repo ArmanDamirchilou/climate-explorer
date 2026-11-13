@@ -69,3 +69,9 @@ The current Ankara schedule confirms the start at **Saturday 14 November, 09:45 
 ## 1.2 media update
 
 The short replacement tells the Tehran rainfall period story with a fictional adult narrator, actual numeric figures, a real app capture, English captions and original synthesized sound. Its portrait portfolio counterpart is deliberately longer and must not be used as the official demo. Visible synthetic-media indicators and descriptive/MP4 metadata identify the generated presenter and speech. The previous silent video and its record remain identifiable in version 1.0. No student face, voice or likeness is used. The full production guide was rechecked in Chrome on 13 November; both limits and the minor-media restriction remain as stated above.
+
+## 1.3 technical portfolio film
+
+The separate 135-second studio explanation covers the data, methods considered, synthetic failures, date-window atlas and reproducibility. Its length is the student's requested portfolio format, not an exception to the official demo limit. Keep the existing 29.8-second candidate or reviewed seven-page PDF for that field. No form has been filled or submitted by this production work.
+
+Generated adult performances, a native-voice correction take, editing receipts, final captions and visible/metadata disclosure accompany the long film. Presenter footage is 480p origin within a 1080p composition. The atlas plate is labeled as a data rendering, not a captured interface. Unclear generated sentences were corrected or omitted, with final words checked against the actual edited speech. These media checks do not resolve the event's early-work or AI-ideation concerns.

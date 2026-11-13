@@ -15,4 +15,6 @@ The dates below preserve the actual development history. A release number does n
 
 | 1.2.0 | Adds validated shareable views, a narrated short film and separate portrait reel. Replaces the public silent film while preserving its 1.0 source. Staging rejects unfinished media. | 117 local tests pass. Full decode and final mixed-speech transcription pass. Real app capture, data sources and generation receipt retained. The 45-second reel is portfolio media, not the NASA demo. |
 
+| 1.3.0 | Adds the complete date-window atlas, compact source-backed cell evidence, full offline atlas verification, transactional build rollback and stale-error handling. A separate 135-second studio film explains methods, failures and reproducibility. | All ten atlas cases retain 6,660 complete window analyses. The release verification records actual numerical, UI-module, CI, public and media checks. Generated voice corrections and omissions are documented. Presenter sources are 480p in a 1080p composition; no new inferential guarantee or eligibility approval is claimed. |
+
 Later release notes should explain what changed, why it matters, how it was checked, and the material limits. Keep earlier artifacts identifiable. A rebuilt PDF or video should retain its source hashes and review record so a reviewer can identify the data behind the displayed values.

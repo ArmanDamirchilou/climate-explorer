@@ -1,0 +1,50 @@
+{
+  "chapter": 5,
+  "scope": "Full-clause omissions, no replacement speech. Raw source and original transcript retained separately.",
+  "raw_source": "tmp/long-film/scene-5-raw.mp4",
+  "raw_source_sha256": "b48b9383da560314017cc14624a9d103839b320194f64014eb641428d40bead8",
+  "edited_source": "tmp/long-film/scene-5.mp4",
+  "edited_source_sha256": "65fb4a80ace5fd3d2170a939d59a2ef299fcf6bb12eb093d4bfba293db39a2a7",
+  "raw_transcript": "tmp/long-film/scene-5-raw-transcript.json",
+  "raw_transcript_sha256": "130b0ac099c2411c0a3ef6224b25c4218fe6f532700c1edb4c316aec35e1dafc",
+  "edits": [
+    {
+      "interval": [
+        7.15,
+        9.85
+      ],
+      "reason": "Omit the complete mispronounced offline-replay sentence. The accurate replay capability is shown visually."
+    },
+    {
+      "interval": [
+        19.2,
+        22.1
+      ],
+      "reason": "Omit the complete mispronounced matched-station sentence. The actual remaining validation gaps are shown visually."
+    },
+    {
+      "interval": [
+        25.18,
+        27.072
+      ],
+      "reason": "End the spoken goal after challenge; omit the entire following understand-and-reproduce clause, including the incorrect final word."
+    }
+  ],
+  "edge_fade_seconds": 0.015,
+  "duration_seconds": 27.072,
+  "replacement": "Quiet graphic-reading pauses; final music is added by the separate compositor.",
+  "canonical_paragraph": "Finally, the result has to survive scrutiny. Save an investigation with its source response, settings, and code fingerprint. Automated tests check calculations and failure paths. An independent reader can inspect the same inputs without trusting a screenshot. Climate Explorer is still a prototype. The goal is a climate claim that another person can challenge.",
+  "checks": {
+    "full_decode_passed": true,
+    "edited_transcript_agreement": true,
+    "human_listening_performed": false
+  },
+  "next_check": "Final mixed-film transcription and encoded visual review remain.",
+  "helper_sha256": "5550556e1c71e5cfd4ce05a6686ad9eff710a3899e1bc1823d47aafd2bd8dca9",
+  "created_utc": "2026-11-13T15:10:02.671800+00:00",
+  "edited_transcript": {
+    "file": "tmp/long-film/scene-5-transcript.json",
+    "sha256": "f06c193aa3d155d517db3ef702d17f2d72fa6c13c587e8d6f3c5a2107490997f",
+    "model": "medium.en"
+  }
+}

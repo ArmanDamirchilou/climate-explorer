@@ -1,0 +1,368 @@
+{
+  "method": "faster-whisper 1.2.1",
+  "model": "small.en",
+  "scope": "Automatic draft. Inspect the actual speech and correct captions before publishing.",
+  "duration": 27.0293125,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.48,
+      "text": " Two headlines, one city, rainfall is rising, rainfall is falling.",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.76,
+          "word": " Two",
+          "probability": 0.8216758370399475
+        },
+        {
+          "start": 0.76,
+          "end": 1.2,
+          "word": " headlines,",
+          "probability": 0.9933218359947205
+        },
+        {
+          "start": 1.7,
+          "end": 1.94,
+          "word": " one",
+          "probability": 0.9743116497993469
+        },
+        {
+          "start": 1.94,
+          "end": 2.32,
+          "word": " city,",
+          "probability": 0.9600667357444763
+        },
+        {
+          "start": 2.96,
+          "end": 3.18,
+          "word": " rainfall",
+          "probability": 0.9048768877983093
+        },
+        {
+          "start": 3.18,
+          "end": 3.5,
+          "word": " is",
+          "probability": 0.9983970522880554
+        },
+        {
+          "start": 3.5,
+          "end": 4.0,
+          "word": " rising,",
+          "probability": 0.9987885355949402
+        },
+        {
+          "start": 4.48,
+          "end": 4.74,
+          "word": " rainfall",
+          "probability": 0.9936548471450806
+        },
+        {
+          "start": 4.74,
+          "end": 5.04,
+          "word": " is",
+          "probability": 0.997913658618927
+        },
+        {
+          "start": 5.04,
+          "end": 5.48,
+          "word": " falling.",
+          "probability": 0.9987131357192993
+        }
+      ]
+    },
+    {
+      "start": 6.14,
+      "end": 9.74,
+      "text": " Both came from the same NASA record. The difference was the dates.",
+      "words": [
+        {
+          "start": 6.14,
+          "end": 6.4,
+          "word": " Both",
+          "probability": 0.993733823299408
+        },
+        {
+          "start": 6.4,
+          "end": 6.72,
+          "word": " came",
+          "probability": 0.997260332107544
+        },
+        {
+          "start": 6.72,
+          "end": 6.96,
+          "word": " from",
+          "probability": 0.9989863038063049
+        },
+        {
+          "start": 6.96,
+          "end": 7.12,
+          "word": " the",
+          "probability": 0.9986535310745239
+        },
+        {
+          "start": 7.12,
+          "end": 7.38,
+          "word": " same",
+          "probability": 0.999525785446167
+        },
+        {
+          "start": 7.38,
+          "end": 7.7,
+          "word": " NASA",
+          "probability": 0.9924739003181458
+        },
+        {
+          "start": 7.7,
+          "end": 8.1,
+          "word": " record.",
+          "probability": 0.9981841444969177
+        },
+        {
+          "start": 8.66,
+          "end": 8.76,
+          "word": " The",
+          "probability": 0.9965798258781433
+        },
+        {
+          "start": 8.76,
+          "end": 9.02,
+          "word": " difference",
+          "probability": 0.9986775517463684
+        },
+        {
+          "start": 9.02,
+          "end": 9.28,
+          "word": " was",
+          "probability": 0.9975718855857849
+        },
+        {
+          "start": 9.28,
+          "end": 9.46,
+          "word": " the",
+          "probability": 0.9987305998802185
+        },
+        {
+          "start": 9.46,
+          "end": 9.74,
+          "word": " dates.",
+          "probability": 0.9790350198745728
+        }
+      ]
+    },
+    {
+      "start": 13.66,
+      "end": 18.82,
+      "text": " Over the most recent 15, it points down, with an interval that includes zero.",
+      "words": [
+        {
+          "start": 13.66,
+          "end": 14.34,
+          "word": " Over",
+          "probability": 0.9673568606376648
+        },
+        {
+          "start": 14.34,
+          "end": 14.46,
+          "word": " the",
+          "probability": 0.9990304708480835
+        },
+        {
+          "start": 14.46,
+          "end": 14.64,
+          "word": " most",
+          "probability": 0.9983935952186584
+        },
+        {
+          "start": 14.64,
+          "end": 15.0,
+          "word": " recent",
+          "probability": 0.9964292645454407
+        },
+        {
+          "start": 15.0,
+          "end": 15.48,
+          "word": " 15,",
+          "probability": 0.8582968711853027
+        },
+        {
+          "start": 15.88,
+          "end": 16.08,
+          "word": " it",
+          "probability": 0.9975065588951111
+        },
+        {
+          "start": 16.08,
+          "end": 16.32,
+          "word": " points",
+          "probability": 0.9990743398666382
+        },
+        {
+          "start": 16.32,
+          "end": 16.74,
+          "word": " down,",
+          "probability": 0.9977703094482422
+        },
+        {
+          "start": 17.16,
+          "end": 17.36,
+          "word": " with",
+          "probability": 0.9986056685447693
+        },
+        {
+          "start": 17.36,
+          "end": 17.5,
+          "word": " an",
+          "probability": 0.9988633394241333
+        },
+        {
+          "start": 17.5,
+          "end": 17.86,
+          "word": " interval",
+          "probability": 0.9985617995262146
+        },
+        {
+          "start": 17.86,
+          "end": 18.1,
+          "word": " that",
+          "probability": 0.9976227879524231
+        },
+        {
+          "start": 18.1,
+          "end": 18.44,
+          "word": " includes",
+          "probability": 0.9909058809280396
+        },
+        {
+          "start": 18.44,
+          "end": 18.82,
+          "word": " zero.",
+          "probability": 0.798303484916687
+        }
+      ]
+    },
+    {
+      "start": 19.7,
+      "end": 21.68,
+      "text": " Neither chart proves a permanent reversal.",
+      "words": [
+        {
+          "start": 19.7,
+          "end": 19.88,
+          "word": " Neither",
+          "probability": 0.9974697828292847
+        },
+        {
+          "start": 19.88,
+          "end": 20.24,
+          "word": " chart",
+          "probability": 0.9994966983795166
+        },
+        {
+          "start": 20.24,
+          "end": 20.66,
+          "word": " proves",
+          "probability": 0.9983785152435303
+        },
+        {
+          "start": 20.66,
+          "end": 20.86,
+          "word": " a",
+          "probability": 0.9991278052330017
+        },
+        {
+          "start": 20.86,
+          "end": 21.16,
+          "word": " permanent",
+          "probability": 0.9997398257255554
+        },
+        {
+          "start": 21.16,
+          "end": 21.68,
+          "word": " reversal.",
+          "probability": 0.9994457364082336
+        }
+      ]
+    },
+    {
+      "start": 22.26,
+      "end": 26.44,
+      "text": " So the engineering question became how do we make selective choices visible?",
+      "words": [
+        {
+          "start": 22.26,
+          "end": 22.52,
+          "word": " So",
+          "probability": 0.9902747869491577
+        },
+        {
+          "start": 22.52,
+          "end": 22.64,
+          "word": " the",
+          "probability": 0.8194473385810852
+        },
+        {
+          "start": 22.64,
+          "end": 23.06,
+          "word": " engineering",
+          "probability": 0.9906033873558044
+        },
+        {
+          "start": 23.06,
+          "end": 23.4,
+          "word": " question",
+          "probability": 0.9977351427078247
+        },
+        {
+          "start": 23.4,
+          "end": 23.94,
+          "word": " became",
+          "probability": 0.9979953765869141
+        },
+        {
+          "start": 23.94,
+          "end": 24.62,
+          "word": " how",
+          "probability": 0.13619369268417358
+        },
+        {
+          "start": 24.62,
+          "end": 24.76,
+          "word": " do",
+          "probability": 0.9952431321144104
+        },
+        {
+          "start": 24.76,
+          "end": 24.88,
+          "word": " we",
+          "probability": 0.9991459846496582
+        },
+        {
+          "start": 24.88,
+          "end": 25.08,
+          "word": " make",
+          "probability": 0.9983667731285095
+        },
+        {
+          "start": 25.08,
+          "end": 25.56,
+          "word": " selective",
+          "probability": 0.9933310151100159
+        },
+        {
+          "start": 25.56,
+          "end": 26.06,
+          "word": " choices",
+          "probability": 0.9961863160133362
+        },
+        {
+          "start": 26.06,
+          "end": 26.44,
+          "word": " visible?",
+          "probability": 0.997326135635376
+        }
+      ]
+    }
+  ],
+  "text": "Two headlines, one city, rainfall is rising, rainfall is falling. Both came from the same NASA record. The difference was the dates. Over the most recent 15, it points down, with an interval that includes zero. Neither chart proves a permanent reversal. So the engineering question became how do we make selective choices visible?"
+}

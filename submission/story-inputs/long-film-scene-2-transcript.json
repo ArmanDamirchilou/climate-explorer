@@ -1,0 +1,457 @@
+{
+  "method": "faster-whisper 1.2.1",
+  "model": "medium.en",
+  "scope": "Automatic draft. Inspect the actual speech and correct captions before publishing.",
+  "duration": 27.072,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 7.3,
+      "text": " We began with the data. NASA power provides monthly data from a reanalysis model, not a neighborhood weather station.",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.58,
+          "word": " We",
+          "probability": 0.9062244296073914
+        },
+        {
+          "start": 0.58,
+          "end": 0.86,
+          "word": " began",
+          "probability": 0.9571412801742554
+        },
+        {
+          "start": 0.86,
+          "end": 1.06,
+          "word": " with",
+          "probability": 0.9992823004722595
+        },
+        {
+          "start": 1.06,
+          "end": 1.18,
+          "word": " the",
+          "probability": 0.9918728470802307
+        },
+        {
+          "start": 1.18,
+          "end": 1.46,
+          "word": " data.",
+          "probability": 0.9974775910377502
+        },
+        {
+          "start": 2.22,
+          "end": 2.44,
+          "word": " NASA",
+          "probability": 0.9928768277168274
+        },
+        {
+          "start": 2.44,
+          "end": 2.78,
+          "word": " power",
+          "probability": 0.7553645372390747
+        },
+        {
+          "start": 2.78,
+          "end": 3.3,
+          "word": " provides",
+          "probability": 0.9961238503456116
+        },
+        {
+          "start": 3.3,
+          "end": 3.72,
+          "word": " monthly",
+          "probability": 0.9923805594444275
+        },
+        {
+          "start": 3.72,
+          "end": 4.06,
+          "word": " data",
+          "probability": 0.9990401864051819
+        },
+        {
+          "start": 4.06,
+          "end": 4.36,
+          "word": " from",
+          "probability": 0.9933077096939087
+        },
+        {
+          "start": 4.36,
+          "end": 4.52,
+          "word": " a",
+          "probability": 0.9934995174407959
+        },
+        {
+          "start": 4.52,
+          "end": 5.04,
+          "word": " reanalysis",
+          "probability": 0.8477787673473358
+        },
+        {
+          "start": 5.04,
+          "end": 5.5,
+          "word": " model,",
+          "probability": 0.9985458850860596
+        },
+        {
+          "start": 5.82,
+          "end": 6.06,
+          "word": " not",
+          "probability": 0.9963940978050232
+        },
+        {
+          "start": 6.06,
+          "end": 6.24,
+          "word": " a",
+          "probability": 0.9955841898918152
+        },
+        {
+          "start": 6.24,
+          "end": 6.46,
+          "word": " neighborhood",
+          "probability": 0.9652607440948486
+        },
+        {
+          "start": 6.46,
+          "end": 6.8,
+          "word": " weather",
+          "probability": 0.9971153736114502
+        },
+        {
+          "start": 6.8,
+          "end": 7.3,
+          "word": " station.",
+          "probability": 0.9971486926078796
+        }
+      ]
+    },
+    {
+      "start": 7.94,
+      "end": 15.62,
+      "text": " Temperature uses a weighted yearly average. Rainfall arrives as millimeters per day, so each rate is multiplied by the days in its month.",
+      "words": [
+        {
+          "start": 7.94,
+          "end": 8.14,
+          "word": " Temperature",
+          "probability": 0.9366282820701599
+        },
+        {
+          "start": 8.14,
+          "end": 8.7,
+          "word": " uses",
+          "probability": 0.9950364232063293
+        },
+        {
+          "start": 8.7,
+          "end": 8.98,
+          "word": " a",
+          "probability": 0.9935970306396484
+        },
+        {
+          "start": 8.98,
+          "end": 9.22,
+          "word": " weighted",
+          "probability": 0.9970149993896484
+        },
+        {
+          "start": 9.22,
+          "end": 9.62,
+          "word": " yearly",
+          "probability": 0.9959930181503296
+        },
+        {
+          "start": 9.62,
+          "end": 10.1,
+          "word": " average.",
+          "probability": 0.9988910555839539
+        },
+        {
+          "start": 10.66,
+          "end": 10.96,
+          "word": " Rainfall",
+          "probability": 0.965937465429306
+        },
+        {
+          "start": 10.96,
+          "end": 11.36,
+          "word": " arrives",
+          "probability": 0.9921635389328003
+        },
+        {
+          "start": 11.36,
+          "end": 11.6,
+          "word": " as",
+          "probability": 0.9825232028961182
+        },
+        {
+          "start": 11.6,
+          "end": 12.08,
+          "word": " millimeters",
+          "probability": 0.9711087346076965
+        },
+        {
+          "start": 12.08,
+          "end": 12.34,
+          "word": " per",
+          "probability": 0.9974821209907532
+        },
+        {
+          "start": 12.34,
+          "end": 12.68,
+          "word": " day,",
+          "probability": 0.999352753162384
+        },
+        {
+          "start": 12.96,
+          "end": 13.18,
+          "word": " so",
+          "probability": 0.9953965544700623
+        },
+        {
+          "start": 13.18,
+          "end": 13.4,
+          "word": " each",
+          "probability": 0.9983415603637695
+        },
+        {
+          "start": 13.4,
+          "end": 13.68,
+          "word": " rate",
+          "probability": 0.9981319308280945
+        },
+        {
+          "start": 13.68,
+          "end": 13.84,
+          "word": " is",
+          "probability": 0.9975646734237671
+        },
+        {
+          "start": 13.84,
+          "end": 14.3,
+          "word": " multiplied",
+          "probability": 0.9971530437469482
+        },
+        {
+          "start": 14.3,
+          "end": 14.58,
+          "word": " by",
+          "probability": 0.9987695813179016
+        },
+        {
+          "start": 14.58,
+          "end": 14.72,
+          "word": " the",
+          "probability": 0.9917199611663818
+        },
+        {
+          "start": 14.72,
+          "end": 14.96,
+          "word": " days",
+          "probability": 0.9944289922714233
+        },
+        {
+          "start": 14.96,
+          "end": 15.12,
+          "word": " in",
+          "probability": 0.9915939569473267
+        },
+        {
+          "start": 15.12,
+          "end": 15.26,
+          "word": " its",
+          "probability": 0.9707379937171936
+        },
+        {
+          "start": 15.26,
+          "end": 15.62,
+          "word": " month.",
+          "probability": 0.9859920144081116
+        }
+      ]
+    },
+    {
+      "start": 16.2,
+      "end": 22.74,
+      "text": " Incomplete years are left out. The original response, retrieval date, and source hash travel with the analysis.",
+      "words": [
+        {
+          "start": 16.2,
+          "end": 16.56,
+          "word": " Incomplete",
+          "probability": 0.9523479342460632
+        },
+        {
+          "start": 16.56,
+          "end": 16.88,
+          "word": " years",
+          "probability": 0.9975499510765076
+        },
+        {
+          "start": 16.88,
+          "end": 17.1,
+          "word": " are",
+          "probability": 0.9987646341323853
+        },
+        {
+          "start": 17.1,
+          "end": 17.28,
+          "word": " left",
+          "probability": 0.999249279499054
+        },
+        {
+          "start": 17.28,
+          "end": 17.7,
+          "word": " out.",
+          "probability": 0.9991557598114014
+        },
+        {
+          "start": 18.26,
+          "end": 18.38,
+          "word": " The",
+          "probability": 0.9952268600463867
+        },
+        {
+          "start": 18.38,
+          "end": 18.74,
+          "word": " original",
+          "probability": 0.9985414743423462
+        },
+        {
+          "start": 18.74,
+          "end": 19.34,
+          "word": " response,",
+          "probability": 0.996184766292572
+        },
+        {
+          "start": 19.68,
+          "end": 20.0,
+          "word": " retrieval",
+          "probability": 0.9960688352584839
+        },
+        {
+          "start": 20.0,
+          "end": 20.36,
+          "word": " date,",
+          "probability": 0.9911365509033203
+        },
+        {
+          "start": 20.68,
+          "end": 20.96,
+          "word": " and",
+          "probability": 0.9985438585281372
+        },
+        {
+          "start": 20.96,
+          "end": 21.2,
+          "word": " source",
+          "probability": 0.9926276803016663
+        },
+        {
+          "start": 21.2,
+          "end": 21.54,
+          "word": " hash",
+          "probability": 0.992576003074646
+        },
+        {
+          "start": 21.54,
+          "end": 21.94,
+          "word": " travel",
+          "probability": 0.9870983958244324
+        },
+        {
+          "start": 21.94,
+          "end": 22.14,
+          "word": " with",
+          "probability": 0.9990904331207275
+        },
+        {
+          "start": 22.14,
+          "end": 22.28,
+          "word": " the",
+          "probability": 0.9958459734916687
+        },
+        {
+          "start": 22.28,
+          "end": 22.74,
+          "word": " analysis.",
+          "probability": 0.9969128370285034
+        }
+      ]
+    },
+    {
+      "start": 23.44,
+      "end": 26.72,
+      "text": " A polished graph is useful only if its inputs are inspectable.",
+      "words": [
+        {
+          "start": 23.44,
+          "end": 23.64,
+          "word": " A",
+          "probability": 0.9976378679275513
+        },
+        {
+          "start": 23.64,
+          "end": 23.92,
+          "word": " polished",
+          "probability": 0.9847530722618103
+        },
+        {
+          "start": 23.92,
+          "end": 24.22,
+          "word": " graph",
+          "probability": 0.9988082647323608
+        },
+        {
+          "start": 24.22,
+          "end": 24.46,
+          "word": " is",
+          "probability": 0.9987969398498535
+        },
+        {
+          "start": 24.46,
+          "end": 24.76,
+          "word": " useful",
+          "probability": 0.9991033673286438
+        },
+        {
+          "start": 24.76,
+          "end": 25.18,
+          "word": " only",
+          "probability": 0.9947583079338074
+        },
+        {
+          "start": 25.18,
+          "end": 25.42,
+          "word": " if",
+          "probability": 0.9980456829071045
+        },
+        {
+          "start": 25.42,
+          "end": 25.58,
+          "word": " its",
+          "probability": 0.9323872327804565
+        },
+        {
+          "start": 25.58,
+          "end": 25.92,
+          "word": " inputs",
+          "probability": 0.9960789084434509
+        },
+        {
+          "start": 25.92,
+          "end": 26.12,
+          "word": " are",
+          "probability": 0.9992270469665527
+        },
+        {
+          "start": 26.12,
+          "end": 26.72,
+          "word": " inspectable.",
+          "probability": 0.9889879524707794
+        }
+      ]
+    }
+  ],
+  "text": "We began with the data. NASA power provides monthly data from a reanalysis model, not a neighborhood weather station. Temperature uses a weighted yearly average. Rainfall arrives as millimeters per day, so each rate is multiplied by the days in its month. Incomplete years are left out. The original response, retrieval date, and source hash travel with the analysis. A polished graph is useful only if its inputs are inspectable."
+}

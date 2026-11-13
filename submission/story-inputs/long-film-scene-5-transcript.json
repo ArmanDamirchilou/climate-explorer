@@ -1,0 +1,368 @@
+{
+  "method": "faster-whisper 1.2.1",
+  "model": "medium.en",
+  "scope": "Automatic draft. Inspect the actual speech and correct captions before publishing.",
+  "duration": 27.072,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Finally, the result has to survive scrutiny. Save an investigation with its source response,",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.68,
+          "word": " Finally,",
+          "probability": 0.9859689474105835
+        },
+        {
+          "start": 0.82,
+          "end": 0.94,
+          "word": " the",
+          "probability": 0.9963619112968445
+        },
+        {
+          "start": 0.94,
+          "end": 1.18,
+          "word": " result",
+          "probability": 0.9896320104598999
+        },
+        {
+          "start": 1.18,
+          "end": 1.42,
+          "word": " has",
+          "probability": 0.9971011281013489
+        },
+        {
+          "start": 1.42,
+          "end": 1.6,
+          "word": " to",
+          "probability": 0.9992101192474365
+        },
+        {
+          "start": 1.6,
+          "end": 1.9,
+          "word": " survive",
+          "probability": 0.9983171224594116
+        },
+        {
+          "start": 1.9,
+          "end": 2.42,
+          "word": " scrutiny.",
+          "probability": 0.997312068939209
+        },
+        {
+          "start": 2.96,
+          "end": 3.16,
+          "word": " Save",
+          "probability": 0.9926918148994446
+        },
+        {
+          "start": 3.16,
+          "end": 3.34,
+          "word": " an",
+          "probability": 0.9918113946914673
+        },
+        {
+          "start": 3.34,
+          "end": 3.9,
+          "word": " investigation",
+          "probability": 0.9969292283058167
+        },
+        {
+          "start": 3.9,
+          "end": 4.16,
+          "word": " with",
+          "probability": 0.9942218661308289
+        },
+        {
+          "start": 4.16,
+          "end": 4.34,
+          "word": " its",
+          "probability": 0.9732198119163513
+        },
+        {
+          "start": 4.34,
+          "end": 4.52,
+          "word": " source",
+          "probability": 0.9781036376953125
+        },
+        {
+          "start": 4.52,
+          "end": 5.0,
+          "word": " response,",
+          "probability": 0.9853513240814209
+        }
+      ]
+    },
+    {
+      "start": 5.4,
+      "end": 6.94,
+      "text": " settings, and code fingerprint.",
+      "words": [
+        {
+          "start": 5.4,
+          "end": 5.66,
+          "word": " settings,",
+          "probability": 0.9927582740783691
+        },
+        {
+          "start": 6.02,
+          "end": 6.2,
+          "word": " and",
+          "probability": 0.9956511855125427
+        },
+        {
+          "start": 6.2,
+          "end": 6.38,
+          "word": " code",
+          "probability": 0.9968780279159546
+        },
+        {
+          "start": 6.38,
+          "end": 6.94,
+          "word": " fingerprint.",
+          "probability": 0.9948529601097107
+        }
+      ]
+    },
+    {
+      "start": 9.94,
+      "end": 14.84,
+      "text": " Automated tests check calculations and failure paths. An independent reader can inspect the",
+      "words": [
+        {
+          "start": 9.94,
+          "end": 10.48,
+          "word": " Automated",
+          "probability": 0.9223615527153015
+        },
+        {
+          "start": 10.48,
+          "end": 10.76,
+          "word": " tests",
+          "probability": 0.9674513339996338
+        },
+        {
+          "start": 10.76,
+          "end": 11.04,
+          "word": " check",
+          "probability": 0.8573682308197021
+        },
+        {
+          "start": 11.04,
+          "end": 11.68,
+          "word": " calculations",
+          "probability": 0.994662880897522
+        },
+        {
+          "start": 11.68,
+          "end": 12.02,
+          "word": " and",
+          "probability": 0.9856476783752441
+        },
+        {
+          "start": 12.02,
+          "end": 12.3,
+          "word": " failure",
+          "probability": 0.9973708391189575
+        },
+        {
+          "start": 12.3,
+          "end": 12.74,
+          "word": " paths.",
+          "probability": 0.9849564433097839
+        },
+        {
+          "start": 13.3,
+          "end": 13.44,
+          "word": " An",
+          "probability": 0.995116114616394
+        },
+        {
+          "start": 13.44,
+          "end": 13.84,
+          "word": " independent",
+          "probability": 0.9973357319831848
+        },
+        {
+          "start": 13.84,
+          "end": 14.1,
+          "word": " reader",
+          "probability": 0.9991027116775513
+        },
+        {
+          "start": 14.1,
+          "end": 14.32,
+          "word": " can",
+          "probability": 0.9989615678787231
+        },
+        {
+          "start": 14.32,
+          "end": 14.64,
+          "word": " inspect",
+          "probability": 0.998164713382721
+        },
+        {
+          "start": 14.64,
+          "end": 14.84,
+          "word": " the",
+          "probability": 0.9980809688568115
+        }
+      ]
+    },
+    {
+      "start": 14.84,
+      "end": 19.08,
+      "text": " same inputs without trusting a screenshot. Climate Explorer is still a prototype.",
+      "words": [
+        {
+          "start": 14.84,
+          "end": 15.04,
+          "word": " same",
+          "probability": 0.9984945058822632
+        },
+        {
+          "start": 15.04,
+          "end": 15.42,
+          "word": " inputs",
+          "probability": 0.9833101630210876
+        },
+        {
+          "start": 15.42,
+          "end": 15.68,
+          "word": " without",
+          "probability": 0.9917667508125305
+        },
+        {
+          "start": 15.68,
+          "end": 16.1,
+          "word": " trusting",
+          "probability": 0.9983867406845093
+        },
+        {
+          "start": 16.1,
+          "end": 16.32,
+          "word": " a",
+          "probability": 0.9935187697410583
+        },
+        {
+          "start": 16.32,
+          "end": 16.7,
+          "word": " screenshot.",
+          "probability": 0.9059542417526245
+        },
+        {
+          "start": 17.44,
+          "end": 17.68,
+          "word": " Climate",
+          "probability": 0.928115963935852
+        },
+        {
+          "start": 17.68,
+          "end": 18.0,
+          "word": " Explorer",
+          "probability": 0.794701337814331
+        },
+        {
+          "start": 18.0,
+          "end": 18.28,
+          "word": " is",
+          "probability": 0.9978581070899963
+        },
+        {
+          "start": 18.28,
+          "end": 18.44,
+          "word": " still",
+          "probability": 0.9974109530448914
+        },
+        {
+          "start": 18.44,
+          "end": 18.64,
+          "word": " a",
+          "probability": 0.9992876648902893
+        },
+        {
+          "start": 18.64,
+          "end": 19.08,
+          "word": " prototype.",
+          "probability": 0.996163010597229
+        }
+      ]
+    },
+    {
+      "start": 21.96,
+      "end": 25.1,
+      "text": " The goal is a climate claim that another person can challenge.",
+      "words": [
+        {
+          "start": 21.96,
+          "end": 22.48,
+          "word": " The",
+          "probability": 0.5185383558273315
+        },
+        {
+          "start": 22.48,
+          "end": 22.7,
+          "word": " goal",
+          "probability": 0.9880692362785339
+        },
+        {
+          "start": 22.7,
+          "end": 22.84,
+          "word": " is",
+          "probability": 0.981880784034729
+        },
+        {
+          "start": 22.84,
+          "end": 23.02,
+          "word": " a",
+          "probability": 0.9828007221221924
+        },
+        {
+          "start": 23.02,
+          "end": 23.24,
+          "word": " climate",
+          "probability": 0.9948146939277649
+        },
+        {
+          "start": 23.24,
+          "end": 23.58,
+          "word": " claim",
+          "probability": 0.9962399005889893
+        },
+        {
+          "start": 23.58,
+          "end": 23.76,
+          "word": " that",
+          "probability": 0.9678966403007507
+        },
+        {
+          "start": 23.76,
+          "end": 24.04,
+          "word": " another",
+          "probability": 0.9977940320968628
+        },
+        {
+          "start": 24.04,
+          "end": 24.38,
+          "word": " person",
+          "probability": 0.9993288516998291
+        },
+        {
+          "start": 24.38,
+          "end": 24.62,
+          "word": " can",
+          "probability": 0.9979634284973145
+        },
+        {
+          "start": 24.62,
+          "end": 25.1,
+          "word": " challenge.",
+          "probability": 0.9960141181945801
+        }
+      ]
+    }
+  ],
+  "text": "Finally, the result has to survive scrutiny. Save an investigation with its source response, settings, and code fingerprint. Automated tests check calculations and failure paths. An independent reader can inspect the same inputs without trusting a screenshot. Climate Explorer is still a prototype. The goal is a climate claim that another person can challenge."
+}

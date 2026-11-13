@@ -1,0 +1,218 @@
+{
+  "method": "faster-whisper 1.2.1",
+  "model": "medium.en",
+  "scope": "Automatic draft. Inspect the actual speech and correct captions before publishing.",
+  "duration": 13.056,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.3,
+      "text": " temperature uses a weighted yearly average.",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.4,
+          "word": " temperature",
+          "probability": 0.41114750504493713
+        },
+        {
+          "start": 0.4,
+          "end": 0.86,
+          "word": " uses",
+          "probability": 0.9708502292633057
+        },
+        {
+          "start": 0.86,
+          "end": 1.14,
+          "word": " a",
+          "probability": 0.9875712394714355
+        },
+        {
+          "start": 1.14,
+          "end": 1.4,
+          "word": " weighted",
+          "probability": 0.9963439106941223
+        },
+        {
+          "start": 1.4,
+          "end": 1.8,
+          "word": " yearly",
+          "probability": 0.9966075420379639
+        },
+        {
+          "start": 1.8,
+          "end": 2.3,
+          "word": " average.",
+          "probability": 0.9990466237068176
+        }
+      ]
+    },
+    {
+      "start": 2.96,
+      "end": 4.54,
+      "text": " Incomplete years are left out.",
+      "words": [
+        {
+          "start": 2.96,
+          "end": 3.34,
+          "word": " Incomplete",
+          "probability": 0.9921147525310516
+        },
+        {
+          "start": 3.34,
+          "end": 3.66,
+          "word": " years",
+          "probability": 0.9977589845657349
+        },
+        {
+          "start": 3.66,
+          "end": 3.86,
+          "word": " are",
+          "probability": 0.9990302324295044
+        },
+        {
+          "start": 3.86,
+          "end": 4.06,
+          "word": " left",
+          "probability": 0.9994122982025146
+        },
+        {
+          "start": 4.06,
+          "end": 4.54,
+          "word": " out.",
+          "probability": 0.9986928105354309
+        }
+      ]
+    },
+    {
+      "start": 5.04,
+      "end": 7.36,
+      "text": " Adjusted intervals examine correlated errors.",
+      "words": [
+        {
+          "start": 5.04,
+          "end": 5.34,
+          "word": " Adjusted",
+          "probability": 0.9175183773040771
+        },
+        {
+          "start": 5.34,
+          "end": 5.86,
+          "word": " intervals",
+          "probability": 0.9943082928657532
+        },
+        {
+          "start": 5.86,
+          "end": 6.3,
+          "word": " examine",
+          "probability": 0.9839809536933899
+        },
+        {
+          "start": 6.3,
+          "end": 6.84,
+          "word": " correlated",
+          "probability": 0.9935228824615479
+        },
+        {
+          "start": 6.84,
+          "end": 7.36,
+          "word": " errors.",
+          "probability": 0.9988834261894226
+        }
+      ]
+    },
+    {
+      "start": 7.92,
+      "end": 10.1,
+      "text": " A robust slope checks unusual years.",
+      "words": [
+        {
+          "start": 7.92,
+          "end": 7.98,
+          "word": " A",
+          "probability": 0.9972399473190308
+        },
+        {
+          "start": 7.98,
+          "end": 8.36,
+          "word": " robust",
+          "probability": 0.9991450309753418
+        },
+        {
+          "start": 8.36,
+          "end": 8.72,
+          "word": " slope",
+          "probability": 0.9916771650314331
+        },
+        {
+          "start": 8.72,
+          "end": 9.1,
+          "word": " checks",
+          "probability": 0.9987666606903076
+        },
+        {
+          "start": 9.1,
+          "end": 9.6,
+          "word": " unusual",
+          "probability": 0.9790602922439575
+        },
+        {
+          "start": 9.6,
+          "end": 10.1,
+          "word": " years.",
+          "probability": 0.9987334609031677
+        }
+      ]
+    },
+    {
+      "start": 10.68,
+      "end": 12.86,
+      "text": " The map shows every eligible date window.",
+      "words": [
+        {
+          "start": 10.68,
+          "end": 10.78,
+          "word": " The",
+          "probability": 0.9960824251174927
+        },
+        {
+          "start": 10.78,
+          "end": 10.98,
+          "word": " map",
+          "probability": 0.9930504560470581
+        },
+        {
+          "start": 10.98,
+          "end": 11.34,
+          "word": " shows",
+          "probability": 0.9989514350891113
+        },
+        {
+          "start": 11.34,
+          "end": 11.76,
+          "word": " every",
+          "probability": 0.9970592260360718
+        },
+        {
+          "start": 11.76,
+          "end": 12.24,
+          "word": " eligible",
+          "probability": 0.9982916712760925
+        },
+        {
+          "start": 12.24,
+          "end": 12.52,
+          "word": " date",
+          "probability": 0.9972630739212036
+        },
+        {
+          "start": 12.52,
+          "end": 12.86,
+          "word": " window.",
+          "probability": 0.9990115165710449
+        }
+      ]
+    }
+  ],
+  "text": "temperature uses a weighted yearly average. Incomplete years are left out. Adjusted intervals examine correlated errors. A robust slope checks unusual years. The map shows every eligible date window."
+}

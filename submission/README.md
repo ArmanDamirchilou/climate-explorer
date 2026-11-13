@@ -8,6 +8,8 @@ Two rules need an organizer's decision before this can be treated as an eligible
 
 ## Materials
 
+- [Full technical film](climate-explorer-story-technical.mp4) is a separate 135-second portfolio explanation. [Production brief](LONG_FILM_BRIEF.md), [chapter record](long-film-script.json) and audio-edit receipts preserve the generated sources, local editing and actual checks. It exceeds the official demo limit.
+- [Window-atlas protocol](../evaluation/WINDOW_ATLAS.md) defines the complete date search and its limits. [Innovation review](../INNOVATION_REVIEW.md) records 100 specific candidates and selection criteria.
 - [Project description](PROJECT_DESCRIPTION.md) contains text for the actual form fields.
 - [Demo PDF](climate-explorer-demo.pdf) is the seven-page demonstration. [Artifact details](DEMO_ARTIFACT.md) explain its PDF fallback and checks. The [storyboard](DEMO_SCRIPT.md) also provides an optional short video script.
 - [Narrated short film](climate-explorer-story-judge.mp4) is the current short demo candidate. [Portrait reel](climate-explorer-story-reel.mp4) is a longer portfolio film, not the NASA submission demo. [Production notes](STORY_PRODUCTION.md) describe sources, editing and verification. The earlier [silent video](climate-explorer-demo.mp4) and [its notes](VIDEO_NOTES.md) are preserved as 1.0 artifacts.

@@ -49,3 +49,15 @@ The student selected the Climate Explorer name and climate direction. Codex deve
 **What would you improve next?**
 
 First resolve entry eligibility and the student's account details. Then observe students doing the investigation, improve the explanations that cause mistakes, and follow the source discrepancy with matched spatial data and a suitable station comparison. Broader features should follow evidence from those tasks.
+
+**Why show 666 windows instead of finding the best one?**
+
+The goal is to expose how both date endpoints change a fitted estimate. There are 36 possible ten-year windows in this complete 45-year record, then 35 eleven-year windows and so on to one full-period window. The sum is 666. Overlap makes them dependent, and changing dates changes the historical period being estimated. Selecting one impressive interval after browsing is still selective reporting. The atlas is descriptive, not a joint test or multiplicity correction.
+
+**How does the evidence format work?**
+
+The raw monthly response and long observation arrays appear once. Each cell keeps its dates, complete-year count, trend and sensitivity results. Opening the cell restores the matching observations and source into a normal analysis file. Full-atlas verification checks the entire declared universe; selected-record replay checks only that chosen analysis. Browser point checks have a narrower uncertainty scope.
+
+**Why not add a forecast or a chatbot?**
+
+Those answer different questions and need different validation. A forecast needs a target, withheld periods and suitable baselines. A chatbot needs evidence-grounding and error evaluation. The selected improvement directly addresses a demonstrated weakness in the existing historical-rate task. The innovation review preserves those alternatives and what evidence would justify revisiting them.

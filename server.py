@@ -5,11 +5,30 @@ import csv
 import io
 import json
 import logging
-from functools import partial
+from functools import lru_cache, partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlsplit
 
-from climate import DataUnavailable, FIRST_YEAR, LAST_YEAR, PRESETS, ROOT, investigate
+from climate import DataUnavailable, FIRST_YEAR, LAST_YEAR, PRESETS, ROOT, analyze_saved, investigate, payload_hash
+from window_atlas import build_window_atlas, validate_atlas
+
+ATLAS_CASES = {f"{place}-{variable}": (place, variable) for place in PRESETS for variable in ("temperature", "rainfall")}
+
+@lru_cache(maxsize=10)
+def frozen_atlas(case):
+    if case not in ATLAS_CASES:
+        raise ValueError("Choose one of the ten frozen atlas cases.")
+    key, variable = ATLAS_CASES[case]
+    saved = json.loads((ROOT / "evaluation/source-snapshots" / f"{key}-power.json").read_text())
+    comparison = json.loads((ROOT / "evaluation/dataset-check.json").read_text())
+    reference = next(row for row in comparison["rows"] if row["name"] == PRESETS[key]["name"])
+    if payload_hash(saved["payload"]) != reference["power_payload_sha256"] or saved["request_url"] != reference["power_source_url"]:
+        raise ValueError("Frozen atlas source differs from the retained comparison record.")
+    base = analyze_saved({**PRESETS[key], "start": 1981, "end": 2025, "variable": variable}, saved,
+                         "frozen NASA snapshot (public demonstration)")
+    atlas = build_window_atlas(base)
+    validate_atlas(atlas)
+    return atlas
 
 
 class Handler(SimpleHTTPRequestHandler):
@@ -32,6 +51,15 @@ class Handler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         parsed = urlsplit(self.path)
+        if parsed.path.startswith("/atlas/"):
+            case = parsed.path.removeprefix("/atlas/").removesuffix(".json")
+            if not parsed.path.endswith(".json") or parsed.query or case not in ATLAS_CASES:
+                return self.respond(404, {"error": "Choose one of the ten frozen atlas cases."})
+            try:
+                return self.respond(200, frozen_atlas(case))
+            except (DataUnavailable, ValueError, KeyError, TypeError, OSError, StopIteration):
+                logging.exception("Frozen atlas could not be built")
+                return self.respond(500, {"error": "The frozen atlas could not be built. Restore the retained source files."})
         if parsed.path == "/api/config":
             return self.respond(200, {"presets": PRESETS, "first_year": FIRST_YEAR, "last_year": LAST_YEAR})
         reports = {"/api/validation": "results.json", "/api/dataset-check": "dataset-check.json", "/api/science-audit": "science-audit.json"}

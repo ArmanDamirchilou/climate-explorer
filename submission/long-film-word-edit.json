@@ -1,0 +1,16 @@
+{
+  "chapter": 1,
+  "edit": "Omit the complete ambiguous-city sentence while its accurate data figure is shown. No replacement speech, voice synthesis or word splice is used in the final source.",
+  "raw_source_sha256": "f7db071c84fe07ef13a7c1b53929b000d93f59141a0427cd5138f348cfea786b",
+  "edited_source_sha256": "de8f172e6632bdd982f1ca9cf4299ec02299b400d0df0fdd0dacc33fc574a804",
+  "muted_interval_seconds": [
+    10.0,
+    13.88
+  ],
+  "edge_fade_seconds": 0.015,
+  "removed_sentence": "Over forty-five years, Tehran's fitted rate points up.",
+  "replacement": "No spoken replacement. Readable 1981\u20132025 fitted-rate figure supplies the full-period estimate. Original quiet/native voice on either side is retained.",
+  "timeline": "Original video and total chapter duration retained. Edit occurs under full-screen figures; the presenter mouth is not shown.",
+  "reason": "Base.en and small.en both interpreted the original city name as Turin. A trial donor-word splice failed ASR and was discarded. The final clean omission avoids falsely captioning an ambiguous name.",
+  "human_listening_performed": false
+}
