@@ -1,0 +1,469 @@
+{
+  "method": "faster-whisper 1.2.1",
+  "model": "small.en",
+  "scope": "Automatic draft. Inspect the actual speech and correct captions before publishing.",
+  "duration": 29.723375,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.46,
+      "text": " Can one city tell two climate stories?",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.5,
+          "word": " Can",
+          "probability": 0.9863415360450745
+        },
+        {
+          "start": 0.5,
+          "end": 0.74,
+          "word": " one",
+          "probability": 0.9900051951408386
+        },
+        {
+          "start": 0.74,
+          "end": 0.98,
+          "word": " city",
+          "probability": 0.9880158305168152
+        },
+        {
+          "start": 0.98,
+          "end": 1.32,
+          "word": " tell",
+          "probability": 0.9982421398162842
+        },
+        {
+          "start": 1.32,
+          "end": 1.66,
+          "word": " two",
+          "probability": 0.9798074960708618
+        },
+        {
+          "start": 1.66,
+          "end": 2.04,
+          "word": " climate",
+          "probability": 0.9978882670402527
+        },
+        {
+          "start": 2.04,
+          "end": 2.46,
+          "word": " stories?",
+          "probability": 0.9969168901443481
+        }
+      ]
+    },
+    {
+      "start": 3.36,
+      "end": 4.5,
+      "text": " Look at Tehran's rainfall.",
+      "words": [
+        {
+          "start": 3.36,
+          "end": 3.48,
+          "word": " Look",
+          "probability": 0.9934746623039246
+        },
+        {
+          "start": 3.48,
+          "end": 3.66,
+          "word": " at",
+          "probability": 0.9991268515586853
+        },
+        {
+          "start": 3.66,
+          "end": 4.1,
+          "word": " Tehran's",
+          "probability": 0.7168492376804352
+        },
+        {
+          "start": 4.1,
+          "end": 4.5,
+          "word": " rainfall.",
+          "probability": 0.9945218563079834
+        }
+      ]
+    },
+    {
+      "start": 5.28,
+      "end": 8.16,
+      "text": " Over 45 years, the fitted trend points up.",
+      "words": [
+        {
+          "start": 5.28,
+          "end": 5.56,
+          "word": " Over",
+          "probability": 0.9933308959007263
+        },
+        {
+          "start": 5.56,
+          "end": 6.1,
+          "word": " 45",
+          "probability": 0.9784841537475586
+        },
+        {
+          "start": 6.1,
+          "end": 6.48,
+          "word": " years,",
+          "probability": 0.9971032738685608
+        },
+        {
+          "start": 6.72,
+          "end": 6.9,
+          "word": " the",
+          "probability": 0.9983794689178467
+        },
+        {
+          "start": 6.9,
+          "end": 7.14,
+          "word": " fitted",
+          "probability": 0.9726347327232361
+        },
+        {
+          "start": 7.14,
+          "end": 7.5,
+          "word": " trend",
+          "probability": 0.9972260594367981
+        },
+        {
+          "start": 7.5,
+          "end": 7.84,
+          "word": " points",
+          "probability": 0.9968711733818054
+        },
+        {
+          "start": 7.84,
+          "end": 8.16,
+          "word": " up.",
+          "probability": 0.9983312487602234
+        }
+      ]
+    },
+    {
+      "start": 8.68,
+      "end": 10.6,
+      "text": " Over 15, it points down.",
+      "words": [
+        {
+          "start": 8.68,
+          "end": 8.96,
+          "word": " Over",
+          "probability": 0.9979329109191895
+        },
+        {
+          "start": 8.96,
+          "end": 9.44,
+          "word": " 15,",
+          "probability": 0.9869112968444824
+        },
+        {
+          "start": 9.84,
+          "end": 9.98,
+          "word": " it",
+          "probability": 0.9985858201980591
+        },
+        {
+          "start": 9.98,
+          "end": 10.22,
+          "word": " points",
+          "probability": 0.9991875290870667
+        },
+        {
+          "start": 10.22,
+          "end": 10.6,
+          "word": " down.",
+          "probability": 0.9996134638786316
+        }
+      ]
+    },
+    {
+      "start": 11.22,
+      "end": 12.1,
+      "text": " The dates changed.",
+      "words": [
+        {
+          "start": 11.22,
+          "end": 11.36,
+          "word": " The",
+          "probability": 0.9985527396202087
+        },
+        {
+          "start": 11.36,
+          "end": 11.58,
+          "word": " dates",
+          "probability": 0.6820241808891296
+        },
+        {
+          "start": 11.58,
+          "end": 12.1,
+          "word": " changed.",
+          "probability": 0.9920686483383179
+        }
+      ]
+    },
+    {
+      "start": 12.98,
+      "end": 14.64,
+      "text": " That doesn't prove the climate reversed.",
+      "words": [
+        {
+          "start": 12.98,
+          "end": 13.24,
+          "word": " That",
+          "probability": 0.9978530406951904
+        },
+        {
+          "start": 13.24,
+          "end": 13.52,
+          "word": " doesn't",
+          "probability": 0.9989480674266815
+        },
+        {
+          "start": 13.52,
+          "end": 13.78,
+          "word": " prove",
+          "probability": 0.9955660700798035
+        },
+        {
+          "start": 13.78,
+          "end": 13.96,
+          "word": " the",
+          "probability": 0.9943663477897644
+        },
+        {
+          "start": 13.96,
+          "end": 14.26,
+          "word": " climate",
+          "probability": 0.9993100166320801
+        },
+        {
+          "start": 14.26,
+          "end": 14.64,
+          "word": " reversed.",
+          "probability": 0.9947770833969116
+        }
+      ]
+    },
+    {
+      "start": 15.8,
+      "end": 18.64,
+      "text": " Climate Explorer lets you test that difference with NASA data.",
+      "words": [
+        {
+          "start": 15.8,
+          "end": 15.8,
+          "word": " Climate",
+          "probability": 0.9886977672576904
+        },
+        {
+          "start": 15.8,
+          "end": 16.22,
+          "word": " Explorer",
+          "probability": 0.9465973973274231
+        },
+        {
+          "start": 16.22,
+          "end": 16.58,
+          "word": " lets",
+          "probability": 0.9689772725105286
+        },
+        {
+          "start": 16.58,
+          "end": 16.8,
+          "word": " you",
+          "probability": 0.9997095465660095
+        },
+        {
+          "start": 16.8,
+          "end": 17.06,
+          "word": " test",
+          "probability": 0.9990659356117249
+        },
+        {
+          "start": 17.06,
+          "end": 17.32,
+          "word": " that",
+          "probability": 0.9938404560089111
+        },
+        {
+          "start": 17.32,
+          "end": 17.66,
+          "word": " difference",
+          "probability": 0.9983046054840088
+        },
+        {
+          "start": 17.66,
+          "end": 17.96,
+          "word": " with",
+          "probability": 0.9988406300544739
+        },
+        {
+          "start": 17.96,
+          "end": 18.2,
+          "word": " NASA",
+          "probability": 0.9926615953445435
+        },
+        {
+          "start": 18.2,
+          "end": 18.64,
+          "word": " data.",
+          "probability": 0.9909023642539978
+        }
+      ]
+    },
+    {
+      "start": 19.4,
+      "end": 21.74,
+      "text": " Compare periods, inspect uncertainty,",
+      "words": [
+        {
+          "start": 19.4,
+          "end": 19.72,
+          "word": " Compare",
+          "probability": 0.99410480260849
+        },
+        {
+          "start": 19.72,
+          "end": 20.36,
+          "word": " periods,",
+          "probability": 0.9974167346954346
+        },
+        {
+          "start": 20.68,
+          "end": 21.08,
+          "word": " inspect",
+          "probability": 0.9965996146202087
+        },
+        {
+          "start": 21.08,
+          "end": 21.74,
+          "word": " uncertainty,",
+          "probability": 0.9983637928962708
+        }
+      ]
+    },
+    {
+      "start": 22.22,
+      "end": 25.16,
+      "text": " and save the evidence so someone else can check your result.",
+      "words": [
+        {
+          "start": 22.22,
+          "end": 22.42,
+          "word": " and",
+          "probability": 0.9982934594154358
+        },
+        {
+          "start": 22.42,
+          "end": 22.72,
+          "word": " save",
+          "probability": 0.9989060163497925
+        },
+        {
+          "start": 22.72,
+          "end": 22.92,
+          "word": " the",
+          "probability": 0.9986444115638733
+        },
+        {
+          "start": 22.92,
+          "end": 23.3,
+          "word": " evidence",
+          "probability": 0.9996252059936523
+        },
+        {
+          "start": 23.3,
+          "end": 23.62,
+          "word": " so",
+          "probability": 0.9421334266662598
+        },
+        {
+          "start": 23.62,
+          "end": 23.96,
+          "word": " someone",
+          "probability": 0.9972521662712097
+        },
+        {
+          "start": 23.96,
+          "end": 24.18,
+          "word": " else",
+          "probability": 0.9975113868713379
+        },
+        {
+          "start": 24.18,
+          "end": 24.42,
+          "word": " can",
+          "probability": 0.9991762042045593
+        },
+        {
+          "start": 24.42,
+          "end": 24.62,
+          "word": " check",
+          "probability": 0.999539852142334
+        },
+        {
+          "start": 24.62,
+          "end": 24.8,
+          "word": " your",
+          "probability": 0.9979361295700073
+        },
+        {
+          "start": 24.8,
+          "end": 25.16,
+          "word": " result.",
+          "probability": 0.9728023409843445
+        }
+      ]
+    },
+    {
+      "start": 26.1,
+      "end": 28.56,
+      "text": " Before sharing a claim, check what changed.",
+      "words": [
+        {
+          "start": 26.1,
+          "end": 26.46,
+          "word": " Before",
+          "probability": 0.9988309741020203
+        },
+        {
+          "start": 26.46,
+          "end": 26.8,
+          "word": " sharing",
+          "probability": 0.9984967708587646
+        },
+        {
+          "start": 26.8,
+          "end": 26.96,
+          "word": " a",
+          "probability": 0.9972965121269226
+        },
+        {
+          "start": 26.96,
+          "end": 27.22,
+          "word": " claim,",
+          "probability": 0.999401330947876
+        },
+        {
+          "start": 27.7,
+          "end": 27.94,
+          "word": " check",
+          "probability": 0.9952473044395447
+        },
+        {
+          "start": 27.94,
+          "end": 28.14,
+          "word": " what",
+          "probability": 0.9991973042488098
+        },
+        {
+          "start": 28.14,
+          "end": 28.56,
+          "word": " changed.",
+          "probability": 0.9987659454345703
+        }
+      ]
+    }
+  ],
+  "text": "Can one city tell two climate stories? Look at Tehran's rainfall. Over 45 years, the fitted trend points up. Over 15, it points down. The dates changed. That doesn't prove the climate reversed. Climate Explorer lets you test that difference with NASA data. Compare periods, inspect uncertainty, and save the evidence so someone else can check your result. Before sharing a claim, check what changed."
+}

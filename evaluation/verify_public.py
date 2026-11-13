@@ -57,11 +57,27 @@ def check(base_url):
     video = bodies.get("climate-explorer-demo.mp4", b"")
     if len(video) < 16 or video[4:8] != b"ftyp":
         raise ValueError("The public demonstration MP4 is missing or invalid.")
-    expected_video = json.loads((ROOT / "submission/video-verification.json").read_text())
-    if hashlib.sha256(video).hexdigest() != expected_video["sha256"] or expected_video["duration_seconds"] > 30:
+    expected_video = json.loads((ROOT / "submission/climate-explorer-story-judge.json").read_text())
+    if hashlib.sha256(video).hexdigest() != expected_video["sha256"] or expected_video["duration_seconds"] > 30 or expected_video["mode"] != "judge":
         raise ValueError("The public video differs from the reviewed artifact or exceeds the media limit.")
     if not bodies.get("climate-explorer-demo.vtt", b"").startswith(b"WEBVTT"):
         raise ValueError("The public English captions are missing or invalid.")
+    media_records = {}
+    for mode, public_name in (("judge", "demo"), ("reel", "reel")):
+        record = json.loads((ROOT / f"submission/climate-explorer-story-{mode}.json").read_text())
+        if record["mode"] != mode or record["video_codec"] != "h264" or record["audio_codec"] != "aac" or not record["native_audio_preserved"]:
+            raise ValueError(f"The {mode} media review lacks the expected video and speech contract.")
+        body = bodies.get(f"climate-explorer-{public_name}.mp4", b"")
+        if len(body) < 16 or body[4:8] != b"ftyp" or hashlib.sha256(body).hexdigest() != record["sha256"]:
+            raise ValueError(f"The public {mode} video differs from the reviewed artifact.")
+        captions = bodies.get(f"climate-explorer-{public_name}.vtt", b"")
+        poster = bodies.get(f"story-{mode}-poster.jpg", b"")
+        if not captions.startswith(b"WEBVTT") or hashlib.sha256(captions).hexdigest() != record["captions"]["sha256"]:
+            raise ValueError(f"The public {mode} captions differ from the reviewed artifact.")
+        if not poster.startswith(b"\xff\xd8") or hashlib.sha256(poster).hexdigest() != record["poster"]["sha256"]:
+            raise ValueError(f"The public {mode} poster differs from the reviewed artifact.")
+        media_records[mode] = {"sha256": record["sha256"], "duration_seconds": record["duration_seconds"],
+                               "resolution": record["resolution"], "role": "short demo candidate" if mode == "judge" else "portfolio, exceeds demo limit"}
     return {"checked_utc": datetime.now(timezone.utc).isoformat(), "base_url": base_url,
             "authentication": "none", "files_verified_against_manifest": len(bodies),
             "code_sha256": CODE_SHA256, "analyses": analyses,
@@ -69,6 +85,7 @@ def check(base_url):
             "demo_pdf_sha256": hashlib.sha256(pdf).hexdigest(),
             "demo_video_sha256": hashlib.sha256(video).hexdigest(),
             "demo_video_seconds": expected_video["duration_seconds"],
+            "narrated_media": media_records,
             "scope": "Anonymous HTTP access, deployed file integrity and offline numerical replay; browser behavior and eligibility are separate checks."}
 
 

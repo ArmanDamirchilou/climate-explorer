@@ -63,3 +63,8 @@ The four fixed periods use the same frozen response and retain the longest defau
 ## 1.1 guided investigation
 
 Retain the glacier, snow, deep-sea, slate and teal colors and system/Trebuchet type. A compact full-width story precedes the investigation workspace. Three genuine steps reveal the long period, the recent period and their uncertainty. The comparison uses actual values on one scale, with dates and rate units. Semantic buttons and an explicit action open matching evidence in the existing chart. There is no autoplay; scrolling follows a deliberate action. Mobile uses one column. The selection disclosure, source hash and conditional-interval caveat stay available.
+
+
+## 1.2 sharing and media
+
+A compact Copy view link action stays beside evidence downloads. Its scope text distinguishes a current hosted view from an exact saved investigation. A denied clipboard action exposes a readonly selectable URL instead of requesting broader permissions. No tracking or notes enter the link. The film page uses the same restrained palette and clear type, a wide short-film player, then a separate portrait portfolio player. Actual presenter footage and real data carry the story; no decorative space imagery or invented interface is needed.

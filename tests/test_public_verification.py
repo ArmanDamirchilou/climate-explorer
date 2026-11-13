@@ -38,7 +38,8 @@ class PublicVerificationTests(unittest.TestCase):
         result = check(self.url)
         self.assertEqual(len(result["analyses"]), 40)
         self.assertEqual(sorted(set(row["years_replayed"] for row in result["analyses"])), [15, 25, 35, 45])
-        self.assertEqual(result["demo_video_seconds"], 29)
+        self.assertEqual(result["demo_video_seconds"], 29.8)
+        self.assertEqual(result["narrated_media"]["reel"]["duration_seconds"], 45)
         self.assertEqual(result["authentication"], "none")
         self.assertEqual(result["guided_story_analyses_replayed"], 2)
         self.assertEqual(result["demo_video_sha256"], hashlib.sha256((self.directory / "climate-explorer-demo.mp4").read_bytes()).hexdigest())
@@ -73,4 +74,19 @@ class PublicVerificationTests(unittest.TestCase):
                 check(self.url)
         finally:
             story_path.write_bytes(original_story)
+            manifest_path.write_bytes(original_manifest)
+
+    def test_changed_portfolio_media_is_rejected_despite_matching_manifest(self):
+        video = self.directory / "climate-explorer-reel.mp4"
+        manifest_path = self.directory / "build-manifest.json"
+        original_video, original_manifest = video.read_bytes(), manifest_path.read_bytes()
+        try:
+            video.write_bytes(original_video + b"changed")
+            manifest = json.loads(original_manifest)
+            manifest[video.name] = hashlib.sha256(video.read_bytes()).hexdigest()
+            manifest_path.write_text(json.dumps(manifest))
+            with self.assertRaisesRegex(ValueError, "reel video differs"):
+                check(self.url)
+        finally:
+            video.write_bytes(original_video)
             manifest_path.write_bytes(original_manifest)

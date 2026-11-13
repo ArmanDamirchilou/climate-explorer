@@ -8,7 +8,7 @@ Climate Explorer asks whether a historical climate result changes when we change
 
 - [Frozen browser demonstration](https://armandamirchilou.github.io/climate-explorer/)
 - [Source repository and run instructions](https://github.com/ArmanDamirchilou/climate-explorer)
-- [29-second captioned video](https://armandamirchilou.github.io/climate-explorer/demo.html)
+- [Narrated short film and separate portfolio reel](https://armandamirchilou.github.io/climate-explorer/demo.html)
 - [Seven-page demonstration](https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf)
 - [Research decisions](https://github.com/ArmanDamirchilou/climate-explorer/blob/main/RESEARCH.md)
 - [AI assistance and authorship](https://github.com/ArmanDamirchilou/climate-explorer/blob/main/AI_ASSISTANCE.md)
@@ -17,12 +17,12 @@ The public website uses frozen examples. It does not fetch live data. The Python
 
 ## A twenty minute review
 
-1. Open Tehran temperature for 1981-2025. Explain the displayed rate and units in one sentence. Check whether the page tells you that this is a model grid rather than a street measurement.
+1. Start the three-step rainfall story. Inspect the opposite fitted signs and explain why the recent interval includes zero. Use a chart action and a public view link, then check that your notes are preserved. Also open Tehran temperature for 1981-2025. Explain the displayed rate and units in one sentence. Check whether the page tells you that this is a model grid rather than a street measurement.
 2. Inspect the method comparison. Check whether you can distinguish the fitted rate from the uncertainty interval. Then inspect the fixed date windows. Record any sentence that makes these choices unclear.
 3. Open the validation evidence. Read the strongly correlated, no-trend simulation. Explain why a rate near zero can still receive an interval that excludes zero.
 4. Inspect the Toronto source comparison. Check whether the project shows the disagreement and avoids assigning an unsupported cause.
 5. Add a short investigation note and download the analysis or worksheet. If you run Python, replay it with the command in the README. Otherwise record that replay was not tested by you.
-6. Open the demonstration PDF and video, if published. Identify the problem, the proposed user, one useful result, and one important limitation without reading the repository first.
+6. Open the demonstration PDF and narrated video. The 45-second portrait reel is a portfolio film, not the official demo. Identify the problem, the proposed user, one useful result, and one important limitation without reading the repository first.
 
 ## Feedback to return
 

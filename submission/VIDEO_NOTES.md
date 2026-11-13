@@ -1,4 +1,6 @@
-# Climate Explorer short video
+# Climate Explorer 1.0 silent video
+
+This is the preserved 1.0 artifact. The current public film uses [the narrated story](STORY_PRODUCTION.md).
 
 [The MP4 demonstration](climate-explorer-demo.mp4) lasts **29.00 seconds**. It is silent, with English captions on screen and an additional [WebVTT caption file](climate-explorer-demo.vtt). The video uses actual retained analysis values to show the project's investigation workflow. It is a sequence of data figures, not a screen recording or a fictional application interface.
 
@@ -32,4 +34,4 @@ The builder renders six data figures from ReportLab through MuPDF and encodes th
 
 NASA POWER provides the actual temperature series. NASA GISTEMP provides the comparison field. Their provenance and acknowledgement remain in the repository's data and evaluation files. Codex wrote the original figure and video scripts and captions. This is AI assistance to code and content, not AI generation of the NASA observations.
 
-Public video URL: `https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.mp4`. Anonymous release checks compare the public file hash with video-verification.json. The player uses the embedded captions by default; optional WebVTT captions can be enabled without changing the source video. The video and PDF are alternative demonstration artifacts; use the chosen artifact's exact public URL in the official form. Publishing a file does not submit the competition project.
+The original public video URL now serves the narrated replacement. The 1.0 silent video remains in the v1.0.0 Git tag and release assets. Anonymous release checks compare the public file hash with video-verification.json. The player uses the embedded captions by default; optional WebVTT captions can be enabled without changing the source video. The video and PDF are alternative demonstration artifacts; use the chosen artifact's exact public URL in the official form. Publishing a file does not submit the competition project.

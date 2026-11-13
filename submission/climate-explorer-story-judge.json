@@ -1,0 +1,63 @@
+{
+  "mode": "judge",
+  "file": "climate-explorer-story-judge.mp4",
+  "sha256": "56ba4b9247c6dc4188d865a39979bef473d569e52ac536312cd60cf55e4ede47",
+  "duration_seconds": 29.8,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "native_audio_preserved": true,
+  "whole_performance_speed": 1.015,
+  "video_codec": "h264",
+  "pixel_format": "yuv420p",
+  "frame_count": 894,
+  "audio_codec": "aac",
+  "audio_channels": 1,
+  "audio_sample_rate": 96000,
+  "last_approved_word_seconds": 28.512315270935964,
+  "automatic_transcript_tail_omitted_from_captions": [],
+  "sources": {
+    "submission/story-inputs/tehran-rainfall.json": "8249c9ee82fd3d6521057b78cf9576eac7350523cce7c35679ef9692d6e92c1a",
+    "submission/story-inputs/tehran-recent15-rainfall.json": "925c79b5f862afe6152479a4db8b0b318665b28398faacbc5d9e6342a4ea8232"
+  },
+  "presenter_source_sha256": "94432c90b5e4d8b94c958618ced17df00af505fd4491f683b9e4f60a724413bf",
+  "transcript_sha256": "26cd2db4b4595649ed346e7731caa8b4e129a591b15f9b87db3f9b4edb203383",
+  "actual_app_capture": {
+    "file": "story-app-capture.png",
+    "sha256": "600a0ef358e05b6d16004ecaa8c9348df3ee14c11db916bfe9e18d2ca6a6faa0",
+    "scope": "Real release 1.1 guided story capture, framed in post without simulated clicks or altered data"
+  },
+  "captions": {
+    "file": "climate-explorer-story-judge.vtt",
+    "sha256": "12f5ea160246f9ac9dc5a775e5d1448926933b068468da86007c9eb3f2f28ecd"
+  },
+  "poster": {
+    "file": "climate-explorer-story-judge-poster.jpg",
+    "sha256": "af6b92861177f03db41b2bcfdf2e021b018ded5d069357fe2414af2a73e15b5a"
+  },
+  "ai_disclosure": "Persistent visible generated-adult/voice label plus descriptive text and MP4 metadata",
+  "scientific_scope": "Two fitted periods from the same NASA grid response. Recent ordinary interval includes zero. No claim of climate reversal.",
+  "audio_processing": "Original native speech with synchronized tempo adjustment, loudness normalization, original synthesized ambience and accents.",
+  "extra_audio": "Original deterministic synthesized ambient tones and short musical accents; not weather recordings.",
+  "review": "Final encoded scene samples visually inspected, including the real app crop, period labels, interval crossing zero, opening and ending. Full video decode passed. No human listening is claimed.",
+  "checked_utc": "2026-11-13T08:38:35.648357+00:00",
+  "audio_measurements": {
+    "integrated_lufs": -16.2,
+    "true_peak_dbtp": -0.95,
+    "loudness_range_lu": 4.3
+  },
+  "checks": {
+    "full_decode_passed": true,
+    "encoded_scene_visual_review": true,
+    "human_listening_performed": false,
+    "source_small_en_transcription_matches_approved_narration": true,
+    "final_mixed_audio_asr": "faster-whisper 1.2.1 small.en on the final mixed MP4 matches the entire intended narration, including the final sentence. Automatic check, not human listening.",
+    "caption_tail_omitted": 0
+  },
+  "builder_sha256": "25cc4d15a6e3cb1f8eac929646e1434acd8529ddaf44b65fc7b8130d8ef1bf50",
+  "ffmpeg_version": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+  "rendered_data_release": "1.1 preserved in submission/story-inputs",
+  "final_transcription_sha256": "43248a2f48ae7ce6c270282906924f90de2970275164b1bc905e06cf1b4aa012"
+}

@@ -10,7 +10,7 @@ Two rules need an organizer's decision before this can be treated as an eligible
 
 - [Project description](PROJECT_DESCRIPTION.md) contains text for the actual form fields.
 - [Demo PDF](climate-explorer-demo.pdf) is the seven-page demonstration. [Artifact details](DEMO_ARTIFACT.md) explain its PDF fallback and checks. The [storyboard](DEMO_SCRIPT.md) also provides an optional short video script.
-- [Silent video](climate-explorer-demo.mp4) is a 29-second captioned demonstration using retained data figures. [Video notes](VIDEO_NOTES.md) describe its sources and verification.
+- [Narrated short film](climate-explorer-story-judge.mp4) is the current short demo candidate. [Portrait reel](climate-explorer-story-reel.mp4) is a longer portfolio film, not the NASA submission demo. [Production notes](STORY_PRODUCTION.md) describe sources, editing and verification. The earlier [silent video](climate-explorer-demo.mp4) and [its notes](VIDEO_NOTES.md) are preserved as 1.0 artifacts.
 - [Judge questions](JUDGE_QA.md) prepares the student to explain the evidence and limits.
 - [Final checks](FINAL_CHECKLIST.md) separates technical preparation from actions that require the student or organizer.
 - [Source evidence](verified-sources/README.md) records the official requirements recovered on 13 November.

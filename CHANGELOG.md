@@ -2,6 +2,29 @@
 
 All dates below use Tehran time (UTC+3:30). Development began on 11 November 2026. Git history starts with the truthful import on 13 November. Earlier local versions are documented milestones, not invented Git commits or backdated releases. A version number measures the software contract, not time spent or competition standing.
 
+## 1.2.0 · 13 November 2026
+
+### Added
+
+- Shareable public view links for a supported place, variable and fixed period, with explicit validation, bad-link fallback and a selectable URL when clipboard access is denied.
+- A story-first 29.8-second narrated landscape film, with a fictional adult presenter generated through Higgsfield, native synchronized speech, animated real-data figures, a real app capture, English captions and original synthesized sound.
+- A separate 45-second portrait portfolio reel. It exceeds the NASA demo limit and is visibly labeled as a portfolio film throughout.
+- Generation receipt, exact retained video inputs, caption timing drafts, image provenance, optional media dependency record and reproducible post-production scripts.
+- Reviewed-media hash checks before and after staging. Unfinished or changed video files cannot replace a previous valid build.
+
+### Changed and fixed
+
+- The public short-film URL now serves the narrated replacement. The prior silent source video and its verification record remain preserved as 1.0 artifacts.
+- The film page connects its question directly to the guided investigation and the 15-year rainfall view, with separate players and downloads for the two cuts.
+- New view links omit notes, credentials and unrelated query parameters. They reopen the current hosted example, not a frozen app/data version. Exact evidence still uses the investigation download.
+- Late configuration and clipboard results cannot override newer user actions. The full local app ignores public-view query hints.
+
+### Verification and limits
+
+All 117 tests pass locally with zero skips. The public build contains 63 files, forty analysis examples and two complete guided records, all checked and replayed through local HTTP. Chrome verifies the requested rainfall link, copying, explicit invalid-link fallback and notes surviving guided steps. Both encoded films decode fully. The final mixed short-film speech matches the intended narration in an automatic transcription pass; no human listening or audience study is claimed. Encoded scenes and the actual app image were visually inspected. The short film is 1920 by 1080; the portrait reel is 1080 by 1920. Linux and anonymous deployment checks are recorded in the current release verification record.
+
+There is no change to the NASA observations, statistical settings or investigation envelope. The seven-page PDF remains the reviewed 1.0 artifact. Scientific, educational and eligibility limits remain open. No AI Git co-author trailers are added; AI assistance remains documented.
+
 ## 1.1.0 · 13 November 2026
 
 ### Added

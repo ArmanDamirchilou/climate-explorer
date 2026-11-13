@@ -45,6 +45,7 @@ function selectedLocation() {
 }
 
 function updateLocation() {
+  if (!config) return;
   $('custom-coordinates').hidden = $('location').value !== 'custom';
   for (const id of ['latitude', 'longitude']) $(id).disabled = $('location').value !== 'custom';
   const place = selectedLocation();
@@ -66,6 +67,11 @@ async function explore(event) {
   if (event) event.preventDefault();
   globalThis.ClimateStory?.pause();
   ++importSequence;
+  if (!config) {
+    $('status').hidden = false;
+    $('status').textContent = 'The configuration is still loading. Your choices are kept. Choose Explore this place when it is ready.';
+    return;
+  }
   $('end').setCustomValidity('');
   if (Number($('end').value) - Number($('start').value) < 9) {
     $('end').setCustomValidity('Choose a period of at least 10 complete years.');
@@ -172,6 +178,7 @@ function matchingComparison() {
 }
 
 function renderDatasetComparison() {
+  updateViewLink();
   if (!currentResult) return;
   const row = matchingComparison();
   const matchingPeriod = currentResult.period.start === 1981 && currentResult.period.end === 2025;
@@ -194,6 +201,20 @@ function renderDatasetComparison() {
   }));
   $('source-disagreement').hidden = row.name !== 'Toronto, Canada';
   $('source-disagreement').textContent = 'Toronto shows a substantial source difference. Nearby POWER requests also change the rate. Our audit checks aggregation and spatial sensitivity, but does not establish which source is correct or explain the cause.';
+}
+
+function updateViewLink() {
+  if (!globalThis.ClimateViewLinks) return;
+  $('view-link-controls').hidden = !SNAPSHOT_MODE;
+  if (!SNAPSHOT_MODE) return;
+  const selection = ClimateViewLinks.match(currentResult, config, datasetComparison);
+  $('copy-view-link').disabled = !selection;
+  $('view-link-help').textContent = selection
+    ? 'Opens this public example. Notes are not included. The link does not freeze the app version or source data. Download your investigation for the exact frozen evidence.'
+    : 'A view link is available only when the displayed analysis matches a frozen public preset, period, and source snapshot. Download your investigation to share this evidence.';
+  $('view-link-status').textContent = '';
+  $('view-link-fallback').hidden = true;
+  $('view-link-url').value = '';
 }
 
 function renderChecks(result) {
@@ -453,8 +474,35 @@ async function renderWindows() {
 }
 
 $('window').addEventListener('change', () => {
+  if (!config) return;
   const period = config.windows.find(row => row.id === $('window').value);
   $('start').value = period.start; $('end').value = period.end;
+});
+$('explore-form').addEventListener('input', () => {
+  if (!config) ++importSequence;
+});
+$('explore-form').addEventListener('change', () => {
+  if (!config) ++importSequence;
+});
+$('copy-view-link').addEventListener('click', async () => {
+  if (!SNAPSHOT_MODE || !globalThis.ClimateViewLinks) return;
+  const result = currentResult;
+  const selection = ClimateViewLinks.match(result, config, datasetComparison);
+  if (!selection) { updateViewLink(); return; }
+  const url = ClimateViewLinks.createURL(globalThis.location.href, selection, config);
+  try {
+    if (!globalThis.navigator?.clipboard?.writeText) throw new Error('Clipboard unavailable');
+    await globalThis.navigator.clipboard.writeText(url);
+    if (currentResult !== result) return;
+    $('view-link-status').textContent = 'View link copied. It opens the public example and does not include your notes.';
+  } catch {
+    if (currentResult !== result) return;
+    $('view-link-fallback').hidden = false;
+    $('view-link-url').value = url;
+    $('view-link-url').focus({preventScroll: true});
+    $('view-link-url').select();
+    $('view-link-status').textContent = 'The browser could not copy automatically. Select and copy the link below.';
+  }
 });
 $('import-file').addEventListener('change', async event => {
   const file = event.target.files[0];
@@ -559,16 +607,30 @@ async function initialize() {
     const response = await fetch(apiPath('config'));
     if (!response.ok) throw new Error('The app configuration could not be loaded. Restart the local server and refresh.');
     config = await response.json();
+    const automatic = sequence === importSequence;
     $('start').min = config.first_year; $('start').max = config.last_year - 9;
     $('end').min = config.first_year + 9; $('end').max = config.last_year;
-    $('end').value = config.last_year;
+    if (automatic) $('end').value = config.last_year;
     if (SNAPSHOT_MODE) {
       $('demo-notice').hidden = false;
       $('location').querySelector('option[value="custom"]').remove();
-      $('start').value = config.first_year;
       $('window-control').hidden = false;
       $('start').disabled = true; $('end').disabled = true;
       document.querySelector('.field-help').textContent = 'Choose one of four fixed periods ending in 2025. Keep the longest period as your starting point; short records may tell a different story.';
+      if (automatic && globalThis.ClimateViewLinks) {
+        const view = ClimateViewLinks.parse(globalThis.location?.search || '', config);
+        $('location').value = view.selection.place;
+        document.querySelector(`input[name="variable"][value="${view.selection.variable}"]`).checked = true;
+        $('window').value = view.selection.period;
+        const period = config.windows.find(row => row.id === view.selection.period);
+        $('start').value = period.start; $('end').value = period.end;
+        $('view-link-notice').hidden = view.status === 'default';
+        $('view-link-notice').textContent = view.status === 'invalid' ? view.message : `Opened public example: ${config.presets[view.selection.place].name}, ${view.selection.variable === 'rainfall' ? 'precipitation' : 'temperature'}, ${period.start}–${period.end}. Notes are not included.`;
+      } else if (automatic) $('start').value = config.first_year;
+      else {
+        const period = config.windows.find(row => row.id === $('window').value);
+        if (period) { $('start').value = period.start; $('end').value = period.end; }
+      }
     }
     fetch(apiPath('dataset-check')).then(response => {
       if (!response.ok) throw new Error('Source comparison unavailable.');
@@ -577,6 +639,10 @@ async function initialize() {
     updateLocation();
     updateStorageControls();
     if (sequence === importSequence) await explore();
+    else if (!currentResult && !activeRequest) {
+      $('status').hidden = false;
+      $('status').textContent = 'Your choices are ready. Choose Explore this place to load the selected example.';
+    }
   } catch (error) {
     if (sequence !== importSequence) return;
     $('status').hidden = true; $('error').hidden = false;

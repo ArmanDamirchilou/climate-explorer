@@ -3,26 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A 29-second demonstration of Climate Explorer using actual NASA climate data.">
-  <title>Climate Explorer demonstration</title>
+  <meta name="description" content="One city, two fitted rainfall trends. A narrated Climate Explorer story using retained NASA data.">
+  <title>One city, two climate stories | Climate Explorer</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="story-media.css">
 </head>
 <body>
-  <header class="topbar"><a class="brand" href="./">Climate Explorer</a><nav aria-label="Main navigation"><a href="./">Open investigation</a><a href="validation.html">Read the evidence</a></nav></header>
-  <main class="validation-page">
-    <section class="intro"><h1>Climate Explorer demonstration</h1><p>A 29-second, captioned introduction using real retained data charts. This is an AI-assisted demonstration, with no person's face or voice.</p></section>
-    <video controls preload="metadata" width="1280" height="720" class="demo-video" aria-label="Climate Explorer, 29-second captioned demonstration">
-      <source src="climate-explorer-demo.mp4" type="video/mp4">
-      <track kind="captions" src="climate-explorer-demo.vtt" srclang="en" label="English">
-      <p><a href="climate-explorer-demo.mp4">Download the demonstration video</a>.</p>
-    </video>
-    <p><a href="climate-explorer-demo.mp4" download>Download video</a> or <a href="climate-explorer-demo.pdf">read the seven-slide PDF</a>.</p>
-    <details><summary>Read the video transcript</summary><p>Climate Explorer investigates historical change with NASA data. Inspect Tehran's 1981–2025 temperature rate, about +0.504 °C per decade. This is not a forecast. Compare assumptions and dates. Changing the period changes the estimated rate. Inspect source and location differences. Toronto's disagreement remains unresolved. Save source data and settings, then recalculate the result offline. Try the public examples. AI-assisted prototype. Competition eligibility remains unresolved.</p></details>
-    <h2>Try the investigation</h2><p>The public app contains forty analyses across five locations, two variables and four fixed periods. Reopen a saved investigation, inspect its evidence, and write a claim with the dates, units and assumptions. Browser import checks cover source hashes, aggregation and point estimates. The Python replay also checks the recorded uncertainty calculations.</p>
-    <p>Development began on 11 November 2026. Codex contributed the solution approach, code, research and media. Early-work and AI-ideation rules require organizer guidance. This page is a software demonstration, not an approved competition entry.</p>
-    <p><a href="https://github.com/ArmanDamirchilou/climate-explorer/blob/main/submission/FARHAD_HANDOFF.md">Review guide for Farhad</a> and <a href="https://github.com/ArmanDamirchilou/climate-explorer/blob/main/AI_ASSISTANCE.md">AI assistance record</a>.</p>
+  <a class="skip-link" href="#film">Skip to the film</a>
+  <header class="topbar"><a class="brand" href="./">Climate Explorer</a><nav aria-label="Main navigation"><a href="./#guided-story">Try the story</a><a href="validation.html">Read the evidence</a></nav></header>
+  <main class="validation-page media-page">
+    <section class="intro"><h1>Can one city tell two climate stories?</h1><p>A question first. Then the dates, the uncertainty, and the evidence you can check yourself.</p></section>
+    <section id="film" aria-labelledby="judge-heading">
+      <h2 id="judge-heading">The short story</h2>
+      <video controls playsinline preload="metadata" poster="story-judge-poster.jpg" width="1920" height="1080" class="demo-video" aria-label="Climate Explorer narrated story, under 30 seconds">
+        <source src="climate-explorer-demo.mp4" type="video/mp4">
+        <track kind="captions" src="climate-explorer-demo.vtt" srclang="en" label="English">
+        <p><a href="climate-explorer-demo.mp4">Download the short film</a>.</p>
+      </video>
+      <p class="media-disclosure">AI-generated fictional adult presenter and voice. Charts use retained NASA POWER data. The narrator is not the student, a witness, or a NASA employee.</p>
+      <div class="media-actions"><a class="film-action" href="./#guided-story">Try the three-step investigation</a><a href="climate-explorer-demo.mp4" download>Download the short film</a><a href="climate-explorer-demo.pdf">Read the seven-slide PDF</a></div>
+      <p>The short cut stays within the published 30-second demo limit. English captions are embedded; an optional caption track is also available. Publishing this film does not submit or approve an entry.</p>
+    </section>
+    <section class="media-evidence" aria-labelledby="evidence-heading">
+      <h2 id="evidence-heading">Change the dates. Check the claim.</h2>
+      <p>Tehran's fitted rainfall rate is <strong>+36.9</strong> over 1981–2025 and <strong>−52.8</strong> over 2011–2025, in mm/year per decade. The recent ordinary 95% interval is −172.3 to +66.6. It includes zero. The two fits describe different periods; opposite signs do not prove a climate reversal.</p>
+      <p>The app opens the same source-backed analyses, shows all four fixed periods, and lets you inspect assumptions and save an investigation. This illustrative case was selected after reviewing the four windows. Educational benefit has not yet been measured.</p>
+      <p><a href="./?place=tehran&amp;variable=rainfall&amp;period=recent15#workspace">Open the 15-year rainfall view</a> or <a href="story-tehran.json" download>download both complete story analyses</a>. A view link opens the currently hosted snapshot; a downloaded investigation retains its actual source and settings.</p>
+      <details><summary>Read the spoken transcript</summary><p>Can one city tell two climate stories? Look at Tehran's rainfall. Over forty-five years, the fitted trend points up. Over fifteen, it points down. The dates changed. That doesn't prove the climate reversed. Climate Explorer lets you test that difference with NASA data. Compare periods, inspect uncertainty, and save the evidence so someone else can check your result. Before sharing a claim, check what changed.</p></details>
+    </section>
+    <section class="media-reel" aria-labelledby="reel-heading">
+      <h2 id="reel-heading">The portrait portfolio reel</h2>
+      <p>A longer, 45-second cut leaves more time for the data and evidence workflow. This is a portfolio film. It exceeds the NASA demo limit. Use the short film or seven-slide PDF in the official demo field.</p>
+      <video controls playsinline preload="none" poster="story-reel-poster.jpg" width="1080" height="1920" class="reel-player" aria-label="Climate Explorer 45-second portrait portfolio reel, not the NASA submission demo">
+        <source src="climate-explorer-reel.mp4" type="video/mp4">
+        <track kind="captions" src="climate-explorer-reel.vtt" srclang="en" label="English">
+        <p><a href="climate-explorer-reel.mp4">Download the portfolio reel</a>.</p>
+      </video>
+      <p><a href="climate-explorer-reel.mp4" download>Download the portrait reel</a>. The presenter and speech are synthetic, disclosed on screen and in metadata.</p>
+    </section>
+    <p>Development began on 11 November 2026. Codex contributed the approach, code, research and media; Higgsfield generated the fictional narrator and speech. Early-work and AI-ideation rules require organizer guidance. Entry eligibility remains unresolved.</p>
+    <p><a href="https://github.com/ArmanDamirchilou/climate-explorer/blob/main/submission/FARHAD_HANDOFF.md">Farhad's review guide</a>, <a href="https://github.com/ArmanDamirchilou/climate-explorer/blob/main/submission/STORY_PRODUCTION.md">production decisions</a>, and <a href="https://github.com/ArmanDamirchilou/climate-explorer/blob/main/AI_ASSISTANCE.md">AI assistance record</a>.</p>
   </main>
-  <footer><span>Climate Explorer 1.0.0</span><a href="https://github.com/ArmanDamirchilou/climate-explorer">Code and version history</a><span>Independent project. No NASA endorsement.</span></footer>
+  <footer><span>Climate Explorer 1.2.0</span><a href="https://github.com/ArmanDamirchilou/climate-explorer">Code and version history</a><span>Independent project. No NASA endorsement.</span></footer>
 </body>
 </html>

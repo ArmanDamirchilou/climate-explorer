@@ -1,0 +1,12 @@
+.media-page { max-width: 1120px; }
+.media-page .intro { padding-bottom: 1.2rem; }
+.media-page h1 { max-width: 21ch; }
+.media-page section { margin-bottom: 2.5rem; }
+.media-page p { max-width: 78ch; }
+.media-page .demo-video { display: block; width: 100%; height: auto; background: #183d47; border-radius: 8px; }
+.media-disclosure { color: #526c76; font-size: .92rem; }
+.media-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.5rem; margin: 1.3rem 0; }
+.film-action { display: inline-block; padding: .75rem 1rem; border: 1px solid #147c89; border-radius: 6px; font-weight: 650; }
+.media-evidence, .media-reel { border-top: 1px solid #c6dbe1; padding-top: 1.5rem; }
+.reel-player { display: block; width: min(100%, 420px); height: auto; background: #183d47; border-radius: 8px; margin: 1.2rem 0; }
+@media (max-width: 600px) { .media-actions { align-items: flex-start; flex-direction: column; } .media-page h1 { font-size: 2rem; } }

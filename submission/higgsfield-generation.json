@@ -1,0 +1,37 @@
+{
+  "created_date": "2026-11-13",
+  "provider": "Higgsfield",
+  "job_id": "5864b5fb-5171-4208-8a6a-58c37615ddaf",
+  "status": "completed",
+  "quoted_credits": 480,
+  "automatic_retries": 0,
+  "purpose": "Fictional adult narrator and native synchronized speech, edited with real numerical charts in post-production.",
+  "params": {
+    "model": "seedance_2_5",
+    "mode": "t2v",
+    "duration": 30,
+    "aspect_ratio": "9:16",
+    "resolution": "1080p",
+    "generate_audio": true,
+    "bitrate_mode": "high",
+    "count": 1,
+    "prompt": "A naturalistic documentary-style piece to camera. One fictional adult woman, age 35, not resembling any public figure, in a modest sunlit study beside a window on an ordinary city neighborhood. She is an independent narrator, not the student, not a NASA employee, not a scientist testimonial. Medium close-up at eye level, soft afternoon window light, subtle skin texture, realistic eyes, natural small gestures, slight handheld camera, understated neutral cotton shirt, genuine thoughtful delivery, no beauty-filter look, no glossy commercial set. One continuous shot, no cuts, no graphics, no written text, no logos, no charts. Speak exactly the following English narration with clear synchronized lips and natural American English, an engaged investigative tone. Start speaking in the first half second, with no greeting, title or preamble. Deliver all words evenly within 28.5 seconds, then hold eye contact quietly. Audio: clean close-miked speech, quiet room tone, no music. Exact narration: \"Can one city tell two climate stories? Look at Tehran's rainfall. Over forty-five years, the fitted trend points up. Over fifteen, it points down. The dates changed. That doesn't prove the climate reversed. Climate Explorer lets you test that difference with NASA data. Compare periods, inspect uncertainty, and save the evidence so someone else can check your result. Before sharing a claim, check what changed.\""
+  },
+  "disclosure": "AI-generated fictional adult presenter and voice. Not a real witness, student, researcher testimonial or NASA employee. NASA data remain retained real source data.",
+  "source_sha256": "94432c90b5e4d8b94c958618ced17df00af505fd4491f683b9e4f60a724413bf",
+  "source_duration_seconds": 30.041667,
+  "source_resolution": [
+    1080,
+    1920
+  ],
+  "source_has_native_audio": true,
+  "automatic_transcription": {
+    "tool": "faster-whisper 1.2.1",
+    "models": [
+      "base.en",
+      "small.en"
+    ],
+    "finding": "The small.en pass matches the full intended narration. The base.en draft added a low-confidence extra tail; the captions use the corroborating small.en timestamps. Automatic transcription does not certify human-like appearance or perfect lip sync."
+  },
+  "source_distribution": "Original provider clip retained privately. Edited final videos carry visible synthetic-media disclosure and may be shared. No repeat job or new account was created."
+}

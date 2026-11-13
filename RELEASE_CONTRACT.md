@@ -30,3 +30,10 @@ The existing source comparison uses different spatial supports. Toronto's cause 
 ## Version 1.1 guided examples
 
 A bundled guided example is an optional entry to the same investigation workflow. Its two complete analyses retain source metadata and supported method settings. The browser checks source and point calculations before opening them; Python generation replays full uncertainty calculations. The example does not overwrite worksheet notes or turn a claim-choice exercise into a measured educational result. Manual file imports retain their existing behavior.
+
+
+## Version 1.2 public view links and media
+
+Public view links contain exactly one supported place, variable and fixed period. They omit worksheet notes and do not freeze a release or raw source. Exact evidence continues to use the investigation download. Invalid links announce the default. The full local service ignores these snapshot-only query hints. Clipboard denial falls back to a selectable URL.
+
+The current public short-video URL serves the narrated replacement; the earlier source file remains a version 1.0 artifact. A separately labeled portfolio reel exceeds the NASA demo length. Both edited videos have native generated speech, visible disclosure and metadata. The public builder checks reviewed media hashes before and after copying, rejecting unfinished renders while preserving an earlier build. Optional production dependencies stay separate from the application lock.

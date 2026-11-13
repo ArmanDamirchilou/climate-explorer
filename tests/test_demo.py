@@ -81,6 +81,17 @@ class DemoBuildTests(unittest.TestCase):
             self.assertEqual(record["provenance"]["payload_sha256"], built["provenance"]["payload_sha256"])
             self.assertEqual(verify(record), count)
 
+    def test_unfinished_media_does_not_replace_previous_site(self):
+        source = ROOT / "submission/climate-explorer-story-judge.mp4"
+        original_read = Path.read_bytes
+        manifest_before = (self.output / "build-manifest.json").read_bytes()
+        def read(path, *args, **kwargs):
+            return b"unfinished" if path == source else original_read(path, *args, **kwargs)
+        with patch.object(Path, "read_bytes", read):
+            with self.assertRaisesRegex(ValueError, "Media is unfinished"):
+                build(self.output)
+        self.assertEqual((self.output / "build-manifest.json").read_bytes(), manifest_before)
+
     def test_source_fixtures_match_previously_recorded_hashes(self):
         rows = json.loads((ROOT / "evaluation/dataset-check.json").read_text())["rows"]
         expected = {row["power_source_url"]: row["power_payload_sha256"] for row in rows}

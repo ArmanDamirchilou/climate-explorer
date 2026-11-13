@@ -13,4 +13,6 @@ The dates below preserve the actual development history. A release number does n
 
 | 1.1.0 | Adds an evidence-linked, three-step Tehran rainfall story, claim-choice feedback and matching chart navigation. Preserves notes while changing story steps. | 103 local tests pass. Both complete story records replay. Desktop and 400-pixel Chrome views inspected. Same methods and data; no measured educational benefit claimed. |
 
+| 1.2.0 | Adds validated shareable views, a narrated short film and separate portrait reel. Replaces the public silent film while preserving its 1.0 source. Staging rejects unfinished media. | 117 local tests pass. Full decode and final mixed-speech transcription pass. Real app capture, data sources and generation receipt retained. The 45-second reel is portfolio media, not the NASA demo. |
+
 Later release notes should explain what changed, why it matters, how it was checked, and the material limits. Keep earlier artifacts identifiable. A rebuilt PDF or video should retain its source hashes and review record so a reviewer can identify the data behind the displayed values.

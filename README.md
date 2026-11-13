@@ -159,3 +159,12 @@ The GitHub 1.0.0 release includes a handoff ZIP containing the tracked source, f
 Choose **Start the 3-step story** to investigate Tehran rainfall. The same frozen response gives a +36.901 mm/year-per-decade fitted rate over 1981–2025 and −52.832 over 2011–2025. The shorter ordinary interval includes zero. Dates change the question, not proof of a permanent climate reversal. Each step opens the matching observations and keeps your existing worksheet notes. The final step asks you to choose a supported claim. This teaching example was selected after reviewing the four windows; all four remain inspectable.
 
 `story_evidence.py` rebuilds both complete story analyses offline. The public build regenerates the file so its evidence matches the current source fingerprint. [Science review](evaluation/STORY_SCIENCE_REVIEW.md) records exact values and limits.
+
+
+## Narrated story and shareable views
+
+Version 1.2 adds a narrated, edited short film and a 45-second portrait portfolio reel. [Watch both](https://armandamirchilou.github.io/climate-explorer/demo.html). The fictional adult presenter and voice are generated with Higgsfield and visibly disclosed. Actual NASA data figures and a real app capture connect the story to the working investigation. The longer reel exceeds the NASA demo limit and is not the submission demo. The seven-page PDF remains the reviewed 1.0 artifact.
+
+Use **Copy view link** beside the source downloads to share a supported public location, variable and period. For example, [Tehran rainfall, 2011–2025](https://armandamirchilou.github.io/climate-explorer/?place=tehran&variable=rainfall&period=recent15#workspace). The link does not include notes or freeze the hosted app/data version. Download an investigation for its exact retained evidence. If clipboard access is unavailable, select and copy the displayed URL. Unsupported links announce the default; the full local app does not apply these public-view parameters.
+
+[Production research and rebuild instructions](submission/STORY_PRODUCTION.md) and the [generation receipt](submission/higgsfield-generation.json) record the method and limits. The original silent video remains identifiable in Git history and its 1.0 release.

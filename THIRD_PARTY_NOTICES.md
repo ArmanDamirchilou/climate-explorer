@@ -25,3 +25,8 @@ The interface uses browser-native HTML, CSS, JavaScript and SVG with local syste
 ## Research and requirements
 
 [RESEARCH.md](RESEARCH.md), the evaluation protocols, and [verified competition requirements](submission/REQUIREMENTS.md) cite the relevant primary sources. We retain short excerpts and retrieval metadata for the event guides, rather than republishing their complete text. Those sources are not covered by our software license.
+
+
+## Optional narrated-media production
+
+Higgsfield Seedance 2.5 supplies the synthetic adult performance and native speech; its receipt and disclosure are in submission/higgsfield-generation.json. NASA input retains the data terms above. The instrumental bed and accents are synthesized by the project's own script. Local video authoring uses FFmpeg, Pillow and NumPy. Automatic timing uses faster-whisper, CTranslate2 and downloaded Whisper model weights; optional authoring versions are recorded separately in submission/requirements-media-lock.txt. These authoring packages are not added to application runtime dependencies. Their upstream licenses remain applicable.
