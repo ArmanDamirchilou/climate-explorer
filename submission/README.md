@@ -8,7 +8,7 @@ Two rules need an organizer's decision before this can be treated as an eligible
 
 ## Materials
 
-- [Project overview](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/review.html) and [short-demo-only page](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/demo-short.html) provide separate review links on the independent host.
+- [Project overview](https://armandamirchilou.github.io/climate-explorer/review.html) and [short-demo-only page](https://armandamirchilou.github.io/climate-explorer/demo-short.html) provide separate review links on the dedicated GitHub Pages project site.
 - [Critical judging audit](JUDGE_AUDIT.md) separates fixed problems from unresolved eligibility and human evidence.
 
 - [Full technical film](climate-explorer-story-technical.mp4) is a separate 135-second portfolio explanation. [Production brief](LONG_FILM_BRIEF.md), [chapter record](long-film-script.json) and audio-edit receipts preserve the generated sources, local editing and actual checks. It exceeds the official demo limit.

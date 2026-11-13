@@ -109,3 +109,8 @@ Listen to the actual source and final mix. Correct automatic captions against wh
 Both final encodes passed a full decode and encoded-scene visual review. The short film is 29.800 seconds; the portrait reel is 45.000 seconds. The final mixed short-film audio automatically transcribes to the complete intended narration, including the closing sentence. Exact file hashes, source hashes, audio loudness and peak measurements are recorded in each cut's JSON. Chrome played both local files, and the public short film played with audio in Incognito without login. Human listening and audience feedback have not been recorded. The raw source stays private; edited, disclosed cuts are public.
 
 The public builder now verifies media hashes before and after staging. A render that is still being written cannot replace an existing valid demonstration. The root release verification record records CI and anonymous HTTP checks.
+
+
+## 1.3.1 distribution correction
+
+The final host migration retired the old project-site address. The correction pass in correct_media_distribution_links.py replaces only the visible distribution rectangles with the stable dedicated repository address. Each media record preserves the original tagged video/record hashes, correction helper, rectangles and times. Full decodes pass; compressed AAC and decoded float-PCM hashes match before and after. The short poster is refreshed. Scientific figures, caption timing and narration remain. The original builder hash identifies the pre-correction composition. Earlier cuts remain in their own tags. The later final-reel automatic check produced extra words in its instrumental tail and is not a strict full-mix pass; human listening remains unperformed.

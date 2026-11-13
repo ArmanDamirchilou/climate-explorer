@@ -22,7 +22,7 @@ Technical release checks below refer to the 1.3.1 evidence, not approval to ente
 - [x] The published release states that it began on 11 November and identifies AI contributions.
 - [x] All release tests and replay checks pass. Record the exact commit and environment.
 - [x] The public demo clearly distinguishes frozen examples from live NASA requests.
-- [x] The independent host is reachable without login; anonymous original-asset hashes and full replay pass, and Chrome navigation loads the overview, app and atlas. See release verification for the XHR/browser scope.
+- [ ] Verify the restored GitHub Pages 1.3.1 deployment without login: ordinary response hashes, full replay and Chrome navigation through the overview, app and atlas. The retained 1.3.0 report is not a new deployment result.
 - [x] Actual retained data charts and current validation findings appear in the demo. No invented screenshot is used.
 - [x] The deck has no more than seven slides, or the video lasts no more than 30 seconds. English requirements are met.
 - [x] The AI-assisted video has a visible indicator throughout and an embedded metadata disclosure. No NASA branding is generated or modified.

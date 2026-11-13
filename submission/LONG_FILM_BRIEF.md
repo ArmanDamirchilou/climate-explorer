@@ -70,3 +70,8 @@ The retained atlas file is the exact approved release input; point calculations 
 Before publication, inspect all five chapter transitions, presenter identity, movement, mouth sync, subtitle boundaries, every numeric figure, atlas selection warning and final disclaimer. Decode the entire encoded film. Review encoded frames from every scene and both sides of each edit. Verify all approved speech survives the mix, with no extra words, and inspect clipping/noise. Confirm public playback without login after deployment. Do not claim a human audio review, genuine audience study, completed station validation or eligible entry unless the corresponding real evidence exists.
 
 No new generation or submission is authorized by this document itself. The current producer's explicit generation plan and bounded tool actions are recorded separately. The student handles any eventual official submission.
+
+
+## Final distribution pass
+
+Release1.3.1 changes the visible source/endcard address to the stable dedicated repository after the host migration. The new correction pass preserves the full-screen speech-correction plates and their actual visual boundaries. The original composition, narration, captions and data remain identifiable. Its media record carries original and final hashes, exact edited rectangles/times, copied-audio proofs and encoded-frame review. The final correction helper is distinct from this original compositor; no new generation, speech or student contribution occurred.

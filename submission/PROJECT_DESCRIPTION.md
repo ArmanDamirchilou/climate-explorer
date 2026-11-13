@@ -12,21 +12,21 @@ Climate Explorer helps students investigate historical temperature and rainfall 
 
 ## Link to project demo
 
-Short narrated video candidate: https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/climate-explorer-demo.mp4
+Short narrated video candidate: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.mp4
 
 This is the 29.8-second English-captioned film with a visibly disclosed fictional adult presenter and generated voice. The public URL serves the narrated replacement; the earlier silent 29-second source remains in the 1.0 release. Its actual app capture is identified as release 1.1. Retained figures show two periods from the same NASA response.
 
-Alternative seven-page PDF: https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/climate-explorer-demo.pdf
+Alternative seven-page PDF: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf
 
-The PDF includes its cover. The current 1.3.1 deck updates the earlier retained evidence with the independent app link, atlas and verification scopes; prior bytes remain in the earlier releases. Choose the short MP4 for the official demonstration field. Its dedicated player page is https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/demo-short.html. The PDF remains an alternative retained artifact. Recheck anonymous access before entering it. The separate 45-second portrait reel and 135-second technical film are portfolio material and exceed the official demo limit. Both candidate artifacts retain the AI and early-work disclosures.
+The PDF includes its cover. The current 1.3.1 deck updates the earlier retained evidence with the independent app link, atlas and verification scopes; prior bytes remain in the earlier releases. Choose the short MP4 for the official demonstration field. Its dedicated player page is https://armandamirchilou.github.io/climate-explorer/demo-short.html. The PDF remains an alternative retained artifact. Recheck anonymous access before entering it. The separate 45-second portrait reel and 135-second technical film are portfolio material and exceed the official demo limit. Both candidate artifacts retain the AI and early-work disclosures.
 
 ## Link to final project
 
-Project overview: https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/review.html
+Project overview: https://armandamirchilou.github.io/climate-explorer/review.html
 
 Repository: https://github.com/ArmanDamirchilou/climate-explorer
 
-Frozen browser demonstration: https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/
+Frozen browser demonstration: https://armandamirchilou.github.io/climate-explorer/
 
 The hosted demonstration uses forty retained analyses and ten complete date-window atlases, with no live NASA requests. The repository provides the Python application for live NASA queries and instructions for reproducing calculations. Anonymous public access was verified on 13 November; recheck access before the final form. The hosted page can change with a later release; download the investigation and cite the release for exact evidence.
 

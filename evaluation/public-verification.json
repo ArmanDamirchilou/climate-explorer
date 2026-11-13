@@ -1,10 +1,9 @@
 {
-  "checked_utc": "2026-11-13T16:45:45.634496+00:00",
-  "base_url": "https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/",
+  "checked_utc": "2026-11-13T16:03:24.395434+00:00",
+  "base_url": "https://armandamirchilou.github.io/climate-explorer/",
   "authentication": "none",
-  "files_verified_against_manifest": 79,
-  "request_representation": "Anonymous XHR asset fetch; no cookies, authorization, script stripping or hash normalization. Navigation HTML may also contain the hosting provider's injected detection script; inspect browser navigation separately.",
-  "code_sha256": "540eda3d2ca89d4ba96141801bf8b0be11aef1e9907b3b5506ef0584af25e544",
+  "files_verified_against_manifest": 77,
+  "code_sha256": "6541292e4d39e3ad93f78602d83639b74fae4e5cef5bb22ef7d908a0bec9f2b7",
   "analyses": [
     {
       "file": "demo/ankara-rainfall.json",

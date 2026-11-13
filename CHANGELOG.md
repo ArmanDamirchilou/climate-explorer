@@ -13,14 +13,14 @@ All dates below use Tehran time (UTC+3:30). Development began on 11 November 202
 
 ### Added and changed
 
-- A separate public deployment origin with its own hosting mirror. The dedicated GitHub source repository and all earlier version history remain; the personal-site repository is untouched. GitHub CI verifies and archives builds without publishing to GitHub Pages.
+- GitHub-only publication from the dedicated project repository to its GitHub Pages project site. The personal-site repository is untouched, and all earlier version history remains. GitHub CI verifies and publishes the frozen build with pinned actions.
 - A concise project/evidence overview and a dedicated short-demo page prevent confusion between the official-length candidate and the 135-second portfolio film.
 - Eight targeted replay/cache regression tests, a criterion-based critical audit, and a specific primary-source precedent for trend matrices.
 - Accurate student practice, organizer draft, final checks and complete public AI disclosure.
 
 ### Limits and preservation
 
-- Statistical methods and retained NASA observations are unchanged. Film distribution-link panels are corrected while narration, scientific figures and captions remain; the seven-page PDF updates its version, independent URL and atlas explanation. Earlier releases remain identifiable; no removal or backdating of development history.
+- Statistical methods and retained NASA observations are unchanged. Film distribution-link panels are corrected while narration, scientific figures and captions remain; the seven-page PDF updates its version, GitHub Pages project URL and atlas explanation. Earlier releases remain identifiable; no removal or backdating of development history.
 - Human usability evidence, listening review, matched station validation and Toronto source resolution remain unperformed. Entry eligibility, actual team and guardian requirements and local online delivery remain separate checks. No competition entry or organizer message is submitted.
 
 ## 1.3.0 · 13 November 2026

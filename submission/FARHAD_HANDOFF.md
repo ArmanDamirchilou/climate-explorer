@@ -6,10 +6,10 @@ Climate Explorer asks whether a historical climate result changes when we change
 
 ## Open the project
 
-- [Frozen browser demonstration](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/)
+- [Frozen browser demonstration](https://armandamirchilou.github.io/climate-explorer/)
 - [Source repository and run instructions](https://github.com/ArmanDamirchilou/climate-explorer)
-- [Full technical story, short demo candidate and portrait reel](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/demo.html)
-- [Seven-page demonstration](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/climate-explorer-demo.pdf)
+- [Full technical story, short demo candidate and portrait reel](https://armandamirchilou.github.io/climate-explorer/demo.html)
+- [Seven-page demonstration](https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf)
 - [Research decisions](https://github.com/ArmanDamirchilou/climate-explorer/blob/main/RESEARCH.md)
 - [AI assistance and authorship](https://github.com/ArmanDamirchilou/climate-explorer/blob/main/AI_ASSISTANCE.md)
 

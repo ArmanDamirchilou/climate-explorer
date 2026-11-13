@@ -16,7 +16,7 @@ INK, MUTED = "#123c3f", "#496c70"
 TEAL, ORANGE = "#177e85", "#c46632"
 PALE, GRID = "#edf4f4", "#d8e5e5"
 REPO = "https://github.com/ArmanDamirchilou/climate-explorer"
-DEMO = "https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/"
+DEMO = "https://armandamirchilou.github.io/climate-explorer/"
 
 
 def load(relative):
