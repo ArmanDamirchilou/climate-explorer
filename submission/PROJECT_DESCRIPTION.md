@@ -16,6 +16,10 @@ Verified public PDF link: https://armandamirchilou.github.io/climate-explorer/cl
 
 The demo is a seven-page PDF, including the cover. It opened in Incognito Chrome without login; recheck access before the final form.
 
+Alternative short video: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.mp4
+
+The silent video lasts 29 seconds and uses English captions. Verify its public link after publication. Choose the PDF or MP4 as the form's demonstration link. Both retain the AI and early-work disclosures.
+
 ## Link to final project
 
 Repository: https://github.com/ArmanDamirchilou/climate-explorer

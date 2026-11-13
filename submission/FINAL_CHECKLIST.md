@@ -22,7 +22,7 @@ This checklist cannot make an ineligible project eligible. The student owns regi
 - [x] The final source and demo links open without login in a signed-out browser.
 - [x] Actual retained data charts and current validation findings appear in the demo. No invented screenshot is used.
 - [x] The deck has no more than seven slides, or the video lasts no more than 30 seconds. English requirements are met.
-- [x] AI-generated media, if introduced later, have the indicators required by the guide. No NASA branding is generated or modified.
+- [x] The AI-assisted video has a visible indicator throughout and an embedded metadata disclosure. No NASA branding is generated or modified.
 
 ## Final form actions by the student
 

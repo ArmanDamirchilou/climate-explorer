@@ -55,7 +55,7 @@ def start(pdf, number, title, subtitle=None):
     text(pdf, title, 72, 44, 42, bold=True)
     if subtitle:
         text(pdf, subtitle, 74, 110, 25, MUTED, width=1120)
-    text(pdf, "AI-assisted code and content | Independent student prototype", 74, 682, 14, MUTED)
+    text(pdf, "AI-assisted demonstration | Independent student prototype", 74, 682, 14, MUTED)
     text(pdf, f"{number} / 7", 1150, 682, 14, MUTED)
 
 
@@ -86,11 +86,11 @@ def build(output):
     study = load("evaluation/results.json")
     scenario = next(row for row in study["scenarios"] if row["n"] == 45 and row["rho"] == 0.7 and row["true_slope_per_decade"] == 0)
     pdf = canvas.Canvas(str(output), pagesize=(WIDTH, HEIGHT), invariant=1)
-    pdf.setTitle("Climate Explorer project demonstration")
+    pdf.setTitle("Climate Explorer 1.0 project demonstration")
     pdf.setAuthor("Climate Explorer student project with OpenAI Codex assistance")
     pdf.setSubject("Seven-page PDF demonstration; early work and AI ideation eligibility unresolved")
 
-    start(pdf, 1, "Climate Explorer")
+    start(pdf, 1, "Climate Explorer 1.0")
     text(pdf, "Historical climate trends", 74, 190, 58, bold=True)
     text(pdf, "with visible assumptions", 74, 270, 58, TEAL, bold=True)
     text(pdf, "Be An Earth System Trend Detective!", 78, 390, 30, MUTED)
@@ -175,14 +175,14 @@ def build(output):
     source(pdf, "Fixed exploratory diagnostic: evaluation/SCIENCE_AUDIT.md. All requested points retained.", REPO + "/blob/main/evaluation/SCIENCE_AUDIT.md")
     pdf.showPage()
 
-    start(pdf, 6, "A result can be recalculated without NASA access", "The downloaded record carries raw source data and analysis settings")
-    text(pdf, "Saved evidence", 76, 195, 32, TEAL, bold=True)
-    text(pdf, "Request and retrieval date\nUnits and complete annual values\nMethod settings and versions\nSource and code hashes", 76, 258, 27, width=480)
-    text(pdf, "Offline replay", 660, 195, 32, TEAL, bold=True)
-    text(pdf, "The retained Tehran example replays:\n45 annual values, trend and\nsensitivity checks agree.\nNo network is used.", 660, 258, 27, width=500)
-    text(pdf, "python evaluation/replay.py <downloaded-analysis.json>", 76, 495, 26)
-    text(pdf, "A matching hash detects a change relative to the saved record. It does not prove the data correct.", 76, 555, 25, MUTED, width=1120)
-    source(pdf, "Replay evidence uses the retained example. Source file SHA-256: " + hashlib.sha256(example_path.read_bytes()).hexdigest()[:20], REPO + "/blob/main/evaluation/replay.py")
+    start(pdf, 6, "Keep and check an investigation", "The browser workflow preserves the chosen evidence and makes its verification limits visible")
+    text(pdf, "Browser investigation", 76, 195, 32, TEAL, bold=True)
+    text(pdf, "Choose 45, 35, 25 or 15 years.\nCompare rates on the same source.\nSave notes on this device, opt-in.\nPrint an investigation report.", 76, 258, 26, width=500)
+    text(pdf, "Two levels of verification", 660, 195, 32, TEAL, bold=True)
+    text(pdf, "Browser: hash, annual aggregation,\nOLS and Theil-Sen point checks.\nPython: full numerical replay,\nincluding intervals and sensitivity.", 660, 258, 26, width=500)
+    text(pdf, "Browser import does not verify intervals, p-values or chart bands.", 76, 490, 27, bold=True, width=1110)
+    text(pdf, "A matching hash does not establish source accuracy. The full Python replay remains available.", 76, 554, 24, MUTED, width=1120)
+    source(pdf, "Browser checks and saved notes verified 13 November. Frozen example SHA-256: " + hashlib.sha256(example_path.read_bytes()).hexdigest()[:20], REPO + "/blob/main/evaluation/replay.py")
     pdf.showPage()
 
     start(pdf, 7, "Working prototype and next evidence", "Public frozen demonstration and reproducible source")

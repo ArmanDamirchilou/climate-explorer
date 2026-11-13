@@ -11,3 +11,5 @@ The Tehran temperature, Tehran rainfall, Toronto temperature, and ten-year rainf
 None of these files is an event submission or evidence of competition eligibility.
 
 Release 0.3.0 adds `climate-explorer-investigation-v030-browser.json`, an actual Chrome worksheet with explicitly labelled QA notes rather than a student usability result. Its nested analysis replays. `tehran-temperature-v030-http.json` is the current local HTTP result and matches the final runtime fingerprint. The browser example records an earlier build fingerprint; it is not silently rewritten.
+
+The actual Chrome download `climate-explorer-investigation-v040-browser.json` records the 2011–2025 Tehran precipitation case and explicit release-QA notes. Its fifteen annual values, trend and sensitivity checks replay without the network. It was downloaded before the final 0.4 source freeze and retains that earlier fingerprint. It is not relabelled as a 1.0 export or as student-authored analysis. The updated browser reopened this exact file and preserved its notes; the printed QA copy was checked privately. Current deployed source fingerprints are verified separately.

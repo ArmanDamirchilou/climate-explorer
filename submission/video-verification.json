@@ -1,0 +1,52 @@
+{
+  "generated_utc": "2026-11-13T07:47:04.734399+00:00",
+  "artifact": "climate-explorer-demo.mp4",
+  "sha256": "9c2e7441abb4a2e1ecb9070ba4fac3b5cac6a743e64c689e1993a828cfd2a2a2",
+  "duration_seconds": 29.0,
+  "resolution": [
+    1280,
+    720
+  ],
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "frame_rate": "24/1",
+  "frame_count": 696,
+  "audio_streams": 0,
+  "ffmpeg_version": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+  "visuals": "Data figures calculated from retained analysis records. Not a screen recording or a fictional interface.",
+  "ai_disclosure": "All frames visibly marked AI-assisted demonstration; embedded MP4 comment also acknowledges assistance.",
+  "scenes": [
+    {
+      "duration_seconds": 3,
+      "caption": "Climate Explorer: investigate historical climate change."
+    },
+    {
+      "duration_seconds": 6,
+      "caption": "Inspect the historical rate for Tehran, 1981-2025. This is not a forecast."
+    },
+    {
+      "duration_seconds": 6,
+      "caption": "Compare assumptions and dates. Changing the period changes the estimated rate."
+    },
+    {
+      "duration_seconds": 5,
+      "caption": "Inspect source and location differences. The cause of this disagreement is unresolved."
+    },
+    {
+      "duration_seconds": 5,
+      "caption": "Save the source data and settings. Recalculate the result offline."
+    },
+    {
+      "duration_seconds": 4,
+      "caption": "Try the public examples. AI-assisted prototype. Eligibility unresolved."
+    }
+  ],
+  "sources": {
+    "artifacts/tehran-temperature-v02.json": "e815a85815e3e3eac4ad9e9be55d474765ed8c7e6664fda13fe6146dc87cb383",
+    "evaluation/science-audit.json": "b07f360f4ef7768491aa28943dc8bc45d96c481712f3787ad966c2780560a31d",
+    "evaluation/dataset-check.json": "8af460536ccb726998af8b35e63d4461de87bc5d1578583c88d5651e74f3e266"
+  },
+  "visual_review": "All six encoded scenes visually inspected; captions, actual-data figures, persistent watermark and dates are readable and unclipped. Final rebuilt video pixels unchanged; WebVTT wording simplified.",
+  "decode_check": "Entire 696-frame video decoded without errors; no audio stream.",
+  "replay_check": "Retained Tehran example replayed successfully with the current Python implementation; all45annualvalues,trendandsensitivityagreedwithoutnetwork."
+}

@@ -145,7 +145,7 @@ class DemoBuildTests(unittest.TestCase):
         self.assertTrue((self.output / ".nojekyll").is_file())
 
     def test_page_references_work_under_repository_subpath(self):
-        for page in ["index.html", "validation.html"]:
+        for page in ["index.html", "validation.html", "demo.html"]:
             parser = LocalReferences()
             parser.feed((self.output / page).read_text())
             for reference in parser.references:

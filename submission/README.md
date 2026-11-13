@@ -10,10 +10,12 @@ Two rules need an organizer's decision before this can be treated as an eligible
 
 - [Project description](PROJECT_DESCRIPTION.md) contains text for the actual form fields.
 - [Demo PDF](climate-explorer-demo.pdf) is the seven-page demonstration. [Artifact details](DEMO_ARTIFACT.md) explain its PDF fallback and checks. The [storyboard](DEMO_SCRIPT.md) also provides an optional short video script.
+- [Silent video](climate-explorer-demo.mp4) is a 29-second captioned demonstration using retained data figures. [Video notes](VIDEO_NOTES.md) describe its sources and verification.
 - [Judge questions](JUDGE_QA.md) prepares the student to explain the evidence and limits.
 - [Final checks](FINAL_CHECKLIST.md) separates technical preparation from actions that require the student or organizer.
 - [Source evidence](verified-sources/README.md) records the official requirements recovered on 13 November.
 - [AI assistance](../AI_ASSISTANCE.md) records the work performed by Codex and its specialist agents.
+- [Farhad handoff](FARHAD_HANDOFF.md), [review rubric](REVIEW_RUBRIC.md) and [student practice](STUDENT_PRACTICE.md) support review and preparation. No message has been sent.
 
 The draft description and demo must match the release that is actually shared. Use the release verification record for the final test count, version, and evidence links. Do not add a competition result, personal contribution, user feedback, or public URL that has not been confirmed.
 

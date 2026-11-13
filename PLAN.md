@@ -56,3 +56,9 @@ The software milestone is a reproducible, publicly inspectable prototype with ev
 The three specialist AI reviews are documented in AI_ASSISTANCE.md. Their science, engineering and submission findings informed the current release. They are not human peer reviewers or NASA judges.
 
 The project began before the event, and AI helped supply the approach. Those historical facts cannot be fixed by more code. An organizer must decide how the rules apply. The student must complete any required guardian/team checks, practice the explanation, and provide real usability observations before those claims can be made. No AI-generated testimony or user feedback can close those checks.
+
+## 13 November: 1.0 handoff milestone
+
+Version 0.4.0 adds four fixed periods and safe evidence import with optional local notes. Its tag preserves the workflow milestone. Version 1.0.0 documents the export contract, adds the captioned 29-second video and updated PDF, and packages a reproducible review handoff for Farhad. Eighty-three tests cover the calculations, HTTP behavior, frozen build, browser import, asynchronous actions and public artifact verification. The saved-file workflow and complete printed notes were checked in Chrome. Exact Linux and public release results are retained in evaluation/RELEASE_VERIFICATION.md.
+
+A higher release number is not the objective. The completed 1.x contract is the acceptance milestone. Further features should follow observed review findings or new scientific evidence. Human feedback, the student's personal explanation, and eligibility decisions cannot be replaced by additional generated material.

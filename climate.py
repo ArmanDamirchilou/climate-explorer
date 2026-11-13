@@ -104,7 +104,7 @@ def fetch_data(lat, lon):
             except (ValueError, KeyError, OSError):
                 pass
         try:
-            request = Request(url, headers={"User-Agent": "ClimateExplorer/0.4.0 (independent student research tool)"})
+            request = Request(url, headers={"User-Agent": "ClimateExplorer/1.0.0 (independent student research tool)"})
             with urlopen(request, timeout=40) as response:
                 payload = json.load(response)
             if not payload.get("properties", {}).get("parameter"):
@@ -216,7 +216,7 @@ def analyze_saved(query, saved, delivery="frozen NASA response"):
         "period": {"start": start, "end": end}, "variable": variable,
         "metadata": VARIABLES[variable], "annual": annual, "monthly": monthly,
         "excluded_years": excluded, "trend": trend, "checks": checks,
-        "analysis": {"settings": SETTINGS, "app_release": "0.4.0", "code_sha256": CODE_SHA256, "code_files": CODE_FILES, "build_started": "2026-11-11",
+        "analysis": {"settings": SETTINGS, "app_release": "1.0.0", "code_sha256": CODE_SHA256, "code_files": CODE_FILES, "build_started": "2026-11-11",
                      "versions": {"python": platform.python_version(), "numpy": np.__version__, "scipy": scipy.__version__, "statsmodels": statsmodels.__version__}},
         "raw_source": saved["payload"],
         "provenance": {"provider": "NASA POWER", "sources": header.get("sources", []),

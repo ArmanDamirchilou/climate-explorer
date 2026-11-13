@@ -52,3 +52,9 @@ Add an optional investigation worksheet below the source section. Ask for the us
 ```
 
 Review: the new comparison tests the claim across sources. The worksheet serves the proposed educational task. Neither requires a new dashboard, accounts, or decorative animation. Real comprehension testing remains necessary before claiming educational impact.
+
+## Saved investigation workflow, 13 November
+
+The upgrade keeps the existing climate chart as the main visual. The palette remains ice white #fbfdfe, blue ground #edf3f7, ink #183d47, muted blue #526c76, teal #147c89 and temperature orange #cc6545. System sans serif handles controls and evidence; Trebuchet retains the existing display role. The four-period table is a comparison of estimates, so rows replace extra metric cards. Saved-file controls sit under a disclosure in the investigation sidebar. Opt-in storage remains beside the notes, with device privacy explained at the point of choice.
+
+The four fixed periods use the same frozen response and retain the longest default. Import shows its verification scope before the result. The form remains a separate way to begin another analysis rather than silently changing its controls to arbitrary imported data. Printed notes become plain paragraphs so textarea scrolling cannot hide their content. Media live on a separate demonstration page, keeping the main data workflow focused.

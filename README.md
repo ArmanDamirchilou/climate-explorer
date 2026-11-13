@@ -1,8 +1,8 @@
 # Climate Explorer
 
-A reproducible investigation tool for testing historical climate claims with NASA data. Version 0.4.0 extends the investigation with fixed date comparisons and saved evidence that can be reopened. The proposed audience is students and teachers. Educational benefit has not yet been measured.
+A reproducible investigation tool for testing historical climate claims with NASA data. Version 1.0.0 completes the saved-investigation workflow, fixed date comparisons and review package. The proposed audience is students and teachers. Educational benefit has not yet been measured.
 
-[Open the public demonstration](https://armandamirchilou.github.io/climate-explorer/) · [Research and decisions](RESEARCH.md) · [Seven-slide demo](https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf) · [Submission preparation](submission/README.md) · [AI assistance](AI_ASSISTANCE.md)
+[Open the public demonstration](https://armandamirchilou.github.io/climate-explorer/) · [Research and decisions](RESEARCH.md) · [29-second video](https://armandamirchilou.github.io/climate-explorer/demo.html) · [Seven-slide demo](https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf) · [Submission preparation](submission/README.md) · [AI assistance](AI_ASSISTANCE.md)
 
 The public demonstration contains forty frozen NASA analyses: temperature and precipitation for five locations across four fixed periods ending in 2025. It makes no live NASA request. The full Python app also supports custom coordinates and dates. Both export the exact displayed evidence for offline replay.
 
@@ -30,7 +30,7 @@ On macOS, `Start.command` creates the environment if needed and opens the local 
 
 No NASA account or API key is needed for this POWER endpoint. Other NASA services may require an account. NASA network failure falls back to a clearly labelled real Tehran snapshot or an older cached response when available.
 
-Verification for the preceding 0.3.0 release: 54 tests passed locally and on GitHub Linux. Current additions are checked before release; see the release evidence. See [the release evidence](evaluation/RELEASE_VERIFICATION.md).
+Verification: 83 tests pass locally. The preceding 81-test suite also passed in a clean macOS environment. Linux CI and public release checks are recorded in the release evidence. See [the release evidence](evaluation/RELEASE_VERIFICATION.md).
 
 ## What works
 
@@ -146,3 +146,9 @@ Choose **Keep my latest investigation in this browser** to save the latest evide
 The public demo offers 1981–2025, 1991–2025, 2001–2025 and 2011–2025. All four rates appear together. Changing dates changes the question, so a different slope does not prove acceleration. See [all fixed-window results](evaluation/WINDOW_ANALYSIS.md). The source comparison remains available only for its matched 1981–2025 record.
 
 The downloadable investigation format is **Climate Explorer investigation 1**. It retains the nested analysis for Python replay. Version-by-version additions, changes, fixes and limits are in [CHANGELOG.md](CHANGELOG.md).
+
+## Review and handoff
+
+Start with [Farhad's review guide](submission/FARHAD_HANDOFF.md). The [video page](https://armandamirchilou.github.io/climate-explorer/demo.html) provides the 29-second demonstration, captions, transcript and seven-slide PDF. The [student practice guide](submission/STUDENT_PRACTICE.md) prepares explanations without inventing student contributions. The [1.x software contract](RELEASE_CONTRACT.md) states compatibility and limits.
+
+The GitHub 1.0.0 release includes a handoff ZIP containing the tracked source, frozen demo, media and SHA-256 manifest. After extracting it, follow START_HERE.md. Its static demo needs Python's built-in HTTP server but no scientific packages or NASA network access. Optional source links still use the internet. To reproduce an archive from a clean checkout, run `.venv/bin/python package_release.py`.

@@ -92,3 +92,11 @@ The science review justified making source disagreement visible in the main inve
 The engineering review added HTTP and build checks, an isolated environment check, source hash validation, and tests that a frozen build cannot access the network. CSV now exports the displayed result rather than fetching again. The public frozen demonstration reduces installation and live-service dependencies for reviewers, while retaining the full Python tool for custom investigations.
 
 The submission review recovered the full official brief and exact demo limits. It also found the AI-ideation rule, making the existing authorship history material to eligibility. More features cannot resolve that rule. The seven-page PDF, current form drafts and organizer message are prepared without claiming organizer approval or personal work that did not happen.
+
+## 13 November: workflow decisions for 1.0
+
+Three alternatives were considered for saved results: server accounts, tab-only downloads, and device-local files with optional browser storage. Device-local storage and import address a real continuity gap without requiring accounts, uploading notes or creating a new service. Browser import recalculates the quantities that can be independently implemented and checked with simple numerical references. It explicitly defers uncertainty calculations to the existing Python replay rather than claiming a complete browser statistics engine.
+
+Public period selection uses four fixed windows from the same source. This supports the date-sensitivity question and shows all results together. Free sliders and automatic searches for the strongest trend were deferred because they encourage significance shopping and complicate reproducibility. The report in evaluation/WINDOW_ANALYSIS.md records every preset and variable.
+
+For the video, Higgsfield's video catalog was inspected. No generator guaranteed exact scientific text and numerical charts. The delivered video therefore uses actual retained data figures, rendered reproducibly with captions. No paid generation was started. The scientific narrative remains tied to the source records, and its full limitations stay available in the PDF and repository.

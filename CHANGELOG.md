@@ -2,6 +2,25 @@
 
 All dates below use Tehran time (UTC+3:30). Development began on 11 November 2026. Git history starts with the truthful import on 13 November. Earlier local versions are documented milestones, not invented Git commits or backdated releases. A version number measures the software contract, not time spent or competition standing.
 
+## 1.0.0 · 13 November 2026
+
+### Added
+
+- A documented investigation-format compatibility contract and clear separation between app and method versions.
+- A 29-second, silent English-captioned video using actual retained data charts, with visible AI assistance and start-date disclosure.
+- An updated seven-slide PDF and public video page with captions, transcript and direct downloads.
+- A Farhad review guide, evidence-based rubric, student practice tasks and a checksummed handoff archive with tracked source and a frozen local demonstration.
+
+### Changed
+
+- Release packaging verifies public media and all forty analyses, in addition to the existing source and asset checks.
+- The complete saved-investigation workflow graduates from 0.4 to its documented 1.x contract after browser, clean-environment and release checks.
+- No statistical method or NASA observations are replaced. No existing export format is removed.
+
+### Verification and limits
+
+All 83 tests pass locally. The preceding 81-test suite also passed in a clean macOS environment. Browser tests cover period selection, notes, saving, restoration, file import, download and printing. The public deployment evidence is recorded separately after deployment. The video is 29.00 seconds with 696 frames, fully decoded and visually reviewed. All seven PDF pages were reviewed. The software milestone is complete; the documented scientific, user-testing and organizer checks remain open.
+
 ## 0.4.0 · 13 November 2026
 
 ### Added

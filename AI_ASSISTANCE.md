@@ -40,3 +40,7 @@ The student can add dated entries after performing the work. Useful entries name
 The student requested continued development and a professional handoff to Farhad. The main Codex agent selected and integrated four fixed periods, saved-file import, optional browser storage, restoration, printing and release history. The science agent implemented and checked all forty fixed-window analyses. The engineering agent wrote and tested browser verification and storage handling, including malformed input and asynchronous saves. The submission agent prepared an actual-data video and review materials. These are AI contributions, not unrecorded student work.
 
 At the student's request, Git commits omit AI `Co-authored-by` trailers. Assistance remains documented here and in shared media and exports. No commits are backdated or rewritten to conceal assistance.
+
+## Video and release 1.0
+
+The submission agent used Codex-written ReportLab, MuPDF and FFmpeg scripts to create the silent, captioned 29-second data demonstration and update the seven-slide PDF. Every video frame visibly states AI assistance. Charts use retained NASA values rather than generated observations. No synthetic person, voice or NASA branding appears. Higgsfield's available video models were inspected read-only, but no generation job was started and no credits were spent. Exact charts and captions were rendered directly to preserve numerical content. The main agent added the public media page, software contract and checksummed review packaging.

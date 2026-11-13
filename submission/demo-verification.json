@@ -1,23 +1,25 @@
 {
-  "checked_utc": "2026-11-13T07:04:07.813524+00:00",
+  "checked_utc": "2026-11-13T07:45:30.498310+00:00",
   "file": "submission/climate-explorer-demo.pdf",
-  "sha256": "663ceec3e79ae6c39dcd993664af7aa90f08d594a23c247e9ef3d9f80bce7332",
+  "sha256": "a779e9ce6097efb75c3dd4db9f4bc9f52f8b6b5480d7844a46ed5f68946fa7e9",
   "pages": 7,
   "page_size_points": [
     1280,
     720
   ],
   "checks": [
-    "All seven pages rendered with MuPDF and visually reviewed",
-    "No extracted text span outside page bounds",
-    "Displayed metrics checked against retained JSON",
-    "Public URLs require verification after deployment",
-    "Retained Tehran analysis replayed without network"
+    "All7pagesrenderedwithMuPDFandvisuallyreviewed",
+    "Noextractedtextspanoutsidepagebounds",
+    "Page6distinguisheslimitedbrowserchecksfromfullPythonreplay",
+    "MetricsfromretainedsourceJSON",
+    "PublicPDFURLrequiresreverificationafternewdeployment"
   ],
   "inputs": {
     "artifacts/tehran-temperature-v02.json": "e815a85815e3e3eac4ad9e9be55d474765ed8c7e6664fda13fe6146dc87cb383",
     "evaluation/results.json": "c005ee74cecef59efa4364001edeb286d56de1678dd42ba9993448de688e161f",
     "evaluation/science-audit.json": "b07f360f4ef7768491aa28943dc8bc45d96c481712f3787ad966c2780560a31d",
     "evaluation/dataset-check.json": "8af460536ccb726998af8b35e63d4461de87bc5d1578583c88d5651e74f3e266"
-  }
+  },
+  "release_label": "1.0 release candidate; final publication depends on release checks",
+  "visual_review": "All seven final PDF pages visually inspected. Updated cover, browser/Python verification distinction, captions and persistent watermark fit without overlap."
 }
