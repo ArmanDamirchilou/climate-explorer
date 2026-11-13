@@ -12,11 +12,17 @@ Climate Explorer helps students investigate historical temperature and rainfall 
 
 ## Link to project demo
 
-Use the verified public link to the final deck or video. Follow the official limit. Do not use a localhost address.
+Prepared public PDF link: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf
+
+The demo is a seven-page PDF, including the cover. Open the link without login after deployment before using it in the form.
 
 ## Link to final project
 
-Use the verified public repository or hosted release. A source repository can be the final-project link under the submission guide. If the browser demo uses frozen examples, say so clearly and provide local run instructions for live NASA queries.
+Repository: https://github.com/ArmanDamirchilou/climate-explorer
+
+Frozen browser demonstration: https://armandamirchilou.github.io/climate-explorer/
+
+The hosted demonstration uses retained examples. The repository provides the Python application for live NASA queries and instructions for reproducing calculations. Verify both links without login before using them in the form.
 
 ## Detailed project description
 

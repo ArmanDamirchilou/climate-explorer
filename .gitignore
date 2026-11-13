@@ -1,6 +1,7 @@
 .venv/
 .demo-venv/
 submission/rendered/
+tmp/
 __pycache__/
 *.pyc
 data/cache/

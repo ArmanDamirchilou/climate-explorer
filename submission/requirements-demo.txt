@@ -1,0 +1,4 @@
+# Optional PDF authoring tools, separate from application requirements.
+reportlab==5.1.0
+pypdf==7.0.1
+PyMuPDF==2.1

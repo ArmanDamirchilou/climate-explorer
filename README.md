@@ -2,7 +2,7 @@
 
 A reproducible investigation tool for testing historical climate claims with NASA data. Version 0.3.0 brings method, date, and source checks into one workflow. The proposed audience is students and teachers. Educational benefit has not yet been measured.
 
-[Open the public demonstration](https://armandamirchilou.github.io/climate-explorer/) · [Research and decisions](RESEARCH.md) · [Submission preparation](submission/README.md) · [AI assistance](AI_ASSISTANCE.md)
+[Open the public demonstration](https://armandamirchilou.github.io/climate-explorer/) · [Research and decisions](RESEARCH.md) · [Seven-slide demo](https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf) · [Submission preparation](submission/README.md) · [AI assistance](AI_ASSISTANCE.md)
 
 The public demonstration contains ten frozen NASA analyses: temperature and precipitation for five locations, 1981–2025. It makes no live NASA request. The full Python app also supports custom coordinates and dates. Both export the exact displayed evidence for offline replay.
 

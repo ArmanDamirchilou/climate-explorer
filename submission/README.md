@@ -9,7 +9,7 @@ Two rules need an organizer's decision before this can be treated as an eligible
 ## Materials
 
 - [Project description](PROJECT_DESCRIPTION.md) contains text for the actual form fields.
-- [Demo script](DEMO_SCRIPT.md) gives a seven-slide storyboard and an optional short video script.
+- [Demo PDF](climate-explorer-demo.pdf) is the seven-page demonstration. [Artifact details](DEMO_ARTIFACT.md) explain its PDF fallback and checks. The [storyboard](DEMO_SCRIPT.md) also provides an optional short video script.
 - [Judge questions](JUDGE_QA.md) prepares the student to explain the evidence and limits.
 - [Final checks](FINAL_CHECKLIST.md) separates technical preparation from actions that require the student or organizer.
 - [Source evidence](verified-sources/README.md) records the official requirements recovered on 13 November.
