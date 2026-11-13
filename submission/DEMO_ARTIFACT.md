@@ -24,4 +24,4 @@ The source reads retained analysis and evaluation JSON. It does not retrieve new
 
 PDF authoring used the PDF skill because both permitted presentation runtimes failed. A service failure does not establish public access to the empty Spaces Page. Do not publish or cite that Page as the demo.
 
-Public PDF URL: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf . The updated file must match demo-verification.json after deployment. Release 1.0 records the software, print, media and public-access checks in its verification record. The final release notes and tag identify the published source; runtime verification belongs in ../evaluation/RELEASE_VERIFICATION.md.
+Public PDF URL: https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf . The deployed file matches demo-verification.json in the anonymous public release check. Release 1.0 records the software, print, media and public-access checks in its verification record. The final release notes and tag identify the published source; runtime verification belongs in ../evaluation/RELEASE_VERIFICATION.md.

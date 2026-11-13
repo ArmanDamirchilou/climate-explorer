@@ -24,7 +24,7 @@ Runtime source was checked at commit `4a8ebd11f76b99e7d52efa09ab33d084e61db155`.
 | Privacy and repository scope | Only the project is published. Environment files, caches, render scratch files and unrelated competition-planning documents are excluded. Original local baseline archive remains unchanged and unpublished because it contains a local account path |
 | Authorship and rules | Actual 11 November start date and substantial Codex ideation/code/documentation contribution preserved; no personal contribution or organizer approval invented |
 
-Successful Linux build and deployment: [GitHub Actions run](https://github.com/ArmanDamirchilou/climate-explorer/actions/runs/43383883631). Machine-readable anonymous public checks: [public-verification.json](public-verification.json). The earlier implementation cycle remains in [VERIFICATION.md](VERIFICATION.md).
+Successful Linux build and deployment: [GitHub Actions run](https://github.com/ArmanDamirchilou/climate-explorer/actions/runs/43383883631). Machine-readable anonymous public checks: [public-verification-030.json](public-verification-030.json). The earlier implementation cycle remains in [VERIFICATION.md](VERIFICATION.md).
 
 ## Findings fixed during this release
 
