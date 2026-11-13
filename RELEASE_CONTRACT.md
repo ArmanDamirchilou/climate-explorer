@@ -24,6 +24,8 @@ The 135-second technical film is separate from the short demonstration candidate
 
 CI runs on branch pushes and pull requests for runtime, data, media, tests and workflow changes. Markdown and generated public-verification reports are documentation/evidence and do not trigger another numerical run. Release tags preserve the already verified runtime plus its reviewed evidence; they do not start duplicate jobs. Manual workflow dispatch remains available. Release verification must identify the actual tested runtime commit and distinguish any later evidence-only commit. A skipped or canceled run is never reported as passed.
 
+Branch and tag filters are explicit because an undefined ref type is excluded when the other type is filtered. See [GitHub's workflow filter syntax](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#onpushbranchestagsbranches-ignoretags-ignore).
+
 ## Release gates
 
 The scientific fixtures, HTTP behavior, frozen build and browser-import regression suite must pass. All forty public analyses must replay from retained source responses. Public files must match their manifest. JavaScript syntax and locked dependency checks must pass. Media must remain within the current published limits and accurately disclose assistance. New UI behavior must be inspected in a real browser. Package and release notes must preserve known limits and actual work dates.
