@@ -4,7 +4,7 @@ The Apache-2.0 license covers this project's original code and documentation. Re
 
 ## NASA data
 
-NASA POWER data are provided by the NASA POWER Project at NASA Langley Research Center. This application uses monthly T2M and PRECTOTCORR from the public temporal point API. The records identify MERRA-2 as their meteorology source. Request URLs, dates, units, API versions and payload hashes travel with the frozen files and analysis exports. See the [monthly service](https://power.larc.nasa.gov/docs/services/api/temporal/monthly/), [meteorology methodology](https://power.larc.nasa.gov/docs/methodology/data/sources_meteorology/), and [POWER citation guidance](https://power.larc.nasa.gov/docs/acknowledgement/).
+NASA POWER data are provided by the NASA POWER Project at NASA Langley Research Center. This application uses monthly T2M and PRECTOTCORR from the public temporal point API. The records identify MERRA-2 as their meteorology source. Request URLs, dates, units, API versions and payload hashes travel with the frozen files and analysis exports. See the [monthly service](https://power.larc.nasa.gov/docs/services/api/temporal/monthly/), [meteorology methodology](https://power.larc.nasa.gov/docs/methodology/data/sources_meteorology/), and [POWER citation guidance](https://power.larc.nasa.gov/docs/acknowledgements/).
 
 GISTEMP Team, 2026: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Data accessed 11 November 2026 at [GISTEMP](https://data.giss.nasa.gov/gistemp/). The retained land-only 250 km NetCDF and its exact hash are documented in [the comparison](evaluation/DATASET_CHECK.md).
 
