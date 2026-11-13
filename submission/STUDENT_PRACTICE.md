@@ -1,6 +1,6 @@
 # Explaining Climate Explorer in your own words
 
-Spend about forty minutes on these tasks. Keep the app open. You do not need to memorize every library function. You do need to know what a displayed number means and where it came from.
+Start with about forty minutes on these tasks, then take more time wherever you cannot yet explain the evidence. Completing this practice does not certify mastery or entry eligibility. Keep the app open. You do not need to memorize every library function. You do need to know what a displayed number means and where it came from.
 
 ## First fifteen minutes
 
@@ -14,7 +14,7 @@ Try these questions without reading an answer:
 4. Why are monthly temperatures weighted by calendar days?
 5. What should happen if a month is missing?
 
-Check your answers in EXPLANATION.md. The rate summarizes the selected record. It does not predict future weather or prove a cause. The data represent a model grid. A missing month excludes that year from this project's annual calculation.
+Check your answers in [EXPLANATION.md](../EXPLANATION.md). The rate summarizes the selected record. It does not predict future weather or prove a cause. The data represent a model grid. A missing month excludes that year from this project's annual calculation.
 
 ## Next ten minutes
 
@@ -32,7 +32,7 @@ Then inspect Toronto. The source and nearby-location rates differ. The diagnosti
 
 Download a result. Point to the raw source, source date and method settings. If Python is available, run the replay command. Explain what a matching hash does and does not prove.
 
-Finish with a truthful contribution statement. For example: “I chose the project direction. Codex helped design and write the implementation. I reviewed these calculations and completed these tests.” Replace the final sentence with work you actually performed. Add dated evidence to the contribution log. Do not claim code or design work that you did not do.
+Finish with a truthful contribution statement. The confirmed starting point is: “I chose the name and climate-project direction. Codex developed the detailed approach and implementation, including research, tests and documentation.” Add your own review, calculation or change only after you actually perform it. Record dated evidence in the contribution log. Do not memorize a claim that you wrote code or completed tests you did not do.
 
 ## Questions to practice aloud
 
@@ -42,7 +42,7 @@ Finish with a truthful contribution statement. For example: “I chose the proje
 - Why did the project use an interpretable historical rate instead of a forecasting model?
 - What would you change after observing a real student's mistakes?
 
-If age-related media restrictions apply, practice privately. Do not put your voice, image or likeness into the public competition demonstration. The prepared fictional adult narrator needs no personal recording.
+Practice privately. If you are under 18, do not put your voice, image or likeness into the public competition demonstration. Your age and guardian process still need checking privately. The prepared fictional adult narrator needs no student recording. If you export worksheet notes or share a screenshot, remove school details, contact information, account screens and unrelated browser content first. Browser saving is optional; a shared browser profile can expose saved notes.
 
 ## Explain the engineering in version 1.3
 
@@ -57,4 +57,6 @@ Practice these questions:
 - What do the browser, selected-record Python replay and complete-atlas verifier each check?
 - What happens if a build fails or an old request reports an error after a newer one succeeds?
 
-Use INNOVATION_REVIEW.md to explain one rejected alternative and the evidence needed to revisit it. Do not claim that every listed idea was built, validated or independently developed by you. Record your own actual calculation, test or code contribution with its date and evidence.
+Use [INNOVATION_REVIEW.md](../INNOVATION_REVIEW.md) to explain one rejected alternative and the evidence needed to revisit it. Do not claim that every listed idea was built, validated or independently developed by you. Record your own actual calculation, test or code contribution with its date and evidence.
+
+Finally, explain why the 135-second technical film and 45-second reel are portfolio media. The official-length candidate is the separate 29.8-second film or seven-page PDF. Naming the correct file is part of an accurate submission, but it does not resolve the early-work and AI-ideation concerns.

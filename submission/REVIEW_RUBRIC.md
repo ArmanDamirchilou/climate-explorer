@@ -16,10 +16,11 @@ For each category, record **not tested**, **needs work**, **clear**, or **strong
 
 For version 1.3, inspect these concrete changes before assigning a label:
 
-- Load an atlas, choose a window, and follow its exact dates and source into the main analysis. Check that the displayed universe still contains all 666 eligible candidate periods.
+- Load one of the current complete 1981-2025 atlases, choose a window, and follow its exact dates and source into the main analysis. Check that this case retains all 666 eligible candidate periods. Other date ranges or incomplete records can have different counts; use the payload's declared universe and verify it.
 - Apply a direction filter. Confirm that it changes only the display and does not become a claim about the probability of a real trend.
 - Verify a downloaded complete atlas and a selected investigation separately. Explain why these are different verification scopes.
-- Watch the technical film and compare one displayed result with its retained JSON. The long film is portfolio media; the short candidate remains separate.
+- Watch the technical film and compare one displayed result with its retained JSON. The long film is portfolio media; the 29.8-second candidate remains separate. The real app image is release 1.1 and the atlas plate is a labeled data rendering, not a recorded app interaction.
+- Listen to the actual final narration if reviewing sound quality. Automatic transcript agreement and visual review are recorded; human listening has not been performed by the development agents. Record your own listening outcome rather than inheriting a pass.
 
 The 100-candidate review documents a design search and reasons for selection. It is not evidence of originality, measured usefulness or a hundred completed features. The missing human-task evidence in the Impact row remains missing until someone actually performs and records it.
 

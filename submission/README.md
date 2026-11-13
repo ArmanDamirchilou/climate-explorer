@@ -8,6 +8,9 @@ Two rules need an organizer's decision before this can be treated as an eligible
 
 ## Materials
 
+- [Project overview](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/review.html) and [short-demo-only page](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/demo-short.html) provide separate review links on the independent host.
+- [Critical judging audit](JUDGE_AUDIT.md) separates fixed problems from unresolved eligibility and human evidence.
+
 - [Full technical film](climate-explorer-story-technical.mp4) is a separate 135-second portfolio explanation. [Production brief](LONG_FILM_BRIEF.md), [chapter record](long-film-script.json) and audio-edit receipts preserve the generated sources, local editing and actual checks. It exceeds the official demo limit.
 - [Window-atlas protocol](../evaluation/WINDOW_ATLAS.md) defines the complete date search and its limits. [Innovation review](../INNOVATION_REVIEW.md) records 100 specific candidates and selection criteria.
 - [Project description](PROJECT_DESCRIPTION.md) contains text for the actual form fields.

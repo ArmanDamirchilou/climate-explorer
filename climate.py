@@ -89,22 +89,42 @@ def source_url(lat, lon):
     })
 
 
+def _read_cached_response(path, expected_url):
+    try:
+        saved = json.loads(path.read_text())
+    except (OSError, ValueError):
+        return None
+    if not isinstance(saved, dict) or saved.get("request_url") != expected_url or not isinstance(saved.get("fetched_at"), str):
+        return None
+    try:
+        retrieved = datetime.fromisoformat(saved["fetched_at"])
+    except ValueError:
+        return None
+    if retrieved.utcoffset() is None:
+        return None
+    payload = saved.get("payload")
+    if not isinstance(payload, dict) or not isinstance(payload.get("properties"), dict) or not isinstance(payload.get("parameters"), dict):
+        return None
+    measurements = payload["properties"].get("parameter")
+    if not isinstance(measurements, dict):
+        return None
+    for key in ("T2M", "PRECTOTCORR"):
+        if not isinstance(measurements.get(key), dict) or not isinstance(payload["parameters"].get(key), dict):
+            return None
+    return saved, (datetime.now(timezone.utc) - retrieved).total_seconds()
+
+
 def fetch_data(lat, lon):
     url = source_url(lat, lon)
     key = hashlib.sha256(url.encode()).hexdigest()[:20]
     cache = ROOT / "data" / "cache" / f"{key}.json"
     # Small local cache avoids repeatedly requesting the same historical record.
     with FETCH_LOCK:
-        if cache.exists():
-            try:
-                saved = json.loads(cache.read_text())
-                age = (datetime.now(timezone.utc) - datetime.fromisoformat(saved["fetched_at"])).total_seconds()
-                if 0 <= age < 86400:
-                    return saved, "cached NASA response"
-            except (ValueError, KeyError, OSError):
-                pass
+        cached = _read_cached_response(cache, url) if cache.exists() else None
+        if cached and 0 <= cached[1] < 86400:
+            return cached[0], "cached NASA response"
         try:
-            request = Request(url, headers={"User-Agent": "ClimateExplorer/1.3.0 (independent student research tool)"})
+            request = Request(url, headers={"User-Agent": "ClimateExplorer/1.3.1 (independent student research tool)"})
             with urlopen(request, timeout=40) as response:
                 payload = json.load(response)
             if not payload.get("properties", {}).get("parameter"):
@@ -124,11 +144,8 @@ def fetch_data(lat, lon):
                 sample = ROOT / "data" / "tehran-nasa-snapshot.json"
                 if sample.exists():
                     return json.loads(sample.read_text()), "bundled NASA snapshot (offline fallback)"
-            if cache.exists():
-                try:
-                    return json.loads(cache.read_text()), "older cached NASA response (live service unavailable)"
-                except (OSError, ValueError):
-                    pass
+            if cached:
+                return cached[0], "older cached NASA response (live service unavailable)"
             raise DataUnavailable("NASA data could not be loaded. Try again, or choose Tehran to use the included real NASA snapshot.") from error
 
 
@@ -216,7 +233,7 @@ def analyze_saved(query, saved, delivery="frozen NASA response"):
         "period": {"start": start, "end": end}, "variable": variable,
         "metadata": VARIABLES[variable], "annual": annual, "monthly": monthly,
         "excluded_years": excluded, "trend": trend, "checks": checks,
-        "analysis": {"settings": SETTINGS, "app_release": "1.3.0", "code_sha256": CODE_SHA256, "code_files": CODE_FILES, "build_started": "2026-11-11",
+        "analysis": {"settings": SETTINGS, "app_release": "1.3.1", "code_sha256": CODE_SHA256, "code_files": CODE_FILES, "build_started": "2026-11-11",
                      "versions": {"python": platform.python_version(), "numpy": np.__version__, "scipy": scipy.__version__, "statsmodels": statsmodels.__version__}},
         "raw_source": saved["payload"],
         "provenance": {"provider": "NASA POWER", "sources": header.get("sources", []),

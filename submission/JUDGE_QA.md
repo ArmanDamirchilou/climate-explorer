@@ -61,3 +61,15 @@ The raw monthly response and long observation arrays appear once. Each cell keep
 **Why not add a forecast or a chatbot?**
 
 Those answer different questions and need different validation. A forecast needs a target, withheld periods and suitable baselines. A chatbot needs evidence-grounding and error evaluation. The selected improvement directly addresses a demonstrated weakness in the existing historical-rate task. The innovation review preserves those alternatives and what evidence would justify revisiting them.
+
+**Do the two Tehran rainfall slopes prove that the climate reversed?**
+
+No. The retained record has a +36.901 mm/year-per-decade fitted rate for 1981-2025 and -52.832 for 2011-2025. The recent ordinary 95% interval spans -172.276 to +66.612 and includes zero. These are different historical periods from the same NASA response. The teaching example was chosen after inspecting the four fixed periods, not preregistered as an independent discovery. The atlas exposes the larger date search; it does not correct inference for selecting a window.
+
+**Can this project currently be declared an eligible Space Apps entry?**
+
+No organizer decision is recorded. The implementation began on 11 November before Ankara's hackathon, and Codex contributed to the detailed solution idea. Both activities conflict with restrictions recorded in the official FAQ and submission guide. A polished release, a new title or a new repository would not erase that history. The student must disclose it and obtain guidance before making competition declarations. A portfolio or noncompetitive demonstration is a possible route, subject to the organizer's response.
+
+**Is the person in the films the student or a NASA scientist?**
+
+Neither. The narrator is a visibly disclosed fictional generated adult with generated speech. The technical film's presenter sources are 480p within a 1080p composition. Whole-sentence corrections and omissions are documented. The data graphics come from retained records; its atlas plate is labeled as a rendering, not a screen recording. The genuine app image comes from release 1.1. Automatic transcript checks and encoded-frame review are documented; no human listening or real user testimonial is claimed.

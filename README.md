@@ -1,8 +1,8 @@
 # Climate Explorer
 
-A reproducible investigation tool for testing historical climate claims with NASA data. Version 1.3 adds a complete date-window sensitivity atlas and a longer technical film. The proposed audience is students and teachers. Educational benefit has not yet been measured.
+A reproducible investigation tool for testing historical climate claims with NASA data. Version 1.3.1 hardens evidence replay and cache recovery after a critical judging review. The 1.3 atlas and technical film remain available. The proposed audience is students and teachers. Educational benefit has not yet been measured.
 
-[Open the public demonstration](https://armandamirchilou.github.io/climate-explorer/) · [Research and decisions](RESEARCH.md) · [Films](https://armandamirchilou.github.io/climate-explorer/demo.html) · [Seven-slide demo](https://armandamirchilou.github.io/climate-explorer/climate-explorer-demo.pdf) · [Submission preparation](submission/README.md) · [AI assistance](AI_ASSISTANCE.md)
+[Open the public demonstration](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/) · [Project overview](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/review.html) · [Research and decisions](RESEARCH.md) · [Films](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/demo.html) · [Seven-slide demo](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/climate-explorer-demo.pdf) · [Submission preparation](submission/README.md) · [AI assistance](AI_ASSISTANCE.md)
 
 The public demonstration contains forty frozen NASA analyses: temperature and precipitation for five locations across four fixed periods ending in 2025. It makes no live NASA request. The full Python app also supports custom coordinates and dates. Both export the exact displayed evidence for offline replay.
 
@@ -91,7 +91,7 @@ To replay an analysis JSON, including an investigation worksheet export:
 .venv/bin/python evaluation/replay.py /path/to/climate-explorer-analysis.json
 ```
 
-Replay verifies the payload hash, recorded settings, aggregation, annual and monthly values, trend, and sensitivity results without using the network. Worksheet notes are user text and are not assessed or endorsed by replay. A hash detects an input change relative to the recorded hash; it is not proof that a dataset is correct. A code fingerprint records the source files at server startup. Restart the server after changing code.
+Replay verifies the payload hash, variable units, recorded request and coordinates, covered dates, source metadata, analysis settings, aggregation, annual and monthly values, trend, and sensitivity results without using the network. Compatible historical fingerprints remain replayable; a recorded fingerprint is not an authenticity certificate. Worksheet notes are user text and are not assessed or endorsed by replay. A hash detects an input change relative to the recorded hash; it is not proof that a dataset is correct. A code fingerprint records the source files at server startup. Restart the server after changing code.
 
 To reproduce the studies:
 
@@ -131,7 +131,7 @@ NASA POWER data are provided by the NASA POWER Project. This is an independent s
 .venv/bin/python build_demo.py --output dist
 ```
 
-This build uses retained NASA records, checks their hashes against the frozen study, and replays all forty analyses without contacting NASA. The generated directory can be served by any static host. GitHub Actions tests the code and builds the demonstration before publishing it to GitHub Pages. Pull requests run checks without deploying. The workflow has no NASA key or application secret.
+This build uses retained NASA records, checks their hashes against the frozen study, and replays all forty analyses without contacting NASA. The generated directory can be served by any static host. GitHub Actions tests the code and archives the frozen build. A separate Sites deployment publishes that exact verified build under its own origin. The workflow no longer publishes to GitHub Pages. See [deployment isolation and publication](HOSTING.md). Pull requests run checks without deploying. The workflow has no NASA key or application secret.
 
 An optional investigation worksheet saves the user's question, interpretation, uncertainty, readable evidence summary and exact displayed analysis. Notes stay in the current tab unless optional saving in this browser is enabled. Saved copies can be restored or cleared. CSV exports also use the displayed record instead of fetching a potentially different response.
 
@@ -149,7 +149,7 @@ The downloadable investigation format is **Climate Explorer investigation 1**. I
 
 ## Review and handoff
 
-Start with [Farhad's review guide](submission/FARHAD_HANDOFF.md). The [video page](https://armandamirchilou.github.io/climate-explorer/demo.html) provides the long technical film, separate short demonstration, portrait reel, captions and seven-slide PDF. The [student practice guide](submission/STUDENT_PRACTICE.md) prepares explanations without inventing student contributions. The [1.x software contract](RELEASE_CONTRACT.md) states compatibility and limits.
+Start with [Farhad's review guide](submission/FARHAD_HANDOFF.md). The [video page](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/demo.html) provides the long technical film, separate short demonstration, portrait reel, captions and seven-slide PDF. The [student practice guide](submission/STUDENT_PRACTICE.md) prepares explanations without inventing student contributions. The [1.x software contract](RELEASE_CONTRACT.md) states compatibility and limits.
 
 Each published release has a handoff ZIP containing the tracked source, frozen demo, media and SHA-256 manifest. After extracting it, follow START_HERE.md. Its static demo needs Python's built-in HTTP server but no scientific packages or NASA network access. Optional source links still use the internet. To reproduce an archive from a clean checkout, run `.venv/bin/python package_release.py`.
 
@@ -163,15 +163,15 @@ Choose **Start the 3-step story** to investigate Tehran rainfall. The same froze
 
 ## Narrated story and shareable views
 
-Version 1.2 adds a narrated, edited short film and a 45-second portrait portfolio reel. [Watch both](https://armandamirchilou.github.io/climate-explorer/demo.html). The fictional adult presenter and voice are generated with Higgsfield and visibly disclosed. Actual NASA data figures and a real app capture connect the story to the working investigation. The longer reel exceeds the NASA demo limit and is not the submission demo. The seven-page PDF remains the reviewed 1.0 artifact.
+Version 1.2 adds a narrated, edited short film and a 45-second portrait portfolio reel. [Watch both](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/demo.html). The fictional adult presenter and voice are generated with Higgsfield and visibly disclosed. Actual NASA data figures and a real app capture connect the story to the working investigation. The longer reel exceeds the NASA demo limit and is not the submission demo. The seven-page PDF remains the reviewed 1.0 artifact.
 
-Use **Copy view link** beside the source downloads to share a supported public location, variable and period. For example, [Tehran rainfall, 2011–2025](https://armandamirchilou.github.io/climate-explorer/?place=tehran&variable=rainfall&period=recent15#workspace). The link does not include notes or freeze the hosted app/data version. Download an investigation for its exact retained evidence. If clipboard access is unavailable, select and copy the displayed URL. Unsupported links announce the default; the full local app does not apply these public-view parameters.
+Use **Copy view link** beside the source downloads to share a supported public location, variable and period. For example, [Tehran rainfall, 2011–2025](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/?place=tehran&variable=rainfall&period=recent15#workspace). The link does not include notes or freeze the hosted app/data version. Download an investigation for its exact retained evidence. If clipboard access is unavailable, select and copy the displayed URL. Unsupported links announce the default; the full local app does not apply these public-view parameters.
 
 [Production research and rebuild instructions](submission/STORY_PRODUCTION.md) and the [generation receipt](submission/higgsfield-generation.json) record the method and limits. The original silent video remains identifiable in Git history and its 1.0 release.
 
 ## Inspect every date window
 
-Version 1.3 adds **666 windows for each of ten frozen location/variable cases**, or 6,660 retained analyses. [Open Tehran rainfall](https://armandamirchilou.github.io/climate-explorer/?place=tehran&variable=rainfall&period=full45#window-atlas), then choose **Load the atlas**. The start/end grid and chronological table contain every requested contiguous period of at least ten calendar years. A fit also requires ten complete annual observations. Missing years remain excluded; dependence checks are withheld where their calendar-spacing assumption fails.
+Version 1.3 adds **666 windows for each of ten frozen location/variable cases**, or 6,660 retained analyses. [Open Tehran rainfall](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/?place=tehran&variable=rainfall&period=full45#window-atlas), then choose **Load the atlas**. The start/end grid and chronological table contain every requested contiguous period of at least ten calendar years. A fit also requires ten complete annual observations. Missing years remain excluded; dependence checks are withheld where their calendar-spacing assumption fails.
 
 Display-only length and direction filters keep the full universe visible in the count. They do not change calculations, select a preferred result or correct for searching. Opening a cell reconstructs its exact source-backed analysis and preserves your worksheet notes. Atlas data load only when requested, about 3.3 MB per case before transport compression. The full local server also serves these frozen cases and announces when they differ from its current live source.
 
@@ -187,7 +187,7 @@ The atlas exposes date sensitivity. Its overlapping windows are not independent 
 
 ## The longer technical story
 
-[Watch the 2-minute-15-second technical film](https://armandamirchilou.github.io/climate-explorer/demo.html#technical-film). Five chapters connect the opening question to source conversions, competing methods, synthetic failure cases, the atlas and offline replay. Accurate figures are composited outside the generative model; the atlas plate is explicitly a rendering from retained data, not an interface capture. The separately labeled app capture is from the working 1.1 release.
+[Watch the 2-minute-15-second technical film](https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/demo.html#technical-film). Five chapters connect the opening question to source conversions, competing methods, synthetic failure cases, the atlas and offline replay. Accurate figures are composited outside the generative model; the atlas plate is explicitly a rendering from retained data, not an interface capture. The separately labeled app capture is from the working 1.1 release.
 
 The fictional adult studio presenter and voice are AI-generated. Presenter sources are 480p within a 1080p composition. The first chapter omits an ambiguous-place-name sentence while its accurate full-period figure is shown; no unspoken replacement name is inserted in captions. [The production brief](submission/LONG_FILM_BRIEF.md), [chapter records](submission/long-film-script.json) and [audio-edit receipt](submission/long-film-word-edit.json) preserve the details. The longer film is a portfolio explanation, separate from the existing short demo candidate.
 

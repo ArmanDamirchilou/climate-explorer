@@ -16,6 +16,8 @@ This is a descriptive sensitivity tool. It is not a new climate estimator, a com
 
 Simonsohn, Simmons and Nelson's specification-curve method includes defining suitable specifications, displaying their results, and joint inference. This atlas does not implement that joint inferential stage. Its date windows also change the period being estimated. Describing it as a complete implementation of their method would overstate the work. [Primary paper](https://doi.org/10.1038/s41562-020-0912-z).
 
+Start/end-year trend matrices also predate this project. Yosef, Aguilar and Alpert calculate such matrices to examine period-length sensitivity in climate indices (section 3 and Figure 6). Their variables and trend methods differ from this application's annual OLS calculations. The precedent limits the originality claim: this project combines an established sensitivity display with retained inputs, selected-period reconstruction and offline replay for a proposed learner workflow. It does not introduce the trend-matrix concept or demonstrate an educational advantage over earlier tools. [Author-hosted primary paper, published online in 2020](https://www.tau.ac.il/~pinhas/papers/2020/Yosef_et_al_IJC_2020.pdf), [doi:10.1002/joc.6740](https://doi.org/10.1002/joc.6740).
+
 ## Fixed enumeration rule
 
 Let the base period be the inclusive calendar range S through E, with T = E − S + 1. Set the minimum calendar span and minimum complete-year count to m = 10 by default. Enumerate each pair (a, b) satisfying S ≤ a ≤ b ≤ E and b − a + 1 ≥ m, in ascending start-year order and then ascending end-year order.

@@ -100,7 +100,8 @@ def build(output):
                 if hashlib.sha256((ROOT / "submission" / name).read_bytes()).hexdigest() != digest:
                     raise ValueError(f"Media is unfinished or differs from its review record: {name}")
         shutil.copyfile(ROOT / "submission" / "climate-explorer-demo.pdf", stage / "climate-explorer-demo.pdf")
-        shutil.copyfile(ROOT / "submission" / "demo.html", stage / "demo.html")
+        for name in ("demo.html", "demo-short.html", "review.html"):
+            shutil.copyfile(ROOT / "submission" / name, stage / name)
         media = {
             "climate-explorer-story-judge.mp4": "climate-explorer-demo.mp4",
             "climate-explorer-story-judge.vtt": "climate-explorer-demo.vtt",

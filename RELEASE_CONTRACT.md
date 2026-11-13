@@ -12,7 +12,7 @@ Optional browser storage keeps the latest investigation on this device. It is of
 
 The worksheet envelope is `Climate Explorer investigation 1`. Its `analysis` property retains the existing analysis JSON. New optional fields may be added within 1.x. Breaking required-field or meaning changes require a new envelope identifier. Unknown worksheet notes are not interpreted as commands. Untrusted imports are limited to 2 MiB and validated before rendering.
 
-The browser accepts the supported NASA POWER export layout from application 0.2.1 onward. It checks the recorded hash, calendar aggregation and point estimates. It does not recompute uncertainty intervals, p-values, residual correlation or bands. `evaluation/replay.py` checks the recorded supported settings, raw response, annual/monthly values, trend and sensitivity output. Future unsupported method versions must be handled explicitly rather than silently relabelled.
+The browser accepts the supported NASA POWER export layout from application 0.2.1 onward. It checks the recorded hash, calendar aggregation and point estimates. It does not recompute uncertainty intervals, p-values, residual correlation or bands. `evaluation/replay.py` checks the recorded supported settings, raw response, scientific metadata, request/coordinate/period consistency, annual/monthly values, trend and sensitivity output. Future unsupported method versions must be handled explicitly rather than silently relabelled.
 
 App release and method settings have separate versions. App 1.0.0 retains method settings 0.2.1 because this release improves the workflow rather than silently replacing the statistical method. Exported source fingerprints identify a source snapshot, not a cryptographic signature, NASA authentication or peer review.
 
@@ -47,3 +47,9 @@ A bundled guided example is an optional entry to the same investigation workflow
 Public view links contain exactly one supported place, variable and fixed period. They omit worksheet notes and do not freeze a release or raw source. Exact evidence continues to use the investigation download. Invalid links announce the default. The full local service ignores these snapshot-only query hints. Clipboard denial falls back to a selectable URL.
 
 The current public short-video URL serves the narrated replacement; the earlier source file remains a version 1.0 artifact. A separately labeled portfolio reel exceeds the NASA demo length. Both edited videos have native generated speech, visible disclosure and metadata. The public builder checks reviewed media hashes before and after copying, rejecting unfinished renders while preserving an earlier build. Optional production dependencies stay separate from the application lock.
+
+## Version 1.3.1 review hardening
+
+Replay binds scientific labels to the retained request, validates provenance descriptors and bounds dates before calculation. A compatible older source fingerprint remains a recorded value; it need not equal the current checkout, and it is not an authenticity certificate. The full local app refreshes malformed cache records and never uses an invalid cache as fallback. Statistical settings and source observations remain unchanged.
+
+The independent host and publication steps are documented in HOSTING.md. The GitHub workflow archives builds without a Pages deployment job. The concise project overview and short-demo-only page link to the same reviewed video bytes; the long film remains a portfolio artifact. Final release evidence must verify the independent host instead of inheriting a prior GitHub Pages result.

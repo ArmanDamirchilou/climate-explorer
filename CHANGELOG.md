@@ -2,6 +2,27 @@
 
 All dates below use Tehran time (UTC+3:30). Development began on 11 November 2026. Git history starts with the truthful import on 13 November. Earlier local versions are documented milestones, not invented Git commits or backdated releases. A version number measures the software contract, not time spent or competition standing.
 
+
+## 1.3.1 · 13 November 2026
+
+### Fixed
+
+- Full offline replay rejects mismatched units, requested coordinates, periods and source descriptors, instead of accepting correct numbers with altered scientific labels. Historical compatible fingerprints remain valid recorded metadata, without an authentication claim.
+- The full local app refreshes malformed or wrong-request cache records safely. Invalid cached data are not offered as an offline fallback.
+- Submission drafts now describe the actual narrated 29.8-second film and disclose its generated adult/voice, earlier app image, and the separate long-film role.
+
+### Added and changed
+
+- A separate public deployment origin with its own hosting mirror. The dedicated GitHub source repository and all earlier version history remain; the personal-site repository is untouched. GitHub CI verifies and archives builds without publishing to GitHub Pages.
+- A concise project/evidence overview and a dedicated short-demo page prevent confusion between the official-length candidate and the 135-second portfolio film.
+- Eight targeted replay/cache regression tests, a criterion-based critical audit, and a specific primary-source precedent for trend matrices.
+- Accurate student practice, organizer draft, final checks and complete public AI disclosure.
+
+### Limits and preservation
+
+- Statistical methods, retained NASA observations and reviewed video/PDF bytes are unchanged. Earlier releases remain identifiable; no removal or backdating of development history.
+- Human usability evidence, listening review, matched station validation and Toronto source resolution remain unperformed. Entry eligibility, actual team and guardian requirements and local online delivery remain separate checks. No competition entry or organizer message is submitted.
+
 ## 1.3.0 · 13 November 2026
 
 ### Added

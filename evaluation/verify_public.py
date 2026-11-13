@@ -126,7 +126,7 @@ def check(base_url):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--url", default="https://armandamirchilou.github.io/climate-explorer/")
+    parser.add_argument("--url", default="https://climate-explorer-evidence.techtrendmedia-ai.chatgpt.site/")
     parser.add_argument("--output", type=Path, default=Path(__file__).with_name("public-verification.json"))
     args = parser.parse_args()
     result = check(args.url)
